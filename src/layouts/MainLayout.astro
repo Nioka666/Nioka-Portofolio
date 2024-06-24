@@ -1,0 +1,21 @@
+---
+import "../styles/main.css";
+import HeadMeta from "./HeadMeta.astro";
+import Navbar from "./Navbar.astro";
+import Footer from "./Footer.astro";
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <HeadMeta />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
+</html>
