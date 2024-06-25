@@ -7,19 +7,47 @@
 @layer base {
   * {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    color: black;
+    background: lightgray;
   }
 
   body {
-    @apply bg-gray-50 lg:px-[150px];
+    @apply bg-white;
   }
 
   nav {
-    @apply sticky top-5 w-full h-[75px] shadow-md bg-white flex items-center sm:px-8 lg:px-10 rounded-2xl;
+    @apply sticky top-5 w-full max-sm:w-[95%] mx-auto h-[75px] flex items-center sm:px-8 lg:px-[115px];
   }
 
   main {
-    @apply lg:py-20;
+    @apply lg:py-20 lg:px-[150px];
   }
+
+  /* hero section */
+  section.hero {
+    @apply flex justify-between items-center rounded-2xl mt-7 max-sm:hidden;
+  }
+  /* hero sm */
+  section.sm-hero {
+    @apply flex-col rounded-2xl mt-7 sm:hidden;
+  }
+
+  section.social-media {
+    @apply flex flex-col gap-3;
+  }
+
+  section.headline {
+    @apply w-[47%] flex flex-col ms-16;
+  }
+
+  picture > img.headline-img {
+    @apply w-[325px] rounded-tr-[150px] rounded-tl-[150px] rounded-br-[100px] rounded-bl-[150px] border-[12px];
+  }
+  /* end of hero section */
 }
 
 @layer components {
