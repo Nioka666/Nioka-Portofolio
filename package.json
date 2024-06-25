@@ -11,6 +11,7 @@
     "disable-toolbar": "astro preferences disable devToolbar"
   },
   "dependencies": {
+    "@astrojs/netlify": "^5.3.2",
     "@astrojs/react": "^3.6.0",
     "@astrojs/tailwind": "^5.1.0",
     "@types/react": "^18.3.3",
