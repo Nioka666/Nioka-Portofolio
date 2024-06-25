@@ -87,7 +87,7 @@ function Hero() {
             passionate and dedicated to my work.
           </p>
           <div className="mt-10 flex justify-between">
-            <button className="py-[11px] px-5 bg-black text-white rounded-2xl text-sm font-medium">
+            <button className="py-[14px] px-9 bg-black text-white rounded-2xl text-sm font-medium">
               Say Hello <i className="uil uil-location-arrow ms-0"></i>
             </button>
             <button className="px-7 flex items-center gap-1 bg-transparent text-black rounded-2xl text-sm font-normal hover:translate-y-1 transition-all">
