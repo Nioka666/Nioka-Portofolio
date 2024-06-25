@@ -57,7 +57,14 @@ function Hero() {
       </section>
       {/* Hero sm */}
       <section className="sm-hero">
-        <div className="flex justify-between px-16 items-center mt-20">
+        <div className="flex justify-between px-10 items-center mt-14">
+          <picture>
+            <img
+              src={avatar.src}
+              alt="Adhim Niokagi"
+              className="w-[215px] sm:w-[230px] rounded-tr-[150px] rounded-tl-[150px] rounded-br-[100px] rounded-bl-[150px] border-[12px]"
+            />
+          </picture>
           <section className="social-media">
             {mediaSocial.map((data) => (
               <a href={data.url} key={data.name}>
@@ -68,29 +75,24 @@ function Hero() {
               </a>
             ))}
           </section>
-          <picture>
-            <img
-              src={avatar.src}
-              alt="Adhim Niokagi"
-              className="w-[280px] rounded-tr-[150px] rounded-tl-[150px] rounded-br-[100px] rounded-bl-[150px] border-[12px]"
-            />
-          </picture>
         </div>
         {/* headline */}
-        <section className=" px-7 mt-7 flex flex-col ms-7">
-          <h1 className="text-[40px] font-semibold">M. Adhim Niokagi</h1>
+        <section className="mt-7 flex flex-col ms-7">
+          <h1 className="text-[35px] sm:text-[40px] font-semibold">
+            M. Adhim Niokagi
+          </h1>
           <h6 className="text-xl max-sm:text-lg"># Front-End Developer</h6>
           <p className="max-sm:text-sm text-gray-500 mt-5 w-[91%]">
             I'm a Front-End Web Developer based in Indonesian, and I'm very
             passionate and dedicated to my work.
           </p>
           <div className="mt-10 flex justify-between">
-            <button className="py-[14px] px-7 bg-black text-white rounded-2xl text-lg max-sm:text-base font-medium">
-              Say Hello <i className="uil uil-location-arrow ms-2"></i>
+            <button className="py-[11px] px-5 bg-black text-white rounded-2xl text-sm font-medium">
+              Say Hello <i className="uil uil-location-arrow ms-0"></i>
             </button>
-            <button className="px-7 flex items-center gap-1 bg-transparent text-black rounded-2xl text-base font-normal hover:translate-y-1 transition-all">
-              <i className="bx bx-mouse text-3xl text-gray-600"></i>Scroll Down
-              <i className="bx bx-down-arrow-alt text-xl ms-1 text-gray-600"></i>
+            <button className="px-7 flex items-center gap-1 bg-transparent text-black rounded-2xl text-sm font-normal hover:translate-y-1 transition-all">
+              <i className="bx bx-mouse text-2xl text-gray-600"></i>Scroll Down
+              <i className="bx bx-down-arrow-alt text-xl  text-gray-600"></i>
             </button>
           </div>
         </section>
