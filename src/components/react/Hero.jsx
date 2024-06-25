@@ -57,12 +57,12 @@ function Hero() {
       </section>
       {/* Hero sm */}
       <section className="sm-hero">
-        <div className="flex justify-between px-10 items-center mt-14">
+        <div className="flex justify-between px-10 items-center mt-12">
           <picture>
             <img
               src={avatar.src}
               alt="Adhim Niokagi"
-              className="w-[215px] sm:w-[230px] rounded-tr-[150px] rounded-tl-[150px] rounded-br-[100px] rounded-bl-[150px] border-[12px]"
+              className="w-[220px] sm:w-[230px] rounded-tr-[150px] rounded-tl-[150px] rounded-br-[100px] rounded-bl-[150px] border-[12px]"
             />
           </picture>
           <section className="social-media">
@@ -77,12 +77,12 @@ function Hero() {
           </section>
         </div>
         {/* headline */}
-        <section className="mt-7 flex flex-col ms-7">
-          <h1 className="text-[30px] sm:text-[40px] font-semibold">
+        <section className="mt-8 flex flex-col ms-7">
+          <h1 className="text-[30px] sm:text-[40px] font-semibold ms-2">
             M. Adhim Niokagi
           </h1>
-          <h6 className="text-base sm:text-xl"># Front-End Developer</h6>
-          <p className="max-sm:text-sm text-gray-500 mt-5 w-[91%]">
+          <h6 className="text-base sm:text-xl ms-2"># Front-End Developer</h6>
+          <p className="text-sm sm:text-base text-gray-500 mt-5 w-[91%] ms-2">
             I'm a Front-End Web Developer based in Indonesian, and I'm very
             passionate and dedicated to my work.
           </p>
