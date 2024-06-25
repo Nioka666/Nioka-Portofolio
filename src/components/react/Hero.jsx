@@ -78,16 +78,16 @@ function Hero() {
         </div>
         {/* headline */}
         <section className="mt-7 flex flex-col ms-7">
-          <h1 className="text-[35px] sm:text-[40px] font-semibold">
+          <h1 className="text-[30px] sm:text-[40px] font-semibold">
             M. Adhim Niokagi
           </h1>
-          <h6 className="text-xl max-sm:text-lg"># Front-End Developer</h6>
+          <h6 className="text-base sm:text-xl"># Front-End Developer</h6>
           <p className="max-sm:text-sm text-gray-500 mt-5 w-[91%]">
             I'm a Front-End Web Developer based in Indonesian, and I'm very
             passionate and dedicated to my work.
           </p>
           <div className="mt-10 flex justify-between">
-            <button className="py-[14px] px-9 bg-black text-white rounded-2xl text-sm font-medium">
+            <button className="py-[18px] px-7 bg-black text-white rounded-2xl text-sm font-medium">
               Say Hello <i className="uil uil-location-arrow ms-0"></i>
             </button>
             <button className="px-7 flex items-center gap-1 bg-transparent text-black rounded-2xl text-sm font-normal hover:translate-y-1 transition-all">
