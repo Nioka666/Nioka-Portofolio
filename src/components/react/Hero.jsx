@@ -55,8 +55,12 @@ function Hero() {
             # Front-End Developer
           </h6>
           <p className="text-gray-500 mt-5 w-[91%]">
-            I'm a Front-End Web Developer based in Indonesian, and I'm very
-            passionate and dedicated to my work.
+            I'm a
+            <span className="bg-gray-200 text-black px-1">
+              Front-End Web Developer
+            </span>
+            based in Indonesian, and I'm very passionate and dedicated to my
+            work.
           </p>
           <div className="mt-10">
             <button className="py-[14px] px-7 bg-black text-white rounded-2xl text-lg font-medium">
@@ -91,7 +95,7 @@ function Hero() {
             <img
               src={avatar.src}
               alt="Adhim Niokagi"
-              className={`max-sm:w-[225px] sm:w-[270px] max-md:w-[290px] md:w-[250px] rounded-tr-[100px] rounded-tl-[100px] rounded-br-[100px] rounded-bl-[100px] border-[12px] ${
+              className={`max-sm:w-[225px] sm:w-[270px] max-md:w-[290px] md:w-[250px] rounded-tr-[100px] rounded-tl-[100px] rounded-br-[100px] rounded-bl-[80px] border-[12px] ${
                 loaded ? "animate-fade-in" : "opacity-0"
               }`}
             />
@@ -106,8 +110,12 @@ function Hero() {
             # Front-End Developer
           </h6>
           <p className="text-sm sm:text-base text-gray-500 mt-5 w-[91%] ms-2">
-            I'm a <span className="bg-gray-200 text-black px-1">Front-End Web Developer</span> based in Indonesian, and
-            I'm very passionate and dedicated to my work.
+            I'm a
+            <span className="bg-gray-200 text-black px-1">
+              Front-End Web Developer
+            </span>
+            based in Indonesian, and I'm very passionate and dedicated to my
+            work.
           </p>
           <div className="mt-10 flex justify-between">
             <button className="py-[18px] px-7 bg-black text-white rounded-2xl text-sm font-medium">
