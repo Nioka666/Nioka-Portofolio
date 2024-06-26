@@ -59,7 +59,7 @@ function Hero() {
             <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
             </span>
-            based in Indonesian, and I'm very passionate and dedicated to my
+            based in Indonesian
             work.
           </p>
           <div className="mt-10">
@@ -80,7 +80,7 @@ function Hero() {
       </section>
       {/* Hero sm */}
       <section className="sm-hero">
-        <div className="flex gap-7 px-10 items-center mt-12">
+        <div className="flex gap-7 px-5 items-center mt-12">
           <section className="social-media">
             {mediaSocial.map((data) => (
               <a href={data.url} key={data.name}>
@@ -102,24 +102,24 @@ function Hero() {
           </picture>
         </div>
         {/* headline */}
-        <section className="mt-9 flex flex-col ms-7">
-          <h1 className="text-[31px] sm:text-[40px] font-semibold ms-2">
+        <section className="mt-9 flex flex-col ms-6">
+          <h1 className="text-[31px] sm:text-[40px] font-semibold">
             M. Adhim Niokagi
           </h1>
-          <h6 className="text-base text-gray-500 font-medium sm:text-xl ms-2">
+          <h6 className="text-base text-gray-500 font-medium sm:text-xl">
             # Front-End Developer
           </h6>
-          <p className="text-sm sm:text-base text-gray-500 mt-5 w-[91%] ms-2">
+          <p className="text-sm sm:text-base text-gray-500 mt-5 w-[91%] leading-6">
             I'm a
             <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
             </span>
-            based in Indonesian, and I'm very passionate and dedicated to my
+            based in Indonesian
             work.
           </p>
           <div className="mt-10 flex justify-between">
             <button className="py-[18px] px-7 bg-black text-white rounded-2xl text-sm font-medium">
-              Say Hello <i className="uil uil-location-arrow ms-0"></i>
+              Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <button className="px-7 flex items-center gap-1 bg-transparent text-black rounded-2xl text-sm font-normal hover:translate-y-1 transition-all">
               <i className="bx bx-mouse text-2xl text-gray-600"></i>Scroll Down
