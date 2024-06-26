@@ -51,7 +51,7 @@ function Hero() {
         </section>
         <section className="headline">
           <h1 className="text-[50px] font-semibold">M. Adhim Niokagi</h1>
-          <h6 className="text-xl"># Front-End Developer</h6>
+          <h6 className="text-xl text-gray-500 font-medium"># Front-End Developer</h6>
           <p className="text-gray-500 mt-5 w-[91%]">
             I'm a Front-End Web Developer based in Indonesian, and I'm very
             passionate and dedicated to my work.
@@ -96,11 +96,11 @@ function Hero() {
           </picture>
         </div>
         {/* headline */}
-        <section className="mt-10 flex flex-col ms-7">
+        <section className="mt-9 flex flex-col ms-7">
           <h1 className="text-[31px] sm:text-[40px] font-semibold ms-2">
             M. Adhim Niokagi
           </h1>
-          <h6 className="text-base sm:text-xl ms-2"># Front-End Developer</h6>
+          <h6 className="text-base text-gray-500 font-medium sm:text-xl ms-2"># Front-End Developer</h6>
           <p className="text-sm sm:text-base text-gray-500 mt-5 w-[91%] ms-2">
             I'm a Front-End Web Developer based in Indonesian, and I'm very
             passionate and dedicated to my work.
