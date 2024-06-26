@@ -16,7 +16,7 @@
   }
 
   body {
-    @apply bg-white;
+    @apply bg-gray-50;
   }
 
   nav {
@@ -37,7 +37,7 @@
 
   /* hero section */
   section.hero {
-    @apply flex justify-between items-center rounded-2xl mt-7 max-md:hidden md:mt-20 md:px-16;
+    @apply flex justify-between items-center rounded-2xl mt-7 max-md:hidden;
   }
   /* hero sm */
   section.sm-hero {
@@ -49,7 +49,7 @@
   }
 
   section.headline {
-    @apply w-[47%] flex flex-col ms-16;
+    @apply flex flex-col ms-16;
   }
 
   picture > img.headline-img {

@@ -50,11 +50,11 @@ function Hero() {
           ))}
         </section>
         <section className="headline">
-          <h1 className="text-[50px] font-semibold">M. Adhim Niokagi</h1>
+          <h1 className="text-[55px] font-semibold">M. Adhim Niokagi</h1>
           <h6 className="text-xl text-gray-500 font-medium">
             # Front-End Developer
           </h6>
-          <p className="text-gray-500 mt-5 w-[91%]">
+          <p className="text-gray-500 mt-5 w-[91%] text-base">
             I'm a
             <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
@@ -102,7 +102,7 @@ function Hero() {
         </div>
         {/* headline */}
         <section className="mt-9 flex flex-col mx-5">
-          <h1 className="text-[31px] sm:text-[40px] font-semibold">
+          <h1 className="text-[33px] sm:text-[40px] font-semibold">
             M. Adhim Niokagi
           </h1>
           <h6 className="text-base text-gray-500 font-medium sm:text-xl">
