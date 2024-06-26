@@ -1,18 +1,6 @@
-import { useEffect, useState } from "react";
 import avatar from "../../../public/assets/adhim-niokagi.jpg";
 
 function Hero() {
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    // Set timeout untuk menetapkan state loaded setelah beberapa waktu (contoh: 500ms)
-    const timeout = setTimeout(() => {
-      setLoaded(true);
-    }, 500); // Ubah sesuai dengan kebutuhan durasi animasi
-
-    return () => clearTimeout(timeout); // Membersihkan timeout saat komponen unmount
-  }, []);
-
   const mediaSocial = [
     {
       name: "linkedin",
@@ -67,7 +55,7 @@ function Hero() {
           <img
             src={avatar.src}
             alt="Adhim Niokagi"
-            className={`max-sm:w-[225px] sm:w-[270px] max-md:w-[290px] md:w-[250px] rounded-tr-[100px] rounded-tl-[100px] rounded-br-[100px] rounded-bl-[100px] border-[12px] ${
+            className={`headline-img ${
               loaded ? "animate-fade-in" : "opacity-0"
             }`}
           />
@@ -90,7 +78,9 @@ function Hero() {
             <img
               src={avatar.src}
               alt="Adhim Niokagi"
-              className="max-sm:w-[225px] sm:w-[270px] max-md:w-[290px] md:w-[250px] rounded-tr-[100px] rounded-tl-[100px] rounded-br-[100px] rounded-bl-[100px] border-[12px]"
+              className={`max-sm:w-[225px] sm:w-[270px] max-md:w-[290px] md:w-[250px] rounded-tr-[100px] rounded-tl-[100px] rounded-br-[100px] rounded-bl-[100px] border-[12px] ${
+                loaded ? "animate-fade-in" : "opacity-0"
+              }`}
             />
           </picture>
         </div>
