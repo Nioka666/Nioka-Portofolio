@@ -116,10 +116,10 @@ function Hero() {
             based in Indonesian work.
           </p>
           <div className="mt-10 flex justify-between">
-            <button className="py-[18px] px-7 bg-black text-white rounded-2xl text-sm font-medium">
+            <button className="py-[18px] px-6 bg-black text-white rounded-2xl text-sm font-medium">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
-            <button className="px-7 flex items-center gap-1 bg-transparent text-black rounded-2xl text-sm font-normal hover:translate-y-1 transition-all">
+            <button className="px-6 flex items-center gap-1 bg-transparent text-black rounded-2xl text-sm font-normal hover:translate-y-1 transition-all">
               <i className="bx bx-mouse text-2xl text-gray-600"></i>Scroll Down
               <i className="bx bx-down-arrow-alt text-xl  text-gray-600"></i>
             </button>
