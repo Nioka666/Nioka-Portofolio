@@ -96,7 +96,7 @@ function Hero() {
           </picture>
         </div>
         {/* headline */}
-        <section className="mt-8 flex flex-col ms-7">
+        <section className="mt-10 flex flex-col ms-7">
           <h1 className="text-[31px] sm:text-[40px] font-semibold ms-2">
             M. Adhim Niokagi
           </h1>
