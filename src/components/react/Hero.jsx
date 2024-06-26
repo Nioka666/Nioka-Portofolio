@@ -51,7 +51,9 @@ function Hero() {
         </section>
         <section className="headline">
           <h1 className="text-[50px] font-semibold">M. Adhim Niokagi</h1>
-          <h6 className="text-xl text-gray-500 font-medium"># Front-End Developer</h6>
+          <h6 className="text-xl text-gray-500 font-medium">
+            # Front-End Developer
+          </h6>
           <p className="text-gray-500 mt-5 w-[91%]">
             I'm a Front-End Web Developer based in Indonesian, and I'm very
             passionate and dedicated to my work.
@@ -74,7 +76,7 @@ function Hero() {
       </section>
       {/* Hero sm */}
       <section className="sm-hero">
-        <div className="flex gap-10 px-10 items-center mt-12">
+        <div className="flex gap-7 px-10 items-center mt-12">
           <section className="social-media">
             {mediaSocial.map((data) => (
               <a href={data.url} key={data.name}>
@@ -100,10 +102,12 @@ function Hero() {
           <h1 className="text-[31px] sm:text-[40px] font-semibold ms-2">
             M. Adhim Niokagi
           </h1>
-          <h6 className="text-base text-gray-500 font-medium sm:text-xl ms-2"># Front-End Developer</h6>
+          <h6 className="text-base text-gray-500 font-medium sm:text-xl ms-2">
+            # Front-End Developer
+          </h6>
           <p className="text-sm sm:text-base text-gray-500 mt-5 w-[91%] ms-2">
-            I'm a Front-End Web Developer based in Indonesian, and I'm very
-            passionate and dedicated to my work.
+            I'm a <span className="bg-gray-200 text-black px-1">Front-End Web Developer</span> based in Indonesian, and
+            I'm very passionate and dedicated to my work.
           </p>
           <div className="mt-10 flex justify-between">
             <button className="py-[18px] px-7 bg-black text-white rounded-2xl text-sm font-medium">
