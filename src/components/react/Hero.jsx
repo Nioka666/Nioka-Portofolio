@@ -78,7 +78,7 @@ function Hero() {
         </div>
         {/* headline */}
         <section className="mt-8 flex flex-col ms-7">
-          <h1 className="text-[35px] sm:text-[40px] font-semibold ms-2">
+          <h1 className="text-[31px] sm:text-[40px] font-semibold ms-2">
             M. Adhim Niokagi
           </h1>
           <h6 className="text-base sm:text-xl ms-2"># Front-End Developer</h6>
