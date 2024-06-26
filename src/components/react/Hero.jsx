@@ -7,7 +7,7 @@ function Hero() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoaded(true);
-    }, 500);
+    }, 100);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -38,18 +38,18 @@ function Hero() {
   return (
     <>
       {/* Hero */}
-      <section className="hero">
+      <section className={`hero ${loaded ? "animate-fade-in" : "opacity-0"}`}>
         <section className="social-media">
           {mediaSocial.map((data) => (
             <a href={data.url} key={data.name}>
               <i
-                className={`${data.icon} text-2xl cursor-pointer`}
+                className={`${data.icon} text-2xl cursor-pointer `}
                 key={data.name}
               ></i>
             </a>
           ))}
         </section>
-        <section className="headline">
+        <section className={`headline`}>
           <h1 className="text-[50px] font-semibold">M. Adhim Niokagi</h1>
           <h6 className="text-xl"># Front-End Developer</h6>
           <p className="text-gray-500 mt-5 w-[91%]">
@@ -66,14 +66,14 @@ function Hero() {
           <img
             src={avatar.src}
             alt="Adhim Niokagi"
-            className={`headline-img ${
-              loaded ? "animate-fade-in" : "opacity-0"
-            }`}
+            className={`headline-img `}
           />
         </picture>
       </section>
       {/* Hero sm */}
-      <section className="sm-hero">
+      <section
+        className={`sm-hero ${loaded ? "animate-fade-in" : "opacity-0"}`}
+      >
         <div className="flex gap-10 px-10 items-center mt-12">
           <section className="social-media">
             {mediaSocial.map((data) => (
