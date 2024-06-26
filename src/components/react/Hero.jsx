@@ -72,7 +72,7 @@ function Hero() {
             <img
               src={avatar.src}
               alt="Adhim Niokagi"
-              className="max-sm:w-[225px] max-md:w-[250px] md:w-[250px] rounded-tr-[150px] rounded-tl-[150px] rounded-br-[100px] rounded-bl-[150px] border-[12px]"
+              className="max-sm:w-[225px] sm:w-[270px] max-md:w-[290px] md:w-[250px] rounded-tr-[150px] rounded-tl-[150px] rounded-br-[100px] rounded-bl-[150px] border-[12px]"
             />
           </picture>
         </div>
