@@ -56,7 +56,7 @@ function Hero() {
           </h6>
           <p className="text-gray-500 mt-5 w-[91%]">
             I'm a
-            <span className="bg-gray-200 text-black px-1">
+            <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
             </span>
             based in Indonesian, and I'm very passionate and dedicated to my
@@ -111,7 +111,7 @@ function Hero() {
           </h6>
           <p className="text-sm sm:text-base text-gray-500 mt-5 w-[91%] ms-2">
             I'm a
-            <span className="bg-gray-200 text-black px-1">
+            <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
             </span>
             based in Indonesian, and I'm very passionate and dedicated to my

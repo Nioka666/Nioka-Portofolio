@@ -55,6 +55,14 @@
   picture > img.headline-img {
     @apply w-[325px] rounded-tr-[150px] rounded-tl-[150px] rounded-br-[100px] rounded-bl-[150px] border-[12px];
   }
+
+  .text-highlight {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 50%,
+      #e6e6e6 50%
+    );
+  }
   /* end of hero section */
   .animate-fade-in {
     animation: fadeIn 0.5s ease-in-out;
