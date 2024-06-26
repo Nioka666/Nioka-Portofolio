@@ -59,8 +59,7 @@ function Hero() {
             <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
             </span>
-            based in Indonesian
-            work.
+            based in Indonesian work.
           </p>
           <div className="mt-10">
             <button className="py-[14px] px-7 bg-black text-white rounded-2xl text-lg font-medium">
@@ -102,7 +101,7 @@ function Hero() {
           </picture>
         </div>
         {/* headline */}
-        <section className="mt-9 flex flex-col ms-6">
+        <section className="mt-9 flex flex-col mx-5">
           <h1 className="text-[31px] sm:text-[40px] font-semibold">
             M. Adhim Niokagi
           </h1>
@@ -114,8 +113,7 @@ function Hero() {
             <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
             </span>
-            based in Indonesian
-            work.
+            based in Indonesian work.
           </p>
           <div className="mt-10 flex justify-between">
             <button className="py-[18px] px-7 bg-black text-white rounded-2xl text-sm font-medium">
