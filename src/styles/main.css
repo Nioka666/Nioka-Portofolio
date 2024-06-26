@@ -32,7 +32,7 @@
   }
 
   main {
-    @apply lg:py-20 lg:px-[150px];
+    @apply lg:py-20 lg:px-[150px] md:px-[50px] md:py-14;
   }
 
   /* hero section */

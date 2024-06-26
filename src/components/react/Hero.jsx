@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import avatar from "../../../public/assets/adhim-niokagi.jpg";
+import CV from "../../../public/assets/Adhim_Niokagi_Resume.pdf";
 
 function Hero() {
   const [loaded, setLoaded] = useState(false);
@@ -50,7 +51,9 @@ function Hero() {
           ))}
         </section>
         <section className="headline">
-          <h1 className="text-[55px] font-semibold">M. Adhim Niokagi</h1>
+          <h1 className="text-[55px] font-semibold leading-tight">
+            M. Adhim Niokagi
+          </h1>
           <h6 className="text-xl text-gray-500 font-medium">
             # Front-End Developer
           </h6>
@@ -115,19 +118,21 @@ function Hero() {
             </span>
             based in Indonesian work.
           </p>
-          <div className="mt-10 flex justify-between">
+          <div className="mt-10 flex gap-5 items-center">
             <button className="py-[18px] px-6 bg-black text-white rounded-2xl text-sm font-medium">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
-            <button className="px-6 flex items-center gap-1 bg-transparent text-black rounded-2xl text-sm font-normal hover:translate-y-1 transition-all">
-              <i className="bx bx-mouse text-2xl text-gray-600"></i>Scroll Down
-              <i className="bx bx-down-arrow-alt text-xl  text-gray-600"></i>
-            </button>
+            <a href={CV} target="_blank">
+              <button className="px-6 flex items-center gap-2 bg-transparent text-black rounded-2xl text-sm font-medium">
+                View CV
+                <i class="bx bx-file text-2xl text-gray-600"></i>
+              </button>
+            </a>
           </div>
         </section>
       </section>
       {/* scroll button */}
-      <section className="ms-[135px] mt-14 max-sm:hidden">
+      <section className="ms-[85px] lg:ms-[115px] mt-14 max-sm:hidden">
         <button className="flex items-center gap-1 bg-transparent text-black rounded-2xl text-base font-normal hover:translate-y-1 transition-all">
           <i className="bx bx-mouse text-3xl text-gray-600"></i>Scroll Down
           <i className="bx bx-down-arrow-alt text-xl ms-1 text-gray-600"></i>
