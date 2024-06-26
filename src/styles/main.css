@@ -41,7 +41,7 @@
   }
   /* hero sm */
   section.sm-hero {
-    @apply flex-col rounded-2xl mt-7 md:hidden;
+    @apply flex-col rounded-2xl mt-16 md:hidden;
   }
 
   section.social-media {

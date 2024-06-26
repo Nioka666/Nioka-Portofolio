@@ -20,7 +20,7 @@ function Hero() {
     {
       name: "whatsapp",
       icon: "bx bxl-whatsapp",
-      url: "https://whatsapp.me/6287755588990",
+      url: "https://wa.me/6287755588990",
     },
   ];
 
@@ -72,13 +72,13 @@ function Hero() {
             <img
               src={avatar.src}
               alt="Adhim Niokagi"
-              className="max-sm:w-[225px] sm:w-[270px] max-md:w-[290px] md:w-[250px] rounded-tr-[150px] rounded-tl-[150px] rounded-br-[100px] rounded-bl-[150px] border-[12px]"
+              className="max-sm:w-[225px] sm:w-[270px] max-md:w-[290px] md:w-[250px] rounded-tr-[100px] rounded-tl-[100px] rounded-br-[100px] rounded-bl-[100px] border-[12px]"
             />
           </picture>
         </div>
         {/* headline */}
         <section className="mt-8 flex flex-col ms-7">
-          <h1 className="text-[30px] sm:text-[40px] font-semibold ms-2">
+          <h1 className="text-[35px] sm:text-[40px] font-semibold ms-2">
             M. Adhim Niokagi
           </h1>
           <h6 className="text-base sm:text-xl ms-2"># Front-End Developer</h6>
