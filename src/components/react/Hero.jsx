@@ -1,6 +1,17 @@
+import { useEffect, useState } from "react";
 import avatar from "../../../public/assets/adhim-niokagi.jpg";
 
 function Hero() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoaded(true);
+    }, 500);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   const mediaSocial = [
     {
       name: "linkedin",
