@@ -57,14 +57,7 @@ function Hero() {
       </section>
       {/* Hero sm */}
       <section className="sm-hero">
-        <div className="flex justify-between px-10 items-center mt-12">
-          <picture>
-            <img
-              src={avatar.src}
-              alt="Adhim Niokagi"
-              className="w-[220px] sm:w-[230px] rounded-tr-[150px] rounded-tl-[150px] rounded-br-[100px] rounded-bl-[150px] border-[12px]"
-            />
-          </picture>
+        <div className="flex gap-10 px-10 items-center mt-12">
           <section className="social-media">
             {mediaSocial.map((data) => (
               <a href={data.url} key={data.name}>
@@ -75,6 +68,13 @@ function Hero() {
               </a>
             ))}
           </section>
+          <picture>
+            <img
+              src={avatar.src}
+              alt="Adhim Niokagi"
+              className="max-sm:w-[225px] max-md:w-[250px] md:w-[250px] rounded-tr-[150px] rounded-tl-[150px] rounded-br-[100px] rounded-bl-[150px] border-[12px]"
+            />
+          </picture>
         </div>
         {/* headline */}
         <section className="mt-8 flex flex-col ms-7">

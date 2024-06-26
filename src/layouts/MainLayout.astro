@@ -2,6 +2,7 @@
 import "../styles/main.css";
 import HeadMeta from "../components/astro/HeadMeta.astro";
 import Navbar from "../components/astro/Navbar.astro";
+import BottomNavbar from "../components/astro/BottomNavbar.astro";
 import Footer from "../components/astro/Footer.astro";
 
 const { title } = Astro.props;
@@ -17,5 +18,6 @@ const { title } = Astro.props;
     <Navbar />
     <slot />
     <Footer />
+    <BottomNavbar />
   </body>
 </html>
