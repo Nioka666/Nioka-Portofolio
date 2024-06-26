@@ -125,7 +125,7 @@ function Hero() {
             <a href={CV} target="_blank">
               <button className="px-6 flex items-center gap-2 bg-transparent text-black rounded-2xl text-sm font-medium">
                 View CV
-                <i class="bx bx-file text-2xl text-gray-600"></i>
+                <i className="bx bx-file text-2xl text-gray-600"></i>
               </button>
             </a>
           </div>
