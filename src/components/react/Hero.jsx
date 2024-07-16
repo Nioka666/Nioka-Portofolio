@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import avatar from "../../../public/assets/adhim-niokagi.jpg";
+import avatar from "../../../public/assets/adhim-niokagi_2.jpg";
 import CV from "../../../public/assets/Adhim_Niokagi_Resume.pdf";
 
 function Hero() {
@@ -52,7 +52,7 @@ function Hero() {
         </section>
         <section className="headline">
           <h1 className="text-[55px] font-semibold leading-tight">
-            M. Adhim Niokagi
+            Adhim Niokagi
           </h1>
           <h6 className="text-xl text-gray-500 font-medium">
             # Front-End Developer
@@ -82,12 +82,12 @@ function Hero() {
       </section>
       {/* Hero sm */}
       <section className="sm-hero">
-        <div className="flex gap-7 px-5 items-center mt-12">
+        <div className="flex gap-11 px-7 items-center mt-12">
           <section className="social-media">
             {mediaSocial.map((data) => (
               <a href={data.url} key={data.name}>
                 <i
-                  className={`${data.icon} text-2xl cursor-pointer`}
+                  className={`${data.icon} text-xl cursor-pointer`}
                   key={data.name}
                 ></i>
               </a>
@@ -104,9 +104,9 @@ function Hero() {
           </picture>
         </div>
         {/* headline */}
-        <section className="mt-9 flex flex-col mx-5">
-          <h1 className="text-[33px] sm:text-[40px] font-semibold">
-            M. Adhim Niokagi
+        <section className="mt-8 flex flex-col mx-7">
+          <h1 className="max-sm:text-[38px] sm:text-[38px] font-semibold">
+            Adhim Niokagi
           </h1>
           <h6 className="text-base text-gray-500 font-medium sm:text-xl">
             # Front-End Developer
