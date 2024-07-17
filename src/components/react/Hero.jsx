@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import avatar from "../../../public/assets/adhim-niokagi_2.jpg";
-import CV from "../../../public/assets/Adhim_Niokagi_Resume.pdf";
+import avatar from "../../assets/adhim-niokagi_2.jpg";
+
+import CV from "../../assets/Adhim_Niokagi_Resume.pdf";
 
 function Hero() {
   const [loaded, setLoaded] = useState(false);
@@ -62,7 +63,7 @@ function Hero() {
             <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
             </span>
-            based in Indonesian work.
+             based in Indonesian work, still learning hard and improving self.
           </p>
           <div className="mt-10">
             <button className="py-[14px] px-7 bg-black text-white rounded-2xl text-lg font-medium">
@@ -94,7 +95,7 @@ function Hero() {
           <picture
             className={`blob overflow-hidden ${
               loaded ? "animate-fade-in" : "opacity-0"
-            } max-sm:w-[235px] max-sm:h-full sm:w-[270px] sm:h-full max-md:w-[290px] md:w-[250px] md:h-full`}
+            } max-sm:w-[230px] max-sm:h-full sm:w-[270px] sm:h-full max-md:w-[290px] md:w-[250px] md:h-full`}
           >
             <img src={avatar.src} alt="Adhim Niokagi" />
           </picture>
@@ -104,15 +105,15 @@ function Hero() {
           <h1 className="max-sm:text-[38px] sm:text-[38px] font-semibold">
             Adhim Niokagi
           </h1>
-          <h6 className="text-lg text-gray-500 font-medium max-sm:text-lg sm:text-xl">
+          <h6 className="text-lg text-gray-500 font-medium max-sm:text-[17px] sm:text-xl">
             # Front-End Developer
           </h6>
-          <p className="max-sm:text-[17px] sm:text-[18px] text-gray-500 mt-5 w-[91%] leading-6">
+          <p className="max-sm:text-[17px] sm:text-[18px] text-gray-500 mt-3 w-[91%] leading-6">
             I'm a
             <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
             </span>
-            based in Indonesian work.
+            based in Indonesian work, still learning hard and improving self.
           </p>
           <div className="mt-10 flex gap-5 items-center">
             <button className="py-[18px] px-6 bg-black text-white rounded-2xl text-sm font-medium">
