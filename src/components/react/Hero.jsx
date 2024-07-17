@@ -63,7 +63,7 @@ function Hero() {
             <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
             </span>
-             based in Indonesian work, still learning hard and improving self.
+            work based in Mojokerto, East Java.
           </p>
           <div className="mt-10">
             <button className="py-[14px] px-7 bg-black text-white rounded-2xl text-lg font-medium">
@@ -113,7 +113,7 @@ function Hero() {
             <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
             </span>
-            based in Indonesian work, still learning hard and improving self.
+            work based in Mojokerto, East Java.
           </p>
           <div className="mt-10 flex gap-5 items-center">
             <button className="py-[18px] px-6 bg-black text-white rounded-2xl text-sm font-medium">

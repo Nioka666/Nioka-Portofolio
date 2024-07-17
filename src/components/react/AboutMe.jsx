@@ -1,4 +1,4 @@
-import avatar from "../../assets/adhim-niokagi_2.jpg";
+import avatar from "../../assets/adhim_hp.jpeg";
 
 function AboutMe() {
   return (
