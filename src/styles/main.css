@@ -57,11 +57,12 @@
   }
 
   .text-highlight {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 50%,
-      #e6e6e6 50%
-    );
+    background: linear-gradient(180deg, #ffffff00 50%, #ebebeb 50%);
+  }
+
+  .text-gray {
+    /* color: #7b7b7b; */
+    @apply text-gray-500;
   }
 
   .b-nav-shadow {
