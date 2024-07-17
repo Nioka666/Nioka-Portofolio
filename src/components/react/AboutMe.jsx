@@ -5,10 +5,10 @@ function AboutMe() {
     <>
       <div className="about-me mt-32">
         <section className="text-center">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold text-black">
             About me
           </h1>
-          <h3 className="text-sm md:text-base text-gray-600">Introduction</h3>
+          <h3 className="text-sm md:text-base text-gray-500">Introduction</h3>
         </section>
         <section className="flex justify-center my-11">
           <picture>

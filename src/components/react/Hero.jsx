@@ -45,20 +45,21 @@ function Hero() {
           {mediaSocial.map((data) => (
             <a href={data.url} key={data.name}>
               <i
-                className={`${data.icon} text-2xl cursor-pointer`}
+                className={`${data.icon} text-2xl cursor-pointer text-black`}
                 key={data.name}
               ></i>
             </a>
           ))}
         </section>
         <section className="headline">
-          <h1 className="text-[55px] font-semibold leading-tight">
+          <h1 className="text-[55px] font-semibold leading-tight text-black">
             Adhim Niokagi
           </h1>
-          <h6 className="text-xl text-gray-500 font-medium">
-            # Front-End Developer
+          <h6 className="text-xl text-gray-600 font-medium">
+            <i className="uil uil-minus"></i>{" "}
+            <i className="uil uil-minus ms-[-15px]"></i> Front-End Developer
           </h6>
-          <p className="text-gray-500 mt-5 w-[91%] text-base">
+          <p className="text-gray-500 mt-5 w-[91%] text-[17px]">
             I'm a
             <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
@@ -66,7 +67,7 @@ function Hero() {
             work based in Mojokerto, East Java.
           </p>
           <div className="mt-10">
-            <button className="py-[14px] px-7 bg-black text-white rounded-2xl text-lg font-medium">
+            <button className="py-[14px] px-7 bg-black text-white rounded-2xl text-lg font-medium hover:bg-white hover:text-black transition-all hover:shadow-md">
               Say Hello <i className="uil uil-location-arrow ms-2"></i>
             </button>
           </div>
@@ -105,10 +106,11 @@ function Hero() {
           <h1 className="max-sm:text-[38px] sm:text-[38px] font-semibold">
             Adhim Niokagi
           </h1>
-          <h6 className="text-lg text-gray-500 font-medium max-sm:text-[17px] sm:text-xl">
-            # Front-End Developer
+          <h6 className="text-lg text-gray-700 font-medium max-sm:text-[17px] sm:text-xl">
+            <i className="uil uil-minus"></i>{" "}
+            <i className="uil uil-minus ms-[-15px]"></i> Front-End Developer
           </h6>
-          <p className="max-sm:text-[17px] sm:text-[18px] text-gray-500 mt-3 w-full leading-6">
+          <p className="max-sm:text-[16px] sm:text-[17px] text-gray-500 mt-3 w-full leading-6">
             I'm a
             <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
@@ -129,7 +131,7 @@ function Hero() {
         </section>
       </section>
       {/* scroll button */}
-      <section className="ms-[85px] lg:ms-[115px] mt-14 max-sm:hidden">
+      <section className="ms-[85px] lg:ms-[130px] mt-14 max-sm:hidden">
         <button className="flex items-center gap-1 bg-transparent text-black rounded-2xl text-base font-normal hover:translate-y-1 transition-all">
           <i className="bx bx-mouse text-3xl text-gray-600"></i>Scroll Down
           <i className="bx bx-down-arrow-alt text-xl ms-1 text-gray-600"></i>
