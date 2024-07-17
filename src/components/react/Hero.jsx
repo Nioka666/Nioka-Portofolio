@@ -91,14 +91,12 @@ function Hero() {
               </a>
             ))}
           </section>
-          <picture>
-            <img
-              src={avatar.src}
-              alt="Adhim Niokagi"
-              className={`max-sm:w-[225px] sm:w-[270px] max-md:w-[290px] md:w-[250px] rounded-tr-[100px] rounded-tl-[100px] rounded-br-[100px] rounded-bl-[80px] border-[12px] ${
-                loaded ? "animate-fade-in" : "opacity-0"
-              }`}
-            />
+          <picture
+            className={`blob overflow-hidden ${
+              loaded ? "animate-fade-in" : "opacity-0"
+            }`}
+          >
+            <img src={avatar.src} alt="Adhim Niokagi" />
           </picture>
         </div>
         {/* headline */}
