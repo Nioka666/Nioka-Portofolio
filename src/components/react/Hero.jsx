@@ -104,14 +104,14 @@ function Hero() {
           </picture>
         </div>
         {/* headline */}
-        <section className="mt-8 flex flex-col mx-7">
+        <section className="mt-7 flex flex-col mx-7">
           <h1 className="max-sm:text-[38px] sm:text-[38px] font-semibold">
             Adhim Niokagi
           </h1>
-          <h6 className="text-base text-gray-500 font-medium max-sm:text-lg sm:text-xl">
+          <h6 className="text-lg text-gray-500 font-medium max-sm:text-lg sm:text-xl">
             # Front-End Developer
           </h6>
-          <p className="max-sm:text-base sm:text-base text-gray-500 mt-5 w-[91%] leading-6">
+          <p className="max-sm:text-[17px] sm:text-[18px] text-gray-500 mt-5 w-[91%] leading-6">
             I'm a
             <span className="text-highlight font-medium mx-1">
               Front-End Web Developer
