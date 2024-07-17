@@ -70,13 +70,11 @@ function Hero() {
             </button>
           </div>
         </section>
-        <picture>
+        <picture className="blob overflow-hidden">
           <img
             src={avatar.src}
             alt="Adhim Niokagi"
-            className={`headline-img ${
-              loaded ? "animate-fade-in" : "opacity-0"
-            }`}
+            className={`${loaded ? "animate-fade-in" : "opacity-0"}`}
           />
         </picture>
       </section>
