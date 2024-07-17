@@ -89,13 +89,12 @@
 @layer components {
   /* blob animation */
   .blob {
-    background-color: gray;
     background-size: cover;
-    border: 12px solid #e2e2e2;
-    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    border: 12px solid #e2e2e2a6;
+    border-radius: 50% / 50%;
     width: 320px;
     height: 314px;
-    animation: morph 8s linear infinite;
+    animation: morph 10s ease-in-out infinite alternate;
     transform-style: preserve-3d;
     outline: 1px solid transparent;
     will-change: border-radius;
@@ -110,51 +109,41 @@
     position: absolute;
     left: 0;
     top: 0;
-    border-radius: 42% 58% 70% 50% / 45% 45% 55% 55%;
+    border-radius: 50% / 50%;
     will-change: border-radius, transform, opacity;
-    animation-delay: 800ms;
+    animation: morph 10s ease-in-out infinite alternate;
   }
 
   .blob:before {
-    animation: morph 8s linear infinite;
-    opacity: 0.21;
-    animation-duration: 8s;
+    opacity: 0.2;
+    animation-delay: 2s;
   }
 
   .blob:after {
-    animation: morph 8s linear infinite;
-    animation-delay: 800ms;
-    opacity: 0.89;
-    text-indent: -21px;
+    opacity: 0.8;
+    animation-delay: 4s;
   }
 
   @keyframes morph {
     0%,
     100% {
-      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      border-radius: 50% / 50%;
       transform: translate3d(0, 0, 0) rotateZ(0.01deg);
     }
 
-    34% {
-      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    25% {
+      border-radius: 45% 55% 65% 35% / 55% 45% 55% 45%;
       transform: translate3d(0, 0, 0) rotateZ(0.01deg);
     }
 
     50% {
-      opacity: 0.89;
+      border-radius: 40% 60% 50% 50% / 50% 60% 40% 50%;
       transform: translate3d(0, 0, 0) rotateZ(0.01deg);
     }
 
-    67% {
-      border-radius: 80% 60% 60% 80% / 80% 80% 60% 60%;
+    75% {
+      border-radius: 55% 45% 50% 50% / 50% 60% 40% 50%;
       transform: translate3d(0, 0, 0) rotateZ(0.01deg);
-    }
-  }
-
-  @keyframes fadeIn {
-    100% {
-      transform: scale(1.03);
-      opacity: 0;
     }
   }
 }
