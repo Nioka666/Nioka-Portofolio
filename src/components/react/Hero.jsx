@@ -66,7 +66,9 @@ function Hero() {
           </h6>
           <p className="font-normal text-gray mt-5 w-[91%] leading-7 text-[19px]">
             I'm a
-            <span className="text-highlight mx-1">Junior Front-End Web Developer,</span>
+            <span className="text-highlight mx-1">
+              Junior Front-End Web Developer,
+            </span>
             work based in Mojokerto, East Java.
           </p>
           <div className="mt-10">
