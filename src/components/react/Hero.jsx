@@ -64,9 +64,9 @@ function Hero() {
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i> Front-End Developer
           </h6>
-          <p className="text-gray-500 mt-5 w-[91%] text-[17px]">
+          <p className="text-gray-500 mt-5 w-[91%] leading-7 text-[18px]">
             I'm a
-            <span className="text-highlight font-medium mx-1">
+            <span className="text-highlight mx-1">
               Front-End Web Developer
             </span>
             work based in Mojokerto, East Java.
@@ -90,7 +90,7 @@ function Hero() {
         <div className="flex max-sm:gap-9 sm:gap-10 px-6 items-center mt-12">
           <section className="social-media">
             {mediaSocial.map((data) => (
-              <a href={data.url} key={data.name} className="tooltip tooltip-left" data-tip={data.name}>
+              <a href={data.url} key={data.name} className="tooltip tooltip-right" data-tip={data.name}>
                 <i
                   className={`${data.icon} text-xl cursor-pointer`}
                   key={data.name}
@@ -101,7 +101,7 @@ function Hero() {
           <picture
             className={`blob overflow-hidden ${
               loaded ? "animate-fade-in" : "opacity-0"
-            } max-sm:w-[230px] max-sm:h-full sm:w-[270px] sm:h-full max-md:w-[290px] md:w-[250px] md:h-full`}
+            } max-sm:w-[220px] max-sm:h-full sm:w-[270px] sm:h-full max-md:w-[290px] md:w-[250px] md:h-full`}
           >
             <img src={avatar.src} alt="Adhim Niokagi" />
           </picture>
@@ -115,9 +115,9 @@ function Hero() {
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i> Front-End Developer
           </h6>
-          <p className="max-sm:text-[16px] sm:text-[17px] text-gray-500 mt-3 w-full leading-6">
-            I'm a
-            <span className="text-highlight font-medium mx-1">
+          <p className="max-sm:text-[16px] sm:text-[17px] text-gray-500 mt-3 w-full leading-7">
+            I'm a Junior
+            <span className="text-highlight mx-1">
               Front-End Web Developer
             </span>
             work based in Mojokerto, East Java.
