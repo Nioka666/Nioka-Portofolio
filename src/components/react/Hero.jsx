@@ -16,22 +16,22 @@ function Hero() {
 
   const mediaSocial = [
     {
-      name: "linkedin",
+      name: "Linkedin",
       icon: "bx bxl-linkedin",
       url: "https://linkedin.com/in/adhim-niokagi",
     },
     {
-      name: "instagram",
+      name: "Instagram",
       icon: "bx bxl-instagram",
       url: "https://instagram.com/nioka.o",
     },
     {
-      name: "github",
+      name: "Github",
       icon: "bx bxl-github",
       url: "https://github.com/nioka666",
     },
     {
-      name: "whatsapp",
+      name: "Whatsapp",
       icon: "bx bxl-whatsapp",
       url: "https://wa.me/6287755588990",
     },
@@ -43,7 +43,12 @@ function Hero() {
       <section className="hero">
         <section className="social-media">
           {mediaSocial.map((data) => (
-            <a href={data.url} key={data.name}>
+            <a
+              href={data.url}
+              key={data.name}
+              className="tooltip tooltip-left"
+              data-tip={data.name}
+            >
               <i
                 className={`${data.icon} text-2xl cursor-pointer text-black`}
                 key={data.name}
@@ -85,7 +90,7 @@ function Hero() {
         <div className="flex max-sm:gap-9 sm:gap-10 px-6 items-center mt-12">
           <section className="social-media">
             {mediaSocial.map((data) => (
-              <a href={data.url} key={data.name}>
+              <a href={data.url} key={data.name} className="tooltip tooltip-left" data-tip={data.name}>
                 <i
                   className={`${data.icon} text-xl cursor-pointer`}
                   key={data.name}
