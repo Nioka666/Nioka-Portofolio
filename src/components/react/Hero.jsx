@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import avatar from "../../assets/adhim-niokagi_2.jpg";
-
 import CV from "../../assets/Adhim_Niokagi_Resume.pdf";
 
 function Hero() {
@@ -64,7 +63,7 @@ function Hero() {
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i> Front-End Developer
           </h6>
-          <p className="font-medium text-gray-500 mt-5 w-[91%] leading-7 text-[18px]">
+          <p className="font-medium text-gray-400 mt-5 w-[91%] leading-7 text-[18px]">
             I'm a
             <span className="text-highlight mx-1">Front-End Web Developer</span>
             work based in Mojokerto, East Java.
@@ -118,7 +117,7 @@ function Hero() {
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i> Front-End Developer
           </h6>
-          <p className="font-medium max-sm:text-[16px] sm:text-[17px] text-gray-500 mt-3 w-full leading-6">
+          <p className="font-medium max-sm:text-[16px] sm:text-[17px] text-gray-400 mt-3 w-full leading-6">
             I'm a Junior
             <span className="text-highlight mx-1">Front-End Web Developer</span>
             work based in Mojokerto, East Java.
