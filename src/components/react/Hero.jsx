@@ -64,15 +64,13 @@ function Hero() {
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i> Front-End Developer
           </h6>
-          <p className="text-gray-500 mt-5 w-[91%] leading-7 text-[18px]">
+          <p className="font-medium text-gray-500 mt-5 w-[91%] leading-7 text-[18px]">
             I'm a
-            <span className="text-highlight mx-1">
-              Front-End Web Developer
-            </span>
+            <span className="text-highlight mx-1">Front-End Web Developer</span>
             work based in Mojokerto, East Java.
           </p>
           <div className="mt-10">
-            <button className="py-[14px] px-7 bg-black text-white rounded-2xl text-lg font-medium hover:bg-white hover:text-black transition-all hover:shadow-md">
+            <button className="py-[15px] px-7 bg-black text-white rounded-2xl text-lg font-medium hover:bg-white hover:text-black transition-all hover:shadow-md">
               Say Hello <i className="uil uil-location-arrow ms-2"></i>
             </button>
           </div>
@@ -90,7 +88,12 @@ function Hero() {
         <div className="flex max-sm:gap-9 sm:gap-10 px-6 items-center mt-12">
           <section className="social-media">
             {mediaSocial.map((data) => (
-              <a href={data.url} key={data.name} className="tooltip tooltip-right" data-tip={data.name}>
+              <a
+                href={data.url}
+                key={data.name}
+                className="tooltip tooltip-right"
+                data-tip={data.name}
+              >
                 <i
                   className={`${data.icon} text-xl cursor-pointer`}
                   key={data.name}
@@ -115,15 +118,13 @@ function Hero() {
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i> Front-End Developer
           </h6>
-          <p className="max-sm:text-[16px] sm:text-[17px] text-gray-500 mt-3 w-full leading-6">
+          <p className="font-medium max-sm:text-[16px] sm:text-[17px] text-gray-500 mt-3 w-full leading-6">
             I'm a Junior
-            <span className="text-highlight mx-1">
-              Front-End Web Developer
-            </span>
+            <span className="text-highlight mx-1">Front-End Web Developer</span>
             work based in Mojokerto, East Java.
           </p>
           <div className="mt-10 flex gap-5 items-center">
-            <button className="py-[18px] px-6 bg-black text-white rounded-2xl text-sm font-medium">
+            <button className="py-[18px] px-6 bg-black text-white rounded-2xl text-sm font-medium hover:text-black hover:bg-white transition-all">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <a href={CV} target="_blank">
