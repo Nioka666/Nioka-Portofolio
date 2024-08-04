@@ -25,7 +25,7 @@ function AboutMe() {
           {/*  */}
           <div className="flex-col max-sm:px-5 sm:px-10 md:px-0 max-sm:mt-7 lg:w-[1500px]">
             {/* boxes */}
-            <div className="flex max-sm:gap-2 gap-4 max-sm:justify-center max-lg:justify-center max-lg:my-10">
+            <div className="flex max-sm:gap-2 gap-4 max-sm:justify-center max-lg:justify-center max-lg:my-10 flex-wrap">
               <div className="rounded-2xl text-center border-1 max-sm:px-3 max-sm:py-3 px-6 py-5">
                 <h1 className="max-sm:text-xl text-3xl font-bold">1 +</h1>
                 <p className="max-sm:text-xs text-sm text-gray-500 mt-2">
