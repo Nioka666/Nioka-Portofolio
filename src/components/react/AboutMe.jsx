@@ -3,7 +3,7 @@ import avatar from "../../assets/adhim-niokagi.jpg";
 function AboutMe() {
   return (
     <>
-      <div id="about-me" className="about-me mt-36">
+      <div id="about-me" className="about-me mt-36 px-10">
         <section className="text-center">
           <h1 className="text-xl sm:text-2xl md:text-4xl font-semibold text-black">
             About me
