@@ -1,4 +1,4 @@
-import avatar from "../../assets/adhim_hp.jpeg";
+import avatar from "../../assets/adhim-niokagi.jpg";
 
 function AboutMe() {
   return (
@@ -8,44 +8,44 @@ function AboutMe() {
           <h1 className="text-xl sm:text-2xl md:text-4xl font-semibold text-black">
             About me
           </h1>
-          <h3 className="text-sm md:text-[17px] text-gray-500 mt-2">
+          <h3 className="text-sm md:text-[17px] text-gray-400 mt-2">
             Introduction
           </h3>
         </section>
-        <section className="md:flex justify-between gap-5 mt-10">
-          <div className="flex flex-col justify-center gap-8">
+        <section className="lg:flex justify-between gap-24 mt-16">
+          <div className="flex justify-center">
             <picture className="mx-auto">
               <img
                 src={avatar.src}
-                className="rounded-3xl max-sm:w-[225px] sm:w-[250px] md:w-[300px]"
+                className="rounded-[50px] max-sm:w-[225px] sm:w-[250px] lg:w-[900px]"
                 alt="adhim niokagi photo"
               />
             </picture>
+          </div>
+          {/*  */}
+          <div className="flex-col max-sm:px-10 sm:px-10 md:px-0 max-sm:mt-7 lg:w-[1500px]">
             {/* boxes */}
-            <div className="flex justify-center gap-4">
-              <div className="rounded-2xl text-center border-1 max-sm:p-2 max-sm:px-4 sm:p-3 sm:px-4 md:p-4 md:px-6">
+            <div className="flex gap-4 max-sm:justify-center max-lg:justify-center max-lg:my-10">
+              <div className="rounded-2xl text-center border-1 px-6 py-5">
                 <h1 className="max-sm:text-2xl text-3xl font-bold">1 +</h1>
                 <p className="max-sm:text-xs text-sm text-gray-500 mt-2">
                   Years <br /> Experience
                 </p>
               </div>
-              <div className="rounded-2xl text-center border-1 max-sm:p-2 max-sm:px-4 sm:p-3 sm:px-4 md:p-4 md:px-6">
+              <div className="rounded-2xl text-center border-1 px-6 py-5">
                 <h1 className="max-sm:text-2xl text-3xl font-bold"> 2</h1>
                 <p className="max-sm:text-xs text-sm text-gray-500 mt-2">
                   Completed <br /> Projects
                 </p>
               </div>
-              <div className="rounded-2xl text-center border-1 max-sm:p-2 max-sm:px-4 sm:p-3 sm:px-4 md:p-4 md:px-6">
+              <div className="rounded-2xl text-center border-1 px-6 py-5">
                 <h1 className="max-sm:text-2xl text-3xl font-bold">7</h1>
                 <p className="max-sm:text-xs text-sm text-gray-500 mt-2">
                   Certifications <br /> courses
                 </p>
               </div>
             </div>
-          </div>
-          {/*  */}
-          <div className="max-sm:px-20 sm:px-20 md:px-0 max-sm:mt-7">
-            <p className="max-sm:text-base sm:text-base sm:text-center md:text-left md:text-lg text-gray-600 leading-7">
+            <p className="mt-10 text-center sm:text-base sm:text-center md:text-left max-sm:text-sm md:text-base text-gray-600 leading-7">
               As a full stack web developer, I am highly dedicated to supporting
               your company or project. I have extensive experience with several
               up-to-date technology frameworks such as ReactJs, Express.js, and

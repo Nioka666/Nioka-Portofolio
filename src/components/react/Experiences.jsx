@@ -3,110 +3,88 @@
 function Experiences() {
   return (
     <>
-      <div className="mt-32 max-sm:px-10 sm:px-7">
-        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-          <li>
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="timeline-start me-10 mb-10 md:text-end">
-              <time className="font-mono italic">1984</time>
-              <div className="text-lg font-black">First Macintosh computer</div>
-              <p className="max-sm:text-sm">
-                The Apple Macintosh—later rebranded as the Macintosh 128K—is the
-                original Apple Macintosh personal computer. It played a
-                pivotaling handle; it came with a keyboard and single-button
-                mouse.
-              </p>
-            </div>
-            <hr />
-          </li>
-          <li>
-            <hr />
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="timeline-end max-sm:timeline-end  md:ms-10 mb-10">
-              <time className="font-mono italic">1998</time>
-              <div className="text-lg font-black">iMac</div>
-              <p className="max-sm:text-sm">
-                iMac is a family of all-in-one Mac desktop computers designed
-                and built by Apple Inc. It has been the primary part of Apple's
-                consumer desktop offerings since its debut in August 1998, and
-                has evolved through seven distinct forms
-              </p>
-            </div>
-            <hr />
-          </li>
-          <li>
-            <hr />
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="timeline-start me-10 mb-10 md:text-end">
-              <time className="font-mono italic">2001</time>
-              <div className="text-lg font-black">iPod</div>
-              <p className="max-sm:text-sm">
-                The iPod is a discontinued series of portable media players and
-                multi-purpose mobile devices designed and marketed by Apple Inc.
-                The first version was released on October 23, 2001, about 8+1⁄2
-                months after the Macintosh version of iTunes was released. Apple
-                sold an estimated 450 million iPod products as of 2022.
-              </p>
-            </div>
-            <hr />
-          </li>
-          <li>
-            <hr />
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-          </li>
-        </ul>
+      <div className="mt-36">
+        <section className="text-center">
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-semibold text-black">
+            Qualifications
+          </h1>
+          <h3 className="text-sm md:text-[17px] text-gray-400 mt-2">
+            My Journey
+          </h3>
+        </section>
+        <section>
+          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical max-md:px-12 lg:mt-20 max-md:mt-12">
+            <li>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-start mb-10 md:text-end">
+                <time className="font-mono italic">2024 - Present</time>
+                <div className="text-lg font-bold">
+                  Politeknik Elektronika Negeri Surabaya
+                </div>
+                Informatics Engineering
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end mb-10 max-md:mb-2">
+                <time className="font-mono italic">2021 - 2024</time>
+                <div className="text-lg font-bold">SMK Negeri 2 Mojokerto</div>
+                Software Engineering
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-start mb-10 md:text-end">
+                <time className="font-mono italic">2019 - 2021</time>
+                <div className="text-lg font-bold">SMP Negeri 1 Jetis</div>
+                Student
+              </div>
+            </li>
+          </ul>
+        </section>
       </div>
     </>
   );

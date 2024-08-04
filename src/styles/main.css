@@ -147,4 +147,8 @@
       transform: translate3d(0, 0, 0) rotateZ(0.01deg);
     }
   }
+
+  .border-blob-about {
+    border: 7px solid #e2e2e200;
+  }
 }
