@@ -34,7 +34,7 @@ function Experiences() {
                 <div className="text-lg font-bold">
                   Politeknik Elektronika Negeri Surabaya
                 </div>
-                Informatics Engineering
+                Informatics Engineering <br /> <br />
               </div>
               <hr />
             </li>
@@ -54,10 +54,10 @@ function Experiences() {
                   />
                 </svg>
               </div>
-              <div className="timeline-end mb-10 max-md:mb-2">
+              <div className="timeline-end lg:mb-10">
                 <time className="font-mono italic">2021 - 2024</time>
                 <div className="text-lg font-bold">SMK Negeri 2 Mojokerto</div>
-                Software Engineering
+                Software Engineering <br /><br />
               </div>
               <hr />
             </li>
