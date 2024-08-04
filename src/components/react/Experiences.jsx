@@ -12,8 +12,8 @@ function Experiences() {
             My Journey
           </h3>
         </section>
-        <section>
-          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical max-md:px-12 lg:mt-20 max-md:mt-12">
+        <section className="max-md:px-6 lg:mt-20 max-md:mt-12">
+          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
             <li>
               <div className="timeline-middle">
                 <svg

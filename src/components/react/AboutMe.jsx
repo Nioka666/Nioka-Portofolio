@@ -23,23 +23,23 @@ function AboutMe() {
             </picture>
           </div>
           {/*  */}
-          <div className="flex-col max-sm:px-10 sm:px-10 md:px-0 max-sm:mt-7 lg:w-[1500px]">
+          <div className="flex-col max-sm:px-5 sm:px-10 md:px-0 max-sm:mt-7 lg:w-[1500px]">
             {/* boxes */}
-            <div className="flex gap-4 max-sm:justify-center max-lg:justify-center max-lg:my-10">
-              <div className="rounded-2xl text-center border-1 px-6 py-5">
-                <h1 className="max-sm:text-2xl text-3xl font-bold">1 +</h1>
+            <div className="flex max-sm:gap-2 gap-4 max-sm:justify-center max-lg:justify-center max-lg:my-10">
+              <div className="rounded-2xl text-center border-1 max-sm:px-3 max-sm:py-3 px-6 py-5">
+                <h1 className="max-sm:text-xl text-3xl font-bold">1 +</h1>
                 <p className="max-sm:text-xs text-sm text-gray-500 mt-2">
                   Years <br /> Experience
                 </p>
               </div>
-              <div className="rounded-2xl text-center border-1 px-6 py-5">
-                <h1 className="max-sm:text-2xl text-3xl font-bold"> 2</h1>
+              <div className="rounded-2xl text-center border-1 max-sm:px-3 max-sm:py-3 px-6 py-5">
+                <h1 className="max-sm:text-xl text-3xl font-bold"> 2</h1>
                 <p className="max-sm:text-xs text-sm text-gray-500 mt-2">
                   Completed <br /> Projects
                 </p>
               </div>
-              <div className="rounded-2xl text-center border-1 px-6 py-5">
-                <h1 className="max-sm:text-2xl text-3xl font-bold">7</h1>
+              <div className="rounded-2xl text-center border-1 max-sm:px-3 max-sm:py-3 px-6 py-5">
+                <h1 className="max-sm:text-xl text-3xl font-bold">7</h1>
                 <p className="max-sm:text-xs text-sm text-gray-500 mt-2">
                   Certifications <br /> courses
                 </p>
