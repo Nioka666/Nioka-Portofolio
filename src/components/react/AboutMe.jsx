@@ -3,16 +3,16 @@ import avatar from "../../assets/adhim-niokagi.jpg";
 function AboutMe() {
   return (
     <>
-      <div id="about-me" className="about-me mt-36 px-10">
+      <div id="about-me" className="about-me mt-36 lg:px-10">
         <section className="text-center">
-          <h1 className="text-xl sm:text-2xl md:text-4xl font-semibold text-black">
+          <h1 className="text-2xl sm:text-2xl md:text-4xl font-semibold text-black">
             About me
           </h1>
-          <h3 className="text-sm md:text-[17px] text-gray-400 mt-2">
+          <h3 className="text-sm md:text-[17px] text-gray-400 mt-2 max-sm:mt-0">
             Introduction
           </h3>
         </section>
-        <section className="lg:flex justify-between gap-24 mt-16">
+        <section className="lg:flex justify-between gap-24 mt-16 max-sm:mt-8">
           <div className="flex justify-center">
             <picture className="mx-auto">
               <img
