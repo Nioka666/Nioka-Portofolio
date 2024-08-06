@@ -17,7 +17,7 @@ function Qualification() {
           </h3>
         </section>
         {/* switch button */}
-        <section className="flex justify-center gap-10 mt-8">
+        <section className="flex justify-center gap-10 mt-16 max-sm:mt-14">
           <button
             className={`bg-transparent max-sm:text-sm text-xl flex gap-2 items-center ${activeMenu === 1 ? "text-black" : "text-gray-400"}`}
             onClick={() => setActiveMenu(1)}
