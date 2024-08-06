@@ -32,7 +32,7 @@ function Qualification() {
           </button>
         </section>
         {/* result */}
-        <section className="max-sm:mx-14 sm:mx-10">
+        <section className="max-sm:mx-4 sm:mx-2">
           {activeMenu === 1 ? <Educations /> : <Experiences />}
         </section>
       </div>

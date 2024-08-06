@@ -45,7 +45,7 @@ function AboutMe() {
                 </p>
               </div>
             </div>
-            <p className="mt-7 text-center sm:text-base sm:text-center md:text-left max-sm:text-[15px] max-sm:px-8 md:text-base text-gray-600">
+            <p className="mt-7 text-center sm:text-base sm:text-center md:text-left max-sm:text-[15px] max-sm:px-2 md:text-base text-gray-600">
               As a full stack web developer, I am highly dedicated to supporting
               your company or project. I have extensive experience with several
               up-to-date technology frameworks such as ReactJs, Express.js, and
