@@ -3,7 +3,7 @@ import avatar from "../../assets/adhim-niokagi.jpg";
 function AboutMe() {
   return (
     <>
-      <div id="about-me" className="about-me mt-36 lg:px-10">
+      <div id="about-me" className="about-me mt-28 lg:px-10">
         <section className="text-center">
           <h1 className="text-2xl sm:text-2xl md:text-4xl font-semibold text-black">
             About me
@@ -25,7 +25,7 @@ function AboutMe() {
           {/*  */}
           <div className="flex-col max-sm:px-5 sm:px-10 md:px-0 max-sm:mt-7 lg:w-[1500px]">
             {/* boxes */}
-            <div className="flex max-sm:gap-2 gap-4 max-sm:justify-center max-lg:justify-center max-lg:my-10 flex-wrap">
+            <div className="flex max-sm:gap-2 gap-4 max-sm:justify-center max-lg:justify-center max-lg:my-7 flex-wrap">
               <div className="rounded-2xl text-center border-1 max-sm:px-3 max-sm:py-3 px-6 py-5">
                 <h1 className="max-sm:text-xl text-3xl font-bold">1 +</h1>
                 <p className="max-sm:text-xs text-sm text-gray-500 mt-2">
@@ -45,7 +45,7 @@ function AboutMe() {
                 </p>
               </div>
             </div>
-            <p className="mt-10 text-center sm:text-base sm:text-center md:text-left max-sm:text-sm md:text-base text-gray-600 leading-7">
+            <p className="mt-7 text-center sm:text-base sm:text-center md:text-left max-sm:text-[15px] max-sm:px-8 md:text-base text-gray-600">
               As a full stack web developer, I am highly dedicated to supporting
               your company or project. I have extensive experience with several
               up-to-date technology frameworks such as ReactJs, Express.js, and

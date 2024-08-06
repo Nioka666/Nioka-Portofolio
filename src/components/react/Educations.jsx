@@ -21,9 +21,10 @@ function Educations() {
             </div>
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic">2024 - Present</time>
-              <div className="text-lg font-bold">
+              <div className="max-sm:text-base text-lg font-bold">
                 Politeknik Elektronika Negeri Surabaya
               </div>
+              Associate degree <br />
               Informatics Engineering <br /> <br />
             </div>
             <hr />
@@ -46,7 +47,7 @@ function Educations() {
             </div>
             <div className="timeline-end lg:mb-10">
               <time className="font-mono italic">2021 - 2024</time>
-              <div className="text-lg font-bold">SMK Negeri 2 Mojokerto</div>
+              <div className="max-sm:text-base text-lg font-bold">SMK Negeri 2 Mojokerto</div>
               Software Engineering <br />
               <br />
             </div>
@@ -70,7 +71,7 @@ function Educations() {
             </div>
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic">2019 - 2021</time>
-              <div className="text-lg font-bold">SMP Negeri 1 Jetis</div>
+              <div className="max-sm:text-base text-lg font-bold">SMP Negeri 1 Jetis</div>
               Student
             </div>
           </li>
