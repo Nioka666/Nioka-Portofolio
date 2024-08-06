@@ -120,7 +120,7 @@ function Hero() {
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i> Front-End Developer
           </h6>
-          <p className="font-normal max-sm:text-[16px] sm:text-[17px] text-gray mt-3 w-full leading-6">
+          <p className="font-normal max-sm:text-[17px] sm:text-[17px] text-gray mt-3 w-full leading-6">
             I'm a Junior
             <span className="text-highlight mx-1">Front-End Web Developer</span>
             work based in Mojokerto, East Java.
