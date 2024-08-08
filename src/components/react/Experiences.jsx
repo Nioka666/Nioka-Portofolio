@@ -1,7 +1,7 @@
 function Experiences() {
   return (
     <>
-      <section className="max-sm:mt-6 max-md:px-6 lg:mt-10 max-md:mt-10">
+      <section className="max-sm:mt-8 max-md:px-8 lg:mt-10 max-md:mt-10">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           <li>
             <div className="timeline-middle">
@@ -20,9 +20,7 @@ function Experiences() {
             </div>
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic">2023 - Present</time>
-              <div className="text-lg font-bold">
-                Freelance
-              </div>
+              <div className="text-lg font-bold">Independent Freelancer</div>
               Frontend Web Developer <br /> <br />
             </div>
             <hr />
@@ -45,7 +43,9 @@ function Experiences() {
             </div>
             <div className="timeline-end lg:mb-10">
               <time className="font-mono italic">2022 - 2023</time>
-              <div className="text-lg font-bold">Kantor Pertanahan Kota Mojokerto</div>
+              <div className="text-lg font-bold">
+                ATR/BPN - Kantor Pertanahan Kota Mojokerto
+              </div>
               Student Internship <br />
               <br />
             </div>

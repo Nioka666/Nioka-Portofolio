@@ -57,19 +57,22 @@ function Hero() {
           ))}
         </section>
         <section className="headline">
-          <h1 className="text-[55px] font-semibold leading-tight text-black">
+          <h1 className="text-[56px] font-semibold leading-tight text-black">
             Adhim Niokagi
           </h1>
-          <h6 className="text-xl text-gray-600 font-medium">
+          <h6 className="text-xl text-gray-600 font-medium mt-1">
             <i className="uil uil-minus"></i>{" "}
-            <i className="uil uil-minus ms-[-15px]"></i> Front-End Developer
+            <i className="uil uil-minus ms-[-15px]"></i>{" "}
+            <i className="uil uil-minus ms-[-15px]"></i>{" "}
+            <span className="ms-2">Front-End Web Developer</span>
           </h6>
-          <p className="font-normal text-gray mt-5 w-[91%] leading-7 text-[19px]">
-            I'm a
-            <span className="text-highlight mx-1">
-              Junior Front-End Web Developer,
-            </span>
-            work based in Mojokerto, East Java.
+          <p className="font-normal text-gray mt-5 w-[91%] text-[17px]">
+            I'm a 
+            <span className="text-highlight ms-1">
+              Front-End Web Developer,
+            </span>{" "}
+            work based in Mojokerto, East Java,
+            passionate and dedicated to my work.
           </p>
           <div className="mt-10">
             <button className="py-[15px] px-7 bg-black text-white rounded-2xl text-lg font-medium hover:bg-white hover:text-black transition-all hover:shadow-md">
@@ -113,17 +116,22 @@ function Hero() {
         </div>
         {/* headline */}
         <section className="mt-7 flex flex-col mx-6">
-          <h1 className="max-sm:text-[38px] sm:text-[38px] font-semibold">
+          <h1 className="max-sm:text-[38.5px] sm:text-[38px] font-semibold">
             Adhim Niokagi
           </h1>
-          <h6 className="text-lg text-gray-700 font-medium max-sm:text-[17px] sm:text-xl">
+          <h6 className="text-lg text-gray-700 font-medium max-sm:text-[17px] sm:text-xl mt-1">
             <i className="uil uil-minus"></i>{" "}
-            <i className="uil uil-minus ms-[-15px]"></i> Front-End Developer
+            <i className="uil uil-minus ms-[-15px]"></i>{" "}
+            <i className="uil uil-minus ms-[-15px]"></i>{" "}
+            <span className="ms-2">Front-End Web Developer</span>
           </h6>
-          <p className="font-normal max-sm:text-[17px] sm:text-[17px] text-gray mt-3 w-full leading-6">
-            I'm a Junior
-            <span className="text-highlight mx-1">Front-End Web Developer</span>
-            work based in Mojokerto, East Java.
+          <p className="font-normal max-sm:text-[15px] sm:text-[17px] text-gray mt-3 w-full">
+            I'm a 
+            <span className="text-highlight mx-1">
+              {" "}
+              Front-End Web Developer,{" "}
+            </span>
+            work based in Mojokerto, East Java, passionate and dedicated to my work.
           </p>
           <div className="mt-10 flex gap-5 items-center">
             <button className="py-[18px] px-6 bg-black text-white rounded-2xl text-sm font-medium hover:text-black hover:bg-white transition-all">

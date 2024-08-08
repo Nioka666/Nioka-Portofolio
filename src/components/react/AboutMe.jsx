@@ -12,12 +12,12 @@ function AboutMe() {
             Introduction
           </h3>
         </section>
-        <section className="lg:flex justify-between gap-24 mt-16 max-sm:mt-8">
+        <section className="lg:flex justify-between gap-20 mt-16 max-sm:mt-8">
           <div className="flex justify-center">
-            <picture className="mx-auto">
+            <picture className="">
               <img
                 src={avatar.src}
-                className="rounded-[50px] max-sm:w-[225px] sm:w-[250px] lg:w-[900px]"
+                className="rounded-[50px] max-sm:w-[250px] sm:w-[250px] lg:w-[1100px]"
                 alt="adhim niokagi photo"
               />
             </picture>
@@ -45,7 +45,7 @@ function AboutMe() {
                 </p>
               </div>
             </div>
-            <p className="mt-7 text-center sm:text-base sm:text-center md:text-left max-sm:text-[15px] max-sm:px-2 md:text-base text-gray-600">
+            <p className="mt-7 text-center sm:text-base md:text-lg sm:text-center md:text-left max-sm:text-[15px] max-sm:px-0 text-gray-600">
               As a full stack web developer, I am highly dedicated to supporting
               your company or project. I have extensive experience with several
               up-to-date technology frameworks such as ReactJs, Express.js, and

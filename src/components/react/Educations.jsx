@@ -2,7 +2,7 @@
 function Educations() {
   return (
     <>
-      <section className="max-md:px-6 max-sm:mt-6 lg:mt-10 max-md:mt-10">
+      <section className="max-md:px-8 max-sm:mt-8 lg:mt-10 max-md:mt-10">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           <li>
             <div className="timeline-middle">
@@ -24,7 +24,7 @@ function Educations() {
               <div className="max-sm:text-base text-lg font-bold">
                 Politeknik Elektronika Negeri Surabaya
               </div>
-              Associate degree <br />
+              Associate's degree <br />
               Informatics Engineering <br /> <br />
             </div>
             <hr />
@@ -72,7 +72,7 @@ function Educations() {
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic">2019 - 2021</time>
               <div className="max-sm:text-base text-lg font-bold">SMP Negeri 1 Jetis</div>
-              Student
+              General Student
             </div>
           </li>
         </ul>
