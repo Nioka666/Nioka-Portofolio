@@ -66,7 +66,7 @@ function Hero() {
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Web Developer</span>
           </h6>
-          <p className="font-normal text-gray mt-5 w-[91%] text-[17px]">
+          <p className="font-normal text-gray mt-5 w-[91%] text-[17.5px]">
             I'm a 
             <span className="text-highlight ms-1">
               Front-End Web Developer,
@@ -125,7 +125,7 @@ function Hero() {
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Web Developer</span>
           </h6>
-          <p className="font-normal max-sm:text-[16px] sm:text-[17px] text-gray mt-3 w-full">
+          <p className="font-normal max-sm:text-[16.5px] sm:text-[17px] text-gray mt-3 w-full">
             I'm a 
             <span className="text-highlight mx-1">
               {" "}
