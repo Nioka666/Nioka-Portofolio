@@ -9,23 +9,23 @@ function Qualification() {
     <>
       <div className="mt-[135px] max-sm:mt-[130px]">
         <section className="text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-black">
+          <h1 className="text-2xl font-semibold text-black sm:text-3xl md:text-4xl">
             Qualifications
           </h1>
-          <h3 className="text-sm md:text-[17px] text-gray-500 mt-2">
+          <h3 className="mt-2 text-sm text-gray-500 md:text-[17px]">
             My Journey
           </h3>
         </section>
         {/* switch button */}
-        <section className="flex justify-center gap-10 mt-16 max-sm:mt-14">
+        <section className="mt-16 flex justify-center gap-10 max-sm:mt-14">
           <button
-            className={`bg-transparent max-sm:text-sm text-xl flex gap-2 items-center ${activeMenu === 1 ? "text-black" : "text-gray-400"}`}
+            className={`flex items-center gap-2 bg-transparent text-xl max-sm:text-sm ${activeMenu === 1 ? "text-black" : "text-gray-400"}`}
             onClick={() => setActiveMenu(1)}
           >
             <i className="bx bxs-graduation text-[30px]"></i> Educations
           </button>
           <button
-            className={`bg-transparent max-sm:text-sm text-xl flex gap-2 items-center ${activeMenu === 2 ? "text-black" : "text-gray-400"}`}
+            className={`flex items-center gap-2 bg-transparent text-xl max-sm:text-sm ${activeMenu === 2 ? "text-black" : "text-gray-400"}`}
             onClick={() => setActiveMenu(2)}
           >
             <i className="bx bxs-briefcase text-[24px]"></i>Experiences

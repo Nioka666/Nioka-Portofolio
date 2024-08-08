@@ -50,7 +50,7 @@ function Hero() {
               data-tip={data.name}
             >
               <i
-                className={`${data.icon} text-2xl cursor-pointer text-black`}
+                className={`${data.icon} cursor-pointer text-2xl text-black`}
                 key={data.name}
               ></i>
             </a>
@@ -60,22 +60,22 @@ function Hero() {
           <h1 className="text-[56px] font-semibold leading-tight text-black">
             Adhim Niokagi
           </h1>
-          <h6 className="text-xl text-gray-600 font-medium mt-1">
+          <h6 className="mt-1 text-xl font-medium text-gray-600">
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Web Developer</span>
           </h6>
-          <p className="font-normal text-gray mt-5 w-[91%] text-[17.5px]">
-            I'm a 
+          <p className="text-gray mt-5 w-[91%] text-[17.5px] font-normal">
+            I'm a
             <span className="text-highlight ms-1">
               Front-End Web Developer,
             </span>{" "}
-            work based in Mojokerto, East Java,
-            passionate and dedicated to my work.
+            work based in Mojokerto, East Java, passionate and dedicated to my
+            work.
           </p>
           <div className="mt-10">
-            <button className="py-[15px] px-7 bg-black text-white rounded-2xl text-lg font-medium hover:bg-white hover:text-black transition-all hover:shadow-md">
+            <button className="rounded-2xl bg-black px-7 py-[15px] text-lg font-medium text-white transition-all hover:bg-white hover:text-black hover:shadow-md">
               Say Hello <i className="uil uil-location-arrow ms-2"></i>
             </button>
           </div>
@@ -90,7 +90,7 @@ function Hero() {
       </section>
       {/* Hero sm */}
       <section className="sm-hero">
-        <div className="flex max-sm:gap-9 sm:gap-10 px-6 items-center mt-12">
+        <div className="mt-12 flex items-center px-6 max-sm:gap-9 sm:gap-10">
           <section className="social-media">
             {mediaSocial.map((data) => (
               <a
@@ -100,7 +100,7 @@ function Hero() {
                 data-tip={data.name}
               >
                 <i
-                  className={`${data.icon} text-xl cursor-pointer`}
+                  className={`${data.icon} cursor-pointer text-xl`}
                   key={data.name}
                 ></i>
               </a>
@@ -109,36 +109,37 @@ function Hero() {
           <picture
             className={`blob overflow-hidden ${
               loaded ? "animate-fade-in" : "opacity-0"
-            } max-sm:w-[220px] max-sm:h-full sm:w-[270px] sm:h-full max-md:w-[290px] md:w-[250px] md:h-full`}
+            } max-md:w-[290px] max-sm:h-full max-sm:w-[220px] sm:h-full sm:w-[270px] md:h-full md:w-[250px]`}
           >
             <img src={avatar.src} alt="Adhim Niokagi" />
           </picture>
         </div>
         {/* headline */}
-        <section className="mt-7 flex flex-col mx-6">
-          <h1 className="max-sm:text-[38.5px] sm:text-[38px] font-semibold">
+        <section className="mx-6 mt-7 flex flex-col">
+          <h1 className="font-semibold max-sm:text-[38.5px] sm:text-[38px]">
             Adhim Niokagi
           </h1>
-          <h6 className="text-lg text-gray-700 font-medium max-sm:text-[17px] sm:text-xl">
+          <h6 className="text-lg font-medium text-gray-700 max-sm:text-[17px] sm:text-xl">
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Web Developer</span>
           </h6>
-          <p className="font-normal max-sm:text-[16.5px] sm:text-[17px] text-gray mt-3 w-full">
-            I'm a 
+          <p className="text-gray mt-3 w-full font-normal max-sm:text-[16.5px] sm:text-[17px]">
+            I'm a
             <span className="text-highlight mx-1">
               {" "}
               Front-End Web Developer,{" "}
             </span>
-            work based in Mojokerto, East Java, passionate and dedicated to my work.
+            work based in Mojokerto, East Java, passionate and dedicated to my
+            work.
           </p>
-          <div className="mt-10 flex gap-5 items-center">
-            <button className="py-[18px] px-6 bg-black text-white rounded-2xl text-sm font-medium hover:text-black hover:bg-white transition-all">
+          <div className="mt-10 flex items-center gap-5">
+            <button className="rounded-2xl bg-black px-6 py-[18px] text-sm font-medium text-white transition-all hover:bg-white hover:text-black">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <a href={CV} target="_blank">
-              <button className="px-6 flex items-center gap-2 bg-transparent text-black rounded-2xl text-sm font-medium">
+              <button className="flex items-center gap-2 rounded-2xl bg-transparent px-6 text-sm font-medium text-black">
                 View CV
                 <i className="bx bx-file text-2xl text-gray-600"></i>
               </button>
@@ -147,10 +148,10 @@ function Hero() {
         </section>
       </section>
       {/* scroll button */}
-      <section className="ms-[85px] lg:ms-[130px] mt-14 max-sm:hidden">
-        <button className="flex items-center gap-1 bg-transparent text-black rounded-2xl text-base font-normal hover:translate-y-1 transition-all">
+      <section className="ms-[85px] mt-14 max-sm:hidden lg:ms-[130px]">
+        <button className="flex items-center gap-1 rounded-2xl bg-transparent text-base font-normal text-black transition-all hover:translate-y-1">
           <i className="bx bx-mouse text-3xl text-gray-600"></i>Scroll Down
-          <i className="bx bx-down-arrow-alt text-xl ms-1 text-gray-600"></i>
+          <i className="bx bx-down-arrow-alt ms-1 text-xl text-gray-600"></i>
         </button>
       </section>
     </>

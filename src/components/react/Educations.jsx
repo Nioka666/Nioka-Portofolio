@@ -2,8 +2,8 @@
 function Educations() {
   return (
     <>
-      <section className="max-md:px-8 max-sm:mt-8 lg:mt-10 max-md:mt-10">
-        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+      <section className="max-md:mt-10 max-md:px-8 max-sm:mt-8 lg:mt-10">
+        <ul className="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
           <li>
             <div className="timeline-middle">
               <svg
@@ -21,7 +21,7 @@ function Educations() {
             </div>
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic">2024 - Present</time>
-              <div className="max-sm:text-base text-lg font-bold">
+              <div className="text-lg font-bold max-sm:text-base">
                 Politeknik Elektronika Negeri Surabaya
               </div>
               Associate's degree <br />
@@ -47,7 +47,9 @@ function Educations() {
             </div>
             <div className="timeline-end lg:mb-10">
               <time className="font-mono italic">2021 - 2024</time>
-              <div className="max-sm:text-base text-lg font-bold">SMK Negeri 2 Mojokerto</div>
+              <div className="text-lg font-bold max-sm:text-base">
+                SMK Negeri 2 Mojokerto
+              </div>
               Software Engineering <br />
               <br />
             </div>
@@ -71,7 +73,9 @@ function Educations() {
             </div>
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic">2019 - 2021</time>
-              <div className="max-sm:text-base text-lg font-bold">SMP Negeri 1 Jetis</div>
+              <div className="text-lg font-bold max-sm:text-base">
+                SMP Negeri 1 Jetis
+              </div>
               General Student
             </div>
           </li>

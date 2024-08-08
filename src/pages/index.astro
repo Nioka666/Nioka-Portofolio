@@ -3,12 +3,14 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/react/Hero";
 import AboutMe from "../components/react/AboutMe";
 import Qualification from "../components/react/Qualification";
+import ButtonUp from "../components/react/ButtonUp";
 ---
 
 <MainLayout title="Nioka Portofolio">
   <main>
     <Hero client:idle />
-    <AboutMe client:idle/>
+    <AboutMe client:idle />
     <Qualification client:idle />
+    <ButtonUp client:idle />
   </main>
 </MainLayout>

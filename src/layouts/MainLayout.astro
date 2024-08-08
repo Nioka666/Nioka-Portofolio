@@ -3,6 +3,7 @@ import "../styles/main.css";
 import Navbar from "../components/astro/Navbar.astro";
 import BottomNavbar from "../components/astro/BottomNavbar.astro";
 import Footer from "../components/astro/Footer.astro";
+import ButtonUp from "../components/react/ButtonUp";
 
 const { title } = Astro.props;
 ---
@@ -30,10 +31,11 @@ const { title } = Astro.props;
     />
     <title>{title}</title>
   </head>
-  <body class="bg-white dark:bg-gray-900 dark:text-white">
+  <body id="top" class="bg-white dark:bg-gray-900 dark:text-white">
     <Navbar />
     <slot />
+    <ButtonUp />
     <Footer />
-    <BottomNavbar />
+    <BottomNavbar client:idle />
   </body>
 </html>
