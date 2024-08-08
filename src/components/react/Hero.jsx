@@ -119,13 +119,13 @@ function Hero() {
           <h1 className="max-sm:text-[38.5px] sm:text-[38px] font-semibold">
             Adhim Niokagi
           </h1>
-          <h6 className="text-lg text-gray-700 font-medium max-sm:text-[17px] sm:text-xl mt-1">
+          <h6 className="text-lg text-gray-700 font-medium max-sm:text-[17px] sm:text-xl">
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Web Developer</span>
           </h6>
-          <p className="font-normal max-sm:text-[15px] sm:text-[17px] text-gray mt-3 w-full">
+          <p className="font-normal max-sm:text-[16px] sm:text-[17px] text-gray mt-3 w-full">
             I'm a 
             <span className="text-highlight mx-1">
               {" "}
