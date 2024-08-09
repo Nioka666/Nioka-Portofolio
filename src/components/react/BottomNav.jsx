@@ -4,8 +4,34 @@ function BottomNav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const bottomDrawerRef = useRef(null);
   const toggleButtonRef = useRef(null);
+  const dataMenu = [
+    {
+      name: "Home",
+      icon: "bx bx-home text-2xl",
+      url: "#home",
+    },
+    {
+      name: "About",
+      icon: "bx bx-home text-2xl",
+      url: "#about",
+    },
+    {
+      name: "Skills",
+      icon: "bx bx-home text-2xl",
+      url: "#skills",
+    },
+    {
+      name: "Qualification",
+      icon: "bx bx-home text-2xl",
+      url: "#qualification",
+    },
+    {
+      name: "Contact",
+      icon: "bx bx-contact text-2xl",
+      url: "#contact",
+    },
+  ];
 
-  // Close the drawer when clicking outside of it
   useEffect(() => {
     function handleClickOutside(event) {
       if (
@@ -67,43 +93,51 @@ function BottomNav() {
         className={`fixed inset-x-0 bottom-0 transform transition-transform duration-300 ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
       >
         {/* Drawer content */}
-        <div className="flex rounded-t-3xl bg-white shadow-2xl">
-          <div className="flex h-[200px] gap-x-5 rounded-t-3xl border">
-            <div class="flex flex-wrap justify-center gap-2 p-4">
+        <div className="rounded-t-3xl bg-white shadow-2xl">
+          <div className="flex h-[200px] justify-center gap-x-5 rounded-t-3xl p-4">
+            <div class="flex flex-wrap justify-center gap-2">
               <a href="#about">
-                <div class="box grid w-[100px] cursor-pointer p-3 text-center">
+                <div class="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
                   <i class="bx bx-user text-2xl"></i>
                   <span class="text-xs">About</span>
                 </div>
               </a>
-              <div class="box grid w-[100px] cursor-pointer p-3 text-center">
-                <i class="bx bx-universal-access text-2xl"></i>
-                <span class="text-xs">Skills</span>
-              </div>
+              <a href="">
+                <div class="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
+                  <i class="bx bx-universal-access text-2xl"></i>
+                  <span class="text-xs">Skills</span>
+                </div>
+              </a>
               <a href="#qualification">
-                <div class="box grid w-[100px] cursor-pointer p-3 text-center">
+                <div class="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
                   <i class="bx bx-file text-2xl"></i>
                   <span class="text-xs">Qualification</span>
                 </div>
               </a>
-              <div class="box grid w-[100px] cursor-pointer p-3 text-center">
-                <i class="bx bx-image text-2xl"></i>
-                <span class="text-xs">Portofolio</span>
-              </div>
-              <div class="box grid w-[100px] cursor-pointer p-3 text-center">
-                <i class="bx bxs-contact text-2xl"></i>
-                <span class="text-xs">Contact</span>
-              </div>
-              <div class="box grid w-[100px] cursor-pointer p-3 text-center">
-                <i class="text-2xl"></i>
-                <span class="text-xs"></span>
-              </div>
+              <a href="">
+                <div class="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
+                  <i class="bx bx-image text-2xl"></i>
+                  <span class="text-xs">Portofolio</span>
+                </div>
+              </a>
+              <a href="">
+                <div class="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
+                  <i class="uil uil-user-square text-2xl"></i>
+                  <span class="text-xs">Contact</span>
+                </div>
+              </a>
+              <a href="">
+                <div class="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
+                  <i class="text-2xl"></i>
+                  <span class="text-xs"></span>
+                </div>
+              </a>
             </div>
           </div>
           <button
             type="button"
             onClick={() => setDrawerOpen(false)}
-            className="fixed bottom-3 right-4"
+            className="fixed bottom-4 right-7"
           >
             <i className="bx bx-x text-xl"></i>
           </button>
