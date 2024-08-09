@@ -154,7 +154,7 @@ function Hero() {
         </section>
       </section>
       {/* scroll button */}
-      <section className="ms-[85px] mt-14 max-sm:hidden lg:ms-[130px]">
+      <section className="ms-[85px] mt-14 max-lg:hidden lg:ms-[130px]">
         <button className="flex items-center gap-1 rounded-2xl bg-transparent text-base font-normal text-black transition-all hover:translate-y-1">
           <i className="bx bx-mouse text-3xl text-gray-600"></i>Scroll Down
           <i className="bx bx-down-arrow-alt ms-1 text-xl text-gray-600"></i>

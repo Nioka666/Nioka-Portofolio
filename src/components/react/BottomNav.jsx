@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useSwipeable } from "react-swipeable";
 
 function BottomNav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -52,8 +53,14 @@ function BottomNav() {
     };
   }, []);
 
+  const SwipeHandler = useSwipeable({
+    onSwipedDown: () => setDrawerOpen(false),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
   return (
-    <div className="bottom-nav">
+    <div {...SwipeHandler} className="bottom-nav">
       <section className="b-nav-shadow flex h-[60px] w-full items-center justify-between bg-white px-7">
         <a href="/">
           <h1 className="text-base font-medium text-black max-sm:text-sm md:text-lg lg:text-lg">
@@ -97,6 +104,7 @@ function BottomNav() {
       >
         {/* Drawer content */}
         <div className="drawer-b-nav rounded-t-3xl bg-white">
+          <div className="swipper relative top-2 mx-auto mt-10 h-[5.5px] w-[100px] rounded-full bg-gray-200"></div>
           <div className="h-[250px] justify-center gap-x-5 rounded-t-3xl p-4 pt-7">
             <div className="flex flex-wrap justify-center gap-2">
               {dataMenu.map((data) => (
