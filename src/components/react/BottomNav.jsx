@@ -6,29 +6,32 @@ function BottomNav() {
   const toggleButtonRef = useRef(null);
   const dataMenu = [
     {
-      name: "Home",
-      icon: "bx bx-home text-2xl",
-      url: "#home",
-    },
-    {
       name: "About",
-      icon: "bx bx-home text-2xl",
+      icon: "bx bx-user text-3xl",
       url: "#about",
     },
     {
       name: "Skills",
-      icon: "bx bx-home text-2xl",
+      icon: "bx bx-universal-access text-3xl",
+      url: "#about",
+    },
+    {
+      name: "Qualifies",
+      icon: "bx bx-file text-3xl",
       url: "#skills",
     },
     {
-      name: "Qualification",
-      icon: "bx bx-home text-2xl",
+      name: "Portofolio",
+      icon: "bx bx-image text-3xl",
       url: "#qualification",
     },
     {
       name: "Contact",
-      icon: "bx bx-contact text-2xl",
+      icon: "uil uil-user-square text-3xl",
       url: "#contact",
+    },
+    {
+      blankElement: <></>,
     },
   ];
 
@@ -96,42 +99,17 @@ function BottomNav() {
         <div className="rounded-t-3xl bg-white shadow-2xl">
           <div className="h-[240px] justify-center gap-x-5 rounded-t-3xl p-4 pt-7">
             <div className="flex flex-wrap justify-center gap-2">
-              <a href="#about">
-                <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
-                  <i className="bx bx-user text-3xl"></i>
-                  <span className="mt-1 text-sm">About</span>
-                </div>
-              </a>
-              <a href="">
-                <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
-                  <i className="bx bx-universal-access text-3xl"></i>
-                  <span className="mt-1 text-sm">Skills</span>
-                </div>
-              </a>
-              <a href="#qualification">
-                <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
-                  <i className="bx bx-file text-3xl"></i>
-                  <span className="mt-1 text-sm">Qualify</span>
-                </div>
-              </a>
-              <a href="">
-                <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
-                  <i className="bx bx-image text-3xl"></i>
-                  <span className="mt-1 text-sm">Portofolio</span>
-                </div>
-              </a>
-              <a href="">
-                <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
-                  <i className="uil uil-user-square text-3xl"></i>
-                  <span className="mt-1 text-sm">Contact</span>
-                </div>
-              </a>
-              <a href="">
-                <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
-                  <i className="text-2xl"></i>
-                  <span className="mt-1 text-sm"></span>
-                </div>
-              </a>
+              {dataMenu.map((data) => (
+                <>
+                  <a href={data.url} className="text-black hover:text-gray-700">
+                    <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
+                      <i className={data.icon}></i>
+                      <span className="mt-1 text-sm">{data.name}</span>
+                    </div>
+                  </a>
+                  {data.blankElement}
+                </>
+              ))}
             </div>
           </div>
           <button
