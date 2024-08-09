@@ -5,15 +5,10 @@ function ButtonUp() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 540) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      setIsVisible(window.scrollY > 540);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     // check when still mount
     handleScroll();
 
@@ -23,14 +18,22 @@ function ButtonUp() {
     };
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       {isVisible && (
-        <a href="#top">
-          <button className="fixed bottom-12 right-10 rounded-2xl border bg-gray-800 px-3 py-2 text-white transition-all hover:bg-gray-600 max-md:bottom-20 max-md:right-5">
-            <i className="bx bxs-chevron-up text-2xl font-bold max-sm:text-lg"></i>
-          </button>
-        </a>
+        <button
+          className="fixed bottom-12 right-10 rounded-2xl border bg-gray-800 px-3 py-2 text-white transition-all hover:bg-gray-600 max-md:bottom-20 max-md:right-5"
+          onClick={scrollToTop}
+        >
+          <i className="bx bxs-chevron-up text-2xl font-bold max-sm:text-lg"></i>
+        </button>
       )}
     </>
   );
