@@ -74,10 +74,16 @@ function Hero() {
             work based in Mojokerto, East Java, passionate and dedicated to my
             work.
           </p>
-          <div className="mt-10">
-            <button className="rounded-2xl bg-black px-7 py-[15px] text-lg font-medium text-white transition-all hover:bg-white hover:text-black hover:shadow-md">
+          <div className="mt-10 flex gap-5">
+            <button className="rounded-[18px] bg-gray-800 px-7 py-[16px] text-base font-medium text-white transition-all hover:bg-white hover:text-black hover:shadow-md">
               Say Hello <i className="uil uil-location-arrow ms-2"></i>
             </button>
+            <a href={CV} target="_blank">
+              <button className="flex items-center rounded-2xl bg-transparent px-7 py-[16px] text-sm font-medium text-black">
+                View CV
+                <i className="bx bx-file text-2xl text-gray-600"></i>
+              </button>
+            </a>
           </div>
         </section>
         <picture
@@ -135,7 +141,7 @@ function Hero() {
             work.
           </p>
           <div className="mt-10 flex items-center gap-5">
-            <button className="rounded-2xl bg-black px-6 py-[18px] text-sm font-medium text-white transition-all hover:bg-white hover:text-black">
+            <button className="rounded-[17px] bg-gray-800 px-6 py-[18px] text-sm font-medium text-white transition-all hover:bg-white hover:text-black">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <a href={CV} target="_blank">
