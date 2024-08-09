@@ -18,7 +18,7 @@ function AboutMe() {
             <picture className="">
               <img
                 src={avatar.src}
-                className="rounded-[50px] max-sm:w-[250px] sm:w-[250px] lg:w-[1100px]"
+                className="rounded-[50px] max-sm:w-[225px] sm:w-[250px] lg:w-[1100px]"
                 alt="adhim niokagi photo"
               />
             </picture>
