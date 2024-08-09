@@ -1,4 +1,4 @@
-import avatar from "../../assets/adhim-niokagi.jpg";
+import avatar from "../../assets/adhim_3.jpeg";
 
 function AboutMe() {
   return (
@@ -18,7 +18,7 @@ function AboutMe() {
             <picture className="">
               <img
                 src={avatar.src}
-                className="rounded-[50px] max-sm:w-[225px] sm:w-[250px] lg:w-[1100px]"
+                className="rounded-[30px] max-sm:w-[210px] sm:w-[250px] lg:w-[1100px]"
                 alt="adhim niokagi photo"
               />
             </picture>
