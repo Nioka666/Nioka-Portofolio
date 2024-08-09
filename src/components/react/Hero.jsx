@@ -79,9 +79,9 @@ function Hero() {
               Say Hello <i className="uil uil-location-arrow ms-2"></i>
             </button>
             <a href={CV} target="_blank">
-              <button className="flex items-center rounded-2xl bg-transparent px-7 py-[16px] text-sm font-medium text-black">
+              <button className="flex items-center rounded-2xl bg-transparent px-7 py-[15px] text-base font-medium text-black max-sm:text-sm">
                 View CV
-                <i className="bx bx-file text-2xl text-gray-600"></i>
+                <i className="bx bx-file ms-3 text-2xl text-gray-600"></i>
               </button>
             </a>
           </div>

@@ -33,9 +33,57 @@
           ></path>
         </svg>
       </label>
-      <i
-        class="bx bx-category text-[22px] cursor-pointer text-gray-600 hover:text-gray-400 transition-all font-medium"
-      ></i>
+      <button id="toggleButton">
+        <i
+          class="bx bx-category text-[22px] cursor-pointer text-gray-600 hover:text-gray-400 transition-all font-medium"
+        ></i>
+      </button>
     </div>
   </section>
+
+  <!-- bottom drawer -->
+  <div
+    id="bottomDrawer"
+    class="fixed inset-x-0 bottom-0 transform translate-y-full transition-transform duration-300"
+  >
+    <div class="border shadow-lg rounded-t-lg">
+      <!-- Drawer content -->
+      <div
+        class="flex flex-none items-center gap-x-5 bg-white h-[300px] rounded-t-lg"
+      >
+        <button type="button"> Accept all </button>
+        <button type="button" id="rejectButton"> Reject all </button>
+      </div>
+    </div>
+  </div>
 </div>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.getElementById("toggleButton");
+    const bottomDrawer = document.getElementById("bottomDrawer");
+    const rejectButton = document.getElementById("rejectButton");
+
+    function toggleDrawer() {
+      bottomDrawer.classList.toggle("translate-y-full");
+      bottomDrawer.classList.toggle("translate-y-0");
+    }
+
+    function closeDrawer() {
+      bottomDrawer.classList.add("translate-y-full");
+      bottomDrawer.classList.remove("translate-y-0");
+    }
+
+    toggleButton.addEventListener("click", toggleDrawer);
+    rejectButton.addEventListener("click", closeDrawer);
+
+    document.addEventListener("click", (event) => {
+      if (
+        !bottomDrawer.contains(event.target) &&
+        !toggleButton.contains(event.target)
+      ) {
+        closeDrawer();
+      }
+    });
+  });
+</script>

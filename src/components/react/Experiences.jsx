@@ -18,7 +18,7 @@ function Experiences() {
                 />
               </svg>
             </div>
-            <div className="timeline-start mb-10 md:text-end">
+            <div className="timeline-end md:timeline-start max-md:ms-3 md:mb-10 md:me-5 md:text-end">
               <time className="font-mono italic">2023 - Present</time>
               <div className="text-lg font-bold">Independent Freelancer</div>
               Frontend Web Developer <br /> <br />
@@ -41,7 +41,7 @@ function Experiences() {
                 />
               </svg>
             </div>
-            <div className="timeline-end lg:mb-10">
+            <div className="timeline-end max-md:ms-3 md:ms-5 lg:mb-10">
               <time className="font-mono italic">2022 - 2023</time>
               <div className="text-lg font-bold">
                 ATR/BPN - Kantor Pertanahan Kota Mojokerto

@@ -27,7 +27,7 @@ function ButtonUp() {
     <>
       {isVisible && (
         <a href="#top">
-          <button className="fixed bottom-12 right-10 rounded-2xl border bg-gray-800 px-3 py-2 text-white transition-all hover:bg-gray-600 max-sm:bottom-20 max-sm:right-5">
+          <button className="fixed bottom-12 right-10 rounded-2xl border bg-gray-800 px-3 py-2 text-white transition-all hover:bg-gray-600 max-md:bottom-20 max-md:right-5">
             <i className="bx bxs-chevron-up text-2xl font-bold max-sm:text-lg"></i>
           </button>
         </a>

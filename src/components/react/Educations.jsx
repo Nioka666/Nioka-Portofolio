@@ -19,7 +19,7 @@ function Educations() {
                 />
               </svg>
             </div>
-            <div className="timeline-start mb-10 md:text-end">
+            <div className="timeline-end md:timeline-start max-md:ms-3 md:mb-10 md:me-5 md:text-end">
               <time className="font-mono italic">2024 - Present</time>
               <div className="text-lg font-bold max-sm:text-base">
                 Politeknik Elektronika Negeri Surabaya
@@ -45,7 +45,7 @@ function Educations() {
                 />
               </svg>
             </div>
-            <div className="timeline-end lg:mb-10">
+            <div className="timeline-end max-md:ms-3 md:ms-5 lg:mb-10">
               <time className="font-mono italic">2021 - 2024</time>
               <div className="text-lg font-bold max-sm:text-base">
                 SMK Negeri 2 Mojokerto
@@ -71,7 +71,7 @@ function Educations() {
                 />
               </svg>
             </div>
-            <div className="timeline-start mb-10 md:text-end">
+            <div className="timeline-end mb-10 md:timeline-start max-md:ms-3 md:me-5 md:text-end">
               <time className="font-mono italic">2019 - 2021</time>
               <div className="text-lg font-bold max-sm:text-base">
                 SMP Negeri 1 Jetis

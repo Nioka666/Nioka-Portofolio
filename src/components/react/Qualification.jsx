@@ -7,6 +7,7 @@ function Qualification() {
 
   return (
     <>
+      <div id="qualification"></div>
       <div className="mt-[135px] max-sm:mt-[130px]">
         <section className="text-center">
           <h1 className="text-2xl font-semibold text-black sm:text-3xl md:text-4xl">
