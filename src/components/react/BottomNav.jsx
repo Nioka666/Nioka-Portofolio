@@ -18,7 +18,7 @@ function BottomNav() {
     {
       name: "Qualifies",
       icon: "bx bx-file text-3xl",
-      url: "#skills",
+      url: "#qualification",
     },
     {
       name: "Portofolio",
@@ -96,12 +96,15 @@ function BottomNav() {
         className={`fixed inset-x-0 bottom-0 transform transition-transform duration-300 ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
       >
         {/* Drawer content */}
-        <div className="rounded-t-3xl bg-white shadow-2xl">
-          <div className="h-[240px] justify-center gap-x-5 rounded-t-3xl p-4 pt-7">
+        <div className="drawer-b-nav rounded-t-3xl bg-white">
+          <div className="h-[250px] justify-center gap-x-5 rounded-t-3xl p-4 pt-7">
             <div className="flex flex-wrap justify-center gap-2">
               {dataMenu.map((data) => (
                 <>
-                  <a href={data.url} className="text-black hover:text-gray-700">
+                  <a
+                    href={data.url}
+                    className="text-gray-600 hover:text-gray-400"
+                  >
                     <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
                       <i className={data.icon}></i>
                       <span className="mt-1 text-sm">{data.name}</span>
