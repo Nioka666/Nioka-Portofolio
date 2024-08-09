@@ -94,42 +94,42 @@ function BottomNav() {
       >
         {/* Drawer content */}
         <div className="rounded-t-3xl bg-white shadow-2xl">
-          <div className="flex h-[200px] justify-center gap-x-5 rounded-t-3xl p-4">
-            <div class="flex flex-wrap justify-center gap-2">
+          <div className="h-[240px] justify-center gap-x-5 rounded-t-3xl p-4 pt-7">
+            <div className="flex flex-wrap justify-center gap-2">
               <a href="#about">
-                <div class="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
-                  <i class="bx bx-user text-2xl"></i>
-                  <span class="text-xs">About</span>
+                <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
+                  <i className="bx bx-user text-3xl"></i>
+                  <span className="mt-1 text-sm">About</span>
                 </div>
               </a>
               <a href="">
-                <div class="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
-                  <i class="bx bx-universal-access text-2xl"></i>
-                  <span class="text-xs">Skills</span>
+                <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
+                  <i className="bx bx-universal-access text-3xl"></i>
+                  <span className="mt-1 text-sm">Skills</span>
                 </div>
               </a>
               <a href="#qualification">
-                <div class="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
-                  <i class="bx bx-file text-2xl"></i>
-                  <span class="text-xs">Qualification</span>
+                <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
+                  <i className="bx bx-file text-3xl"></i>
+                  <span className="mt-1 text-sm">Qualify</span>
                 </div>
               </a>
               <a href="">
-                <div class="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
-                  <i class="bx bx-image text-2xl"></i>
-                  <span class="text-xs">Portofolio</span>
+                <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
+                  <i className="bx bx-image text-3xl"></i>
+                  <span className="mt-1 text-sm">Portofolio</span>
                 </div>
               </a>
               <a href="">
-                <div class="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
-                  <i class="uil uil-user-square text-2xl"></i>
-                  <span class="text-xs">Contact</span>
+                <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
+                  <i className="uil uil-user-square text-3xl"></i>
+                  <span className="mt-1 text-sm">Contact</span>
                 </div>
               </a>
               <a href="">
-                <div class="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
-                  <i class="text-2xl"></i>
-                  <span class="text-xs"></span>
+                <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
+                  <i className="text-2xl"></i>
+                  <span className="mt-1 text-sm"></span>
                 </div>
               </a>
             </div>
