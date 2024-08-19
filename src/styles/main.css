@@ -50,7 +50,7 @@
   }
 
   section.headline {
-    @apply ms-20 flex w-[50%] flex-col;
+    @apply ms-[82px] flex w-[50%] flex-col;
   }
 
   picture > img.headline-img {

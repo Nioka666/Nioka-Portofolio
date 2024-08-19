@@ -5,7 +5,7 @@ function ButtonUp() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsVisible(window.scrollY > 540);
+      setIsVisible(window.scrollY > 500);
     };
 
     window.addEventListener("scroll", handleScroll);

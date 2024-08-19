@@ -66,7 +66,7 @@ function Hero() {
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Web Developer</span>
           </h6>
-          <p className="text-gray mt-5 w-[91%] text-[17.5px] font-normal">
+          <p className="text-gray mt-5 w-[91%] text-[17px] font-normal">
             I'm a
             <span className="text-highlight ms-1">
               Front-End Web Developer,
@@ -154,7 +154,7 @@ function Hero() {
         </section>
       </section>
       {/* scroll button */}
-      <section className="ms-[85px] mt-14 max-lg:hidden lg:ms-[130px]">
+      <section className="ms-[85px] mt-20 max-lg:hidden lg:ms-[130px]">
         <button className="flex items-center gap-1 rounded-2xl bg-transparent text-base font-normal text-black transition-all hover:translate-y-1">
           <i className="bx bx-mouse text-3xl text-gray-600"></i>Scroll Down
           <i className="bx bx-down-arrow-alt ms-1 text-xl text-gray-600"></i>

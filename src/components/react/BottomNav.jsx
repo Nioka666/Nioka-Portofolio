@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useSwipeable } from "react-swipeable";
 
 function BottomNav() {
@@ -107,11 +107,12 @@ function BottomNav() {
           <div className="swipper relative top-2 mx-auto mt-10 h-[5.5px] w-[100px] rounded-full bg-gray-200"></div>
           <div className="h-[250px] justify-center gap-x-5 rounded-t-3xl p-4 pt-7">
             <div className="flex flex-wrap justify-center gap-2">
-              {dataMenu.map((data) => (
-                <>
+              {dataMenu.map((data, index) => (
+                <React.Fragment key={index}>
                   <a
                     href={data.url}
                     className="text-gray-600 hover:text-gray-400"
+                    key={data.name}
                   >
                     <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
                       <i className={data.icon}></i>
@@ -119,7 +120,7 @@ function BottomNav() {
                     </div>
                   </a>
                   {data.blankElement}
-                </>
+                </React.Fragment>
               ))}
             </div>
           </div>
