@@ -16,17 +16,16 @@
   }
 
   body {
-    background-color: white;
+    @apply bg-nioprimary;
     max-width: 100% !important;
-    /* IMPORTANT ! */
   }
 
   nav {
-    @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center max-md:hidden max-sm:hidden sm:top-6 sm:h-[75px] sm:px-8 lg:px-[115px];
+    @apply bg-nioprimary sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center max-md:hidden max-sm:hidden sm:top-6 sm:h-[75px] sm:px-8 lg:px-[115px];
   }
 
   div.bottom-nav {
-    @apply fixed bottom-0 mx-auto flex h-[60px] w-full items-center max-sm:visible sm:h-[60px] md:hidden;
+    @apply bg-nioprimary fixed bottom-0 mx-auto flex h-[60px] w-full items-center max-sm:visible sm:h-[60px] md:hidden;
   }
 
   nav > section {

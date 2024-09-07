@@ -11,6 +11,9 @@ function Skills() {
             My Competence
           </h3>
         </section>
+        <section className="grid justify-center">
+          <div className=""></div>
+        </section>
       </div>
     </>
   );

@@ -50,7 +50,7 @@ function Hero() {
               data-tip={data.name}
             >
               <i
-                className={`${data.icon} cursor-pointer text-2xl text-black`}
+                className={`${data.icon} cursor-pointer text-[21px] text-black`}
                 key={data.name}
               ></i>
             </a>

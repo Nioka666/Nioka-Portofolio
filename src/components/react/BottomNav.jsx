@@ -61,7 +61,7 @@ function BottomNav() {
 
   return (
     <div {...SwipeHandler} className="bottom-nav">
-      <section className="b-nav-shadow flex h-[60px] w-full items-center justify-between bg-white px-7">
+      <section className="b-nav-shadow bg-nioprimary flex h-[60px] w-full items-center justify-between px-7">
         <a href="/">
           <h1 className="text-base font-medium text-black max-sm:text-sm md:text-lg lg:text-lg">
             Adhim Niokagi

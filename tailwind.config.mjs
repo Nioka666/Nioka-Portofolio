@@ -9,6 +9,9 @@ export default {
       borderWidth: {
         1: "1.8px",
       },
+      colors: {
+        nioprimary: "#f9f9f9",
+      },
     },
   },
   plugins: [daisyui],
