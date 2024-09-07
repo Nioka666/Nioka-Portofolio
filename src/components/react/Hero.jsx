@@ -146,8 +146,7 @@ function Hero() {
               {" "}
               Front-End Web Developer,{" "}
             </span>
-            work based in Mojokerto, East Java, passionate and dedicated to my
-            work.
+            work based in Mojokerto, East Java.
           </p>
           <div className="mt-10 flex items-center gap-5">
             <button className="rounded-[17px] bg-black px-6 py-[18px] text-sm font-medium text-white transition-all hover:bg-white hover:text-black">
