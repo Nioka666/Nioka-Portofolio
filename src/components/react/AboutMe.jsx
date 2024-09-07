@@ -1,4 +1,4 @@
-import avatar from "../../assets/adhim_3.jpeg";
+import avatar from "../../assets/adhim_3hp.jpeg";
 
 function AboutMe() {
   return (
