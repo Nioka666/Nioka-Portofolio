@@ -14,6 +14,14 @@ function Hero() {
     return () => clearTimeout(timeout);
   }, []);
 
+  const scrollDown = () => {
+    window.scrollBy({
+      top: 650,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   const mediaSocial = [
     {
       name: "Linkedin",
@@ -131,7 +139,7 @@ function Hero() {
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Web Developer</span>
           </h6>
-          <p className="text-gray mt-3 w-full font-normal max-sm:text-[16.5px] sm:text-[17px]">
+          <p className="text-gray mt-3 w-full font-normal max-sm:text-[15.5px] sm:text-[17px]">
             I'm a
             <span className="text-highlight mx-1">
               {" "}
@@ -155,7 +163,10 @@ function Hero() {
       </section>
       {/* scroll button */}
       <section className="ms-[85px] mt-20 max-lg:hidden lg:ms-[130px]">
-        <button className="flex items-center gap-1 rounded-2xl bg-transparent text-base font-normal text-black transition-all hover:translate-y-1">
+        <button
+          className="flex items-center gap-1 rounded-2xl bg-transparent text-base font-normal text-black transition-all hover:translate-y-1"
+          onClick={scrollDown}
+        >
           <i className="bx bx-mouse text-3xl text-gray-600"></i>Scroll Down
           <i className="bx bx-down-arrow-alt ms-1 text-xl text-gray-600"></i>
         </button>
