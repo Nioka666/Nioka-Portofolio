@@ -102,6 +102,7 @@ function Hero() {
           <img src={avatar.src} alt="Adhim Niokagi" />
         </picture>
       </section>
+
       {/* Hero sm */}
       <section className="sm-hero">
         <div className="mt-12 flex items-center px-6 max-sm:gap-9 sm:gap-10">
@@ -123,7 +124,7 @@ function Hero() {
           <picture
             className={`blob overflow-hidden ${
               loaded ? "animate-fade-in" : "opacity-0"
-            } max-md:w-[290px] max-sm:h-full max-sm:w-[220px] sm:h-full sm:w-[270px] md:h-full md:w-[250px] lg:h-full`}
+            } max-md:w-[290px] max-sm:h-full max-sm:w-[230px] sm:h-full sm:w-[270px] md:h-full md:w-[250px] lg:h-full`}
           >
             <img src={avatar.src} alt="Adhim Niokagi" />
           </picture>

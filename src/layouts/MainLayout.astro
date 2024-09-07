@@ -1,6 +1,6 @@
 ---
 import "../styles/main.css";
-import Navbar from "../components/astro/Navbar.astro";
+import Navbar from "../components/react/Navbar";
 import BottomNav from "../components/react/BottomNav";
 import Footer from "../components/astro/Footer.astro";
 import ButtonUp from "../components/react/ButtonUp";
@@ -32,7 +32,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Navbar />
+    <Navbar client:idle />
     <slot />
     <ButtonUp />
     <Footer />
