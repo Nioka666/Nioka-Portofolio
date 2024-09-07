@@ -148,7 +148,7 @@ function Hero() {
             </span>
             work based in Mojokerto, East Java.
           </p>
-          <div className="mt-10 flex items-center gap-5">
+          <div className="mt-16 flex items-center gap-5">
             <button className="rounded-[17px] bg-black px-6 py-[18px] text-sm font-medium text-white transition-all hover:bg-white hover:text-black">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
