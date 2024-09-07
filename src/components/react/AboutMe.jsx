@@ -46,13 +46,13 @@ function AboutMe() {
                 </p>
               </div>
             </div>
-            <p className="mt-7 text-pretty indent-[80px] text-gray-600 max-sm:px-0 max-sm:indent-14 max-sm:text-[13.5px] sm:text-center sm:text-base md:text-left md:text-lg">
+            <p className="mt-7 text-pretty indent-[60px] text-gray-600 max-sm:px-0 max-sm:indent-10 max-sm:text-[13.5px] sm:text-center sm:text-base md:text-left md:text-lg">
               As a Front-End Web Developer, I am highly dedicated to supporting
               your company or project. I have extensive experience with several
               up-to-date technology frameworks such as ReactJs, Express.js, and
               Next.js.
             </p>
-            <p className="mt-2 text-pretty indent-[80px] text-gray-600 max-sm:px-0 max-sm:indent-14 max-sm:text-[13.5px] sm:text-center sm:text-base md:text-left md:text-lg">
+            <p className="text-pretty indent-[60px] text-gray-600 max-sm:px-0 max-sm:indent-10 max-sm:text-[13.5px] sm:text-center sm:text-base md:text-left md:text-lg">
               I am proficient in managing databases and implementing complex
               business logicals.
             </p>
