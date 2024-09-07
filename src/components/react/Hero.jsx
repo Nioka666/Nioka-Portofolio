@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Typewriter from "typewriter-effect";
 import avatar from "../../assets/adhim-niokagi_2.jpg";
 
 import CV from "../../assets/Adhim_Niokagi_Resume.pdf";
@@ -75,12 +76,22 @@ function Hero() {
             <span className="ms-2">Front-End Web Developer</span>
           </h6>
           <p className="text-gray mt-5 w-[91%] text-[17px] font-normal">
-            I'm a
-            <span className="text-highlight ms-1">
-              Front-End Web Developer,
-            </span>{" "}
-            work based in Mojokerto, East Java, passionate and dedicated to my
-            work.
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("I'm a")
+                  .pauseFor(500)
+                  .typeString(" Front-End Web Developer,")
+                  .pauseFor(1000)
+                  .typeString(" work based in Mojokerto, East Java,")
+                  .pauseFor(1000)
+                  .typeString(" passionate and dedicated to my work.")
+                  .start();
+              }}
+              options={{
+                autoStart: true,
+              }}
+            />
           </p>
           <div className="mt-10 flex gap-5">
             <button className="rounded-[18px] bg-black px-7 py-[16px] text-base font-medium text-white transition-all hover:bg-white hover:text-black hover:shadow-md">
@@ -141,14 +152,24 @@ function Hero() {
             <span className="ms-2">Front-End Web Developer</span>
           </h6>
           <p className="text-gray mt-3 w-full font-normal max-sm:text-[15.5px] sm:text-[17px]">
-            I'm a
-            <span className="text-highlight mx-1">
-              {" "}
-              Front-End Web Developer,{" "}
-            </span>
-            work based in Mojokerto, East Java. <br /> . . .
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("I'm a")
+                  .pauseFor(500)
+                  .typeString(" Front-End Web Developer,")
+                  .pauseFor(1000)
+                  .typeString(" work based in Mojokerto, East Java,")
+                  .pauseFor(1000)
+                  .typeString(" and dedicated to my work.")
+                  .start();
+              }}
+              options={{
+                autoStart: true,
+              }}
+            />
           </p>
-          <div className="mt-12 flex items-center gap-5">
+          <div className="mt-10 flex items-center gap-5">
             <button className="rounded-[17px] bg-black px-6 py-[18px] text-sm font-medium text-white transition-all hover:bg-white hover:text-black">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
