@@ -46,7 +46,7 @@ function AboutMe() {
                 </p>
               </div>
             </div>
-            <p className="mt-7 text-center text-gray-600 max-sm:px-0 max-sm:text-[15px] sm:text-center sm:text-base md:text-left md:text-lg">
+            <p className="mt-7 text-center text-gray-600 max-sm:px-0 max-sm:text-[14px] sm:text-center sm:text-base md:text-left md:text-lg">
               As a Front-End Web Developer, I am highly dedicated to supporting
               your company or project. I have extensive experience with several
               up-to-date technology frameworks such as ReactJs, Express.js, and
