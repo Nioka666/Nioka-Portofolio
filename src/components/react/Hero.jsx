@@ -131,7 +131,7 @@ function Hero() {
         </div>
         {/* headline */}
         <section className="mx-6 mt-7 flex flex-col">
-          <h1 className="font-semibold max-sm:text-[38.5px] sm:text-[38px]">
+          <h1 className="font-semibold max-sm:text-[38px] sm:text-[38.5px]">
             Adhim Niokagi
           </h1>
           <h6 className="text-lg font-medium text-gray-700 max-sm:text-[17px] sm:text-xl">
@@ -146,9 +146,9 @@ function Hero() {
               {" "}
               Front-End Web Developer,{" "}
             </span>
-            work based in Mojokerto, East Java.
+            work based in Mojokerto, East Java. <br /> . . .
           </p>
-          <div className="mt-16 flex items-center gap-5">
+          <div className="mt-12 flex items-center gap-5">
             <button className="rounded-[17px] bg-black px-6 py-[18px] text-sm font-medium text-white transition-all hover:bg-white hover:text-black">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
