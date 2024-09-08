@@ -3,7 +3,7 @@ import avatar from "../../assets/adhim_3hp.jpeg";
 function AboutMe() {
   return (
     <>
-      <div id="about" className="about-me mt-36 lg:px-16  rounded-3xl py-16 bg-gradient-to-b from-gray-200 to-white max-md:mx-10">
+      <div id="about" className="about-me mt-36 lg:px-16  rounded-3xl py-14 bg-gradient-to-b from-gray-100 to-white max-md:mx-4">
         <section className="text-center">
           <h1 className="text-2xl font-semibold text-black sm:text-2xl md:text-4xl">
             About Me
