@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function Navbar() {
   const [scrollDirection, setScrollDirection] = useState("up");
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [lastScrollY, setLastScrollY] = useState(0); // state pertama posisi scroll sumbu Y
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +24,7 @@ function Navbar() {
   return (
     <>
       <nav className={`nav ${scrollDirection === "down" ? "hide" : "show"}`}>
-        <section className="flex h-[70px] w-full items-center justify-between rounded-3xl px-7 max-sm:rounded-none sm:h-[75px] sm:px-10">
+        <section className="">
           <a href="/">
             <h1 className="text-base font-medium text-black md:text-base lg:text-base">
               Adhim Niokagi

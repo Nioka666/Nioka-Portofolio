@@ -41,6 +41,7 @@
 
   nav > section {
     box-shadow: 2px 2px 10px rgba(41, 41, 41, 0.065);
+    @apply flex h-[70px] w-full items-center justify-between rounded-3xl px-7 max-sm:rounded-none sm:h-[75px] sm:px-10;
   }
 
   main {
@@ -105,8 +106,8 @@
     background-size: cover;
     border: 13.5px solid #d8d8d8a6;
     border-radius: 50% / 50%;
-    width: 340px;
-    height: 328px;
+    width: 337px;
+    height: 326px;
     margin-right: 10px;
     margin-left: -10px;
     animation: morph 10s ease-in-out infinite alternate;
