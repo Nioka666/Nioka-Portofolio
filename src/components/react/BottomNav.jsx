@@ -37,6 +37,12 @@ function BottomNav() {
   ];
 
   useEffect(() => {
+    if (drawerOpen == true) {
+      document.body.classList.add("lock-scroll");
+    } else {
+      document.body.classList.remove("lock-scroll");
+    }
+    
     function handleClickOutside(event) {
       if (
         bottomDrawerRef.current &&
@@ -51,7 +57,9 @@ function BottomNav() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+
+
+  }, [drawerOpen]);
 
   const SwipeHandler = useSwipeable({
     onSwipedDown: () => setDrawerOpen(false),
@@ -100,7 +108,7 @@ function BottomNav() {
       {/* Bottom drawer */}
       <div
         ref={bottomDrawerRef}
-        className={`fixed inset-x-0 bottom-0 transform transition-transform duration-300 ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
+        className={`fixed cursor-grab inset-x-0 bottom-0 transform transition-transform duration-300 ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
       >
         {/* Drawer content */}
         <div className="drawer-b-nav rounded-t-3xl bg-white">

@@ -133,7 +133,7 @@ function Hero() {
             ))}
           </section>
           <picture
-            className={`blob max-md:ms-[3px] overflow-hidden ${
+            className={`blob max-md:ms-[2px] overflow-hidden ${
               loaded ? "animate-fade-in" : "opacity-0"
             } max-md:w-[290px] max-sm:h-full max-sm:w-[223px] sm:h-full sm:w-[270px] md:h-full md:w-[250px] lg:h-full`}
           >
@@ -151,7 +151,7 @@ function Hero() {
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Web Developer</span>
           </h6>
-          <p className="text-gray mt-3 w-full font-normal max-sm:text-[15.5px] sm:text-[17px]">
+          <p className="text-gray mt-3 w-full font-normal max-sm:text-[15.5px] sm:text-[17px] h-[80px]">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter

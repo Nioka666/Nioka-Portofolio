@@ -1,8 +1,7 @@
 function Skills() {
   return (
     <>
-      <div id="skills"></div>
-      <div className="skills mt-44 lg:px-10">
+      <div id="skills" className="skills mt-40 border py-16 lg:px-10">
         <section className="text-center">
           <h1 className="text-2xl font-semibold text-black sm:text-2xl md:text-4xl">
             Skills

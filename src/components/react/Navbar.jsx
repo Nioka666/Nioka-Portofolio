@@ -68,10 +68,12 @@ function Navbar() {
                       <span className="text-xs">About</span>
                     </div>
                   </a>
-                  <div className="box grid w-[100px] cursor-pointer p-3 text-center">
-                    <i className="bx bx-universal-access text-2xl"></i>
-                    <span className="text-xs">Skills</span>
-                  </div>
+                  <a href="#skills">
+                    <div className="box grid w-[100px] cursor-pointer p-3 text-center">
+                      <i className="bx bx-universal-access text-2xl"></i>
+                      <span className="text-xs">Skills</span>
+                    </div>
+                  </a>
                   <a href="#qualification">
                     <div className="box grid w-[100px] cursor-pointer p-3 text-center">
                       <i className="bx bx-file text-2xl"></i>

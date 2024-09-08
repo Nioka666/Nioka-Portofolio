@@ -28,7 +28,7 @@ function AboutMe() {
           {/*  */}
           <div className="flex-col max-sm:mt-7 max-sm:px-5 sm:px-10 md:px-0 lg:w-[1500px]">
             {/* boxes */}
-            <div className="flex flex-wrap gap-4 max-lg:my-7 max-lg:justify-center max-sm:justify-center max-sm:gap-2">
+            <div className="flex flex-wrap gap-4 max-lg:my-7 max-lg:justify-center max-sm:justify-center max-sm:gap-0">
               <div className="rounded-[26px] px-6 py-5 text-center max-sm:px-[17px] max-sm:py-3 md:border md:shadow-sm">
                 {/* <i className="bx bx-code-block text-2xl"></i> */}
                 <h1 className="text-3xl font-bold max-sm:text-[21px]">1 +</h1>
@@ -49,7 +49,7 @@ function AboutMe() {
                 </p>
               </div>
             </div>
-            <p className="mt-7 text-center text-gray-600 max-sm:mt-[-3px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-lg">
+            <p className="mt-7 text-center text-gray-600 max-sm:mt-[-5px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-lg">
               As a Front-End Web Developer, I am highly dedicated to supporting
               your company or project. I have extensive experience with several
               up-to-date technology frameworks such as ReactJs, Express.js, and
