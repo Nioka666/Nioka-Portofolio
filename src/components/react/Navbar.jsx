@@ -58,7 +58,7 @@ function Navbar() {
                 <i className="bx bx-menu-alt-right cursor-pointer text-[26px] font-medium text-gray-600 transition-all hover:text-gray-400"></i>
               </button>
               <div
-                className="card dropdown-content card-compact z-[1] mt-10 w-[380px] bg-white p-2 text-black shadow"
+                className="card dropdown-content card-compact z-[1] mt-10 w-[380px] bg-white p-2 text-black shadow-sm"
                 tabIndex="0"
               >
                 <div className="flex flex-wrap justify-center gap-2 p-4">
