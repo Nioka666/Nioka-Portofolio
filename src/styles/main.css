@@ -50,7 +50,7 @@
 
   /* hero section */
   section.hero {
-    @apply mt-7 flex items-center justify-between rounded-2xl max-md:hidden;
+    @apply lg:mt-14 md:mt-14 flex items-center justify-between rounded-2xl max-md:hidden;
   }
   /* hero sm */
   section.sm-hero {
@@ -62,7 +62,7 @@
   }
 
   section.headline {
-    @apply ms-[82px] flex w-[50%] flex-col;
+    @apply md:ms-[60px] lg:ms-[80px] flex lg:w-[50%] md:w-[47%] flex-col;
   }
 
   picture > img.headline-img {
@@ -106,8 +106,6 @@
     background-size: cover;
     border: 13.5px solid #d8d8d8a6;
     border-radius: 50% / 50%;
-    width: 337px;
-    height: 326px;
     margin-right: 10px;
     margin-left: -10px;
     animation: morph 10s ease-in-out infinite alternate;
