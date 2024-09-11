@@ -14,7 +14,7 @@ function BottomNav() {
     {
       name: "Skills",
       icon: "bx bx-universal-access text-3xl",
-      url: "#about",
+      url: "#skills",
     },
     {
       name: "Qualifies",
@@ -24,7 +24,7 @@ function BottomNav() {
     {
       name: "Portofolio",
       icon: "bx bx-image text-3xl",
-      url: "#qualification",
+      url: "#portofolio",
     },
     {
       name: "Contact",
