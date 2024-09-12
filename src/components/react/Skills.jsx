@@ -110,7 +110,7 @@ function Skills() {
 
   return (
     <>
-      <div id="skills" className="skills mt-16 py-10 lg:px-10">
+      <div id="skills" className="skills mt-14 py-10 lg:px-10">
         <section className="text-center">
           <h1 className="text-2xl font-semibold text-black sm:text-2xl md:text-4xl">
             Technical Skills

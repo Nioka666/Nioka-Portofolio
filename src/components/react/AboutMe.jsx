@@ -5,7 +5,7 @@ function AboutMe() {
     <>
       <div
         id="about"
-        className="about-me mt-24 rounded-3xl py-14 max-md:mx-0 lg:px-10"
+        className="about-me mt-20 rounded-3xl py-14 max-md:mx-0 lg:px-10"
       >
         <section className="text-center">
           <h1 className="text-2xl font-semibold text-black sm:text-2xl md:text-4xl">
