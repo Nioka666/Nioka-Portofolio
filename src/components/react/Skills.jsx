@@ -89,7 +89,7 @@ function Skills() {
     return (
       <details className="collapse bg-base-200 transition-all ease-in-out">
         <summary className="collapse-title py-5 text-[21px] font-semibold text-gray-500 max-sm:text-[17px]">
-          <div className="my-2 flex items-center gap-2 max-sm:justify-center max-md:justify-center lg:ms-14">
+          <div className="my-2 max-sm:my-0 flex items-center gap-2 max-sm:justify-center max-md:justify-center lg:ms-14">
             <i className="bx bx-code-curly text-2xl"></i>
             <span>{title}</span>
           </div>
