@@ -79,7 +79,7 @@
   }
 
   .text-niogray {
-    color: #919296;
+    color: #87888c;
   }
 
   .b-nav-shadow {
@@ -177,4 +177,8 @@
 .lock-scroll {
   overflow: hidden;
   height: 100%;
+}
+
+.pallete-nioprimary {
+  background-color: #f4f4f4;
 }
