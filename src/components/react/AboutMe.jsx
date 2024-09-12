@@ -29,7 +29,7 @@ function AboutMe() {
           <div className="flex-col max-sm:mt-7 max-sm:px-5 sm:px-10 md:px-0 lg:w-1/2">
             {/* boxes */}
             <div className="flex gap-4 max-lg:my-7 max-lg:justify-center max-sm:justify-center max-sm:gap-0">
-              <div className="grid w-[150px] gap-1 rounded-[20px] bg-gray-100 px-6 py-5 text-center text-black max-sm:w-[130px] max-sm:bg-gray-100 max-sm:px-[17px] max-sm:py-4 md:border-0">
+              <div className="grid w-[150px] gap-1 rounded-[20px] bg-nioprimary px-6 py-5 text-center text-black max-sm:w-[130px] max-sm:bg-gray-100 max-sm:px-[17px] max-sm:py-4 md:border-0">
                 <i className="bx bx-time-five mb-2 text-[26px] max-sm:mb-1 max-sm:text-[20px]"></i>
                 <p className="mt-0 text-[14px] text-black max-sm:text-[11px]">
                   Experience
@@ -51,7 +51,7 @@ function AboutMe() {
                 <p className="text-[8.9px] text-gray-500">15+ Certifications</p>
               </div>
             </div>
-            <div className="mockup-window bg-gray-100 mt-7 shadow-sm">
+            <div className="mockup-window bg-gray-200 mt-5 shadow-sm">
               <div className="bg-nioprimary px-6 max-sm:px-0 max-sm:py-7 py-7">
                 <p className="text-center text-gray-500 max-sm:mt-[-5px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[16px]">
                   As a Front-End Web Developer, I am highly dedicated to

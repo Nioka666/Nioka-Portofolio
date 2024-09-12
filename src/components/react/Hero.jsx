@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import avatar from "../../assets/adhim-niokagi_2.jpg";
-import CV from "../../assets/Adhim_Niokagi_Resume.pdf";
+import CV from "../../assets/Muhammad_Adhim_Niokagi_CV.pdf";
 
 function Hero() {
   const [loaded, setLoaded] = useState(false);
