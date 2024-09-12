@@ -94,7 +94,7 @@ function Skills() {
             <span>{title}</span>
           </div>
         </summary>
-        <div className="collapse-content mx-10 my-7 grid grid-cols-5 justify-items-center gap-10 max-sm:mx-0 max-sm:my-3 max-sm:gap-4">
+        <div className="collapse-content mx-10 my-7 grid grid-cols-5 max-sm:grid-cols-4 justify-items-center gap-10 max-sm:mx-0 max-sm:my-3 max-sm:gap-4">
           {dataVariable.map((iconData) => (
             <img
               key={iconData.id}
