@@ -108,13 +108,13 @@
   /* blob animation */
   .blob {
     background-size: cover;
-    border: 13.5px solid transparent;
+    border: 13.5px solid #d8d8d884;
     border-radius: 50% / 50%;
     margin-right: 10px;
     margin-left: -10px;
     animation: morph 8s ease-in-out infinite alternate;
     transform-style: preserve-3d;
-    outline: 1.5px solid #1a1a1a7a;
+    outline: 0px solid transparent;
     will-change: border-radius;
   }
 
