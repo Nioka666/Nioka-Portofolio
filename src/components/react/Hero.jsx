@@ -143,10 +143,10 @@ function Hero() {
         </div>
         {/* headline */}
         <section className="mx-6 mt-7 flex flex-col">
-          <h1 className="font-semibold max-sm:text-[41px] max-miniphone:text-[28px] sm:text-[38.5px]">
+          <h1 className="font-semibold max-sm:text-[40px] max-miniphone:text-[28px] sm:text-[38.5px]">
             Adhim Niokagi
           </h1>
-          <h6 className="text-lg text-black max-sm:text-[19px] max-miniphone:text-[14px] miniphone:text-[19px] sm:text-xl">
+          <h6 className="text-lg text-black max-sm:text-[19px] max-miniphone:text-[14px] sm:text-xl">
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
