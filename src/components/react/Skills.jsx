@@ -7,7 +7,6 @@ import bootstrapIcon from "../../assets/icons/bootstrap.png";
 import reactIcon from "../../assets/icons/reactjs.png";
 import viteIcon from "../../assets/icons/vite.png";
 import figmaIcon from "../../assets/icons/Figma.png";
-
 // backend icons
 import nodeJsIcon from "../../assets/icons/nodejs.png";
 import expressIcon from "../../assets/icons/Express.png";
@@ -120,12 +119,8 @@ function Skills() {
           </h3>
         </section>
         <section className="mx-auto grid w-[90%] gap-7 py-10 max-md:w-[90%]">
-          {/* Frontend Development */}
           <SkillCollapse title={"Front-End Development"} dataVariable={frontEndData} />
-
-          {/* Backend Development */}
           <SkillCollapse title={"Back-End Development"} dataVariable={backEndData} />
-          
         </section>
       </div>
     </>
