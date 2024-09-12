@@ -136,24 +136,24 @@ function Hero() {
           <picture
             className={`blob overflow-hidden max-md:ms-[2px] max-miniphone:ms-[-3px] ${
               loaded ? "animate-fade-in" : "opacity-0"
-            } max-md:w-[290px] max-sm:h-full max-sm:w-[225px] sm:h-full sm:w-[270px] md:h-full md:w-[250px] lg:h-full`}
+            } max-md:w-[290px] max-sm:h-full max-sm:w-[227px] max-miniphone:w-[223px] sm:h-full sm:w-[270px] md:h-full md:w-[250px] lg:h-full`}
           >
             <img src={avatar.src} alt="Adhim Niokagi" />
           </picture>
         </div>
         {/* headline */}
         <section className="mx-6 mt-7 flex flex-col">
-          <h1 className="font-semibold max-sm:text-[41.2px] max-miniphone:text-[30px] sm:text-[38.5px]">
+          <h1 className="font-semibold max-sm:text-[41.2px] max-miniphone:text-[28px] sm:text-[38.5px]">
             Adhim Niokagi
           </h1>
-          <h6 className="text-lg text-black max-sm:text-[19px] max-miniphone:text-[15.5px] miniphone:text-[19px] sm:text-xl">
+          <h6 className="text-lg text-black max-sm:text-[19px] max-miniphone:text-[14px] miniphone:text-[19px] sm:text-xl">
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Developer</span>
           </h6>
-          <div className="text-niogray mt-[13.5px] h-[95px] w-full leading-7 max-sm:text-[17px] max-miniphone:text-[13.5px] sm:text-[17px]">
+          <div className="text-niogray mt-[13.5px] h-[95px] max-miniphone:h-[70px] w-full leading-7 max-miniphone:leading-5 max-sm:text-[17px] max-miniphone:text-[13px] sm:text-[17px]">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -172,11 +172,11 @@ function Hero() {
             />
           </div>
           <div className="mt-10 flex items-center gap-5 max-sm:mt-8 max-miniphone:gap-2">
-            <button className="rounded-[17px] bg-gray-900 px-8 py-[19px] text-sm font-medium text-white transition-all hover:bg-white hover:text-black max-miniphone:px-4 max-miniphone:text-[11px]">
+            <button className="rounded-[17px] bg-gray-900 px-8 py-[19px] max-miniphone:py-[15.7px] text-sm font-medium text-white transition-all hover:bg-white hover:text-black max-miniphone:px-6 max-miniphone:text-[11px]">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <a href={CV} target="_blank">
-              <button className="flex items-center gap-2 rounded-2xl bg-transparent px-6 text-sm font-medium text-black">
+              <button className="flex items-center max-miniphone:hidden gap-2 rounded-2xl bg-transparent px-6 text-sm max-miniphone:text-[10px] font-medium text-black">
                 View CV
                 <i className="bx bx-file text-2xl text-gray-600"></i>
               </button>
