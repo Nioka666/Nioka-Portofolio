@@ -65,17 +65,17 @@ function Hero() {
           ))}
         </section>
         <section className="headline">
-          <h1 className="md:text-[45px] lg:text-[56px] font-semibold leading-tight lg:text-black">
+          <h1 className="font-semibold leading-tight md:text-[45px] lg:text-[56px] lg:text-black">
             Adhim Niokagi
           </h1>
-          <h6 className="md:mt-3 lg:mt-1 md:text-base lg:text-xl text-black">
+          <h6 className="text-black md:mt-3 md:text-base lg:mt-1 lg:text-xl">
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Developer</span>
           </h6>
-          <div className="text-gray mt-5 w-[85%] md:text-[14px] lg:text-[16.5px] font-normal h-[80px]">
+          <div className="text-gray mt-5 h-[80px] w-[85%] font-normal md:text-[14px] lg:text-[16.5px]">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -94,11 +94,12 @@ function Hero() {
             />
           </div>
           <div className="mt-10 flex gap-5">
-            <button className="rounded-[18px] bg-gray-900 md:px-[25px] lg:px-9 py-[16px] md:text-sm lg:text-base font-medium text-white transition-all hover:bg-white hover:text-black hover:shadow-md">
-              Say Hello <i className="uil uil-location-arrow md:ms-1 lg:ms-2"></i>
+            <button className="rounded-[18px] bg-gray-900 py-[16px] font-medium text-white transition-all hover:bg-white hover:text-black hover:shadow-md md:px-[25px] md:text-sm lg:px-9 lg:text-base">
+              Say Hello{" "}
+              <i className="uil uil-location-arrow md:ms-1 lg:ms-2"></i>
             </button>
             <a href={CV} target="_blank">
-              <button className="flex items-center rounded-2xl bg-transparent md:px-4 lg:px-7 py-[15px] md:text-sm lg:text-base font-medium text-black max-sm:text-sm">
+              <button className="flex items-center rounded-2xl bg-transparent py-[15px] font-medium text-black max-sm:text-sm md:px-4 md:text-sm lg:px-7 lg:text-base">
                 View CV
                 <i className="bx bx-file ms-3 text-2xl text-gray-600"></i>
               </button>
@@ -108,7 +109,7 @@ function Hero() {
         <picture
           className={`blob overflow-hidden ${
             loaded ? "animate-fade-in" : "opacity-0"
-          } md:w-[260px] lg:w-[330px] lg:h-[320px] md:mt-[-30px]`}
+          } md:mt-[-30px] md:w-[260px] lg:h-[320px] lg:w-[330px]`}
         >
           <img src={avatar.src} alt="Adhim Niokagi" />
         </picture>
@@ -116,7 +117,7 @@ function Hero() {
 
       {/* Hero sm */}
       <section className="sm-hero">
-        <div className="mt-12 flex items-center px-6 max-sm:gap-9 sm:gap-10">
+        <div className="mt-16 flex items-center px-6 max-sm:gap-9 max-miniphone:gap-5 sm:gap-10">
           <section className="social-media">
             {mediaSocial.map((data) => (
               <a
@@ -126,33 +127,33 @@ function Hero() {
                 data-tip={data.name}
               >
                 <i
-                  className={`${data.icon} cursor-pointer text-xl`}
+                  className={`${data.icon} cursor-pointer text-xl max-miniphone:text-base`}
                   key={data.name}
                 ></i>
               </a>
             ))}
           </section>
           <picture
-            className={`blob max-md:ms-[2px] overflow-hidden ${
+            className={`blob overflow-hidden max-md:ms-[2px] max-miniphone:ms-[-3px] ${
               loaded ? "animate-fade-in" : "opacity-0"
-            } max-md:w-[290px] max-sm:h-full max-sm:w-[223px] sm:h-full sm:w-[270px] md:h-full md:w-[250px] lg:h-full`}
+            } max-md:w-[290px] max-sm:h-full max-sm:w-[225px] sm:h-full sm:w-[270px] md:h-full md:w-[250px] lg:h-full`}
           >
             <img src={avatar.src} alt="Adhim Niokagi" />
           </picture>
         </div>
         {/* headline */}
         <section className="mx-6 mt-7 flex flex-col">
-          <h1 className="font-semibold max-sm:text-[40px] sm:text-[38.5px]">
+          <h1 className="font-semibold max-sm:text-[41.2px] max-miniphone:text-[30px] sm:text-[38.5px]">
             Adhim Niokagi
           </h1>
-          <h6 className="text-lg text-black max-sm:text-[17px] sm:text-xl">
+          <h6 className="text-lg text-black max-sm:text-[19px] max-miniphone:text-[15.5px] miniphone:text-[19px] sm:text-xl">
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Developer</span>
           </h6>
-          <div className="text-gray mt-3 leading-6 w-full font-normal max-sm:text-[15.5px] sm:text-[17px] h-[80px]">
+          <div className="text-niogray mt-[13.5px] h-[95px] w-full leading-7 max-sm:text-[17px] max-miniphone:text-[13.5px] sm:text-[17px]">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -170,8 +171,8 @@ function Hero() {
               }}
             />
           </div>
-          <div className="mt-10 max-sm:mt-8 flex items-center gap-5">
-            <button className="rounded-[17px] bg-gray-900 px-8 py-[19px] text-sm font-medium text-white transition-all hover:bg-white hover:text-black">
+          <div className="mt-10 flex items-center gap-5 max-sm:mt-8 max-miniphone:gap-2">
+            <button className="rounded-[17px] bg-gray-900 px-8 py-[19px] text-sm font-medium text-white transition-all hover:bg-white hover:text-black max-miniphone:px-4 max-miniphone:text-[11px]">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <a href={CV} target="_blank">

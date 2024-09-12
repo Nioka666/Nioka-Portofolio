@@ -6,6 +6,9 @@ export default {
   darkMode: ["selector", '[data-mode="dark"]'],
   theme: {
     extend: {
+      screens: {
+        miniphone: "350px",
+      },
       borderWidth: {
         1: "1.8px",
       },
