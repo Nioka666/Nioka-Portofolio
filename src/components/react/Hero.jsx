@@ -153,7 +153,7 @@ function Hero() {
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Developer</span>
           </h6>
-          <div className="text-niogray mt-[13.5px] h-[95px] max-miniphone:h-[70px] w-full leading-7 max-miniphone:leading-5 max-sm:text-[16.2px] max-miniphone:text-[13px] sm:text-[17px]">
+          <div className="text-niogray mt-[13.5px] h-[95px] max-miniphone:h-[70px] w-full leading-7 max-miniphone:leading-5 max-sm:text-[16.7epx] max-miniphone:text-[13px] sm:text-[17px]">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
