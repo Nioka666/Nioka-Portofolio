@@ -94,12 +94,12 @@ function Hero() {
             />
           </div>
           <div className="mt-10 flex gap-5">
-            <button className="rounded-[18px] bg-gray-900 py-[16px] font-medium text-white transition-all hover:bg-white hover:text-black hover:shadow-md md:px-[25px] md:text-sm lg:px-9 lg:text-base">
+            <button role="button" className="rounded-[18px] bg-gray-800 py-[17px] font-medium text-white transition-all hover:bg-white hover:text-black hover:shadow-md md:px-[25px] md:text-sm lg:px-9 lg:text-base">
               Say Hello{" "}
               <i className="uil uil-location-arrow md:ms-1 lg:ms-2"></i>
             </button>
             <a href={CV} target="_blank">
-              <button className="flex items-center rounded-2xl bg-transparent py-[15px] font-medium text-black max-sm:text-sm md:px-4 md:text-sm lg:px-7 lg:text-base">
+              <button role="button" className="flex items-center rounded-2xl bg-transparent py-[15px] font-medium text-black max-sm:text-sm md:px-4 md:text-sm lg:px-7 lg:text-base">
                 View CV
                 <i className="bx bx-file ms-3 text-2xl text-gray-600"></i>
               </button>
@@ -172,11 +172,11 @@ function Hero() {
             />
           </div>
           <div className="mt-10 flex items-center gap-5 max-sm:mt-8 max-miniphone:gap-2">
-            <button className="rounded-[17px] bg-gray-900 px-8 py-[18px] max-miniphone:py-[15.7px] text-sm font-medium text-white transition-all hover:bg-nioprimary hover:text-black max-miniphone:px-6 max-miniphone:text-[11px]">
+            <button role="button" className="rounded-[17px] bg-gray-800 px-8 py-[18px] max-miniphone:py-[15.7px] text-sm font-medium text-white transition-all hover:bg-nioprimary hover:text-black max-miniphone:px-6 max-miniphone:text-[11px]">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <a href={CV} target="_blank">
-              <button className="flex items-center max-miniphone:hidden gap-2 rounded-2xl bg-transparent px-6 text-sm max-miniphone:text-[10px] font-medium text-black">
+              <button role="button" className="flex items-center max-miniphone:hidden gap-2 rounded-2xl bg-transparent px-6 text-sm max-miniphone:text-[10px] font-medium text-black">
                 View CV
                 <i className="bx bx-file text-2xl text-gray-600"></i>
               </button>
