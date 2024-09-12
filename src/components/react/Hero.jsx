@@ -75,7 +75,7 @@ function Hero() {
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Developer</span>
           </h6>
-          <p className="text-gray mt-5 w-[91%] md:text-[14px] lg:text-[16.5px] font-normal h-[80px]">
+          <div className="text-gray mt-5 w-[85%] md:text-[14px] lg:text-[16.5px] font-normal h-[80px]">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -92,7 +92,7 @@ function Hero() {
                 autoStart: true,
               }}
             />
-          </p>
+          </div>
           <div className="mt-10 flex gap-5">
             <button className="rounded-[18px] bg-gray-900 md:px-[25px] lg:px-9 py-[16px] md:text-sm lg:text-base font-medium text-white transition-all hover:bg-white hover:text-black hover:shadow-md">
               Say Hello <i className="uil uil-location-arrow md:ms-1 lg:ms-2"></i>
@@ -152,7 +152,7 @@ function Hero() {
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Developer</span>
           </h6>
-          <p className="text-gray mt-3 leading-6 w-full font-normal max-sm:text-[15.5px] sm:text-[17px] h-[80px]">
+          <div className="text-gray mt-3 leading-6 w-full font-normal max-sm:text-[15.5px] sm:text-[17px] h-[80px]">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -169,7 +169,7 @@ function Hero() {
                 autoStart: true,
               }}
             />
-          </p>
+          </div>
           <div className="mt-10 max-sm:mt-8 flex items-center gap-5">
             <button className="rounded-[17px] bg-gray-900 px-8 py-[19px] text-sm font-medium text-white transition-all hover:bg-white hover:text-black">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>

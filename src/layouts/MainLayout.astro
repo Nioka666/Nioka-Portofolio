@@ -34,8 +34,8 @@ const { title } = Astro.props;
   <body>
     <Navbar client:idle />
     <slot />
-    <ButtonUp />
-    <Footer />
+    <ButtonUp client:idle />
+    <Footer client:idle />
     <BottomNav client:idle />
   </body>
 </html>
