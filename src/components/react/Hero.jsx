@@ -107,9 +107,9 @@ function Hero() {
           </div>
         </section>
         <picture
-          className={`blob overflow-hidden ${
+          className={`blob overflow-hidden me-[10px] ${
             loaded ? "animate-fade-in" : "opacity-0"
-          } md:mt-[-30px] md:w-[260px] lg:h-[320px] lg:w-[330px]`}
+          } md:mt-[-30px] md:w-[260px] lg:h-[315px] lg:w-[325px]`}
         >
           <img src={avatar.src} alt="Adhim Niokagi" />
         </picture>
