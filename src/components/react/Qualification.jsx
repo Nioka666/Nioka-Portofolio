@@ -7,7 +7,7 @@ function Qualification() {
 
   return (
     <>
-      <div id="qualification" className="mt-10 py-10 max-sm:mt-16 h-[700px]">
+      <div id="qualification" className="mt-10 h-[700px] py-10 max-sm:mt-16">
         <section className="text-center">
           <h1 className="text-2xl font-semibold text-black sm:text-3xl md:text-4xl">
             Qualifications
@@ -17,14 +17,16 @@ function Qualification() {
           </h3>
         </section>
         {/* switch button */}
-        <section className="mt-16 flex justify-center gap-10 max-sm:mt-14 font-medium">
+        <section className="mt-16 flex justify-center gap-10 font-medium max-sm:mt-14">
           <button
+            role="button"
             className={`flex items-center gap-2 bg-transparent text-xl max-sm:text-sm ${activeMenu === 1 ? "text-black" : "text-gray-400"}`}
             onClick={() => setActiveMenu(1)}
           >
             <i className="bx bxs-graduation text-[30px]"></i> Educations
           </button>
           <button
+            role="button"
             className={`flex items-center gap-2 bg-transparent text-xl max-sm:text-sm ${activeMenu === 2 ? "text-black" : "text-gray-400"}`}
             onClick={() => setActiveMenu(2)}
           >

@@ -200,6 +200,7 @@ function Hero() {
       {/* scroll button */}
       <section className="ms-[85px] mt-20 max-lg:hidden lg:ms-[130px]">
         <button
+          role="button"
           className="flex items-center gap-1 rounded-2xl bg-transparent text-base font-normal text-black transition-all hover:translate-y-1"
           onClick={scrollDown}
         >
