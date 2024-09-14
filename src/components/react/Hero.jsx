@@ -159,7 +159,7 @@ function Hero() {
         {/* headline */}
         <section className="mx-6 mt-7 flex flex-col">
           <h1 className="mb-1 font-semibold leading-[53px] max-sm:text-[40px] max-miniphone:text-[28px] sm:text-[47px]">
-            Adhim Niokagii
+            Adhim Niokagi
           </h1>
           <div className="flex text-black max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
             <XLine n={10} />
