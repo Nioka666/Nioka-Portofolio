@@ -7,5 +7,9 @@ import vercelServerless from "@astrojs/vercel/serverless";
 export default defineConfig({
   integrations: [react(), tailwind()],
   output: "server",
-  adapter: vercelServerless(),
+  adapter: vercelServerless({
+    isr: {
+      expiration: 60 * 60 * 24,
+    },
+  }),
 });
