@@ -166,7 +166,7 @@ function Hero() {
           </h1>
           {/* role */}
           <div className="flex max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
-            <XLine n={14} />
+            <XLine n={10} />
             <Typewriter
               onInit={(typewriter) => {
                 typewriter.typeString("Front-End Developer").start();
