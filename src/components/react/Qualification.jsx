@@ -7,7 +7,7 @@ function Qualification() {
 
   return (
     <>
-      <div id="qualification" className="mt-16 py-10 max-sm:mt-16 h-[700px]">
+      <div id="qualification" className="mt-10 py-10 max-sm:mt-16 h-[700px]">
         <section className="text-center">
           <h1 className="text-2xl font-semibold text-black sm:text-3xl md:text-4xl">
             Qualifications
@@ -32,7 +32,7 @@ function Qualification() {
           </button>
         </section>
         {/* result */}
-        <section className="max-sm:mx-4 sm:mx-2">
+        <section className="max-sm:mx-3 sm:mx-2">
           {activeMenu === 1 ? <Educations /> : <Experiences />}
         </section>
       </div>

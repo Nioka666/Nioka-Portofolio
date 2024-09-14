@@ -23,6 +23,7 @@
   nav {
     @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center max-md:hidden max-sm:hidden sm:top-6 sm:h-[75px] sm:px-8 lg:px-[115px];
     transition: all 0.5s ease;
+    background-color: #f8f8f8ac;
     backdrop-filter: blur(10px);
   }
 
@@ -179,5 +180,5 @@
 }
 
 .pallete-nioprimary {
-  background-color: #f1f1f1;
+  background-color: #f8f8f8;
 }

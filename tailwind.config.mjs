@@ -13,7 +13,7 @@ export default {
         1: "1.8px",
       },
       colors: {
-        nioprimary: "#fafafa",
+        nioprimary: "#f8f8f8",
         niosecondary: "#f4f4f4",
       },
     },

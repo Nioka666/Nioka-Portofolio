@@ -1,12 +1,34 @@
 import avatar from "../../assets/adhim_3hp.jpeg";
 
 function AboutMe() {
+  const boxData = [
+    {
+      id: "experience",
+      icon: "bx bx-time-five",
+      title: "Experience",
+      desc: "1+ Year Working",
+    },
+    {
+      id: "projects",
+      icon: "bx bx-code-block",
+      title: "Completed",
+      desc: "5 Projects",
+    },
+    {
+      id: "licenses",
+      icon: "bx bx-medal",
+      title: "Licenses",
+      desc: "15+ Certificates",
+    },
+  ];
+
   return (
     <>
-      <div
+      <section
         id="about"
         className="about-me mt-20 rounded-3xl py-14 max-md:mx-0 lg:px-10"
       >
+        {/* head/title */}
         <section className="text-center">
           <h1 className="text-2xl font-semibold text-black sm:text-2xl md:text-4xl">
             About Me
@@ -15,8 +37,10 @@ function AboutMe() {
             Introduction
           </h3>
         </section>
-        <section className="mt-16 justify-between gap-16 max-sm:mt-8 lg:flex">
-          <div className="flex md:w-1/2 justify-center mx-auto">
+
+        {/* content */}
+        <section className="mt-16 justify-between gap-16 max-sm:mt-8 lg:flex lg:items-center">
+          <div className="mx-auto flex justify-center md:w-1/2">
             <picture className="">
               <img
                 src={avatar.src}
@@ -25,34 +49,24 @@ function AboutMe() {
               />
             </picture>
           </div>
-          {/*  */}
-          <div className="flex-col max-sm:mt-7 max-sm:px-5 sm:px-10 md:px-0 lg:w-1/2">
-            {/* boxes */}
-            <div className="flex gap-4 max-lg:my-7 max-lg:justify-center max-sm:justify-center max-sm:gap-0">
-              <div className="grid w-[150px] gap-1 rounded-[20px] bg-nioprimary px-6 py-5 text-center text-black max-sm:w-[130px] max-sm:bg-gray-100 max-sm:px-[17px] max-sm:py-4 md:border-0">
-                <i className="bx bx-time-five mb-2 text-[26px] max-sm:mb-1 max-sm:text-[20px]"></i>
-                <p className="mt-0 text-[14px] text-black max-sm:text-[11px]">
-                  Experience
-                </p>
-                <p className="text-[8.9px] text-gray-500">1 + Year Working</p>
-              </div>
-              <div className="grid w-[150px] gap-1 rounded-[20px] bg-nioprimary px-6 py-5 text-center text-black max-sm:w-[130px] max-sm:px-[17px] max-sm:py-4 md:border-0">
-                <i className="bx bx-code-block mb-2 text-[26px] max-sm:mb-1 max-sm:text-[20px]"></i>
-                <p className="mt-0 text-[14px] text-black max-sm:text-[11px]">
-                  Completed
-                </p>
-                <p className="text-[8.9px] text-gray-500">5 Projects</p>
-              </div>
-              <div className="grid w-[150px] gap-1 rounded-[20px] bg-nioprimary px-6 py-5 text-center text-black max-sm:w-[130px] max-sm:px-[17px] max-sm:py-4 md:border-0">
-                <i className="bx bx-medal mb-2 text-[26px] max-sm:mb-1 max-sm:text-[20px]"></i>
-                <p className="mt-0 text-[14px] text-black max-sm:text-[11px]">
-                  Licenses
-                </p>
-                <p className="text-[8.9px] text-gray-500">15+ Certifications</p>
-              </div>
+
+          <div className="flex-col max-sm:mt-0 max-sm:px-5 sm:px-10 md:px-0 lg:w-1/2">
+            <div className="flex gap-4 max-lg:my-7 max-sm:my-6 max-lg:justify-center max-sm:justify-center max-sm:gap-0">
+              {/* box */}
+              {boxData.map((box) => (
+                <div className="grid w-[150px] gap-1 rounded-[20px] bg-nioprimary px-6 py-5 text-center text-black max-sm:w-[130px] max-sm:px-[10px] max-sm:py-4 md:border-0 cursor-pointer">
+                  <i
+                    className={`${box.icon} mb-2 text-[26px] max-sm:mb-1 max-sm:text-[20px]`}
+                  ></i>
+                  <p className="mt-0 text-[14px] text-black max-sm:text-[11px]">
+                    Experience
+                  </p>
+                  <p className="text-[8.9px] text-gray-500">1 + Year Working</p>
+                </div>
+              ))}
             </div>
-            <div className="mockup-window bg-gray-200 mt-5 border-b-2">
-              <div className="bg-nioprimary px-6 max-sm:px-0 max-sm:py-7 py-7">
+            <div className="mockup-window mt-5 max-sm:mt-0 border-b-2 bg-gray-200">
+              <div className="bg-nioprimary px-6 py-7 max-sm:px-0 max-sm:py-7">
                 <p className="text-center text-gray-500 max-sm:mt-[-5px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[16px]">
                   As a Front-End Web Developer, I am highly dedicated to
                   supporting your company or project. I have extensive
@@ -64,7 +78,7 @@ function AboutMe() {
             </div>
           </div>
         </section>
-      </div>
+      </section>
     </>
   );
 }

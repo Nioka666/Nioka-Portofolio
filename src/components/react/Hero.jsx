@@ -96,7 +96,7 @@ function Hero() {
           <div className="mt-10 flex gap-5">
             <button
               role="button"
-              className="rounded-[18px] bg-gray-800 py-[17px] font-medium text-white transition-all hover:bg-white hover:text-black hover:shadow-md md:px-[25px] md:text-sm lg:px-9 lg:text-base"
+              className="rounded-[18px] bg-gray-800 py-[17px] font-medium text-white transition-all hover:shadow-md md:px-[25px] md:text-sm lg:px-9 lg:text-base"
             >
               Say Hello{" "}
               <i className="uil uil-location-arrow md:ms-1 lg:ms-2"></i>
