@@ -52,7 +52,7 @@ function Hero() {
     }
     return (
       <>
-        <div className="me-4 text-gray-600">
+        <div className="me-4 text-gray-500">
           <i className="uil uil-minus"></i>
           {elements}
         </div>
@@ -95,8 +95,8 @@ function Hero() {
             />
           </div>
           <p className="text-gray mt-5 h-[80px] w-[85%] font-normal md:text-[14px] lg:text-[16.5px]">
-            Im a Junior Front-End Developer, work based in Mojokerto,
-            East Java. Passionate and dedicated to my work.
+            Im a Junior Front-End Developer, work based in Mojokerto, East Java.
+            Passionate and dedicated to my work.
           </p>
           <div className="mt-10 flex gap-5">
             <button
@@ -161,8 +161,8 @@ function Hero() {
           <h1 className="mb-1 font-semibold leading-[53px] max-sm:text-[40px] max-miniphone:text-[28px] sm:text-[47px]">
             Adhim Niokagi
           </h1>
-          <div className="flex text-black max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
-            <XLine n={10} />
+          <div className="flex max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
+            <XLine n={20} />
             <Typewriter
               onInit={(typewriter) => {
                 typewriter.typeString("Front-End Developer").start();
