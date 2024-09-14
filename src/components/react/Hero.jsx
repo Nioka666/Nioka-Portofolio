@@ -143,7 +143,7 @@ function Hero() {
         </div>
         {/* headline */}
         <section className="mx-6 mt-3 flex flex-col">
-          <h1 className="font-semibold max-sm:text-[2.75rem] leading-[60px] mb-2 max-miniphone:text-[28px] sm:text-[38.5px]">
+          <h1 className="font-semibold max-sm:text-[42px] leading-[52px] mb-2 max-miniphone:text-[28px] sm:text-[38.5px]">
             Adhim Niokagi
           </h1>
           <h6 className="text-lg text-black max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
