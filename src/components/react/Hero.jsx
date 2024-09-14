@@ -159,17 +159,17 @@ function Hero() {
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Developer</span>
           </h6>
-          <div className="text-niogray mt-[13.5px] h-[100px] w-full leading-7 max-sm:text-[17px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[17px]">
+          <div className="text-niogray mt-[13.5px] h-[110px] w-full leading-7 max-sm:text-[16.5px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[17px]">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("I'm a")
+                  .typeString("Hello..  Im a")
                   .pauseFor(500)
-                  .typeString(" Front-End Developer,")
+                  .typeString(" Freelance Front-End Developer,")
                   .pauseFor(1000)
-                  .typeString(" work based in Mojokerto, East Java,")
-                  .pauseFor(1000)
-                  .typeString(" and dedicated to my work.")
+                  .typeString(" work based in Mojokerto, East Java.")
+                  // .pauseFor(1000)
+                  // .typeString(" and dedicated to my work.")
                   .start();
               }}
               options={{
@@ -180,7 +180,7 @@ function Hero() {
           <div className="mt-10 flex items-center gap-[33px] max-sm:mt-8 max-miniphone:gap-2">
             <button
               role="button"
-              className="rounded-[20px] bg-gray-800 px-8 py-[19px] text-[14px] font-medium text-white transition-all hover:bg-gray-700 max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px]"
+              className="rounded-[18px] bg-gray-800 px-8 py-[18px] text-[14px] font-medium text-white transition-all hover:bg-gray-700 max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px]"
             >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>

@@ -51,7 +51,7 @@ function AboutMe() {
                 <p className="text-[8.9px] text-gray-500">15+ Certifications</p>
               </div>
             </div>
-            <div className="mockup-window bg-gray-200 mt-5 shadow-sm">
+            <div className="mockup-window bg-gray-200 mt-5 border-b-2">
               <div className="bg-nioprimary px-6 max-sm:px-0 max-sm:py-7 py-7">
                 <p className="text-center text-gray-500 max-sm:mt-[-5px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[16px]">
                   As a Front-End Web Developer, I am highly dedicated to

@@ -86,7 +86,7 @@ function Skills() {
 
   const SkillCollapse = ({ title, dataVariable }) => {
     return (
-      <details className="collapse bg-gray-200 transition-all ease-in-out">
+      <details className="collapse bg-white transition-all ease-in-out border-b-2">
         <summary className="collapse-title py-5 text-[21px] font-semibold text-gray-500 max-sm:text-[17px]">
           <div className="my-2 max-sm:my-0 flex items-center gap-2 max-sm:justify-center max-md:justify-center lg:ms-14">
             <i className="bx bx-code-curly text-2xl"></i>
@@ -118,7 +118,7 @@ function Skills() {
             My Competence
           </h3>
         </section>
-        <section className="mx-auto grid w-[90%] gap-7 py-10 max-md:w-[90%]">
+        <section className="mx-auto grid w-[90%] gap-6 py-10 max-md:w-[90%]">
           <SkillCollapse title={"Front-End Development"} dataVariable={frontEndData} />
           <SkillCollapse title={"Back-End Development"} dataVariable={backEndData} />
         </section>
