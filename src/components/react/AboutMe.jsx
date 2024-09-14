@@ -26,7 +26,7 @@ function AboutMe() {
     <>
       <section
         id="about"
-        className="about-me mt-20 rounded-3xl py-14 max-md:mx-0 lg:px-10"
+        className="about-me mt-20 rounded-3xl py-10 max-md:mx-0 max-sm:mt-16 lg:px-10"
       >
         {/* head/title */}
         <section className="text-center">
@@ -81,6 +81,7 @@ function AboutMe() {
             </div>
           </div>
         </section>
+        {/* end of content */}
       </section>
     </>
   );

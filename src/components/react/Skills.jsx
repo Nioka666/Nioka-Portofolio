@@ -84,22 +84,22 @@ function Skills() {
     },
   ];
 
-  const SkillCollapse = ({ type, title, dataVariable }) => {
+  const SkillCollapse = ({ title, dataVariable }) => {
     return (
-      <details className="collapse cursor-pointer bg-white transition-all ease-in-out border-b-2">
+      <details className="collapse cursor-pointer border-b-2 bg-white transition-all ease-in-out">
         <summary className="collapse-title py-5 text-[21px] font-semibold text-gray-500 max-sm:text-[17px]">
-          <div className="my-2 max-sm:my-0 flex items-center gap-2 max-sm:justify-center max-md:justify-center lg:ms-14">
+          <div className="my-2 flex items-center gap-2 max-md:justify-center max-sm:my-0 max-sm:justify-center lg:ms-14">
             <i className="bx bx-code-curly text-2xl"></i>
             <span>{title}</span>
           </div>
         </summary>
-        <div className="collapse-content mx-10 my-7 grid grid-cols-5 max-sm:grid-cols-4 justify-items-center gap-10 max-sm:mx-0 max-sm:my-3 max-sm:gap-4">
+        <div className="collapse-content mx-10 my-7 grid grid-cols-5 justify-items-center gap-10 max-sm:mx-0 max-sm:my-3 max-sm:grid-cols-4 max-sm:gap-4">
           {dataVariable.map((iconData) => (
             <img
               key={iconData.id}
               src={iconData.src}
               alt={iconData.id}
-              className="w-[90px] cursor-pointer rounded-lg grayscale transition-all ease-in-out hover:grayscale-0 max-md:w-[50px] select-none"
+              className="w-[90px] cursor-pointer select-none rounded-lg grayscale transition-all ease-in-out hover:grayscale-0 max-md:w-[50px]"
             />
           ))}
         </div>
@@ -109,7 +109,8 @@ function Skills() {
 
   return (
     <>
-      <div id="skills" className="skills mt-14 py-10 lg:px-10">
+      <section id="skills" className="skills mt-20 py-10 max-sm:mt-10 lg:px-10">
+        {/* head/title */}
         <section className="text-center">
           <h1 className="text-2xl font-semibold text-black sm:text-2xl md:text-4xl">
             Technical Skills
@@ -118,11 +119,18 @@ function Skills() {
             My Competence
           </h3>
         </section>
+        {/* content */}
         <section className="mx-auto grid w-[90%] gap-6 py-10 max-md:w-[90%]">
-          <SkillCollapse title={"Front-End Development"} dataVariable={frontEndData} />
-          <SkillCollapse title={"Back-End Development"} dataVariable={backEndData} />
+          <SkillCollapse
+            title={"Front-End Development"}
+            dataVariable={frontEndData}
+          />
+          <SkillCollapse
+            title={"Back-End Development"}
+            dataVariable={backEndData}
+          />
         </section>
-      </div>
+      </section>
     </>
   );
 }

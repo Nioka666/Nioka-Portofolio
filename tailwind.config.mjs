@@ -8,6 +8,7 @@ export default {
     extend: {
       screens: {
         miniphone: "350px",
+        nionotebook: "1140px",
       },
       borderWidth: {
         1: "1.8px",

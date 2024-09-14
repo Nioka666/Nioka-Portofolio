@@ -25,7 +25,7 @@ function Educations() {
                 Politeknik Elektronika Negeri Surabaya
               </div>
               <p className="mt-1 text-sm">
-                Associate's degree <br />
+                Associate's degree, Distance education <br />
                 Informatics Engineering <br /> <br />
               </p>
             </div>

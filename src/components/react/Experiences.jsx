@@ -20,8 +20,12 @@ function Experiences() {
             </div>
             <div className="timeline-end md:timeline-start max-md:ms-3 md:mb-10 md:me-5 md:text-end">
               <time className="font-mono italic">2023 - Present</time>
-              <div className="text-lg font-bold">Independent Freelancer</div>
-              Frontend Web Developer <br /> <br />
+              <div className="mt-1 text-lg font-bold max-sm:text-base">
+                Independent Freelancer
+              </div>
+              <p className="mt-1 text-sm">
+                Front-End Web Developer <br /> <br />
+              </p>
             </div>
             <hr />
           </li>
@@ -43,10 +47,12 @@ function Experiences() {
             </div>
             <div className="timeline-end max-md:ms-3 md:ms-5 lg:mb-10">
               <time className="font-mono italic">2022 - 2023</time>
-              <div className="text-lg font-bold">
+              <div className="mt-1 text-lg font-bold max-sm:text-base">
                 ATR/BPN - Kantor Pertanahan Kota Mojokerto
               </div>
-              Student Internship <br />
+              <p className="mt-1 text-sm">
+                Student Internship <br />
+              </p>
               <br />
             </div>
           </li>

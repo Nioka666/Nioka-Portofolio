@@ -112,10 +112,11 @@ function Hero() {
             </a>
           </div>
         </section>
+        {/* avatar */}
         <picture
           className={`blob me-[10px] overflow-hidden ${
             loaded ? "animate-fade-in" : "opacity-0"
-          } md:mt-[-30px] md:w-[260px] lg:h-[315px] lg:w-[325px]`}
+          } nionotebook:mt-0 nionotebook:h-[315px] nionotebook:w-[325px] md:mt-[-30px] md:w-[260px] lg:mt-[-70px] lg:h-[250px] lg:w-[355px]`}
         >
           <img src={avatar.src} alt="Adhim Niokagi" />
         </picture>
@@ -124,6 +125,7 @@ function Hero() {
       {/* Hero sm */}
       <section className="sm-hero">
         <div className="mt-16 flex items-center px-6 max-sm:gap-9 max-miniphone:gap-5 sm:gap-10">
+          {/* left icon */}
           <section className="social-media">
             {mediaSocial.map((data) => (
               <a
@@ -139,35 +141,37 @@ function Hero() {
               </a>
             ))}
           </section>
+          {/* avatar */}
           <picture
             className={`blob overflow-hidden max-md:ms-[2px] max-miniphone:ms-[-3px] ${
               loaded ? "animate-fade-in" : "opacity-0"
-            } max-md:w-[290px] max-sm:h-full max-sm:w-[227px] max-miniphone:w-[223px] sm:h-full sm:w-[270px] md:h-full md:w-[250px] lg:h-full`}
+            } max-sm:h-full max-sm:w-[227px] max-miniphone:w-[223px] sm:h-full sm:w-[280px] md:h-full md:w-[10px]`}
           >
             <img src={avatar.src} alt="Adhim Niokagi" />
           </picture>
+          {/* end of avatar */}
         </div>
         {/* headline */}
         <section className="mx-6 mt-7 flex flex-col">
-          <h1 className="mb-1 font-semibold leading-[53px] max-sm:text-[40px] max-miniphone:text-[28px] sm:text-[38.5px]">
+          <h1 className="mb-1 font-semibold leading-[53px] max-sm:text-[40px] max-miniphone:text-[28px] sm:text-[47px]">
             Adhim Niokagi
           </h1>
-          <h6 className="text-lg text-black max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
+          <h6 className="text-black max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Developer</span>
           </h6>
-          <div className="text-niogray mt-[13.5px] h-[110px] w-full leading-7 max-sm:text-[16.5px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[17px]">
+          <div className="text-niogray mt-[13.5px] h-[110px] w-full leading-7 max-sm:text-[16.5px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[18px]">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
                   .typeString("Hello..  Im a")
                   .pauseFor(500)
-                  .typeString(" Freelance Front-End Developer,")
+                  .typeString(" Junior Front-End Web Developer. <br>")
                   .pauseFor(1000)
-                  .typeString(" work based in Mojokerto, East Java.")
+                  .typeString(" Work based in Mojokerto, East Java.")
                   // .pauseFor(1000)
                   // .typeString(" and dedicated to my work.")
                   .start();
@@ -177,17 +181,17 @@ function Hero() {
               }}
             />
           </div>
-          <div className="mt-10 flex items-center gap-[33px] max-sm:mt-8 max-miniphone:gap-2">
+          <div className="mt-10 flex items-center gap-[33px] max-sm:mt-8 max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
             <button
               role="button"
-              className="rounded-[18px] bg-gray-800 px-8 py-[18px] text-[14px] font-medium text-white transition-all hover:bg-gray-700 max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px]"
+              className="rounded-[18px] bg-gray-800 px-8 py-[18px] text-[14px] font-medium text-white transition-all hover:bg-gray-700 max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
             >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <a href={CV} target="_blank">
               <button
                 role="button"
-                className="flex items-center gap-[11px] rounded-2xl bg-transparent px-0 text-[14px] font-medium text-black max-miniphone:text-[10px]"
+                className="flex items-center gap-[11px] rounded-2xl bg-transparent px-0 text-[14px] font-medium text-black max-miniphone:text-[10px] sm:text-[15px]"
               >
                 View CV
                 <i className="bx bx-file text-2xl text-gray-600"></i>

@@ -29,7 +29,7 @@ function ButtonUp() {
     <>
       {isVisible && (
         <button
-          className="fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full bg-gray-800 text-white transition-all hover:bg-gray-600 max-md:bottom-20 max-md:right-5 max-sm:h-[40px] max-sm:w-[40px]"
+          className="fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full bg-gray-700 text-white transition-all hover:bg-gray-600 max-md:bottom-20 max-md:right-5 max-sm:h-[35px] max-sm:w-[35px]"
           onClick={scrollToTop}
         >
           <i className="bx bxs-chevron-up text-xl font-bold max-sm:text-base"></i>
