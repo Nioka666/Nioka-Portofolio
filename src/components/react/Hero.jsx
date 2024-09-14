@@ -180,7 +180,7 @@ function Hero() {
           <div className="mt-10 flex items-center gap-[33px] max-sm:mt-8 max-miniphone:gap-2">
             <button
               role="button"
-              className="rounded-[20px] bg-gray-800 px-8 py-[19px] text-[15px] font-medium text-white transition-all hover:bg-gray-700 max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px]"
+              className="rounded-[20px] bg-gray-800 px-8 py-[19px] text-[14px] font-medium text-white transition-all hover:bg-gray-700 max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px]"
             >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
