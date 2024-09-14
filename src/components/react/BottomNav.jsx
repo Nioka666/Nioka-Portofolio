@@ -24,9 +24,9 @@ function BottomNav() {
       url: "#qualification",
     },
     {
-      name: "Portofolio",
+      name: "portfolio",
       icon: "bx bx-image text-3xl",
-      url: "#portofolio",
+      url: "#portfolio",
     },
     {
       name: "Contact",

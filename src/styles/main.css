@@ -53,7 +53,7 @@
 
   /* hero section */
   section.hero {
-    @apply flex items-center justify-between rounded-2xl max-md:hidden md:mt-14 lg:mt-12;
+    @apply flex items-center justify-between rounded-2xl max-md:hidden md:mt-14 lg:mt-12 nionotebook:mt-10;
   }
   /* hero sm */
   section.sm-hero {

@@ -31,7 +31,7 @@ function Qualification() {
             className={`flex items-center gap-2 bg-transparent text-xl max-sm:text-sm ${activeMenu === 2 ? "text-black" : "text-gray-400"}`}
             onClick={() => setActiveMenu(2)}
           >
-            <i className="bx bxs-briefcase text-[25px]"></i>Experiences
+            <i className="bx bxs-briefcase text-[23px]"></i>Experiences
           </button>
         </section>
         {/* end of header */}
