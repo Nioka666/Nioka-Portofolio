@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import avatar from "../../assets/adhim-niokagi_2.jpg";
-import CV from "../../assets/Muhammad_Adhim_Niokagi_CV.pdf";
+import CV from "../../assets/Adhim_Niokagi_IT_CVS.pdf";
 
 function Hero() {
   const [loaded, setLoaded] = useState(false);
@@ -142,18 +142,18 @@ function Hero() {
           </picture>
         </div>
         {/* headline */}
-        <section className="mx-6 mt-7 flex flex-col">
-          <h1 className="font-semibold max-sm:text-[40px] max-miniphone:text-[28px] sm:text-[38.5px]">
+        <section className="mx-6 mt-3 flex flex-col">
+          <h1 className="font-semibold max-sm:text-[2.75rem] leading-[60px] mb-2 max-miniphone:text-[28px] sm:text-[38.5px]">
             Adhim Niokagi
           </h1>
-          <h6 className="text-lg text-black max-sm:text-[19px] max-miniphone:text-[14px] sm:text-xl">
+          <h6 className="text-lg text-black max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
             <i className="uil uil-minus"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Developer</span>
           </h6>
-          <div className="text-niogray mt-[13.5px] h-[95px] max-miniphone:h-[70px] w-full leading-7 max-miniphone:leading-5 max-sm:text-[16.7epx] max-miniphone:text-[13px] sm:text-[17px]">
+          <div className="text-niogray mt-[13.5px] h-[70px] max-miniphone:h-[70px] w-full leading-6 max-miniphone:leading-5 max-sm:text-[16.7epx] max-miniphone:text-[13px] sm:text-[17px]">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -171,8 +171,8 @@ function Hero() {
               }}
             />
           </div>
-          <div className="mt-10 flex items-center gap-5 max-sm:mt-8 max-miniphone:gap-2">
-            <button role="button" className="rounded-[17px] bg-gray-800 px-8 py-[18px] max-miniphone:py-[15.7px] text-sm font-medium text-white transition-all hover:bg-nioprimary hover:text-black max-miniphone:px-6 max-miniphone:text-[11px]">
+          <div className="mt-10 flex items-center gap-3 max-sm:mt-8 max-miniphone:gap-2">
+            <button role="button" className="rounded-[16px] bg-gray-800 px-7 py-[18px] max-miniphone:py-[15.7px] text-sm font-medium text-white transition-all hover:bg-nioprimary hover:text-black max-miniphone:px-6 max-miniphone:text-[11px]">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <a href={CV} target="_blank">

@@ -3,8 +3,10 @@ import { useSwipeable } from "react-swipeable";
 
 function BottomNav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [shadowNav, setShadowNav] = useState(false);
   const bottomDrawerRef = useRef(null);
   const toggleButtonRef = useRef(null);
+
   const dataMenu = [
     {
       name: "About",
@@ -37,12 +39,25 @@ function BottomNav() {
   ];
 
   useEffect(() => {
+    const handleScroll = () => {
+      setShadowNav(window.scrollY > 200);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
+
+  useEffect(() => {
     if (drawerOpen == true) {
       document.body.classList.add("lock-scroll");
     } else {
       document.body.classList.remove("lock-scroll");
     }
-    
+
     function handleClickOutside(event) {
       if (
         bottomDrawerRef.current &&
@@ -57,8 +72,6 @@ function BottomNav() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-
-
   }, [drawerOpen]);
 
   const SwipeHandler = useSwipeable({
@@ -69,7 +82,9 @@ function BottomNav() {
 
   return (
     <div {...SwipeHandler} className="bottom-nav">
-      <section className="b-nav-shadow bg-nioprimary flex h-[60px] w-full items-center justify-between px-7">
+      <section
+        className={`${shadowNav == true ? "b-nav-shadow" : "shadow-none"} flex h-[60px] w-full items-center justify-between bg-nioprimary px-7`}
+      >
         <a href="/">
           <h1 className="text-base font-medium text-black max-sm:text-sm md:text-lg lg:text-lg">
             Adhim Niokagi
@@ -108,7 +123,7 @@ function BottomNav() {
       {/* Bottom drawer */}
       <div
         ref={bottomDrawerRef}
-        className={`fixed cursor-grab inset-x-0 bottom-0 transform transition-transform duration-300 ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
+        className={`fixed inset-x-0 bottom-0 transform cursor-grab transition-transform duration-300 ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
       >
         {/* Drawer content */}
         <div className="drawer-b-nav rounded-t-3xl bg-white">
