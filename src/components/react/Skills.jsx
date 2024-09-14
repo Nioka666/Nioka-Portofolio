@@ -47,10 +47,10 @@ function Skills() {
       id: "vite_icon",
       src: viteIcon.src,
     },
-    {
-      id: "figma_icon",
-      src: figmaIcon.src,
-    },
+    // {
+    //   id: "figma_icon",
+    //   src: figmaIcon.src,
+    // },
   ];
 
   const backEndData = [
@@ -62,14 +62,14 @@ function Skills() {
       id: "express_icon",
       src: expressIcon.src,
     },
-    {
-      id: "php_icon",
-      src: phpIcon.src,
-    },
-    {
-      id: "laravel_icon",
-      src: laravelIcon.src,
-    },
+    // {
+    //   id: "php_icon",
+    //   src: phpIcon.src,
+    // },
+    // {
+    //   id: "laravel_icon",
+    //   src: laravelIcon.src,
+    // },
     {
       id: "mongo_icon",
       src: mongodbIcon.src,

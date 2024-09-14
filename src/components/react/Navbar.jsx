@@ -24,6 +24,7 @@ function Navbar() {
   return (
     <>
       <nav className={`nav ${scrollDirection === "down" ? "hide" : "show"}`}>
+        {/* nav floating island */}
         <section className="">
           <a href="/">
             <h1 className="text-base font-medium text-black md:text-base lg:text-base">
