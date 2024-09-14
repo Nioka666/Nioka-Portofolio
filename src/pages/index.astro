@@ -6,13 +6,15 @@ import Skills from "../components/react/Skills";
 import Qualification from "../components/react/Qualification";
 import ButtonChat from "../components/react/ButtonChat";
 import ButtonUp from "../components/react/ButtonUp";
+
+export const prerender = false;
 ---
 
 <MainLayout title="Adhim Niokagi Portfolio">
   <main>
     <Hero client:idle />
     <AboutMe />
-    <Skills client:idle/>
+    <Skills client:idle />
     <Qualification client:idle />
     <ButtonChat />
     <ButtonUp />
