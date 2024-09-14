@@ -15,7 +15,7 @@ function Qualification() {
         {/* header/title */}
         <PartTitle
           title={"Qualifications"}
-          desc={"My Education & Experience Journey"}
+          desc={"My Journey's"}
         />
         {/* switch button */}
         <section className="mt-16 flex justify-center gap-10 font-medium max-sm:mt-14">
