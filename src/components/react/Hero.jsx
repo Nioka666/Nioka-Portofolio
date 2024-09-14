@@ -169,7 +169,7 @@ function Hero() {
                 typewriter
                   .typeString("Hello..  Im a")
                   .pauseFor(500)
-                  .typeString(" Junior Front-End Web Developer. <br>")
+                  .typeString(" Junior Front-End Web Developer.")
                   .pauseFor(1000)
                   .typeString(" Work based in Mojokerto, East Java.")
                   // .pauseFor(1000)
