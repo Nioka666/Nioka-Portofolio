@@ -55,7 +55,7 @@ function Navbar() {
               className="dropdown dropdown-end tooltip tooltip-bottom"
               data-tip="Menu"
             >
-              <button role="button" className="">
+              <button role="button" type="button" className="">
                 <i className="bx bx-menu-alt-right cursor-pointer text-[26px] font-medium text-gray-600 transition-all hover:text-gray-400"></i>
               </button>
               <div

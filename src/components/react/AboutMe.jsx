@@ -51,21 +51,24 @@ function AboutMe() {
           </div>
 
           <div className="flex-col max-sm:mt-0 max-sm:px-5 sm:px-10 md:px-0 lg:w-1/2">
-            <div className="flex gap-4 max-lg:my-7 max-sm:my-6 max-lg:justify-center max-sm:justify-center max-sm:gap-0">
+            <div className="flex gap-4 max-lg:my-7 max-lg:justify-center max-sm:my-6 max-sm:justify-center max-sm:gap-0">
               {/* box */}
               {boxData.map((box) => (
-                <div className="grid w-[150px] gap-1 rounded-[20px] bg-nioprimary px-6 py-5 text-center text-black max-sm:w-[130px] max-sm:px-[10px] max-sm:py-4 md:border-0 cursor-pointer">
+                <div
+                  key={box.id}
+                  className="grid w-[150px] cursor-pointer gap-1 rounded-[20px] bg-nioprimary px-6 py-5 text-center text-black max-sm:w-[130px] max-sm:px-[10px] max-sm:py-4 md:border-0"
+                >
                   <i
                     className={`${box.icon} mb-2 text-[26px] max-sm:mb-1 max-sm:text-[20px]`}
                   ></i>
                   <p className="mt-0 text-[14px] text-black max-sm:text-[11px]">
-                    Experience
+                    {box.title}
                   </p>
-                  <p className="text-[8.9px] text-gray-500">1 + Year Working</p>
+                  <p className="text-[8.9px] text-gray-500">{box.desc}</p>
                 </div>
               ))}
             </div>
-            <div className="mockup-window mt-5 max-sm:mt-0 border-b-2 bg-gray-200">
+            <div className="mockup-window mt-5 border-b-2 bg-gray-200 max-sm:mt-0">
               <div className="bg-nioprimary px-6 py-7 max-sm:px-0 max-sm:py-7">
                 <p className="text-center text-gray-500 max-sm:mt-[-5px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[16px]">
                   As a Front-End Web Developer, I am highly dedicated to
