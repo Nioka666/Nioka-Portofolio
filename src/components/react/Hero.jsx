@@ -45,6 +45,21 @@ function Hero() {
     },
   ];
 
+  const XLine = ({ n }) => {
+    const elements = [];
+    for (let i = 0; i < n; i++) {
+      elements.push(<i key={i} className="uil uil-minus ms-[-15px]"></i>);
+    }
+    return (
+      <>
+        <div className="me-4 text-gray-600">
+          <i className="uil uil-minus"></i>
+          {elements}
+        </div>
+      </>
+    );
+  };
+
   return (
     <>
       {/* Hero */}
@@ -68,31 +83,21 @@ function Hero() {
           <h1 className="font-semibold leading-tight md:text-[45px] lg:text-[56px] lg:text-black">
             Adhim Niokagi
           </h1>
-          <h6 className="text-black md:mt-3 md:text-base lg:mt-1 lg:text-xl">
-            <i className="uil uil-minus"></i>{" "}
-            <i className="uil uil-minus ms-[-15px]"></i>{" "}
-            <i className="uil uil-minus ms-[-15px]"></i>{" "}
-            <i className="uil uil-minus ms-[-15px]"></i>{" "}
-            <span className="ms-2">Front-End Developer</span>
-          </h6>
-          <div className="text-gray mt-5 h-[80px] w-[85%] font-normal md:text-[14px] lg:text-[16.5px]">
+          <div className="flex text-black md:mt-3 md:text-base lg:mt-2 lg:text-xl">
+            <XLine n={10} />
             <Typewriter
               onInit={(typewriter) => {
-                typewriter
-                  .typeString("I'm a")
-                  .pauseFor(500)
-                  .typeString(" Front-End Developer,")
-                  .pauseFor(1000)
-                  .typeString(" work based in Mojokerto, East Java,")
-                  .pauseFor(1000)
-                  .typeString(" passionate and dedicated to my work.")
-                  .start();
+                typewriter.typeString("Front-End Developer").start();
               }}
               options={{
                 autoStart: true,
               }}
             />
           </div>
+          <p className="text-gray mt-5 h-[80px] w-[85%] font-normal md:text-[14px] lg:text-[16.5px]">
+            Im a Junior Front-End Developer, work based in Mojokerto,
+            East Java. Passionate and dedicated to my work.
+          </p>
           <div className="mt-10 flex gap-5">
             <button
               role="button"
@@ -156,31 +161,21 @@ function Hero() {
           <h1 className="mb-1 font-semibold leading-[53px] max-sm:text-[40px] max-miniphone:text-[28px] sm:text-[47px]">
             Adhim Niokagi
           </h1>
-          <h6 className="text-black max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
-            <i className="uil uil-minus"></i>{" "}
-            <i className="uil uil-minus ms-[-15px]"></i>{" "}
-            <i className="uil uil-minus ms-[-15px]"></i>{" "}
-            <i className="uil uil-minus ms-[-15px]"></i>{" "}
-            <span className="ms-2">Front-End Developer</span>
-          </h6>
-          <div className="text-niogray mt-[13.5px] h-[110px] w-full leading-7 max-sm:text-[16.5px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[18px]">
+          <div className="flex text-black max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
+            <XLine n={10} />
             <Typewriter
               onInit={(typewriter) => {
-                typewriter
-                  .typeString("Hello..  Im a")
-                  .pauseFor(500)
-                  .typeString(" Junior Front-End Web Developer.")
-                  .pauseFor(1000)
-                  .typeString(" Work based in Mojokerto, East Java.")
-                  // .pauseFor(1000)
-                  // .typeString(" and dedicated to my work.")
-                  .start();
+                typewriter.typeString("Front-End Developer").start();
               }}
               options={{
                 autoStart: true,
               }}
             />
           </div>
+          <p className="text-niogray mt-[13.5px] h-[110px] w-full leading-7 max-sm:text-[16.5px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[18px]">
+            Hello.. Im a Junior Front-End Web Developer. Work based in
+            Mojokerto, East Java
+          </p>
           <div className="mt-10 flex items-center gap-[33px] max-sm:mt-8 max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
             <button
               role="button"
