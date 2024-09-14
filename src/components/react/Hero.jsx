@@ -94,12 +94,18 @@ function Hero() {
             />
           </div>
           <div className="mt-10 flex gap-5">
-            <button role="button" className="rounded-[18px] bg-gray-800 py-[17px] font-medium text-white transition-all hover:bg-white hover:text-black hover:shadow-md md:px-[25px] md:text-sm lg:px-9 lg:text-base">
+            <button
+              role="button"
+              className="rounded-[18px] bg-gray-800 py-[17px] font-medium text-white transition-all hover:bg-white hover:text-black hover:shadow-md md:px-[25px] md:text-sm lg:px-9 lg:text-base"
+            >
               Say Hello{" "}
               <i className="uil uil-location-arrow md:ms-1 lg:ms-2"></i>
             </button>
             <a href={CV} target="_blank">
-              <button role="button" className="flex items-center rounded-2xl bg-transparent py-[15px] font-medium text-black max-sm:text-sm md:px-4 md:text-sm lg:px-7 lg:text-base">
+              <button
+                role="button"
+                className="flex items-center rounded-2xl bg-transparent py-[15px] font-medium text-black max-sm:text-sm md:px-4 md:text-sm lg:px-7 lg:text-base"
+              >
                 View CV
                 <i className="bx bx-file ms-3 text-2xl text-gray-600"></i>
               </button>
@@ -107,7 +113,7 @@ function Hero() {
           </div>
         </section>
         <picture
-          className={`blob overflow-hidden me-[10px] ${
+          className={`blob me-[10px] overflow-hidden ${
             loaded ? "animate-fade-in" : "opacity-0"
           } md:mt-[-30px] md:w-[260px] lg:h-[315px] lg:w-[325px]`}
         >
@@ -142,8 +148,8 @@ function Hero() {
           </picture>
         </div>
         {/* headline */}
-        <section className="mx-6 mt-3 flex flex-col">
-          <h1 className="font-semibold max-sm:text-[42px] leading-[52px] mb-2 max-miniphone:text-[28px] sm:text-[38.5px]">
+        <section className="mx-6 mt-7 flex flex-col">
+          <h1 className="mb-1 font-semibold leading-[52px] max-sm:text-[41px] max-miniphone:text-[28px] sm:text-[38.5px]">
             Adhim Niokagi
           </h1>
           <h6 className="text-lg text-black max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
@@ -153,7 +159,7 @@ function Hero() {
             <i className="uil uil-minus ms-[-15px]"></i>{" "}
             <span className="ms-2">Front-End Developer</span>
           </h6>
-          <div className="text-niogray mt-[13.5px] h-[70px] max-miniphone:h-[70px] w-full leading-6 max-miniphone:leading-5 max-sm:text-[16.7epx] max-miniphone:text-[13px] sm:text-[17px]">
+          <div className="text-niogray mt-[13.5px] h-[100px] w-full leading-7 max-sm:text-[17px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[17px]">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -171,12 +177,18 @@ function Hero() {
               }}
             />
           </div>
-          <div className="mt-10 flex items-center gap-3 max-sm:mt-8 max-miniphone:gap-2">
-            <button role="button" className="rounded-[16px] bg-gray-800 px-7 py-[18px] max-miniphone:py-[15.7px] text-sm font-medium text-white transition-all hover:bg-nioprimary hover:text-black max-miniphone:px-6 max-miniphone:text-[11px]">
+          <div className="mt-10 flex items-center gap-[33px] max-sm:mt-8 max-miniphone:gap-2">
+            <button
+              role="button"
+              className="rounded-[20px] bg-gray-800 px-8 py-[19px] text-[15px] font-medium text-white transition-all hover:bg-gray-700 max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px]"
+            >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <a href={CV} target="_blank">
-              <button role="button" className="flex items-center max-miniphone:hidden gap-2 rounded-2xl bg-transparent px-6 text-sm max-miniphone:text-[10px] font-medium text-black">
+              <button
+                role="button"
+                className="flex items-center gap-[11px] rounded-2xl bg-transparent px-0 text-[14px] font-medium text-black max-miniphone:text-[10px]"
+              >
                 View CV
                 <i className="bx bx-file text-2xl text-gray-600"></i>
               </button>
