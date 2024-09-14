@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
-import avatar from "../../assets/adhim-niokagi_2.jpg";
+import avatar from "../../assets/adhim_niokagi.jpg";
 import CV from "../../assets/Adhim_Niokagi_IT_CVS.pdf";
 
 function Hero() {
@@ -116,7 +116,7 @@ function Hero() {
         <picture
           className={`blob me-[10px] overflow-hidden ${
             loaded ? "animate-fade-in" : "opacity-0"
-          } nionotebook:mt-[-5px] nionotebook:h-[315px] nionotebook:w-[325px] md:mt-[-30px] md:w-[260px] lg:mt-[-70px] lg:h-[250px] lg:w-[355px]`}
+          } md:mt-[-30px] md:w-[260px] lg:mt-[-70px] lg:h-[250px] lg:w-[355px] nionotebook:mt-[-5px] nionotebook:h-[315px] nionotebook:w-[325px]`}
         >
           <img src={avatar.src} alt="Adhim Niokagi" />
         </picture>

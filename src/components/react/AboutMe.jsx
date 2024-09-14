@@ -1,4 +1,5 @@
 import avatar from "../../assets/adhim_3hp.jpeg";
+import PartTitle from "./PartTitle";
 
 function AboutMe() {
   const boxData = [
@@ -29,14 +30,7 @@ function AboutMe() {
         className="about-me mt-20 rounded-3xl py-10 max-md:mx-0 max-sm:mt-16 lg:px-10"
       >
         {/* head/title */}
-        <section className="text-center">
-          <h1 className="text-2xl font-semibold text-black sm:text-2xl md:text-4xl">
-            About Me
-          </h1>
-          <h3 className="mt-2 text-sm text-gray-400 max-sm:mt-0 md:text-[17px]">
-            Introduction
-          </h3>
-        </section>
+        <PartTitle title={"About Me"} desc={"My Introduction"} />
 
         {/* content */}
         <section className="mt-16 justify-between gap-16 max-sm:mt-8 lg:flex lg:items-center">

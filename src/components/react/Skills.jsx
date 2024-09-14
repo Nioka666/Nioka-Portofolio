@@ -16,6 +16,7 @@ import mysqlIcon from "../../assets/icons/MySQL.png";
 import mongodbIcon from "../../assets/icons/mongodb.png";
 import postmanIcon from "../../assets/icons/Postman.png";
 import nestIcon from "../../assets/icons/Nest.js.png";
+import PartTitle from "./PartTitle";
 
 function Skills() {
   const frontEndData = [
@@ -111,16 +112,9 @@ function Skills() {
     <>
       <section id="skills" className="skills mt-20 py-10 max-sm:mt-10 lg:px-10">
         {/* head/title */}
-        <section className="text-center">
-          <h1 className="text-2xl font-semibold text-black sm:text-2xl md:text-4xl">
-            Technical Skills
-          </h1>
-          <h3 className="mt-2 text-sm text-gray-400 max-sm:mt-0 md:text-[17px]">
-            My Competence
-          </h3>
-        </section>
+        <PartTitle title={"Technical Skills"} desc={"My Technical Skills"} />
         {/* content */}
-        <section className="mx-auto grid w-[90%] gap-6 py-10 max-md:w-[90%]">
+        <section className="mx-auto grid w-[90%] gap-6 py-12 max-md:w-[90%] lg:mt-5">
           <SkillCollapse
             title={"Front-End Development"}
             dataVariable={frontEndData}

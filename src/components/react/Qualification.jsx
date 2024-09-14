@@ -1,26 +1,27 @@
 import { useState } from "react";
 import Educations from "./Educations";
 import Experiences from "./Experiences";
+import PartTitle from "./PartTitle";
 
 function Qualification() {
   const [activeMenu, setActiveMenu] = useState(1);
+  const switchButton = () => {
+    return <></>;
+  };
 
   return (
     <>
       <section id="qualification" className="mt-10 h-[700px] py-10 max-sm:mt-1">
         {/* header/title */}
-        <section className="text-center">
-          <h1 className="text-2xl font-semibold text-black sm:text-3xl md:text-4xl">
-            Qualifications
-          </h1>
-          <h3 className="mt-2 text-sm text-gray-500 md:text-[17px]">
-            My Journey
-          </h3>
-        </section>
+        <PartTitle
+          title={"Qualifications"}
+          desc={"My Education & Experience Journey"}
+        />
         {/* switch button */}
         <section className="mt-16 flex justify-center gap-10 font-medium max-sm:mt-14">
           <button
             role="button"
+            title="button"
             className={`flex items-center gap-2 bg-transparent text-xl max-sm:text-sm ${activeMenu === 1 ? "text-black" : "text-gray-400"}`}
             onClick={() => setActiveMenu(1)}
           >
@@ -28,6 +29,7 @@ function Qualification() {
           </button>
           <button
             role="button"
+            title="button"
             className={`flex items-center gap-2 bg-transparent text-xl max-sm:text-sm ${activeMenu === 2 ? "text-black" : "text-gray-400"}`}
             onClick={() => setActiveMenu(2)}
           >
