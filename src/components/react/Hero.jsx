@@ -5,23 +5,6 @@ import CV from "../../assets/Adhim_Niokagi_IT_CVS.pdf";
 
 function Hero() {
   const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setLoaded(true);
-    }, 50);
-
-    return () => clearTimeout(timeout);
-  }, []);
-
-  const scrollDown = () => {
-    window.scrollBy({
-      top: 650,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
   const mediaSocial = [
     {
       name: "Linkedin",
@@ -44,6 +27,22 @@ function Hero() {
       url: "https://wa.me/6287755588990",
     },
   ];
+  
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoaded(true);
+    }, 50);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  const scrollDown = () => {
+    window.scrollBy({
+      top: 650,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
 
   const XLine = ({ n }) => {
     const elements = [];
@@ -83,6 +82,7 @@ function Hero() {
           <h1 className="font-semibold leading-tight md:text-[45px] lg:text-[56px] lg:text-black">
             Adhim Niokagi
           </h1>
+          {/* role */}
           <div className="flex text-black md:mt-3 md:text-base lg:mt-2 lg:text-xl">
             <XLine n={10} />
             <Typewriter
@@ -94,10 +94,12 @@ function Hero() {
               }}
             />
           </div>
+          {/* summary */}
           <p className="text-gray mt-5 h-[80px] w-[85%] font-normal md:text-[14px] lg:text-[16.5px]">
             Im a Junior Front-End Developer, work based in Mojokerto, East Java.
             Passionate and dedicated to my work.
           </p>
+          {/* btn group */}
           <div className="mt-10 flex gap-5">
             <button
               role="button"
@@ -126,8 +128,9 @@ function Hero() {
           <img src={avatar.src} alt="Adhim Niokagi" />
         </picture>
       </section>
-
+      {/*  */}
       {/* Hero sm */}
+      {/*  */}
       <section className="sm-hero">
         <div className="mt-16 flex items-center px-6 max-sm:gap-9 max-miniphone:gap-5 sm:gap-10">
           {/* left icon */}
@@ -161,8 +164,9 @@ function Hero() {
           <h1 className="mb-1 font-semibold leading-[53px] max-sm:text-[40px] max-miniphone:text-[28px] sm:text-[47px]">
             Adhim Niokagi
           </h1>
+          {/* role */}
           <div className="flex max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
-            <XLine n={20} />
+            <XLine n={14} />
             <Typewriter
               onInit={(typewriter) => {
                 typewriter.typeString("Front-End Developer").start();
