@@ -149,7 +149,7 @@ function Hero() {
         </div>
         {/* headline */}
         <section className="mx-6 mt-7 flex flex-col">
-          <h1 className="mb-1 font-semibold leading-[52px] max-sm:text-[41px] max-miniphone:text-[28px] sm:text-[38.5px]">
+          <h1 className="mb-1 font-semibold leading-[53px] max-sm:text-[40px] max-miniphone:text-[28px] sm:text-[38.5px]">
             Adhim Niokagi
           </h1>
           <h6 className="text-lg text-black max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
@@ -196,6 +196,7 @@ function Hero() {
           </div>
         </section>
       </section>
+
       {/* scroll button */}
       <section className="ms-[85px] mt-20 max-lg:hidden lg:ms-[130px]">
         <button
