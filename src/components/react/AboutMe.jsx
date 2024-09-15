@@ -1,4 +1,4 @@
-import avatar from "../../assets/adhim_3hp.jpeg";
+import avatar from "../../assets/adhim_hp.webp";
 import PartTitle from "./PartTitle";
 
 function AboutMe() {
