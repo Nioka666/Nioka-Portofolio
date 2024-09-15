@@ -139,7 +139,7 @@
   /* blob animation */
   .blob {
     background-size: cover;
-    border: 13.5px solid #d8d8d86a;
+    border: 13px solid #d8d8d86a;
     border-radius: 50% / 50%;
     margin-right: 10px;
     margin-left: -10px;
