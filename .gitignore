@@ -1,8 +1,8 @@
 # build output
-dist/
 # generated types
 .astro/
 .vscode
+dist/
 
 # dependencies
 node_modules/

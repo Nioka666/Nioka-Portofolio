@@ -168,7 +168,7 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-niogray mt-[13.5px] h-[110px] w-full leading-[25px] max-sm:text-[16.5px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[18px]">
+          <p className="text-gray mt-[13.5px] h-[110px] w-full leading-[25px] max-sm:text-[16.5px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[18px]">
             Hello.. Im a Junior Front-End Web Developer. Work based in
             Mojokerto, East Java
           </p>
