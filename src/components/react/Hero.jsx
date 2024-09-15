@@ -51,7 +51,7 @@ function Hero() {
     }
     return (
       <>
-        <div className="me-4 text-gray-500">
+        <div className="me-[14px] text-gray-500">
           <i className="uil uil-minus"></i>
           {elements}
         </div>
@@ -154,7 +154,7 @@ function Hero() {
         </section>
         {/* headline */}
         <section className="mx-6 mt-7 flex flex-col">
-          <h1 className="mb-1 font-semibold leading-[53px] max-sm:text-[40.7px] max-miniphone:text-[28px] sm:text-[47px]">
+          <h1 className="mb-1 font-semibold leading-[53px] max-sm:text-[40.9px] max-miniphone:text-[28px] sm:text-[47px]">
             Adhim Niokagi
           </h1>
           <div className="flex max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
