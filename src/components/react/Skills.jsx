@@ -100,7 +100,7 @@ function Skills() {
               key={iconData.id}
               src={iconData.src}
               alt={iconData.id}
-              className="z-50 w-[90px] cursor-pointer select-none rounded-lg grayscale transition-all ease-in-out hover:grayscale-0 max-md:w-[50px]"
+              className="w-[90px] cursor-pointer select-none rounded-lg grayscale transition-all ease-in-out hover:grayscale-0 max-md:w-[50px]"
             />
           ))}
         </div>
