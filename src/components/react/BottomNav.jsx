@@ -126,10 +126,10 @@ function BottomNav() {
         className={`fixed inset-x-0 bottom-0 transform cursor-grab transition-transform duration-300 ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
       >
         {/* Drawer content */}
-        <div className="drawer-b-nav rounded-t-3xl bg-white">
-          <div className="swipper relative top-2 mx-auto mt-10 h-[5.5px] w-[100px] rounded-full bg-gray-200"></div>
-          <div className="h-[250px] justify-center gap-x-5 rounded-t-3xl p-4 pt-7">
-            <div className="flex flex-wrap justify-center gap-2">
+        <div className="drawer-b-nav-shadow rounded-t-3xl bg-white">
+          <div className="swipper relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200"></div>
+          <div className="h-[250px] rounded-t-3xl px-7 pt-8">
+            <div className="grid grid-cols-3 justify-items-center">
               {dataMenu.map((data, index) => (
                 <React.Fragment key={index}>
                   <a
@@ -137,9 +137,9 @@ function BottomNav() {
                     className="text-gray-600 hover:text-gray-400"
                     key={data.name}
                   >
-                    <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center">
+                    <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center text-gray-600">
                       <i className={data.icon}></i>
-                      <span className="mt-1 text-sm">{data.name}</span>
+                      <span className="mt-[5px] text-sm">{data.name}</span>
                     </div>
                   </a>
                   {data.blankElement}
@@ -152,7 +152,7 @@ function BottomNav() {
             onClick={() => setDrawerOpen(false)}
             className="fixed bottom-4 right-7"
           >
-            <i className="bx bx-x text-xl"></i>
+            <i className="bx bx-x text-[22px] font-medium"></i>
           </button>
         </div>
       </div>

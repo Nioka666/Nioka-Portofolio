@@ -72,7 +72,7 @@ function Hero() {
               data-tip={data.name}
             >
               <i
-                className={`${data.icon} cursor-pointer text-[21px] text-black`}
+                className={`${data.icon} cursor-pointer md:text-[17px] lg:text-[19px] nionotebook:text-[21px]`}
                 key={data.name}
               ></i>
             </a>
@@ -82,7 +82,6 @@ function Hero() {
           <h1 className="font-semibold leading-tight md:text-[45px] lg:text-[56px] lg:text-black">
             Adhim Niokagi
           </h1>
-          {/* role */}
           <div className="flex text-black md:mt-3 md:text-base lg:mt-2 lg:text-xl">
             <XLine n={10} />
             <Typewriter
@@ -94,24 +93,22 @@ function Hero() {
               }}
             />
           </div>
-          {/* summary */}
           <p className="text-gray mt-5 h-[80px] w-[85%] font-normal md:text-[14px] lg:text-[16.5px]">
             Im a Junior Front-End Developer, work based in Mojokerto, East Java.
             Passionate and dedicated to my work.
           </p>
-          {/* btn group */}
           <div className="mt-10 flex gap-5">
             <button
               role="button"
-              className="rounded-[18px] bg-gray-800 py-[17px] font-medium text-white transition-all hover:shadow-md md:px-[25px] md:text-sm lg:px-9 lg:text-base"
+              className="rounded-[17.5px] bg-gray-800 py-[17px] text-white transition-all hover:shadow-lg md:px-[25px] md:text-sm lg:px-[34px] lg:text-base"
             >
-              Say Hello{" "}
-              <i className="uil uil-location-arrow md:ms-1 lg:ms-2"></i>
+              Say Hello
+              <i className="uil uil-location-arrow md:ms-1 lg:ms-[9.2px]"></i>
             </button>
             <a href={CV} target="_blank">
               <button
                 role="button"
-                className="flex items-center rounded-2xl bg-transparent py-[15px] font-medium text-black max-sm:text-sm md:px-4 md:text-sm lg:px-7 lg:text-base"
+                className="flex items-center py-[15px] font-medium text-black md:px-4 md:text-sm lg:px-7"
               >
                 View CV
                 <i className="bx bx-file ms-3 text-2xl text-gray-600"></i>
@@ -119,7 +116,6 @@ function Hero() {
             </a>
           </div>
         </section>
-        {/* avatar */}
         <picture
           className={`blob me-[10px] overflow-hidden ${
             loaded ? "animate-fade-in" : "opacity-0"
@@ -131,8 +127,8 @@ function Hero() {
 
       {/* Hero sm */}
       <section className="sm-hero">
-        <div className="mt-16 flex items-center px-6 max-sm:gap-9 max-miniphone:gap-5 sm:gap-10">
-          {/* left icon */}
+        {/* avatars */}
+        <section className="mt-16 flex items-center px-6 max-sm:gap-9 max-miniphone:gap-5 sm:gap-10">
           <section className="social-media">
             {mediaSocial.map((data) => (
               <a
@@ -148,7 +144,6 @@ function Hero() {
               </a>
             ))}
           </section>
-          {/* avatar */}
           <picture
             className={`blob overflow-hidden max-md:ms-[2px] max-sm:ms-[-5px] max-miniphone:ms-[-3px] ${
               loaded ? "animate-fade-in" : "opacity-0"
@@ -156,13 +151,12 @@ function Hero() {
           >
             <img src={avatar.src} alt="Adhim Niokagi" />
           </picture>
-        </div>
+        </section>
         {/* headline */}
         <section className="mx-6 mt-7 flex flex-col">
           <h1 className="mb-1 font-semibold leading-[53px] max-sm:text-[40px] max-miniphone:text-[28px] sm:text-[47px]">
             Adhim Niokagi
           </h1>
-          {/* role */}
           <div className="flex max-sm:text-[17px] max-miniphone:text-[14px] sm:text-xl">
             <XLine n={10} />
             <Typewriter
@@ -181,7 +175,7 @@ function Hero() {
           <div className="mt-10 flex items-center gap-[33px] max-sm:mt-8 max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
             <button
               role="button"
-              className="rounded-[18px] bg-gray-800 px-8 py-[18px] text-[14px] font-medium text-white transition-all hover:bg-gray-700 max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
+              className="rounded-[17px] bg-gray-800 px-8 py-[18px] text-[14px] text-white transition-all hover:bg-gray-700 max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
             >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
@@ -199,12 +193,8 @@ function Hero() {
       </section>
 
       {/* scroll button */}
-      <section className="ms-[85px] mt-20 max-lg:hidden lg:ms-[130px]">
-        <button
-          role="button"
-          className="flex items-center gap-1 rounded-2xl bg-transparent text-base font-normal text-black transition-all hover:translate-y-1"
-          onClick={scrollDown}
-        >
+      <section className="hero-scroll-btn-group">
+        <button role="button" className="mouse-scroll-btn" onClick={scrollDown}>
           <i className="bx bx-mouse text-3xl text-gray-600"></i>Scroll Down
           <i className="bx bx-down-arrow-alt ms-1 text-xl text-gray-600"></i>
         </button>
