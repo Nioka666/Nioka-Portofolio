@@ -62,9 +62,10 @@ function AboutMe() {
                 </div>
               ))}
             </div>
+            {/* mockup */}
             <div className="mockup-window mt-5 border-b-2 bg-gray-200 max-sm:mt-0">
-              <div className="bg-nioprimary px-6 py-7 max-sm:px-0 max-sm:py-7">
-                <p className="text-center text-gray-500 max-sm:mt-[-5px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[16px]">
+              <div className="bg-white px-6 py-7 max-sm:px-0 max-sm:py-7">
+                <p className="text-center text-gray-500 max-sm:mt-[-5px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[15.5px]">
                   As a Front-End Web Developer, I am highly dedicated to
                   supporting your company or project. I have extensive
                   experience with several up-to-date technology frameworks such
