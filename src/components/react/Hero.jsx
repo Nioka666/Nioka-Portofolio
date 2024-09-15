@@ -154,10 +154,10 @@ function Hero() {
         </section>
         {/* headline */}
         <section className="mx-6 mt-7 flex flex-col">
-          <h1 className="mb-[5px] font-semibold leading-[53px] max-sm:text-[40.9px] max-miniphone:text-[28px] sm:text-[47px]">
+          <h1 className="mb-[6px] font-semibold leading-[55px] max-sm:text-[41px] max-miniphone:text-[35px] sm:text-[47px]">
             Adhim Niokagi
           </h1>
-          <div className="flex max-sm:text-[17.4px] max-miniphone:text-[14px] sm:text-xl">
+          <div className="flex max-sm:text-[17.9px] max-miniphone:text-[14px] sm:text-xl">
             <XLine n={10} />
             <Typewriter
               onInit={(typewriter) => {
@@ -168,9 +168,9 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-niogray mt-[14.5px] h-[110px] w-full max-sm:leading-[24.5px] max-sm:text-[16.2px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[18px]">
-            Im a Front-End Web Developer, UI/UX Enthusiast based in
-            Mojokerto, East Java. Dedicated to learn more in this field.
+          <p className="text-niogray mt-[14.5px] h-[110px] w-full max-sm:text-[16.7px] leading-[25px]">
+            I'm a Front-End Web Developer & UI/UX Enthusiast, based in
+            Mojokerto, East Java.
           </p>
           <div className="mt-10 flex items-center gap-[33px] font-medium max-sm:mt-8 max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
             <button
