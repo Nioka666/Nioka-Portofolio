@@ -168,8 +168,8 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-niogray mt-[14.5px] h-[110px] w-full max-sm:text-[16.2px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[18px]">
-            Im a Junior Front-End Web Developer, UI/UX Enthusiast based in
+          <p className="text-niogray mt-[14.5px] h-[110px] w-full max-sm:leading-[24.5px] max-sm:text-[16.2px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[18px]">
+            Im a Front-End Web Developer, UI/UX Enthusiast based in
             Mojokerto, East Java. Dedicated to learn more in this field.
           </p>
           <div className="mt-10 flex items-center gap-[33px] font-medium max-sm:mt-8 max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
