@@ -110,11 +110,11 @@ function Skills() {
 
   return (
     <>
-      <section id="skills" className="skills mt-20 py-10 max-sm:mt-12 lg:px-10">
+      <section id="skills" className="skills-component">
         {/* head/title */}
         <PartTitle title={"Technical Skills"} desc={"My Technical Skills"} />
         {/* content */}
-        <section className="mx-auto grid w-[90%] gap-6 py-12 max-md:w-[90%] lg:mt-5">
+        <section className="skills-content-container">
           <SkillCollapse
             title={"Front-End Development"}
             dataVariable={frontEndData}
