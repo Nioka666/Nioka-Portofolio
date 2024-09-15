@@ -110,7 +110,7 @@ function Skills() {
 
   return (
     <>
-      <section id="skills" className="skills mt-20 py-10 max-sm:mt-10 lg:px-10">
+      <section id="skills" className="skills mt-20 py-10 max-sm:mt-12 lg:px-10">
         {/* head/title */}
         <PartTitle title={"Technical Skills"} desc={"My Technical Skills"} />
         {/* content */}
