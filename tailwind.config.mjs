@@ -14,8 +14,9 @@ export default {
         1: "1.8px",
       },
       colors: {
-        nioprimary: "#f8f8f8",
+        nioprimary: "#fafafa",
         niosecondary: "#f4f4f4",
+        niothird: "#f8f8f8",
       },
     },
   },
