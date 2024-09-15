@@ -109,7 +109,6 @@
 
 @layer components {
   /* part components */
-
   .about-component {
     @apply mt-[84px] rounded-3xl py-10 max-md:mx-0 max-sm:mt-16 lg:px-10;
   }
