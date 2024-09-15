@@ -108,6 +108,16 @@
 }
 
 @layer components {
+  /* part components */
+
+  .about-component {
+    @apply mt-20 rounded-3xl py-10 max-md:mx-0 max-sm:mt-16 lg:px-10;
+  }
+
+  .about-content {
+    @apply mt-16 justify-between gap-16 max-sm:mt-8 lg:flex lg:items-center;
+  }
+
   /* blob animation */
   .blob {
     background-size: cover;

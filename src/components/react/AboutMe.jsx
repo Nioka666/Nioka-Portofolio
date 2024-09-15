@@ -25,15 +25,12 @@ function AboutMe() {
 
   return (
     <>
-      <section
-        id="about"
-        className="about-me mt-20 rounded-3xl py-10 max-md:mx-0 max-sm:mt-16 lg:px-10"
-      >
+      <section id="about" className="about-component">
         {/* head/title */}
         <PartTitle title={"About Me"} desc={"My Introduction"} />
 
         {/* content */}
-        <section className="mt-16 justify-between gap-16 max-sm:mt-8 lg:flex lg:items-center">
+        <section className="about-content">
           <div className="mx-auto flex justify-center md:w-1/2">
             <picture className="">
               <img
