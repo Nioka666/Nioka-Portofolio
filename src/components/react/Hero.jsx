@@ -27,7 +27,7 @@ function Hero() {
       url: "https://wa.me/6287755588990",
     },
   ];
-  
+
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoaded(true);
@@ -128,9 +128,8 @@ function Hero() {
           <img src={avatar.src} alt="Adhim Niokagi" />
         </picture>
       </section>
-      {/*  */}
+
       {/* Hero sm */}
-      {/*  */}
       <section className="sm-hero">
         <div className="mt-16 flex items-center px-6 max-sm:gap-9 max-miniphone:gap-5 sm:gap-10">
           {/* left icon */}
@@ -151,13 +150,12 @@ function Hero() {
           </section>
           {/* avatar */}
           <picture
-            className={`blob overflow-hidden max-md:ms-[2px] max-miniphone:ms-[-3px] ${
+            className={`blob overflow-hidden max-md:ms-[2px] max-sm:ms-[-5px] max-miniphone:ms-[-3px] ${
               loaded ? "animate-fade-in" : "opacity-0"
             } max-sm:h-full max-sm:w-[227px] max-miniphone:w-[223px] sm:h-full sm:w-[280px] md:h-full md:w-[10px]`}
           >
             <img src={avatar.src} alt="Adhim Niokagi" />
           </picture>
-          {/* end of avatar */}
         </div>
         {/* headline */}
         <section className="mx-6 mt-7 flex flex-col">
@@ -176,7 +174,7 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-niogray mt-[13.5px] h-[110px] w-full leading-7 max-sm:text-[16.5px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[18px]">
+          <p className="text-niogray mt-[13.5px] h-[110px] w-full leading-[25px] max-sm:text-[16.5px] max-miniphone:h-[70px] max-miniphone:text-[13px] max-miniphone:leading-5 sm:text-[18px]">
             Hello.. Im a Junior Front-End Web Developer. Work based in
             Mojokerto, East Java
           </p>
