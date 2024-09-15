@@ -172,17 +172,17 @@ function Hero() {
             Hello.. Im a Junior Front-End Web Developer. Work based in
             Mojokerto, East Java
           </p>
-          <div className="mt-10 flex items-center gap-[33px] max-sm:mt-8 max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
+          <div className="mt-10 flex items-center gap-[33px] font-medium max-sm:mt-8 max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
             <button
               role="button"
-              className="rounded-[17px] bg-gray-800 px-8 py-[18px] text-[14px] text-white transition-all hover:bg-gray-700 max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
+              className="rounded-[17px] bg-gray-800 px-8 py-[18px] text-[14px] text-white transition-all hover:shadow-md max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
             >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <a href={CV} target="_blank">
               <button
                 role="button"
-                className="flex items-center gap-[11px] rounded-2xl bg-transparent px-0 text-[14px] font-medium text-black max-miniphone:text-[10px] sm:text-[15px]"
+                className="flex items-center gap-[11px] rounded-2xl bg-transparent px-0 text-[14px] text-black max-miniphone:text-[10px] sm:text-[15px]"
               >
                 View CV
                 <i className="bx bx-file text-2xl text-gray-600"></i>
