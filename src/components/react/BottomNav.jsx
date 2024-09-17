@@ -38,7 +38,7 @@ function BottomNav() {
       blankElement: <></>,
     },
   ];
-  
+
   const toggleTheme = () => {
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme === "dark") {

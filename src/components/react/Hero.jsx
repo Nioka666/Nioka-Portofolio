@@ -172,7 +172,7 @@ function Hero() {
             I'm a Front-End Web Developer & UI/UX Enthusiast, based in
             Mojokerto, East Java.
           </p>
-          <div className="mt-10 flex items-center gap-[33px] font-medium max-sm:mt-8 max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
+          <div className="mt-10 flex items-center gap-[40px] font-medium max-sm:mt-8 max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
             <button
               role="button"
               className="dark:bg-niodark2 dark:text-textdark rounded-[17px] bg-gray-800 px-8 py-[18px] text-[14px] text-white transition-all hover:shadow-md max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"

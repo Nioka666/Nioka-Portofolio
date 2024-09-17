@@ -62,6 +62,7 @@ function Skills() {
     {
       id: "express_icon",
       src: expressIcon.src,
+      class: "dark:brightness-0 invert",
     },
     // {
     //   id: "php_icon",
@@ -88,7 +89,7 @@ function Skills() {
   const SkillCollapse = ({ title, dataVariable }) => {
     return (
       <details className="dark:bg-niodark2 dark:border-textdark2 collapse cursor-pointer border-b-2 bg-white">
-        <summary className="dark:text-textdark2 collapse-title py-5 text-[21px] font-semibold text-gray-500 max-sm:text-[16px]">
+        <summary className="dark:text-textdark2 dark:focus:text-textdark collapse-title py-5 text-[21px] font-semibold text-gray-500 max-sm:text-[16px]">
           <div className="my-2 flex items-center gap-2 max-md:justify-center max-sm:my-0 max-sm:justify-center lg:ms-14">
             <i className="bx bx-code-curly text-2xl"></i>
             <span>{title}</span>
@@ -100,7 +101,7 @@ function Skills() {
               key={iconData.id}
               src={iconData.src}
               alt={iconData.id}
-              className="w-[90px] cursor-pointer select-none rounded-lg grayscale transition-all ease-in-out hover:grayscale-0 max-md:w-[50px]"
+              className={`w-[90px] cursor-pointer select-none rounded-lg grayscale transition-all ease-in-out hover:grayscale-0 max-md:w-[50px] ${iconData.class}`}
             />
           ))}
         </div>
