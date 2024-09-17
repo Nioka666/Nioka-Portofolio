@@ -2,8 +2,17 @@ import { useEffect, useState } from "react";
 
 function Navbar() {
   const [scrollDirection, setScrollDirection] = useState("up");
-  const [lastScrollY, setLastScrollY] = useState(0); // state pertama posisi scroll sumbu Y
+  const [lastScrollY, setLastScrollY] = useState(0);
   const [themeNow, setThemeNow] = useState("light");
+
+  useEffect(() => {
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "light") {
+      setThemeNow("light");
+    } else {
+      setThemeNow("dark");
+    }
+  }, [themeNow]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,15 +41,6 @@ function Navbar() {
       localStorage.setItem("theme", "dark");
     }
   };
-
-  useEffect(() => {
-    const currentTheme = localStorage.getItem("theme");
-    if (currentTheme === "light") {
-      setThemeNow("light");
-    } else {
-      setThemeNow("dark");
-    }
-  }, [themeNow]);
 
   return (
     <>
