@@ -62,7 +62,7 @@ function Skills() {
     {
       id: "express_icon",
       src: expressIcon.src,
-      class: "dark:brightness-0 invert",
+      class: "dark:brightness-0 dark:invert",
     },
     // {
     //   id: "php_icon",
