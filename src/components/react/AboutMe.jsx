@@ -60,9 +60,9 @@ function AboutMe() {
               ))}
             </div>
             {/* mockup */}
-            <div className="mockup-window mt-5 border-b-2 dark:border-niodark2 bg-gray-200 dark:bg-niodark2 max-sm:mt-0">
-              <div className="bg-white dark:bg-niodark px-6 py-7 max-sm:px-0 max-sm:py-7">
-                <p className="text-center text-gray-500 dark:text-textdark2 max-sm:mt-[-5px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[15.5px]">
+            <div className="mockup-window about-mockup-window">
+              <div className="bg-white dark:bg-niodark3 px-6 py-7 max-sm:px-0 max-sm:py-7">
+                <p className="about-mockup-paragraph">
                   As a Front-End Web Developer and UI/UX Enthusiast, I am highly
                   dedicated to learn more in this field. I have extensive
                   experience with several up-to-date technology frameworks such
