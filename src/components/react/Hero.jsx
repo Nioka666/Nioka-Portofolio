@@ -79,10 +79,10 @@ function Hero() {
           ))}
         </section>
         <section className="headline">
-          <h1 className="dark:text-textdark font-semibold leading-tight md:text-[45px] lg:text-[54.5px] lg:text-black">
+          <h1 className="lg-header">
             Adhim Niokagi
           </h1>
-          <div className="flex md:mt-3 md:text-base lg:mt-2 lg:text-xl">
+          <div className="lg-role">
             <XLine n={10} />
             <Typewriter
               onInit={(typewriter) => {
@@ -93,14 +93,14 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-gray dark:text-textdark2 mt-5 h-[80px] w-[85%] font-normal md:text-[14px] lg:text-[16.5px]">
+          <p className="lg-paragraph">
             Im a Junior Front-End Developer, work based in Mojokerto, East Java.
             Passionate and dedicated to my work.
           </p>
-          <div className="dark:text-textdark mt-10 flex gap-7 font-medium">
+          <div className="mt-10 flex gap-7 font-medium dark:text-textdark">
             <button
               role="button"
-              className="dark:bg-niodark2 dark:text-textdark rounded-[17.5px] bg-gray-800 py-[17px] text-white transition-all hover:shadow-lg md:px-[25px] md:text-sm lg:px-[34px] lg:text-base"
+              className="rounded-[17.5px] bg-gray-800 py-[17px] text-white transition-all hover:shadow-lg dark:bg-niodark2 dark:text-textdark md:px-[25px] md:text-sm lg:px-[34px] lg:text-base"
             >
               Say Hello
               <i className="uil uil-location-arrow md:ms-1 lg:ms-[9.2px]"></i>
@@ -168,14 +168,14 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-niogray dark:text-textdark2 mt-[14.5px] h-[110px] w-full leading-[25px] max-sm:text-[16.7px]">
+          <p className="text-niogray mt-[14.5px] h-[110px] w-full leading-[25px] dark:text-textdark2 max-sm:text-[16.7px]">
             I'm a Front-End Web Developer & UI/UX Enthusiast, based in
             Mojokerto, East Java.
           </p>
           <div className="mt-10 flex items-center gap-[40px] font-medium max-sm:mt-8 max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
             <button
               role="button"
-              className="dark:bg-niodark2 dark:text-textdark rounded-[17px] bg-gray-800 px-8 py-[18px] text-[14px] text-white transition-all hover:shadow-md max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
+              className="rounded-[17px] bg-gray-800 px-8 py-[18px] text-[14px] text-white transition-all hover:shadow-md dark:bg-niodark2 dark:text-textdark max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
             >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
@@ -185,7 +185,7 @@ function Hero() {
                 className="flex items-center gap-[11px] rounded-2xl bg-transparent px-0 text-[14px] max-miniphone:text-[10px] sm:text-[15px]"
               >
                 View CV
-                <i className="bx bx-file dark:text-textdark text-2xl text-gray-600"></i>
+                <i className="bx bx-file text-2xl text-gray-600 dark:text-textdark"></i>
               </button>
             </a>
           </div>
@@ -196,7 +196,7 @@ function Hero() {
       <section className="hero-scroll-btn-group">
         <button
           role="button"
-          className="mouse-scroll-btn dark:text-textdark text-gray-600"
+          className="mouse-scroll-btn text-gray-600 dark:text-textdark"
           onClick={scrollDown}
         >
           <i className="bx bx-mouse text-3xl"></i>Scroll Down
