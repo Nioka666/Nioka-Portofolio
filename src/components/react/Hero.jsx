@@ -79,7 +79,7 @@ function Hero() {
           ))}
         </section>
         <section className="headline">
-          <h1 className="dark:text-textdark font-semibold leading-tight md:text-[45px] lg:text-[56px] lg:text-black">
+          <h1 className="dark:text-textdark font-semibold leading-tight md:text-[45px] lg:text-[54.5px] lg:text-black">
             Adhim Niokagi
           </h1>
           <div className="flex md:mt-3 md:text-base lg:mt-2 lg:text-xl">
@@ -97,7 +97,7 @@ function Hero() {
             Im a Junior Front-End Developer, work based in Mojokerto, East Java.
             Passionate and dedicated to my work.
           </p>
-          <div className="dark:text-textdark mt-10 flex gap-5 font-medium">
+          <div className="dark:text-textdark mt-10 flex gap-7 font-medium">
             <button
               role="button"
               className="dark:bg-niodark2 dark:text-textdark rounded-[17.5px] bg-gray-800 py-[17px] text-white transition-all hover:shadow-lg md:px-[25px] md:text-sm lg:px-[34px] lg:text-base"
@@ -111,13 +111,13 @@ function Hero() {
                 className="flex items-center py-[15px] font-medium md:px-4 md:text-sm lg:px-7"
               >
                 View CV
-                <i className="bx bx-file ms-3 text-2xl text-gray-600"></i>
+                <i className="bx bx-file ms-3 text-2xl text-gray-600 dark:text-textdark"></i>
               </button>
             </a>
           </div>
         </section>
         <picture
-          className={`blob me-[10px] overflow-hidden ${
+          className={`blob me-[20px] overflow-hidden ${
             loaded ? "animate-fade-in" : "opacity-0"
           } md:mt-[-30px] md:w-[260px] lg:mt-[-70px] lg:h-[250px] lg:w-[355px] nionotebook:mt-[-5px] nionotebook:h-[315px] nionotebook:w-[325px]`}
         >

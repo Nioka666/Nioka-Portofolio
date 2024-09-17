@@ -30,17 +30,19 @@
     color: #838383;
     color: #535353;
     color: #151516;
+    color: #38383897;
+
   }
 
   nav {
-    @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center  sm:top-6 sm:h-[75px] sm:px-8 lg:px-[115px];
+    @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center sm:top-6 sm:h-[75px] sm:px-8 lg:px-[115px];
     transition: all 0.3s ease;
   }
 
   nav section {
     background-color: #ffffffac;
     backdrop-filter: blur(10px);
-    @apply dark:bg-[#292929] max-md:hidden max-sm:hidden;
+    @apply max-md:hidden max-sm:hidden dark:bg-[#38383897];
   }
 
   .nav.hide {
@@ -78,7 +80,7 @@
   }
 
   section.headline {
-    @apply flex flex-col md:ms-[60px] md:w-[47%] lg:ms-[95px] lg:w-[70%] min-[1147px]:w-[50%];
+    @apply flex flex-col md:ms-[60px] md:w-[47%] lg:ms-[100px] lg:w-[70%] min-[1147px]:w-[50%];
   }
 
   picture > img.headline-img {
@@ -156,10 +158,14 @@
   }
 
   /* blob animation */
+  .pleee {
+    color: #000000;
+  }
+
   .blob {
     background-size: cover;
     border: 13px solid #d8d8d86a;
-    @apply dark:border-[#535353] dark:brightness-90;
+    @apply dark:border-[#000000] dark:brightness-90;
     border-radius: 50% / 50%;
     margin-right: 10px;
     margin-left: -10px;

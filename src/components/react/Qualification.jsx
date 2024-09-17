@@ -23,11 +23,11 @@ function Qualification() {
         <PartTitle title={"Qualifications"} desc={"My Journey's"} />
         <section className="qualifications-btn-group">
           <PartButton stateActiveMenu={1}>
-            <i className="bx bxs-graduation text-[26px] max-sm:text-[24px]"></i>{" "}
+            <i className="bx bxs-graduation text-[25px] max-sm:text-[20px]"></i>{" "}
             Educations
           </PartButton>
           <PartButton stateActiveMenu={2}>
-            <i className="bx bxs-briefcase text-[21px] max-sm:text-[19px]"></i>
+            <i className="bx bxs-briefcase text-[21px] max-sm:text-[18px]"></i>
             Experiences
           </PartButton>
         </section>
