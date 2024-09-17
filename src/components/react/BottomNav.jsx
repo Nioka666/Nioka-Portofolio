@@ -107,7 +107,7 @@ function BottomNav() {
         className={`${shadowNav == true ? "b-nav-shadow" : "shadow-none"} flex h-[60px] w-full items-center justify-between px-7`}
       >
         <a href="/">
-          <h1 className="text-base font-medium max-sm:text-sm md:text-lg lg:text-lg">
+          <h1 className="text-base font-medium max-sm:text-sm md:text-lg lg:text-lg dark:text-textdark3">
             Adhim Niokagi
           </h1>
         </a>
@@ -115,14 +115,14 @@ function BottomNav() {
           <label className="swap swap-rotate mt-[-0.5px]">
             <input type="checkbox" onChange={toggleTheme} />
             <svg
-              className={`dark:fill-textdark ${themeNow === "light" ? "swap-on" : "swap-off"} h-[21.5px] w-[21.5px] fill-gray-600`}
+              className={`dark:fill-textdark3 ${themeNow === "light" ? "swap-on" : "swap-off"} h-[21.5px] w-[21.5px] fill-gray-600`}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
               <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
             </svg>
             <svg
-              className={`dark:fill-textdark ${themeNow === "dark" ? "swap-on" : "swap-off"} h-[22px] w-[22px] fill-gray-600`}
+              className={`dark:fill-textdark3 ${themeNow === "dark" ? "swap-on" : "swap-off"} h-[22px] w-[22px] fill-gray-600`}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -134,7 +134,7 @@ function BottomNav() {
             onClick={() => setDrawerOpen((prev) => !prev)}
             className="mt-1"
           >
-            <i className="bx bx-category dark:text-textdark cursor-pointer text-[22px] font-medium text-gray-600 transition-all hover:text-gray-400"></i>
+            <i className="bx bx-category cursor-pointer text-[22px] font-medium text-gray-600 transition-all hover:text-gray-400 dark:text-textdark"></i>
           </button>
         </div>
       </section>
@@ -145,8 +145,8 @@ function BottomNav() {
         className={`fixed inset-x-0 bottom-0 transform cursor-grab transition-transform duration-300 ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
       >
         {/* Drawer content */}
-        <div className="drawer-b-nav-shadow dark:bg-niodark3 rounded-t-3xl bg-white">
-          <div className="swipper dark:bg-niodark2 relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200"></div>
+        <div className="drawer-b-nav-shadow dark:bg-niodark3 rounded-t-3xl bg-white dark:shadow-none">
+          <div className="swipper relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200 dark:bg-niodark2"></div>
           <div className="h-[250px] rounded-t-3xl px-4 pt-8">
             <div className="grid grid-cols-3 justify-items-center">
               {dataMenu.map((data, index) => (
@@ -156,7 +156,7 @@ function BottomNav() {
                     className="text-gray-600 hover:text-gray-400"
                     key={data.name}
                   >
-                    <div className="box dark:text-textdark2 grid w-[100px] basis-1/3 cursor-pointer p-3 text-center text-gray-600">
+                    <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center text-gray-600 dark:text-textdark2">
                       <i className={data.icon}></i>
                       <span className="mt-[5px] text-sm">{data.name}</span>
                     </div>
