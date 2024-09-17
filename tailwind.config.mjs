@@ -17,7 +17,7 @@ export default {
         nioprimary: "#fafafa",
         niosecondary: "#f4f4f4",
         niothird: "#f8f8f8",
-        niodark: "#181819",
+        niodark: "#141416",
         niodark2: "#2d2d2d",
         niodark3: "#262628",
         textdark: "#d6d6d6",

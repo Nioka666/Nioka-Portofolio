@@ -173,7 +173,7 @@ function Hero() {
           <div className="mt-10 flex items-center gap-[40px] font-medium max-sm:mt-[27px] max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
             <button
               role="button"
-              className="rounded-[17px] bg-gray-800 px-8 py-[18px] text-[14px] text-white transition-all hover:shadow-md dark:bg-niodark2 dark:text-textdark max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
+              className="rounded-[17px] bg-gray-800 px-8 py-[18px] text-[14px] text-white transition-all hover:shadow-md dark:bg-niodark3 dark:shadow-sm dark:text-textdark max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
             >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>

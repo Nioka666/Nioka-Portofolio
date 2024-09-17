@@ -61,7 +61,7 @@ function AboutMe() {
             </div>
             {/* mockup */}
             <div className="mockup-window about-mockup-window">
-              <div className="bg-white dark:bg-niodark3 px-6 py-7 max-sm:px-0 max-sm:py-7">
+              <div className="bg-white dark:bg-niodark3 dark:shadow-md px-6 py-7 max-sm:px-0 max-sm:py-7">
                 <p className="about-mockup-paragraph">
                   As a Front-End Web Developer and UI/UX Enthusiast, I am highly
                   dedicated to learn more in this field. I have extensive
