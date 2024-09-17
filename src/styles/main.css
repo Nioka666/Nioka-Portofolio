@@ -71,7 +71,7 @@
   }
   /* hero sm */
   section.sm-hero {
-    @apply mt-[68px] flex-col rounded-2xl md:hidden;
+    @apply mt-[-60px] flex-col rounded-2xl md:hidden;
   }
 
   section.social-media {
