@@ -63,11 +63,10 @@ function AboutMe() {
             <div className="mockup-window mt-5 border-b-2 bg-gray-200 max-sm:mt-0">
               <div className="bg-white px-6 py-7 max-sm:px-0 max-sm:py-7">
                 <p className="text-center text-gray-500 max-sm:mt-[-5px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[15.5px]">
-                  As a Front-End Web Developer, I am highly dedicated to
-                  supporting your company or project. I have extensive
+                  As a Front-End Web Developer and UI/UX Enthusiast, I am highly dedicated to
+                  learn more in this field. I have extensive
                   experience with several up-to-date technology frameworks such
-                  as ReactJs, Express.js, and Next.js. I am proficient in
-                  managing databases and implementing complex business logicals.
+                  as ReactJs, Express.js and more Javaxsript ecosystem for recent.
                 </p>
               </div>
             </div>
