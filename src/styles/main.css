@@ -91,7 +91,7 @@
   }
 
   section.headline {
-    @apply flex flex-col md:ms-[60px] md:w-[47%] lg:ms-[100px] lg:w-[70%] min-[1147px]:w-[50%];
+    @apply flex flex-col md:ms-[60px] md:w-[47%] lg:ms-[115px] lg:w-[70%] min-[1147px]:w-[50%];
   }
 
   picture > img.headline-img {
