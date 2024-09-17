@@ -9,7 +9,7 @@ function Qualification() {
     return (
       <button
         role="button"
-        className={`flex items-center gap-2 rounded-xl border-b-2 bg-transparent bg-white px-[17px] py-[14px] text-xl max-sm:text-[13px] md:px-7 md:py-5 md:text-[17px] ${activeMenu === stateActiveMenu ? "text-black" : "text-gray-400"}`}
+        className={`flex items-center gap-2 rounded-xl border-b-2 bg-transparent bg-white px-[17px] py-[14px] text-xl max-sm:text-[13px] md:px-7 md:py-[18px] md:text-[17px] ${activeMenu === stateActiveMenu ? "text-black" : "text-gray-400"}`}
         onClick={() => setActiveMenu(stateActiveMenu)}
       >
         {children}
@@ -19,9 +19,9 @@ function Qualification() {
 
   return (
     <>
-      <section id="qualification" className="mt-10 h-[700px] py-10 max-sm:mt-1">
+      <section id="qualification" className="qualifications-component">
         <PartTitle title={"Qualifications"} desc={"My Journey's"} />
-        <section className="mt-16 flex justify-center gap-3 font-medium max-sm:mt-12 md:gap-8">
+        <section className="qualifications-btn-group">
           <PartButton stateActiveMenu={1}>
             <i className="bx bxs-graduation text-[26px] max-sm:text-[24px]"></i>{" "}
             Educations

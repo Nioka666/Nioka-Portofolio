@@ -2,7 +2,7 @@
 function Educations() {
   return (
     <>
-      <section className="max-md:mt-10 max-md:px-8 max-sm:mt-10 lg:mt-10">
+      <section className="max-md:mt-10 max-md:px-8 max-sm:mt-10 lg:mt-12">
         <ul className="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
           <li>
             <div className="timeline-middle">
