@@ -12,7 +12,7 @@
   }
 
   html {
-    @apply dark:bg-niodark bg-nioprimary !important;
+    @apply dark:bg-niodark !important;
   }
 
   ::selection {
@@ -21,7 +21,7 @@
   }
 
   body {
-    @apply dark:bg-niodark dark:text-textdark bg-nioprimary;
+    @apply dark:bg-niodark dark:text-textdark bg-nioprimary !important;
     max-width: 100% !important;
   }
 
@@ -31,18 +31,17 @@
     color: #d6d6d6;
     color: #838383;
     color: #535353;
-
   }
 
   nav {
-    @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center max-md:hidden max-sm:hidden sm:top-6 sm:h-[75px] sm:px-8 lg:px-[115px];
+    @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center  sm:top-6 sm:h-[75px] sm:px-8 lg:px-[115px];
     transition: all 0.3s ease;
   }
 
   nav section {
     background-color: #ffffffac;
     backdrop-filter: blur(10px);
-    @apply dark:bg-[#292929];
+    @apply dark:bg-[#292929] max-md:hidden max-sm:hidden;
   }
 
   .nav.hide {
@@ -54,7 +53,7 @@
   }
 
   div.bottom-nav {
-    @apply dark:bg-niodark fixed bottom-0 mx-auto flex h-[60px] w-full items-center bg-nioprimary max-sm:visible sm:h-[60px] md:hidden ;
+    @apply dark:bg-niodark fixed bottom-0 mx-auto flex h-[60px] w-full items-center bg-nioprimary max-sm:visible sm:h-[60px] md:hidden;
   }
 
   nav > section {
@@ -87,7 +86,6 @@
     @apply w-[325px] rounded-bl-[150px] rounded-br-[100px] rounded-tl-[150px] rounded-tr-[150px];
   }
 
-  
   /*  */
 
   .text-gray {

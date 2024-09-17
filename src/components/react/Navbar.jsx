@@ -45,7 +45,7 @@ function Navbar() {
     <>
       <nav className={`nav ${scrollDirection === "down" ? "hide" : "show"}`}>
         {/* nav floating island */}
-        <section className="transition-none">
+        <section className="transition-none max-md:hidden max-sm:hidden">
           <a href="/">
             <h1 className="text-base font-medium md:text-base lg:text-base">
               Adhim Niokagi
