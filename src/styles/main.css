@@ -27,6 +27,7 @@
 
   .palleteee {
     color: #222225;
+    color: #222224;
     color: #38383897;
     color: #141416;
     color: #bfc0c3;
@@ -135,7 +136,7 @@
   /* part components */
   /* hero */
   .hero-scroll-btn-group {
-    @apply ms-[85px] mt-20 max-lg:hidden lg:ms-[130px];
+    @apply ms-[85px] mt-24 max-lg:hidden lg:ms-[135px];
   }
 
   button.mouse-scroll-btn {
@@ -151,7 +152,7 @@
   }
 
   .about-mockup-window {
-    @apply mt-5 border-b-2 bg-gray-200 dark:border-niodark dark:bg-niodark2 max-sm:mt-0;
+    @apply mt-5 border-b-2 bg-gray-200 dark:border-niodark dark:bg-niodark3 max-sm:mt-0;
   }
 
   .about-mockup-paragraph {

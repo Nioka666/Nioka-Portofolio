@@ -194,10 +194,10 @@ function Hero() {
       <section className="hero-scroll-btn-group">
         <button
           role="button"
-          className="mouse-scroll-btn text-gray-600 dark:text-textdark"
+          className="mouse-scroll-btn text-gray-600 dark:text-textdark2"
           onClick={scrollDown}
         >
-          <i className="bx bx-mouse text-3xl"></i>Scroll Down
+          <i className="bx bx-mouse text-2xl me-1"></i>Scroll Down
           <i className="bx bx-down-arrow-alt ms-1 text-xl"></i>
         </button>
       </section>
