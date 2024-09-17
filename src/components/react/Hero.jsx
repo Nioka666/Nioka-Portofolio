@@ -79,10 +79,10 @@ function Hero() {
           ))}
         </section>
         <section className="headline">
-          <h1 className="font-semibold leading-tight md:text-[45px] lg:text-[56px] lg:text-black">
+          <h1 className="dark:text-textdark font-semibold leading-tight md:text-[45px] lg:text-[56px] lg:text-black">
             Adhim Niokagi
           </h1>
-          <div className="flex text-black md:mt-3 md:text-base lg:mt-2 lg:text-xl">
+          <div className="flex md:mt-3 md:text-base lg:mt-2 lg:text-xl">
             <XLine n={10} />
             <Typewriter
               onInit={(typewriter) => {
@@ -93,14 +93,14 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-gray mt-5 h-[80px] w-[85%] font-normal md:text-[14px] lg:text-[16.5px]">
+          <p className="text-gray dark:text-textdark2 mt-5 h-[80px] w-[85%] font-normal md:text-[14px] lg:text-[16.5px]">
             Im a Junior Front-End Developer, work based in Mojokerto, East Java.
             Passionate and dedicated to my work.
           </p>
-          <div className="mt-10 flex gap-5">
+          <div className="dark:text-textdark mt-10 flex gap-5 font-medium">
             <button
               role="button"
-              className="rounded-[17.5px] bg-gray-800 py-[17px] text-white transition-all hover:shadow-lg md:px-[25px] md:text-sm lg:px-[34px] lg:text-base"
+              className="dark:bg-niodark2 dark:text-textdark rounded-[17.5px] bg-gray-800 py-[17px] text-white transition-all hover:shadow-lg md:px-[25px] md:text-sm lg:px-[34px] lg:text-base"
             >
               Say Hello
               <i className="uil uil-location-arrow md:ms-1 lg:ms-[9.2px]"></i>
@@ -108,7 +108,7 @@ function Hero() {
             <a href={CV} target="_blank">
               <button
                 role="button"
-                className="flex items-center py-[15px] font-medium text-black md:px-4 md:text-sm lg:px-7"
+                className="flex items-center py-[15px] font-medium md:px-4 md:text-sm lg:px-7"
               >
                 View CV
                 <i className="bx bx-file ms-3 text-2xl text-gray-600"></i>
@@ -168,24 +168,24 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-niogray mt-[14.5px] h-[110px] w-full max-sm:text-[16.7px] leading-[25px]">
+          <p className="text-niogray dark:text-textdark2 mt-[14.5px] h-[110px] w-full leading-[25px] max-sm:text-[16.7px]">
             I'm a Front-End Web Developer & UI/UX Enthusiast, based in
             Mojokerto, East Java.
           </p>
           <div className="mt-10 flex items-center gap-[33px] font-medium max-sm:mt-8 max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
             <button
               role="button"
-              className="rounded-[17px] bg-gray-800 px-8 py-[18px] text-[14px] text-white transition-all hover:shadow-md max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
+              className="dark:bg-niodark2 dark:text-textdark rounded-[17px] bg-gray-800 px-8 py-[18px] text-[14px] text-white transition-all hover:shadow-md max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
             >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <a href={CV} target="_blank">
               <button
                 role="button"
-                className="flex items-center gap-[11px] rounded-2xl bg-transparent px-0 text-[14px] text-black max-miniphone:text-[10px] sm:text-[15px]"
+                className="flex items-center gap-[11px] rounded-2xl bg-transparent px-0 text-[14px] max-miniphone:text-[10px] sm:text-[15px]"
               >
                 View CV
-                <i className="bx bx-file text-2xl text-gray-600"></i>
+                <i className="bx bx-file dark:text-textdark text-2xl text-gray-600"></i>
               </button>
             </a>
           </div>
@@ -194,9 +194,13 @@ function Hero() {
 
       {/* scroll button */}
       <section className="hero-scroll-btn-group">
-        <button role="button" className="mouse-scroll-btn" onClick={scrollDown}>
-          <i className="bx bx-mouse text-3xl text-gray-600"></i>Scroll Down
-          <i className="bx bx-down-arrow-alt ms-1 text-xl text-gray-600"></i>
+        <button
+          role="button"
+          className="mouse-scroll-btn dark:text-textdark text-gray-600"
+          onClick={scrollDown}
+        >
+          <i className="bx bx-mouse text-3xl"></i>Scroll Down
+          <i className="bx bx-down-arrow-alt ms-1 text-xl"></i>
         </button>
       </section>
     </>

@@ -47,12 +47,12 @@ function AboutMe() {
               {boxData.map((box) => (
                 <div
                   key={box.id}
-                  className="grid w-[150px] cursor-pointer gap-1 rounded-[20px] bg-nioprimary px-6 py-5 text-center text-black max-sm:w-[130px] max-sm:px-[10px] max-sm:py-4 md:border-0"
+                  className="dark:text-textdark grid w-[150px] cursor-pointer gap-1 rounded-[20px] px-6 py-5 text-center text-black max-sm:w-[130px] max-sm:px-[10px] max-sm:py-4 md:border-0"
                 >
                   <i
                     className={`${box.icon} mb-2 text-[26px] max-sm:mb-1 max-sm:text-[20px]`}
                   ></i>
-                  <p className="mt-0 text-[14px] text-black max-sm:text-[11px]">
+                  <p className="mt-0 text-[14px] max-sm:text-[11px]">
                     {box.title}
                   </p>
                   <p className="text-[8.9px] text-gray-500">{box.desc}</p>
@@ -60,13 +60,14 @@ function AboutMe() {
               ))}
             </div>
             {/* mockup */}
-            <div className="mockup-window mt-5 border-b-2 bg-gray-200 max-sm:mt-0">
-              <div className="bg-white px-6 py-7 max-sm:px-0 max-sm:py-7">
-                <p className="text-center text-gray-500 max-sm:mt-[-5px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[15.5px]">
-                  As a Front-End Web Developer and UI/UX Enthusiast, I am highly dedicated to
-                  learn more in this field. I have extensive
+            <div className="mockup-window mt-5 border-b-2 dark:border-niodark2 bg-gray-200 dark:bg-niodark2 max-sm:mt-0">
+              <div className="bg-white dark:bg-niodark px-6 py-7 max-sm:px-0 max-sm:py-7">
+                <p className="text-center text-gray-500 dark:text-textdark2 max-sm:mt-[-5px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[15.5px]">
+                  As a Front-End Web Developer and UI/UX Enthusiast, I am highly
+                  dedicated to learn more in this field. I have extensive
                   experience with several up-to-date technology frameworks such
-                  as ReactJs, Express.js and more Javaxsript ecosystem for recent.
+                  as ReactJs, Express.js and more Javascript ecosystem for
+                  recent.
                 </p>
               </div>
             </div>

@@ -3,7 +3,7 @@ import daisyui from "daisyui";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-  darkMode: ["selector", '[data-mode="dark"]'],
+  darkMode: "class",
   theme: {
     extend: {
       screens: {
@@ -17,6 +17,10 @@ export default {
         nioprimary: "#fafafa",
         niosecondary: "#f4f4f4",
         niothird: "#f8f8f8",
+        niodark: "#000000",
+        niodark2: "#2d2d2d",
+        textdark: "#d6d6d6",
+        textdark2: "#838383",
       },
     },
   },

@@ -29,10 +29,10 @@ function Educations() {
                 Informatics Engineering <br /> <br />
               </p>
             </div>
-            <hr />
+            <hr className="dark:bg-textdark2" />
           </li>
           <li>
-            <hr />
+            <hr className="dark:bg-textdark2" />
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,10 +57,10 @@ function Educations() {
               </p>
               <br />
             </div>
-            <hr />
+            <hr className="dark:bg-textdark2" />
           </li>
           <li>
-            <hr />
+            <hr className="dark:bg-textdark2" />
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
