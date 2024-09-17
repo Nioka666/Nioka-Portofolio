@@ -146,7 +146,7 @@ function BottomNav() {
       >
         {/* Drawer content */}
         <div className="drawer-b-nav-shadow dark:bg-niodark3 rounded-t-3xl bg-white dark:shadow-none">
-          <div className="swipper relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200 dark:bg-niodark2"></div>
+          <div className="swipper relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200 dark:bg-textdark2"></div>
           <div className="h-[250px] rounded-t-3xl px-4 pt-8">
             <div className="grid grid-cols-3 justify-items-center">
               {dataMenu.map((data, index) => (
