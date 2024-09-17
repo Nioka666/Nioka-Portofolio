@@ -165,7 +165,7 @@
   .blob {
     background-size: cover;
     border: 13px solid #d8d8d86a;
-    @apply dark:border-[#000000] dark:brightness-90;
+    @apply dark:border-[6px] dark:border-transparent dark:brightness-90;
     border-radius: 50% / 50%;
     margin-right: 10px;
     margin-left: -10px;
