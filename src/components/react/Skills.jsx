@@ -87,8 +87,8 @@ function Skills() {
 
   const SkillCollapse = ({ title, dataVariable }) => {
     return (
-      <details className="collapse cursor-pointer border-b-2 bg-white transition-all ease-in-out">
-        <summary className="collapse-title py-5 text-[21px] font-semibold text-gray-500 max-sm:text-[17px]">
+      <details className="dark:bg-niodark2 collapse cursor-pointer border-b-2 border-textdark2 bg-white transition-all ease-in-out">
+        <summary className="collapse-title py-5 text-[21px] font-semibold text-gray-500 dark:text-textdark2 max-sm:text-[17px]">
           <div className="my-2 flex items-center gap-2 max-md:justify-center max-sm:my-0 max-sm:justify-center lg:ms-14">
             <i className="bx bx-code-curly text-2xl"></i>
             <span>{title}</span>
