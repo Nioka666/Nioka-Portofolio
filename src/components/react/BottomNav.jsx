@@ -144,8 +144,8 @@ function BottomNav() {
         className={`fixed inset-x-0 bottom-0 transform cursor-grab transition-transform duration-300 ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
       >
         {/* Drawer content */}
-        <div className="drawer-b-nav-shadow rounded-t-3xl bg-white">
-          <div className="swipper relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200"></div>
+        <div className="drawer-b-nav-shadow rounded-t-3xl bg-white dark:bg-niodark">
+          <div className="swipper relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200 dark:bg-niodark2"></div>
           <div className="h-[250px] rounded-t-3xl px-4 pt-8">
             <div className="grid grid-cols-3 justify-items-center">
               {dataMenu.map((data, index) => (
@@ -155,7 +155,7 @@ function BottomNav() {
                     className="text-gray-600 hover:text-gray-400"
                     key={data.name}
                   >
-                    <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center text-gray-600">
+                    <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center text-gray-600 dark:text-textdark2">
                       <i className={data.icon}></i>
                       <span className="mt-[5px] text-sm">{data.name}</span>
                     </div>

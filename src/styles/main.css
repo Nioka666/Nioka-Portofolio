@@ -31,6 +31,7 @@
     color: #d6d6d6;
     color: #838383;
     color: #535353;
+    color: #141414;
   }
 
   nav {
@@ -71,7 +72,7 @@
   }
   /* hero sm */
   section.sm-hero {
-    @apply mt-[-60px] flex-col rounded-2xl md:hidden;
+    @apply mt-[-65px] flex-col rounded-2xl md:hidden;
   }
 
   section.social-media {
