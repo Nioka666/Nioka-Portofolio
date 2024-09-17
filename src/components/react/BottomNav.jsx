@@ -38,15 +38,6 @@ function BottomNav() {
     },
   ];
 
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, []);
-
   const toggleTheme = () => {
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme === "dark") {
