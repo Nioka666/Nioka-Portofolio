@@ -98,8 +98,16 @@
     @apply w-[325px] rounded-bl-[150px] rounded-br-[100px] rounded-tl-[150px] rounded-tr-[150px];
   }
 
-  /*  */
+  .button-send-chat {
+    @apply fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full bg-gray-700 text-white transition-all hover:bg-gray-600 dark:bg-niodark2 max-lg:hidden max-md:bottom-20 max-md:right-5;
+  }
 
+  /* button go up */
+  .button-go-top {
+    @apply fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full border-none bg-gray-200 text-black transition-none hover:bg-gray-300 dark:bg-niodark2 dark:text-textdark2 max-md:bottom-20 max-md:right-5 max-sm:h-[38px] max-sm:w-[38px];
+  }
+
+  /*  */
   .text-gray {
     /* color: #7b7b7b; */
     @apply text-gray-500;
@@ -155,7 +163,7 @@
   }
 
   .about-mockup-paragraph {
-    @apply text-center text-gray-500 dark:text-textdark2 max-sm:mt-[-5px] dark:max-sm:mt-[-15px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[15.5px];
+    @apply text-center text-gray-500 dark:text-textdark2 max-sm:mt-[-5px] max-sm:px-6 max-sm:text-[11.5px] dark:max-sm:mt-[-15px] sm:text-center sm:text-base md:text-left md:text-[15.5px];
   }
 
   /* skills section */

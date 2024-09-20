@@ -6,7 +6,7 @@ function ButtonChat() {
   return (
     <>
       <button
-        className="fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full bg-gray-700 dark:bg-niodark2 text-white transition-all hover:bg-gray-600 max-lg:hidden max-md:bottom-20 max-md:right-5"
+        className="button-send-chat"
         onClick={btnAction}
       >
         <i className="bx bxs-message-square-detail text-xl max-sm:text-base"></i>
