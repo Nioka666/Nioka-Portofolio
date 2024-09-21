@@ -99,6 +99,10 @@
     @apply w-[325px] rounded-bl-[150px] rounded-br-[100px] rounded-tl-[150px] rounded-tr-[150px];
   }
 
+  .bottom-drawer {
+    @apply fixed inset-x-0 bottom-0 transform cursor-grab transition-transform duration-300;
+  }
+
   .button-send-chat {
     @apply fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full bg-gray-700 text-white transition-all hover:bg-gray-600 dark:bg-niodark2 max-lg:hidden max-md:bottom-20 max-md:right-5;
   }

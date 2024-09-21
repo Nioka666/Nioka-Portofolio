@@ -5,33 +5,35 @@ function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [themeNow, setThemeNow] = useState("light");
 
-  useEffect(() => {
-    const currentTheme = localStorage.getItem("theme");
-    if (currentTheme === "light") {
-      setThemeNow("light");
-    } else {
-      setThemeNow("dark");
-    }
-  }, [themeNow]);
+  const menuData = [
+    {
+      url: "#about",
+      icon: "bx bx-user text-2xl",
+      title: "About",
+    },
+    {
+      url: "#skills",
+      icon: "bx bx-universal-access text-2xl",
+      title: "Skills",
+    },
+    {
+      url: "#qualification",
+      icon: "bx bx-file text-2xl",
+      title: "Qualification",
+    },
+    {
+      url: "#portfolio",
+      icon: "bx bx-image text-2xl",
+      title: "Portfolio",
+    },
+    {
+      url: "#contact",
+      icon: "bx bxs-contact text-2xl",
+      title: "Contact",
+    },
+  ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        setScrollDirection("down");
-      } else {
-        setScrollDirection("up");
-      }
-      setLastScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
-
-  const toggleTheme = () => {
+  function toggleTheme() {
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme === "dark") {
       document.documentElement.classList.remove("dark");
@@ -40,7 +42,31 @@ function Navbar() {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
     }
-  };
+  }
+
+  useEffect(() => {
+    let currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "light") {
+      setThemeNow("light");
+    } else {
+      setThemeNow("dark");
+    }
+
+    function handleScroll() {
+      if (window.scrollY > lastScrollY) {
+        setScrollDirection("down");
+      } else {
+        setScrollDirection("up");
+      }
+      setLastScrollY(window.scrollY);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [themeNow, lastScrollY]);
 
   return (
     <>
@@ -77,43 +103,21 @@ function Navbar() {
               data-tip="Menu"
             >
               <button role="button" type="button" className="">
-                <i className="bx bx-menu-alt-right dark:text-textdark cursor-pointer text-[26px] font-medium text-gray-600 transition-all hover:text-gray-400"></i>
+                <i className="bx bx-menu-alt-right cursor-pointer text-[26px] font-medium text-gray-600 transition-all hover:text-gray-400 dark:text-textdark"></i>
               </button>
               <div
-                className="dark:bg-niodark2 dark:text-textdark card dropdown-content card-compact z-[1] mt-10 w-[380px] bg-white p-2 text-black shadow-sm"
+                className="card dropdown-content card-compact z-[1] mt-10 w-[380px] bg-white p-2 text-black shadow-sm dark:bg-niodark2 dark:text-textdark"
                 tabIndex="0"
               >
-                <div className="flex flex-wrap justify-center gap-2 p-4">
-                  <a href="#about">
-                    <div className="box grid w-[100px] cursor-pointer p-3 text-center">
-                      <i className="bx bx-user text-2xl"></i>
-                      <span className="text-xs">About</span>
-                    </div>
-                  </a>
-                  <a href="#skills">
-                    <div className="box grid w-[100px] cursor-pointer p-3 text-center">
-                      <i className="bx bx-universal-access text-2xl"></i>
-                      <span className="text-xs">Skills</span>
-                    </div>
-                  </a>
-                  <a href="#qualification">
-                    <div className="box grid w-[100px] cursor-pointer p-3 text-center">
-                      <i className="bx bx-file text-2xl"></i>
-                      <span className="text-xs">Qualification</span>
-                    </div>
-                  </a>
-                  <div className="box grid w-[100px] cursor-pointer p-3 text-center">
-                    <i className="bx bx-image text-2xl"></i>
-                    <span className="text-xs">Portfolio</span>
-                  </div>
-                  <div className="box grid w-[100px] cursor-pointer p-3 text-center">
-                    <i className="bx bxs-contact text-2xl"></i>
-                    <span className="text-xs">Contact</span>
-                  </div>
-                  <div className="box grid w-[100px] cursor-pointer p-3 text-center">
-                    <i className="text-2xl"></i>
-                    <span className="text-xs"></span>
-                  </div>
+                <div className="grid grid-cols-3 gap-2 p-5">
+                  {menuData.map((menu) => (
+                    <a href={menu.url}>
+                      <div className="box grid w-[100px] cursor-pointer p-3 text-center">
+                        <i className={menu.icon}></i>
+                        <span className="text-xs">{menu.title}</span>
+                      </div>
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>
