@@ -115,9 +115,7 @@ function Hero() {
           </div>
         </section>
         <picture
-          className={`blob me-[25px] overflow-hidden ${
-            loaded ? "animate-fade-in" : "opacity-0"
-          } md:mt-[-30px] md:w-[260px] lg:mt-[-70px] lg:h-[250px] lg:w-[355px] nionotebook:mt-[-5px] nionotebook:h-[315px] nionotebook:w-[325px]`}
+          className={`blob me-[25px] overflow-hidden md:mt-[-30px] md:w-[260px] lg:mt-[-70px] lg:h-[250px] lg:w-[355px] nionotebook:mt-[-5px] nionotebook:h-[315px] nionotebook:w-[325px]`}
         >
           <img src={avatar.src} alt="Adhim Niokagi" />
         </picture>
@@ -143,9 +141,7 @@ function Hero() {
             ))}
           </section>
           <picture
-            className={`blob overflow-hidden max-md:ms-[2px] max-sm:ms-[-5px] max-miniphone:ms-[-3px] ${
-              loaded ? "animate-fade-in" : "opacity-0"
-            } max-sm:h-full max-sm:w-[227px] max-miniphone:w-[223px] sm:h-full sm:w-[280px] md:h-full md:w-[10px]`}
+            className={`blob overflow-hidden max-md:ms-[2px] max-sm:ms-[-5px] max-sm:h-full max-sm:w-[227px] max-miniphone:ms-[-3px] max-miniphone:w-[223px] sm:h-full sm:w-[280px] md:h-full md:w-[10px]`}
           >
             <img src={avatar.src} alt="Adhim Niokagi" />
           </picture>
@@ -173,7 +169,7 @@ function Hero() {
           <div className="mt-10 flex items-center gap-[40px] font-medium max-sm:mt-[27px] max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
             <button
               role="button"
-              className="rounded-[16px] bg-gray-800 px-[30px] py-[17.5px] text-[14.7px] text-nioprimary hover:shadow-md dark:bg-niosecondary dark:font-semibold dark:text-niodark dark:shadow-sm max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
+              className="rounded-[15px] bg-gray-800 px-[30px] py-[17.5px] text-[14.7px] text-nioprimary hover:shadow-md dark:bg-niosecondary dark:font-semibold dark:text-niodark dark:shadow-sm max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
             >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
