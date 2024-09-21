@@ -84,7 +84,7 @@
 
   /* hero sm */
   section.sm-hero {
-    @apply mt-[-65px] flex-col rounded-2xl md:hidden;
+    @apply mt-[-61px] flex-col rounded-2xl md:hidden;
   }
 
   section.social-media {
