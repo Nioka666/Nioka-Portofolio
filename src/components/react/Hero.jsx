@@ -95,10 +95,10 @@ function Hero() {
             Im a Junior Front-End Developer, work based in Mojokerto, East Java.
             Passionate and dedicated to my work.
           </p>
-          <div className="mt-10 flex gap-7 font-medium dark:text-textdark">
+          <div className="mt-10 flex gap-7 font-medium">
             <button
               role="button"
-              className="rounded-[17.5px] bg-gray-800 py-[17px] text-white transition-all hover:shadow-lg dark:bg-niodark2 dark:text-textdark md:px-[25px] md:text-sm lg:px-[34px] lg:text-base"
+              className="rounded-[17.5px] bg-niodark py-[17px] text-white hover:shadow-lg dark:bg-nioprimary dark:font-semibold dark:text-niodark md:px-[25px] md:text-sm lg:px-[34px] lg:text-[17px]"
             >
               Say Hello
               <i className="uil uil-location-arrow md:ms-1 lg:ms-[9.2px]"></i>
@@ -106,10 +106,10 @@ function Hero() {
             <a href={CV} target="_blank">
               <button
                 role="button"
-                className="flex items-center py-[15px] font-medium md:px-4 md:text-sm lg:px-7"
+                className="flex items-center py-[15px] md:px-4 md:text-sm lg:px-7 lg:text-[17px]"
               >
                 View CV
-                <i className="bx bx-file ms-3 text-2xl text-gray-600 dark:text-textdark"></i>
+                <i className="bx bx-file ms-3 text-2xl text-gray-600 dark:text-nioprimary"></i>
               </button>
             </a>
           </div>
@@ -173,7 +173,7 @@ function Hero() {
           <div className="mt-10 flex items-center gap-[40px] font-medium max-sm:mt-[27px] max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
             <button
               role="button"
-              className="rounded-[17px] bg-gray-800 px-8 py-[18px] text-[14px] text-white transition-all hover:shadow-md dark:bg-niodark3 dark:shadow-sm dark:text-textdark max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
+              className="rounded-[17px] bg-gray-800 px-[30.5px] py-[17.5px] text-[15px] text-white hover:shadow-md dark:bg-nioprimary dark:font-semibold dark:text-niodark dark:shadow-sm max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
             >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
@@ -197,7 +197,7 @@ function Hero() {
           className="mouse-scroll-btn text-gray-600 dark:text-textdark2"
           onClick={scrollDown}
         >
-          <i className="bx bx-mouse text-2xl me-1"></i>Scroll Down
+          <i className="bx bx-mouse me-1 text-2xl"></i>Scroll Down
           <i className="bx bx-down-arrow-alt ms-1 text-xl"></i>
         </button>
       </section>
