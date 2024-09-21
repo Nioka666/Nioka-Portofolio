@@ -98,7 +98,7 @@ function Hero() {
           <div className="mt-10 flex gap-7 font-medium">
             <button
               role="button"
-              className="rounded-[17.5px] bg-niodark py-[17px] text-white hover:shadow-lg dark:bg-nioprimary dark:font-semibold dark:text-niodark md:px-[25px] md:text-sm lg:px-[34px] lg:text-[17px]"
+              className="rounded-[17.5px] bg-niodark py-[17px] text-white hover:bg-niodark2 hover:shadow-lg dark:bg-nioprimary dark:font-semibold dark:text-niodark dark:hover:bg-niosecondary md:px-[25px] md:text-sm lg:px-[34px] lg:text-[17px]"
             >
               Say Hello
               <i className="uil uil-location-arrow md:ms-1 lg:ms-[9.2px]"></i>
