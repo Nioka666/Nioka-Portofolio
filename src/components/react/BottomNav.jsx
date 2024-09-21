@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useSwipeable } from "react-swipeable";
 
 function BottomNav() {
@@ -34,9 +34,6 @@ function BottomNav() {
       icon: "uil uil-user-square text-3xl",
       url: "#contact",
     },
-    {
-      blankElement: <></>,
-    },
   ];
 
   const toggleTheme = () => {
@@ -57,9 +54,7 @@ function BottomNav() {
     } else {
       setThemeNow("dark");
     }
-  }, [themeNow]);
 
-  useEffect(() => {
     const handleScroll = () => {
       setShadowNav(window.scrollY > 200);
     };
@@ -67,19 +62,13 @@ function BottomNav() {
     window.addEventListener("scroll", handleScroll);
     handleScroll();
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
-
-  useEffect(() => {
-    if (drawerOpen == true) {
+    if (drawerOpen) {
       document.body.classList.add("lock-scroll");
     } else {
       document.body.classList.remove("lock-scroll");
     }
 
-    function handleClickOutside(event) {
+    const handleClickOutside = (event) => {
       if (
         bottomDrawerRef.current &&
         !bottomDrawerRef.current.contains(event.target) &&
@@ -87,13 +76,16 @@ function BottomNav() {
       ) {
         setDrawerOpen(false);
       }
-    }
+    };
 
     document.addEventListener("mousedown", handleClickOutside);
+
+    // Cleanup functions
     return () => {
+      window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [drawerOpen]);
+  }, [themeNow, drawerOpen]);
 
   const SwipeHandler = useSwipeable({
     onSwipedDown: () => setDrawerOpen(false),
@@ -107,7 +99,7 @@ function BottomNav() {
         className={`${shadowNav == true ? "b-nav-shadow" : "shadow-none"} flex h-[60px] w-full items-center justify-between px-7`}
       >
         <a href="/">
-          <h1 className="text-base font-medium max-sm:text-sm md:text-lg lg:text-lg dark:text-textdark3">
+          <h1 className="text-base font-medium dark:text-textdark3 max-sm:text-sm md:text-lg lg:text-lg">
             Adhim Niokagi
           </h1>
         </a>
@@ -145,24 +137,21 @@ function BottomNav() {
         className={`fixed inset-x-0 bottom-0 transform cursor-grab transition-transform duration-300 ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
       >
         {/* Drawer content */}
-        <div className="drawer-b-nav-shadow dark:bg-niodark3 rounded-t-3xl bg-white dark:shadow-none">
+        <div className="drawer-b-nav-shadow rounded-t-3xl bg-white dark:bg-niodark3 dark:shadow-none">
           <div className="swipper relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200 dark:bg-textdark2"></div>
           <div className="h-[250px] rounded-t-3xl px-4 pt-8">
             <div className="grid grid-cols-3 justify-items-center">
               {dataMenu.map((data, index) => (
-                <React.Fragment key={index}>
-                  <a
-                    href={data.url}
-                    className="text-gray-600 hover:text-gray-400"
-                    key={data.name}
-                  >
-                    <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center text-gray-600 dark:text-textdark2">
-                      <i className={data.icon}></i>
-                      <span className="mt-[5px] text-sm">{data.name}</span>
-                    </div>
-                  </a>
-                  {data.blankElement}
-                </React.Fragment>
+                <a
+                  href={data.url}
+                  className="text-gray-600 hover:text-gray-400"
+                  key={index}
+                >
+                  <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center text-gray-600 dark:text-textdark2">
+                    <i className={data.icon}></i>
+                    <span className="mt-[5px] text-sm">{data.name}</span>
+                  </div>
+                </a>
               ))}
             </div>
           </div>
