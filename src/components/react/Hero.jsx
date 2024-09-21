@@ -51,7 +51,7 @@ function Hero() {
     }
     return (
       <>
-        <div className="me-[14px] text-gray-500">
+        <div className="me-[14px] text-gray-500 dark:text-textdark3">
           <i className="uil uil-minus"></i>
           {elements}
         </div>
@@ -162,9 +162,9 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-niogray mt-[14.5px] h-[110px] w-full leading-[25px] dark:text-textdark2 max-sm:text-[16.7px]">
+          <p className="text-niogray mt-[14.5px] h-[110px] w-full leading-[25px] dark:text-textdark2 max-sm:text-[15px]">
             I'm a Front-End Web Developer & UI/UX Enthusiast, based in
-            Mojokerto, East Java.
+            Mojokerto, East Java. Passionate and dedicated to my work.
           </p>
           <div className="mt-10 flex items-center gap-[40px] font-medium max-sm:mt-[27px] max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
             <button
