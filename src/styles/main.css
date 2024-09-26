@@ -44,14 +44,6 @@
     @apply dark:bg-[#38383897] max-md:hidden max-sm:hidden;
   }
 
-  .nav.hide {
-    transform: translateY(-200%);
-  }
-
-  .nav.show {
-    transform: translateY(0);
-  }
-
   div.bottom-nav {
     @apply fixed bottom-0 mx-auto flex h-[60px] w-full items-center bg-nioprimary dark:bg-niodark max-sm:visible sm:h-[60px] md:hidden;
   }
@@ -59,6 +51,19 @@
   nav > section {
     box-shadow: 2px 2px 10px rgba(96, 96, 96, 0.065);
     @apply flex h-[70px] w-full items-center justify-between rounded-3xl px-7 dark:shadow-none max-sm:rounded-none sm:h-[75px] sm:px-10;
+  }
+
+  .nav-content-modal {
+    @apply card dropdown-content card-compact z-[1] mt-10 w-[380px] bg-white p-2 text-black shadow-sm dark:bg-niodark2 dark:text-textdark;
+  }
+
+  .nav.hide,
+  .nav-content-modal.hide {
+    transform: translateY(-200%);
+  }
+
+  .nav.show {
+    transform: translateY(0);
   }
 
   main {
@@ -187,6 +192,10 @@
 
   .qualifications-btn-group {
     @apply mt-16 flex justify-center gap-3 font-medium max-sm:mt-12 md:gap-8;
+  }
+
+  .portfolio-component {
+    @apply mt-28 py-10 max-sm:mt-12 lg:px-10;
   }
 
   /* blob animation */

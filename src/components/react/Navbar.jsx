@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollDirection, setScrollDirection] = useState("up");
   const [lastScrollY, setLastScrollY] = useState(0);
   const [themeNow, setThemeNow] = useState("light");
@@ -79,7 +80,7 @@ function Navbar() {
             </h1>
           </a>
           <div className="icon-group flex gap-4 sm:gap-7">
-            <div className="tooltip tooltip-bottom" data-tip="Themes">
+            <div className="">
               <label className="swap swap-rotate">
                 <input type="checkbox" onChange={toggleTheme} />
                 <svg
@@ -98,28 +99,25 @@ function Navbar() {
                 </svg>
               </label>
             </div>
-            <div
-              className="dropdown dropdown-end tooltip tooltip-bottom"
-              data-tip="Menu"
-            >
-              <button role="button" type="button" className="">
+            <div className="dropdown dropdown-end menu-dropdown-toggle">
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 <i className="bx bx-menu-alt-right cursor-pointer text-[26px] font-medium text-gray-600 transition-all hover:text-gray-400 dark:text-textdark"></i>
               </button>
-              <div
-                className="card dropdown-content card-compact z-[1] mt-10 w-[380px] bg-white p-2 text-black shadow-sm dark:bg-niodark2 dark:text-textdark"
-                tabIndex="0"
-              >
-                <div className="grid grid-cols-3 gap-2 p-5">
-                  {menuData.map((menu) => (
-                    <a href={menu.url}>
-                      <div className="box grid w-[100px] cursor-pointer p-3 text-center">
-                        <i className={menu.icon}></i>
-                        <span className="text-xs">{menu.title}</span>
-                      </div>
-                    </a>
-                  ))}
+              {/* content modal */}
+              {isMenuOpen && scrollDirection !== "down" && (
+                <div className={`nav-content-modal`} tabIndex="0">
+                  <div className="grid grid-cols-3 gap-2 p-5">
+                    {menuData.map((menu, index) => (
+                      <a href={menu.url} key={index}>
+                        <div className="box grid w-[100px] cursor-pointer p-3 text-center">
+                          <i className={menu.icon}></i>
+                          <span className="text-xs">{menu.title}</span>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </section>
