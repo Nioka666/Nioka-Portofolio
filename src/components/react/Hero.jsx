@@ -147,8 +147,8 @@ function Hero() {
           </picture>
         </section>
         {/* headline */}
-        <section className="mx-6 mt-7 flex flex-col">
-          <h1 className="mb-[6px] font-semibold leading-[55px] max-sm:text-[41px] max-miniphone:text-[35px] sm:text-[47px]">
+        <section className="sm-headline">
+          <h1>
             Adhim Niokagi
           </h1>
           <div className="flex max-sm:text-[17.9px] max-miniphone:text-[14px] sm:text-xl">
@@ -166,17 +166,17 @@ function Hero() {
             I'm a Front-End Web Developer & UI/UX Enthusiast, based in
             Mojokerto, East Java.
           </p>
-          <div className="mt-10 flex items-center gap-[40px] font-medium max-sm:mt-[27px] max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
+          <div className="sm-btn-group">
             <button
               role="button"
-              className="rounded-[15.5px] bg-gray-800 px-[30px] py-[17.5px] text-[14.7px] text-nioprimary hover:shadow-md dark:bg-textdark2 dark:font-semibold dark:text-niodark dark:shadow-sm max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
+              className="hello-sm-btn"
             >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <a href={CV} target="_blank">
               <button
                 role="button"
-                className="flex items-center gap-[11px] rounded-2xl bg-transparent px-0 text-[14px] max-miniphone:text-[10px] sm:text-[15px]"
+                className="cv-sm-btn"
               >
                 View CV
                 <i className="bx bx-file text-2xl text-gray-600 dark:text-textdark"></i>

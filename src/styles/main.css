@@ -88,6 +88,26 @@
     @apply mt-16 flex items-center px-6 max-sm:gap-9 max-miniphone:gap-5 sm:gap-10;
   }
 
+  section.sm-hero section.sm-headline {
+    @apply mx-6 mt-7 flex flex-col;
+  }
+
+  section.sm-hero section.sm-headline h1 {
+    @apply mb-[6px] font-semibold leading-[55px] max-sm:text-[41px] max-miniphone:text-[35px] sm:text-[47px];
+  }
+
+  section.sm-hero div.sm-btn-group {
+    @apply mt-10 flex items-center gap-[40px] font-medium max-sm:mt-[27px] max-miniphone:gap-2 sm:mt-0 sm:gap-[40px];
+  }
+
+  section.sm-hero button.hello-sm-btn {
+    @apply rounded-[15.5px] bg-gray-800 px-[30px] py-[17.5px] text-[14.7px] text-nioprimary hover:shadow-md dark:bg-textdark2 dark:font-semibold dark:text-niodark dark:shadow-sm max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px];
+  }
+
+  section.sm-hero button.cv-sm-btn {
+    @apply flex items-center gap-[11px] rounded-2xl bg-transparent px-0 text-[14px] max-miniphone:text-[10px] sm:text-[15px];
+  }
+
   picture.sm-avatar {
     @apply blob overflow-hidden max-md:ms-[2px] max-sm:ms-[-5px] max-sm:h-full max-sm:w-[227px] max-miniphone:ms-[-3px] max-miniphone:w-[223px] sm:h-full sm:w-[280px] md:h-full md:w-[10px];
   }
