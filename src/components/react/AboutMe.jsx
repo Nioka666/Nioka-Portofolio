@@ -40,9 +40,9 @@ function AboutMe() {
               />
             </picture>
           </div>
-
-          <div className="flex-col max-sm:mt-0 max-sm:px-5 sm:px-10 md:px-0 lg:w-1/2">
-            <div className="flex gap-4 max-lg:my-7 max-lg:justify-center max-sm:my-6 max-sm:justify-center max-sm:gap-0">
+          {/* content */}
+          <div className="about-desc-wrapper">
+            <div className="about-boxes">
               {/* box */}
               {boxData.map((box) => (
                 <div

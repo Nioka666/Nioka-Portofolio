@@ -188,12 +188,20 @@
     @apply mt-16 justify-between gap-16 max-sm:mt-8 lg:flex lg:items-center;
   }
 
+  .about-desc-wrapper {
+    @apply flex-col max-sm:mt-0 max-sm:px-5 sm:px-10 md:px-0 lg:w-1/2;
+  }
+
+  .about-desc-wrapper .about-boxes {
+    @apply flex gap-4 max-lg:my-7 max-lg:justify-center max-sm:my-6 max-sm:justify-center max-sm:gap-0;
+  }
+
   .about-mockup-window {
     @apply mt-5 border-b-2 bg-white dark:border-niodark dark:bg-niodark3 max-sm:mt-0;
   }
 
   .about-mockup-paragraph {
-    @apply text-center text-gray-500 dark:text-textdark2 mt-[-5px] max-sm:px-6 max-sm:text-[11.5px] max-sm:mt-[-15px] sm:text-center sm:text-base md:text-left md:text-[15.5px];
+    @apply mt-[-5px] text-center text-gray-500 dark:text-textdark2 max-sm:mt-[-15px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[15.5px];
   }
 
   /* skills section */
