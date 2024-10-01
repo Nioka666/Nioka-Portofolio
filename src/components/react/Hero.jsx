@@ -124,7 +124,7 @@ function Hero() {
       {/* Hero sm */}
       <section className="sm-hero">
         {/* avatars */}
-        <section className="mt-16 flex items-center px-6 max-sm:gap-9 max-miniphone:gap-5 sm:gap-10">
+        <section className="avatar-wrap">
           <section className="social-media">
             {mediaSocial.map((data) => (
               <a
@@ -141,7 +141,7 @@ function Hero() {
             ))}
           </section>
           <picture
-            className={`blob overflow-hidden max-md:ms-[2px] max-sm:ms-[-5px] max-sm:h-full max-sm:w-[227px] max-miniphone:ms-[-3px] max-miniphone:w-[223px] sm:h-full sm:w-[280px] md:h-full md:w-[10px]`}
+            className={`sm-avatar`}
           >
             <img src={avatar.src} alt="Adhim Niokagi" />
           </picture>
