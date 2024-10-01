@@ -51,8 +51,13 @@ function BottomNav() {
     return (
       <div className="icon-group flex items-center gap-5 sm:gap-7">
         <div className="swap swap-rotate mt-[-0.5px]">
-          <label htmlFor="toogleTheme"></label>
-          <input id="toogleTheme" type="checkbox" onChange={toggleTheme} />
+          <input
+            id="toogletheme"
+            name="toogletheme"
+            aria-labelledby="toogletheme"
+            type="checkbox"
+            onChange={toggleTheme}
+          />
           <svg
             className={`dark:fill-textdark3 ${themeNow === "light" ? "swap-on" : "swap-off"} h-[21.5px] w-[21.5px] fill-gray-600`}
             xmlns="http://www.w3.org/2000/svg"
@@ -72,6 +77,7 @@ function BottomNav() {
           ref={toggleButtonRef}
           onClick={() => setDrawerOpen((prev) => !prev)}
           className="mt-1"
+          aria-label="Menu button"
         >
           <i className="bx bx-category cursor-pointer text-[22px] font-medium text-gray-600 transition-all hover:text-gray-400 dark:text-textdark"></i>
         </button>
