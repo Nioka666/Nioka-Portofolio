@@ -197,11 +197,11 @@
   }
 
   .about-mockup-window {
-    @apply mt-5 border-b-2 bg-white dark:border-niodark dark:bg-niodark3 max-sm:mt-0;
+    @apply mt-5 border-b-2 bg-white dark:border-niodark dark:bg-niodark3 max-sm:mt-0 sm:mx-5 md:mx-0;
   }
 
   .about-mockup-paragraph {
-    @apply mt-[-5px] text-center text-gray-500 dark:text-textdark2 max-sm:mt-[-15px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[15.5px];
+    @apply mt-[-12px] px-2 text-center text-gray-500 dark:text-textdark2 max-sm:mt-[-15px] max-sm:px-6 max-sm:text-[11.5px] sm:text-center sm:text-base md:text-left md:text-[15.5px];
   }
 
   /* skills section */
@@ -230,7 +230,7 @@
   .blob {
     background-size: cover;
     border: 11px solid #d8d8d86a;
-    @apply dark:border-[#4c4c4f] dark:brightness-90;
+    @apply dark:border-transparent dark:brightness-90;
     border-radius: 50% / 50%;
     margin-right: 10px;
     margin-left: -10px;
@@ -310,4 +310,7 @@
   color: #bfc0c3;
   color: #4c4c4f;
   color: #0b0b0c;
+
+  /*  */
+  color: #4c4c4f;
 }
