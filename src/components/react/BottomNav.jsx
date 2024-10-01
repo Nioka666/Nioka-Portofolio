@@ -51,13 +51,7 @@ function BottomNav() {
     return (
       <div className="icon-group flex items-center gap-5 sm:gap-7">
         <div className="swap swap-rotate mt-[-0.5px]">
-          <input
-            id="toogletheme"
-            name="toogletheme"
-            aria-labelledby="toogletheme"
-            type="checkbox"
-            onChange={toggleTheme}
-          />
+          <input id="toogletheme" aria-label="toogletheme" type="checkbox" onChange={toggleTheme} />
           <svg
             className={`dark:fill-textdark3 ${themeNow === "light" ? "swap-on" : "swap-off"} h-[21.5px] w-[21.5px] fill-gray-600`}
             xmlns="http://www.w3.org/2000/svg"

@@ -100,7 +100,7 @@ function Navbar() {
               </label>
             </div>
             <div className="dropdown dropdown-end menu-dropdown-toggle">
-              <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Navbar menu button">
                 <i className="bx bx-menu-alt-right cursor-pointer text-[26px] font-medium text-gray-600 transition-all hover:text-gray-400 dark:text-textdark"></i>
               </button>
               {/* content modal */}
