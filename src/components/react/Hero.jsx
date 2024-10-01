@@ -98,7 +98,7 @@ function Hero() {
           <div className="mt-10 flex gap-7 font-medium">
             <button
               role="button"
-              className="rounded-[17.5px] bg-niodark py-[17px] text-white hover:bg-niodark2 hover:shadow-lg dark:bg-nioprimary dark:font-semibold dark:text-niodark dark:hover:bg-niosecondary md:px-[25px] md:text-sm lg:px-[34px] lg:text-[17px]"
+              className="rounded-[17.5px] bg-niodark py-[17px] text-white hover:bg-niodark2 hover:shadow-lg dark:bg-textdark2 dark:font-semibold dark:text-niodark dark:hover:text-niodark md:px-[25px] md:text-sm lg:px-[34px] lg:text-[17px]"
             >
               Say Hello
               <i className="uil uil-location-arrow md:ms-1 lg:ms-[9.2px]"></i>
@@ -169,7 +169,7 @@ function Hero() {
           <div className="mt-10 flex items-center gap-[40px] font-medium max-sm:mt-[27px] max-miniphone:gap-2 sm:mt-0 sm:gap-[40px]">
             <button
               role="button"
-              className="rounded-[15.5px] bg-gray-800 px-[30px] py-[17.5px] text-[14.7px] text-nioprimary hover:shadow-md dark:bg-niosecondary dark:font-semibold dark:text-niodark dark:shadow-sm max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
+              className="rounded-[15.5px] bg-gray-800 px-[30px] py-[17.5px] text-[14.7px] text-nioprimary hover:shadow-md dark:bg-textdark2 dark:font-semibold dark:text-niodark dark:shadow-sm max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px]"
             >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>

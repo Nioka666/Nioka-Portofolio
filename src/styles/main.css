@@ -25,14 +25,6 @@
     max-width: 100% !important;
   }
 
-  .palleteee {
-    color: #222225;
-    color: #141416;
-    color: #bfc0c3;
-    color: #57575a;
-    color: #0e0e10;
-  }
-
   nav {
     @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center sm:top-6 sm:h-[75px] sm:px-8 lg:px-[115px];
     transition: all 0.3s ease;
@@ -202,7 +194,7 @@
   .blob {
     background-size: cover;
     border: 11px solid #d8d8d86a;
-    @apply dark:border-[7px] dark:border-transparent dark:brightness-90;
+    @apply dark:border-[#4c4c4f] dark:brightness-90;
     border-radius: 50% / 50%;
     margin-right: 10px;
     margin-left: -10px;
@@ -275,4 +267,11 @@
 
 .pallete-nioprimary {
   background-color: #f8f8f8;
+}
+
+.palleteee {
+  color: #f4f4f4;
+  color: #bfc0c3;
+  color: #4c4c4f;
+  color: #0b0b0c;
 }
