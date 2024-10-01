@@ -70,6 +70,7 @@ function Hero() {
               key={data.name}
               className="tooltip tooltip-left"
               data-tip={data.name}
+              aria-label="Links to connect my social media"
             >
               <i
                 className={`${data.icon} cursor-pointer md:text-[17px] lg:text-[19px] nionotebook:text-[21px]`}
@@ -132,6 +133,7 @@ function Hero() {
                 key={data.name}
                 className="tooltip tooltip-right"
                 data-tip={data.name}
+                aria-label="Links to connect my social media"
               >
                 <i
                   className={`${data.icon} cursor-pointer text-xl max-miniphone:text-base`}

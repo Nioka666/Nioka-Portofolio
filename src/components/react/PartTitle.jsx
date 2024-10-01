@@ -4,9 +4,9 @@ function PartTitle({ title, desc }) {
       <h1 className="text-2xl font-bold text-black dark:text-textdark sm:text-2xl md:text-4xl">
         {title}
       </h1>
-      <h3 className="mt-[13.4px] text-sm text-gray-400 max-sm:mt-0 md:text-[17px]">
+      <h2 className="mt-[13.4px] text-sm text-gray-400 max-sm:mt-0 md:text-[17px]">
         {desc}
-      </h3>
+      </h2>
     </section>
   );
 }
