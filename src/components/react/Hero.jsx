@@ -97,27 +97,19 @@ function Hero() {
             Passionate and dedicated to my work.
           </p>
           <div className="mt-10 flex gap-7 font-medium">
-            <button
-              role="button"
-              className="rounded-[17.5px] bg-niodark py-[17px] text-white hover:bg-niodark2 hover:shadow-lg dark:bg-textdark2 dark:font-semibold dark:text-niodark dark:hover:text-niodark md:px-[25px] md:text-sm lg:px-[34px] lg:text-[17px]"
-            >
+            <button role="button" className="hero-hello-btn">
               Say Hello
               <i className="uil uil-location-arrow md:ms-1 lg:ms-[9.2px]"></i>
             </button>
             <a href={CV} target="_blank">
-              <button
-                role="button"
-                className="flex items-center py-[15px] md:px-4 md:text-sm lg:px-7 lg:text-[17px]"
-              >
+              <button role="button" className="hero-cv-btn">
                 View CV
-                <i className="bx bx-file ms-3 text-2xl text-gray-600 dark:text-nioprimary"></i>
+                <i className="bx bx-file"></i>
               </button>
             </a>
           </div>
         </section>
-        <picture
-          className={`blob me-[25px] overflow-hidden md:mt-[-30px] md:w-[260px] lg:mt-[-70px] lg:h-[250px] lg:w-[355px] nionotebook:mt-[-5px] nionotebook:h-[315px] nionotebook:w-[325px]`}
-        >
+        <picture className={`hero-pp`}>
           <img src={avatar.src} alt="Adhim Niokagi Profile Picture" />
         </picture>
       </section>
@@ -142,17 +134,13 @@ function Hero() {
               </a>
             ))}
           </section>
-          <picture
-            className={`sm-avatar`}
-          >
+          <picture className={`sm-avatar`}>
             <img src={avatar.src} alt="Adhim Niokagi Profile Picture" />
           </picture>
         </section>
         {/* headline */}
         <section className="sm-headline">
-          <h1>
-            Adhim Niokagi
-          </h1>
+          <h1>Adhim Niokagi</h1>
           <div className="flex max-sm:text-[17.9px] max-miniphone:text-[14px] sm:text-xl">
             <XLine n={10} />
             <Typewriter
@@ -169,17 +157,11 @@ function Hero() {
             Mojokerto, East Java.
           </p>
           <div className="sm-btn-group">
-            <button
-              role="button"
-              className="hello-sm-btn"
-            >
+            <button role="button" className="hello-sm-btn">
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <a href={CV} target="_blank">
-              <button
-                role="button"
-                className="cv-sm-btn"
-              >
+              <button role="button" className="cv-sm-btn">
                 View CV
                 <i className="bx bx-file text-2xl text-gray-600 dark:text-textdark"></i>
               </button>

@@ -22,6 +22,9 @@ function AboutMe() {
       desc: "15+ Certificates",
     },
   ];
+  const paragraph = {
+    text: "As a Front-End Web Developer and UI/UX Enthusiast, I am highly dedicated to learn more in this field. I have extensive experience with several up-to-date technology frameworks such as ReactJs, Express.js and more Javascript ecosystem for recent.",
+  };
 
   return (
     <>
@@ -32,13 +35,11 @@ function AboutMe() {
         {/* content */}
         <section className="about-content">
           <div className="mx-auto flex justify-center md:w-1/2">
-            <picture className="">
-              <img
-                src={niokaPhoto.src}
-                className="rounded-[30px] max-sm:w-[220px] sm:w-[250px] lg:w-[360px]"
-                alt="Adhim Niokagi Photo"
-              />
-            </picture>
+            <img
+              src={niokaPhoto.src}
+              className="rounded-[30px] max-sm:w-[220px] sm:w-[250px] lg:w-[360px]"
+              alt="Adhim Niokagi Photo"
+            />
           </div>
           {/* content */}
           <div className="about-desc-wrapper">
@@ -47,7 +48,7 @@ function AboutMe() {
               {boxData.map((box) => (
                 <div
                   key={box.id}
-                  className="dark:text-textdark grid w-[150px] cursor-pointer gap-1 rounded-[20px] px-6 py-5 text-center text-black max-sm:w-[130px] max-sm:px-[10px] max-sm:py-4 md:border-0"
+                  className="grid w-[150px] cursor-pointer gap-1 rounded-[20px] px-6 py-5 text-center text-black dark:text-textdark max-sm:w-[130px] max-sm:px-[10px] max-sm:py-4 md:border-0"
                 >
                   <i
                     className={`${box.icon} mb-2 text-[26px] max-sm:mb-1 max-sm:text-[20px]`}
@@ -60,15 +61,9 @@ function AboutMe() {
               ))}
             </div>
             {/* mockup */}
-            <div className="mockup-window about-mockup-window">
-              <div className="bg-white dark:bg-niodark3 dark:shadow-md px-6 py-7 max-sm:px-0 max-sm:py-7">
-                <p className="about-mockup-paragraph">
-                  As a Front-End Web Developer and UI/UX Enthusiast, I am highly
-                  dedicated to learn more in this field. I have extensive
-                  experience with several up-to-date technology frameworks such
-                  as ReactJs, Express.js and more Javascript ecosystem for
-                  recent.
-                </p>
+            <div className="about-mockup-window mockup-window">
+              <div className="bg-white px-6 py-7 dark:bg-niodark3 dark:shadow-md max-sm:px-0 max-sm:py-7">
+                <p className="about-mockup-paragraph">{paragraph.text}</p>
               </div>
             </div>
           </div>
