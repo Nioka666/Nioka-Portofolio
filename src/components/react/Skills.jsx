@@ -95,20 +95,20 @@ function Skills() {
 
   const SkillCollapse = ({ title, dataVariable }) => {
     return (
-      <details className="collapse cursor-pointer border-b-2 bg-white dark:border-borderbtm dark:bg-niodark3">
-        <summary className="collapse-title py-5 text-[21px] font-semibold text-gray-500 focus:text-black dark:text-textdark2 dark:focus:text-textdark max-sm:text-[16px]">
+      <details className="collapse skills-collapse">
+        <summary className="collapse-title">
           <div className="my-2 flex items-center gap-2 max-md:ms-3 max-sm:my-0 lg:ms-14">
             <i className="bx bx-code-curly text-2xl"></i>
             <span>{title}</span>
           </div>
         </summary>
-        <div className="collapse-content mx-10 my-7 grid grid-cols-5 justify-items-center gap-10 max-sm:mx-0 max-sm:my-3 max-sm:grid-cols-4 max-sm:gap-4">
+        <div className="collapse-content skills-content">
           {dataVariable.map((iconData) => (
             <img
               key={iconData.id}
               src={iconData.src}
               alt={iconData.id}
-              className={`w-[90px] cursor-pointer select-none rounded-lg grayscale transition-all ease-in-out hover:grayscale-0 max-md:w-[50px] ${iconData.class}`}
+              className={`skills-icon ${iconData.class}`}
             />
           ))}
         </div>
