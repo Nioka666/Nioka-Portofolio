@@ -343,8 +343,8 @@
 }
 
 .backdrop-blur {
-  background-color: #0000002a;
-  backdrop-filter: blur(4px);
+  background-color: #32323215;
+  backdrop-filter: blur(3px);
   position: fixed;
   top: 0;
   left: 0;
