@@ -134,7 +134,7 @@ function BottomNav() {
 
   return (
     <>
-      <div className={`${drawerOpen ? "visible" : "hidden"} backdrop-blur`} id="backdrop"></div>
+      <div className={`${drawerOpen ? "visible" : "hidden"} backdrop-blur transition ease-in-out delay-500`} id="backdrop"></div>
       <div {...SwipeHandler} className="bottom-nav">
         <section
           className={`${shadowNav == true ? "b-nav-shadow" : "shadow-none"} flex h-[60px] w-full items-center justify-between px-7`}
@@ -150,7 +150,7 @@ function BottomNav() {
         {/* Bottom drawer */}
         <div
           ref={bottomDrawerRef}
-          className={`bottom-drawer z-[9] ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
+          className={`bottom-drawer ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
         >
           {/* Drawer content */}
           <div className="rounded-t-3xl bg-white dark:bg-niodark3 dark:shadow-none">

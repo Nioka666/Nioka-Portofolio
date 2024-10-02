@@ -1,27 +1,21 @@
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function FloatingButton() {
   const [isBellow400, setIsBellow400] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
-
-  useLayoutEffect(() => {
-    setIsMounted(true);
-    setIsBellow400(window.scrollY <= 400);
-  }, []);
 
   useEffect(() => {
-    if (!isMounted) return;
-
     const handleScroll = () => {
       setIsBellow400(window.scrollY <= 400);
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll();
 
+    // unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isMounted]);
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -29,10 +23,6 @@ function FloatingButton() {
       behavior: "smooth",
     });
   };
-
-  if (!isMounted) {
-    return null;
-  }
 
   return (
     <>
