@@ -134,7 +134,7 @@ function BottomNav() {
 
   return (
     <>
-      <div className={`${drawerOpen ? "visible" : "hidden"} backdrop-blur transition ease-in-out delay-500`} id="backdrop"></div>
+      <div className={`${drawerOpen ? "visible" : "hidden"} backdrop-blur`}></div>
       <div {...SwipeHandler} className="bottom-nav">
         <section
           className={`${shadowNav == true ? "b-nav-shadow" : "shadow-none"} flex h-[60px] w-full items-center justify-between px-7`}
