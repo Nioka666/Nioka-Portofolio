@@ -68,7 +68,7 @@
   }
 
   section.hero picture.hero-pp {
-    @apply blob me-[25px] overflow-hidden md:mt-[-30px] md:w-[260px] lg:mt-[-70px] lg:h-[250px] lg:w-[355px] nionotebook:mt-[-5px] nionotebook:h-[315px] nionotebook:w-[325px];
+    @apply blob me-[25px] overflow-hidden md:mt-[-30px] md:w-[260px] lg:mt-[-70px] lg:h-[250px] lg:w-[355px] nionotebook:mt-[-15px] nionotebook:h-[315px] nionotebook:w-[325px];
   }
 
   section.hero button.hero-hello-btn {
@@ -144,8 +144,8 @@
     @apply fixed inset-x-0 bottom-0 transform cursor-grab transition-transform duration-300;
   }
 
-  .button-send-chat {
-    @apply fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full bg-gray-700 text-white transition-all hover:bg-gray-600 dark:bg-niodark2 max-lg:hidden max-md:bottom-20 max-md:right-5;
+  .button-info {
+    @apply fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full bg-gray-200 text-textdark2 transition-all hover:bg-gray-300 dark:bg-niodark2 max-md:hidden max-md:bottom-20 max-md:right-5;
   }
 
   /* button go up */
@@ -271,7 +271,7 @@
   .blob {
     background-size: cover;
     border: 11px solid #d8d8d86a;
-    @apply dark:border-transparent dark:brightness-90;
+    @apply md:border-[13px] dark:border-transparent dark:brightness-90;
     border-radius: 50% / 50%;
     margin-right: 10px;
     margin-left: -10px;
@@ -348,10 +348,7 @@
 
 .palleteee {
   color: #f4f4f4;
-  color: #bfc0c3;
-  color: #4c4c4f;
   color: #0b0b0c;
-
   /*  */
   color: #4c4c4f;
 }
