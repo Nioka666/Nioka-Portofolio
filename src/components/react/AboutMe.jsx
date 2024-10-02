@@ -1,4 +1,4 @@
-import avatar from "../../assets/adhim_hp.webp";
+import niokaPhoto from "../../assets/adhim_hp.webp";
 import PartTitle from "./PartTitle";
 
 function AboutMe() {
@@ -34,9 +34,9 @@ function AboutMe() {
           <div className="mx-auto flex justify-center md:w-1/2">
             <picture className="">
               <img
-                src={avatar.src}
+                src={niokaPhoto.src}
                 className="rounded-[30px] max-sm:w-[220px] sm:w-[250px] lg:w-[360px]"
-                alt="adhim niokagi photo"
+                alt="Adhim Niokagi Photo"
               />
             </picture>
           </div>

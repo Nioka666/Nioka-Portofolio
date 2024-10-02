@@ -118,7 +118,7 @@ function Hero() {
         <picture
           className={`blob me-[25px] overflow-hidden md:mt-[-30px] md:w-[260px] lg:mt-[-70px] lg:h-[250px] lg:w-[355px] nionotebook:mt-[-5px] nionotebook:h-[315px] nionotebook:w-[325px]`}
         >
-          <img src={avatar.src} alt="Adhim Niokagi" />
+          <img src={avatar.src} alt="Adhim Niokagi Profile Picture" />
         </picture>
       </section>
 
@@ -145,7 +145,7 @@ function Hero() {
           <picture
             className={`sm-avatar`}
           >
-            <img src={avatar.src} alt="Adhim Niokagi" />
+            <img src={avatar.src} alt="Adhim Niokagi Profile Picture" />
           </picture>
         </section>
         {/* headline */}
