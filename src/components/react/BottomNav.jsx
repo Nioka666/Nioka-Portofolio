@@ -51,7 +51,12 @@ function BottomNav() {
     return (
       <div className="icon-group flex items-center gap-5 sm:gap-7">
         <label className="swap swap-rotate mt-[-0.5px]" htmlFor="toggletheme">
-          <input id="toggletheme" aria-label="toggletheme" type="checkbox" onChange={toggleTheme} />
+          <input
+            id="toggletheme"
+            aria-label="toggletheme"
+            type="checkbox"
+            onChange={toggleTheme}
+          />
           <svg
             className={`dark:fill-textdark3 ${themeNow === "light" ? "swap-on" : "swap-off"} h-[21.5px] w-[21.5px] fill-gray-600`}
             xmlns="http://www.w3.org/2000/svg"
@@ -96,8 +101,10 @@ function BottomNav() {
 
     if (drawerOpen) {
       document.body.classList.add("lock-scroll");
+      // document.body.classList.add("backdrop-blur");
     } else {
       document.body.classList.remove("lock-scroll");
+      // document.body.classList.remove("backdrop-blur");
     }
 
     const handleClickOutside = (event) => {
@@ -126,54 +133,57 @@ function BottomNav() {
   });
 
   return (
-    <div {...SwipeHandler} className="bottom-nav">
-      <section
-        className={`${shadowNav == true ? "b-nav-shadow" : "shadow-none"} flex h-[60px] w-full items-center justify-between px-7`}
-      >
-        <a href="/">
-          <h1 className="font-medium dark:text-textdark3 max-sm:text-sm md:text-lg lg:text-lg">
-            Adhim Niokagi
-          </h1>
-        </a>
-        <IconGroup />
-      </section>
+    <>
+      <div className={`${drawerOpen ? "visible" : "hidden"} backdrop-blur`} id="backdrop"></div>
+      <div {...SwipeHandler} className="bottom-nav">
+        <section
+          className={`${shadowNav == true ? "b-nav-shadow" : "shadow-none"} flex h-[60px] w-full items-center justify-between px-7`}
+        >
+          <a href="/">
+            <h1 className="font-medium dark:text-textdark3 max-sm:text-sm md:text-lg lg:text-lg">
+              Adhim Niokagi
+            </h1>
+          </a>
+          <IconGroup />
+        </section>
 
-      {/* Bottom drawer */}
-      <div
-        ref={bottomDrawerRef}
-        className={`bottom-drawer ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
-      >
-        {/* Drawer content */}
-        <div className="drawer-b-nav-shadow rounded-t-3xl bg-white dark:bg-niodark3 dark:shadow-none">
-          <div className="swipper relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200 dark:bg-textdark2"></div>
-          <div className="h-[250px] rounded-t-3xl px-4 pt-8">
-            <div className="grid grid-cols-3 justify-items-center">
-              {dataMenu.map((data, index) => (
-                <a
-                  href={data.url}
-                  className="text-gray-600 hover:text-gray-400"
-                  key={index}
-                  onClick={() => setDrawerOpen(false)}
-                >
-                  <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center text-gray-600 dark:text-textdark2">
-                    <i className={data.icon}></i>
-                    <span className="mt-[5px] text-sm">{data.name}</span>
-                  </div>
-                </a>
-              ))}
+        {/* Bottom drawer */}
+        <div
+          ref={bottomDrawerRef}
+          className={`bottom-drawer z-[9] ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
+        >
+          {/* Drawer content */}
+          <div className="drawer-b-nav-shadow rounded-t-3xl bg-white dark:bg-niodark3 dark:shadow-none">
+            <div className="swipper relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200 dark:bg-textdark2"></div>
+            <div className="h-[250px] rounded-t-3xl px-4 pt-8">
+              <div className="grid grid-cols-3 justify-items-center">
+                {dataMenu.map((data, index) => (
+                  <a
+                    href={data.url}
+                    className="text-gray-600 hover:text-gray-400"
+                    key={index}
+                    onClick={() => setDrawerOpen(false)}
+                  >
+                    <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center text-gray-600 dark:text-textdark2">
+                      <i className={data.icon}></i>
+                      <span className="mt-[5px] text-sm">{data.name}</span>
+                    </div>
+                  </a>
+                ))}
+              </div>
             </div>
+            <button
+              type="button"
+              onClick={() => setDrawerOpen(false)}
+              className="fixed bottom-4 right-7"
+              aria-label="Close drawer button"
+            >
+              <i className="bx bx-x text-[22px] font-medium"></i>
+            </button>
           </div>
-          <button
-            type="button"
-            onClick={() => setDrawerOpen(false)}
-            className="fixed bottom-4 right-7"
-            aria-label="Close drawer button"
-          >
-            <i className="bx bx-x text-[22px] font-medium"></i>
-          </button>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

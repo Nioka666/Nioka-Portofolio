@@ -21,7 +21,7 @@
   }
 
   body {
-    @apply bg-nioprimary dark:bg-niodark dark:text-textdark !important;
+    @apply bg-nioprimary dark:bg-niodark dark:text-textdark;
     max-width: 100% !important;
   }
 
@@ -145,7 +145,7 @@
   }
 
   .button-info {
-    @apply fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full bg-gray-200 text-textdark2 transition-all hover:bg-gray-300 dark:bg-niodark2 max-md:hidden max-md:bottom-20 max-md:right-5;
+    @apply fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full bg-gray-200 text-textdark2 transition-all hover:bg-gray-300 dark:bg-niodark2 max-md:bottom-20 max-md:right-5 max-md:hidden;
   }
 
   /* button go up */
@@ -271,7 +271,7 @@
   .blob {
     background-size: cover;
     border: 11px solid #d8d8d86a;
-    @apply md:border-[13px] dark:border-transparent dark:brightness-90;
+    @apply dark:border-transparent dark:brightness-90 md:border-[13px];
     border-radius: 50% / 50%;
     margin-right: 10px;
     margin-left: -10px;
@@ -340,6 +340,17 @@
 .lock-scroll {
   overflow: hidden;
   height: 100%;
+}
+
+.backdrop-blur {
+  background-color: #0000002a;
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .pallete-nioprimary {
