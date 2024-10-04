@@ -103,10 +103,8 @@ function BottomNav() {
 
     if (drawerOpen) {
       document.body.classList.add("lock-scroll");
-      // document.body.classList.add("backdrop-blur");
     } else {
       document.body.classList.remove("lock-scroll");
-      // document.body.classList.remove("backdrop-blur");
     }
 
     const handleClickOutside = (event) => {

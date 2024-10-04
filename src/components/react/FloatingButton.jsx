@@ -26,7 +26,7 @@ function FloatingButton() {
 
   return (
     <>
-      <div className="dropdown dropdown-end dropdown-top fixed bottom-12 right-10">
+      <div className="dropdown dropdown-end dropdown-top fixed bottom-12 right-10 transition-none">
         <button className="button-info" aria-label="Info Button">
           <i className="bx bx-info-circle text-2xl max-sm:text-base"></i>
         </button>

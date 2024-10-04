@@ -72,11 +72,11 @@
   }
 
   section.hero button.hero-hello-btn {
-    @apply rounded-[17.5px] bg-niodark py-[21px] text-white hover:bg-niodark2 hover:shadow-lg dark:bg-textdark2 dark:font-semibold dark:text-niodark dark:hover:text-niodark md:px-[25px] md:text-sm lg:px-[34px] lg:text-[18px];
+    @apply rounded-[17.5px] bg-niodark py-[20px] text-white hover:bg-niodark2 hover:shadow-lg dark:bg-textdark2 dark:font-semibold dark:text-niodark dark:hover:text-niodark md:px-[25px] md:text-sm lg:px-[34px] lg:text-[18px];
   }
 
   section.hero button.hero-cv-btn {
-    @apply flex items-center py-[21px] md:px-4 md:text-sm lg:px-7 lg:text-[17px];
+    @apply flex items-center py-[20px] md:px-4 md:text-sm lg:px-7 lg:text-[17px];
   }
 
   section.hero button.hero-cv-btn i {
@@ -141,11 +141,11 @@
   }
 
   .bottom-drawer {
-    @apply fixed inset-x-0 bottom-0 transform cursor-grab transition-all ease-out duration-300;
+    @apply fixed inset-x-0 bottom-0 transform cursor-grab transition-all duration-300 ease-out;
   }
 
   .button-info {
-    @apply fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full bg-gray-200 text-textdark2 transition-all hover:bg-gray-300 dark:bg-niodark2 max-md:bottom-20 max-md:right-5 max-md:hidden;
+    @apply fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full bg-gray-200 text-textdark2 transition-all transition-none hover:bg-gray-300 dark:bg-niodark2 max-md:bottom-20 max-md:right-5 max-md:hidden;
   }
 
   /* button go up */
