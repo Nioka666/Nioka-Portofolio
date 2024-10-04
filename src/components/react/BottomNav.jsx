@@ -41,9 +41,11 @@ function BottomNav() {
     if (currentTheme === "dark") {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
+      setThemeNow("light");
     } else {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
+      setThemeNow("dark");
     }
   }
 

@@ -39,9 +39,11 @@ function Navbar() {
     if (currentTheme === "dark") {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
+      setThemeNow("light");
     } else {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
+      setThemeNow("dark");
     }
   }
 
@@ -100,7 +102,10 @@ function Navbar() {
               </label>
             </div>
             <div className="dropdown dropdown-end menu-dropdown-toggle">
-              <button onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Navbar menu button">
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label="Navbar menu button"
+              >
                 <i className="bx bx-menu-alt-right cursor-pointer text-[26px] font-medium text-gray-600 transition-all hover:text-gray-400 dark:text-textdark"></i>
               </button>
               {/* content modal */}
