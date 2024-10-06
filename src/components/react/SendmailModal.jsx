@@ -1,9 +1,8 @@
-import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 const SendmailModal = ({ id }) => {
   const formRef = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -13,11 +12,17 @@ const SendmailModal = ({ id }) => {
       })
       .then(
         () => {
-          alert("Email sent successfully!");
-          console.log("SUCCESS!");
+          const alertMsg = document.getElementById("mail-alert");
+          if (alertMsg) {
+            alertMsg.classList.remove("hidden");
+
+            setTimeout(() => {
+              alertMsg.classList.add("hidden");
+            }, 2000);
+          }
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.log(error);
         },
       );
   };
