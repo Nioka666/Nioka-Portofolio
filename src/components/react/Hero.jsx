@@ -44,6 +44,22 @@ function Hero() {
     });
   };
 
+  const SendmailModal = ({ id }) => {
+    return (
+      <>
+        <dialog id={id} className="modal">
+          <div className="modal-box">
+            <h3 className="text-lg font-bold">Hello!</h3>
+            <p className="py-4">Press ESC key or click outside to close</p>
+          </div>
+          <form method="dialog" className="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+      </>
+    );
+  };
+
   const XLine = ({ n }) => {
     const elements = [];
     for (let i = 0; i < n; i++) {
@@ -94,13 +110,18 @@ function Hero() {
           </div>
           <p className="lg-paragraph">
             Im a Junior Front-End Developer, work based in Mojokerto, East Java.
-            Passionate and dedicated to my work.
+            Passionate and dedicated in this field.
           </p>
           <div className="mt-10 flex gap-7 font-medium">
-            <button role="button" className="hero-hello-btn">
+            <button
+              role="button"
+              className="hero-hello-btn"
+              onClick={() => document.getElementById("my_modal_1").showModal()}
+            >
               Say Hello
               <i className="uil uil-location-arrow md:ms-1 lg:ms-[9.2px]"></i>
             </button>
+            <SendmailModal id={"my_modal_1"} />
             <a href={CV} target="_blank">
               <button role="button" className="hero-cv-btn">
                 View CV
@@ -152,14 +173,19 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-niogray text-[15px] mt-[18.5px] h-[100px] w-full leading-[25px] dark:text-textdark2 max-sm:text-[16px]">
+          <p className="text-niogray mt-[18.5px] h-[100px] w-full text-[15px] leading-[25px] dark:text-textdark2 max-sm:text-[16px]">
             I'm a Front-End Web Developer & UI/UX Enthusiast, dedicated to learn
             more in this field.
           </p>
           <div className="sm-btn-group">
-            <button role="button" className="hello-sm-btn">
+            <button
+              role="button"
+              className="hello-sm-btn"
+              onClick={() => document.getElementById("my_modal_2").showModal()}
+            >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
+            <SendmailModal id={"my_modal_2"} />
             <a href={CV} target="_blank">
               <button role="button" className="cv-sm-btn">
                 View CV
