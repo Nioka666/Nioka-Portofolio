@@ -152,7 +152,7 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-niogray mt-[18.5px] h-[90px] w-full leading-[25px] dark:text-textdark2 max-sm:text-[16.3px]">
+          <p className="text-niogray text-[15px] mt-[18.5px] h-[100px] w-full leading-[25px] dark:text-textdark2 max-sm:text-[16px]">
             I'm a Front-End Web Developer & UI/UX Enthusiast, dedicated to learn
             more in this field.
           </p>
@@ -163,7 +163,7 @@ function Hero() {
             <a href={CV} target="_blank">
               <button role="button" className="cv-sm-btn">
                 View CV
-                <i className="bx bx-file text-2xl text-gray-600 dark:text-textdark"></i>
+                <i className="bx bx-file text-[21px] text-gray-600 dark:text-textdark3"></i>
               </button>
             </a>
           </div>

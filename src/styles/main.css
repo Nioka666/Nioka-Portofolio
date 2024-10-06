@@ -106,11 +106,11 @@
   }
 
   section.sm-hero section.sm-headline {
-    @apply mx-6 mt-7 flex flex-col;
+    @apply mx-[18px] mt-7 flex flex-col;
   }
 
   section.sm-hero section.sm-headline h1 {
-    @apply mb-[6px] font-semibold leading-[56px] max-sm:text-[41px] max-miniphone:text-[35px] sm:text-[47px];
+    @apply mb-[6px] font-semibold leading-[57px] max-sm:text-[41px] max-miniphone:text-[35px] sm:text-[47px];
   }
 
   section.sm-hero div.sm-btn-group {
@@ -118,11 +118,11 @@
   }
 
   section.sm-hero button.hello-sm-btn {
-    @apply rounded-[15.5px] bg-gray-800 px-[30px] py-[17.5px] text-[14.7px] text-nioprimary hover:shadow-md dark:bg-textdark2 dark:font-semibold dark:text-niodark dark:shadow-sm max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px];
+    @apply rounded-[15.5px] bg-gray-800 px-[30px] py-[17.5px] text-[15px] text-nioprimary hover:shadow-md dark:bg-textdark2 dark:font-semibold dark:text-niodark dark:shadow-sm max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px];
   }
 
   section.sm-hero button.cv-sm-btn {
-    @apply flex items-center gap-[11px] rounded-2xl bg-transparent px-0 text-[14px] max-miniphone:text-[10px] sm:text-[15px];
+    @apply flex items-center gap-[11px] rounded-2xl bg-transparent px-0 text-[15px] max-miniphone:text-[10px] sm:text-[15px];
   }
 
   picture.sm-avatar {
