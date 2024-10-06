@@ -7,8 +7,8 @@
 @layer base {
   * {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
     box-sizing: border-box;
+    /* scroll-behavior: smooth; */
   }
 
   html {
@@ -23,6 +23,7 @@
   body {
     @apply bg-nioprimary dark:bg-niodark dark:text-textdark;
     max-width: 100% !important;
+    scroll-behavior: smooth;
   }
 
   nav {
@@ -109,7 +110,7 @@
   }
 
   section.sm-hero section.sm-headline h1 {
-    @apply mb-[6px] font-semibold leading-[55px] max-sm:text-[41px] max-miniphone:text-[35px] sm:text-[47px];
+    @apply mb-[6px] font-semibold leading-[56px] max-sm:text-[41px] max-miniphone:text-[35px] sm:text-[47px];
   }
 
   section.sm-hero div.sm-btn-group {
