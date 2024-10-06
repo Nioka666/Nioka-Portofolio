@@ -24,10 +24,10 @@ const SendmailModal = ({ id }) => {
 
   return (
     <>
-      <dialog id={id} className="modal w-full">
+      <dialog id={id} className="modal">
         <div className="modal-box p-10 px-12 max-sm:w-[94%] max-sm:p-7">
           <div className="modal-head text-center">
-            <h3 className="text-xl font-semibold max-sm:text-lg">
+            <h3 className="text-2xl font-semibold max-sm:text-lg">
               Say Hello ?
             </h3>
             <p className="mb-4 mt-1 text-xs font-normal text-gray-400">
@@ -37,7 +37,7 @@ const SendmailModal = ({ id }) => {
           <form
             ref={formRef}
             onSubmit={sendEmail}
-            className="form-control w-full flex justify-center gap-3"
+            className="form-control flex w-full justify-center gap-3"
           >
             <input
               type="text"
@@ -57,6 +57,9 @@ const SendmailModal = ({ id }) => {
             </button>
           </form>
         </div>
+        <form method="dialog" className="modal-backdrop">
+          <button>close</button>
+        </form>
       </dialog>
     </>
   );
