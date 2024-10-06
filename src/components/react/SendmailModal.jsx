@@ -37,7 +37,7 @@ const SendmailModal = ({ id }) => {
           <form
             ref={formRef}
             onSubmit={sendEmail}
-            className="form-control grid w-full gap-3"
+            className="form-control w-full flex justify-center gap-3"
           >
             <input
               type="text"
