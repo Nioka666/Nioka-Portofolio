@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import avatar from "../../assets/adhim_niokagi.jpg";
 import CV from "../../assets/Adhim_Niokagi_IT_CVS.pdf";
+import SendmailModal from "./SendmailModal";
 
 function Hero() {
   const [loaded, setLoaded] = useState(false);
@@ -42,22 +43,6 @@ function Hero() {
       left: 0,
       behavior: "smooth",
     });
-  };
-
-  const SendmailModal = ({ id }) => {
-    return (
-      <>
-        <dialog id={id} className="modal">
-          <div className="modal-box">
-            <h3 className="text-lg font-bold">Hello!</h3>
-            <p className="py-4">Press ESC key or click outside to close</p>
-          </div>
-          <form method="dialog" className="modal-backdrop">
-            <button>close</button>
-          </form>
-        </dialog>
-      </>
-    );
   };
 
   const XLine = ({ n }) => {
