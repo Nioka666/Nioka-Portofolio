@@ -106,7 +106,7 @@
   }
 
   section.sm-hero section.sm-headline {
-    @apply mx-5 mt-7 flex flex-col;
+    @apply mx-[22px] mt-7 flex flex-col;
   }
 
   section.sm-hero section.sm-headline h1 {
