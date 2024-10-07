@@ -1,4 +1,4 @@
-function AlertMssg() {
+function SendMailAlert() {
   return (
     <div
       id="mail-alert"
@@ -23,4 +23,4 @@ function AlertMssg() {
   );
 }
 
-export default AlertMssg;
+export default SendMailAlert;
