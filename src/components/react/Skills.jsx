@@ -97,7 +97,7 @@ function Skills() {
     return (
       <details className="collapse skills-collapse">
         <summary className="collapse-title">
-          <div className="my-2 flex items-center gap-2 max-md:ms-[10px] max-sm:my-0 lg:ms-14">
+          <div className="my-2 flex items-center gap-2 max-md:ms-[10px] max-sm:my-1 lg:ms-14">
             <i className="bx bx-code-curly text-[22px]"></i>
             <span>{title}</span>
           </div>
@@ -119,7 +119,6 @@ function Skills() {
   return (
     <>
       <section id="skills" className="skills-component">
-        {/* head/title */}
         <PartTitle title={"Technical Skills"} desc={"My Technical Skills"} />
         {/* content */}
         <section className="skills-content-container">

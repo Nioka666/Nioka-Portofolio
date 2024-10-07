@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import SendMailAlert from "./SendAlert";
+import SendMailAlert from "./SendmailAlert";
 
 const SendmailModal = ({ id }) => {
   const formRef = useRef();
@@ -8,22 +8,33 @@ const SendmailModal = ({ id }) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_clox1br", "template_tz2a35n", formRef.current, {
-        publicKey: "SbnrtM9iW_7rQXlv6",
-      })
+      .sendForm(
+        "service_clox1br",
+        "template_tz2a35n",
+        formRef.current,
+        "SbnrtM9iW_7rQXlv6",
+      )
       .then(
         () => {
           const alertMsg = document.getElementById("mail-alert");
-          const modalToggle = document.getElementById("modal-toggle");
+          const modal1 = document.getElementById("my_modal_1");
+          const modal2 = document.getElementById("my_modal_2");
+
+          if (modal1) {
+            modal1.close();
+          }
+          if (modal2) {
+            modal2.close();
+          }
 
           if (alertMsg) {
-            modalToggle.checked = false;
             alertMsg.classList.remove("hidden");
 
             setTimeout(() => {
               alertMsg.classList.add("hidden");
             }, 2000);
           }
+          formRef.current.reset();
         },
         (error) => {
           console.log(error);
@@ -71,7 +82,6 @@ const SendmailModal = ({ id }) => {
           <button>close</button>
         </form>
       </dialog>
-      <SendMailAlert />
     </>
   );
 };
