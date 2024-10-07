@@ -153,7 +153,7 @@ function BottomNav() {
           className={`bottom-drawer ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
         >
           {/* Drawer content */}
-          <div className="rounded-t-3xl bg-white dark:bg-niodark3 dark:shadow-none">
+          <div className="rounded-t-3xl bg-white dark:bg-niodark3 dark:shadow-sm">
             <div className="swipper relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200 dark:bg-textdark2"></div>
             <div className="h-[250px] rounded-t-3xl px-4 pt-8">
               <div className="grid grid-cols-3 justify-items-center">

@@ -45,7 +45,7 @@ const SendmailModal = ({ id }) => {
   return (
     <>
       <dialog id={id} className="modal">
-        <div className="modal-box p-12 px-12 max-sm:w-[94%] max-sm:p-7">
+        <div className="modal-box p-12 px-12 dark:bg-niodark3 max-sm:w-[94%] max-sm:p-7">
           <div className="modal-head mb-7 text-center">
             <h3 className="text-2xl font-semibold max-sm:text-lg">
               Say Hello ?
@@ -62,17 +62,20 @@ const SendmailModal = ({ id }) => {
             <input
               type="text"
               name="user_name"
-              className="input input-bordered grow max-sm:input-md"
+              className="input input-bordered grow max-sm:input-md dark:bg-niodark2"
               placeholder="type your name"
               required
             />
             <textarea
               name="message"
-              className="textarea textarea-bordered h-[80px] max-sm:text-sm"
+              className="textarea textarea-bordered h-[80px] dark:bg-niodark2 max-sm:text-sm"
               placeholder="Type your message here"
               required
             ></textarea>
-            <button type="submit" className="btn btn-neutral mt-3 rounded-xl">
+            <button
+              type="submit"
+              className="btn mt-3 rounded-xl border-none bg-niodark text-nioprimary hover:bg-niodark2 dark:bg-textdark2 dark:hover:bg-niodark2"
+            >
               Send Message
               <i className="uil uil-location-arrow"></i>
             </button>
