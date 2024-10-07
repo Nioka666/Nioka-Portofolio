@@ -8,7 +8,7 @@ function SendMailAlert() {
       <div className="flex items-center gap-3 max-sm:gap-2">
         <i class="bx bxs-check-circle text-green-400"></i>
         <span className="gap-1 text-base max-sm:text-[15px]">
-          Your message has successfully been sent!
+          Your message sended!
         </span>
       </div>
     </div>
