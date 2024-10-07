@@ -3,22 +3,14 @@ function SendMailAlert() {
     <div
       id="mail-alert"
       role="alert"
-      className="alert hidden fixed left-[50%] top-10 z-[999] w-[82%] -translate-x-1/2 transform transition-all duration-150 ease-linear"
+      className="alert fixed left-[50%] top-10 z-10 w-[82%] -translate-x-1/2 transform border-none transition-all duration-300 ease-linear dark:bg-niodark2 dark:text-nioprimary"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        className="h-6 w-6 shrink-0 stroke-info"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        ></path>
-      </svg>
-      <span>Your message has successfully been sent!</span>
+      <div className="flex items-center gap-3 max-sm:gap-2">
+        <i class="bx bxs-check-circle text-green-400"></i>
+        <span className="gap-1 text-base max-sm:text-[15px]">
+          Your message has successfully been sent!
+        </span>
+      </div>
     </div>
   );
 }
