@@ -33,10 +33,8 @@ const SendmailModal = ({ id }) => {
 
   return (
     <>
-      <SendMailAlert />
-      <input type="checkbox" id="modal-toggle" className="modal-toggle" />
       <dialog id={id} className="modal">
-        <div className="modal-box p-12 px-14 max-sm:w-[94%] max-sm:p-7">
+        <div className="modal-box p-12 px-12 max-sm:w-[94%] max-sm:p-7">
           <div className="modal-head mb-7 text-center">
             <h3 className="text-2xl font-semibold max-sm:text-lg">
               Say Hello ?
@@ -73,6 +71,7 @@ const SendmailModal = ({ id }) => {
           <button>close</button>
         </form>
       </dialog>
+      <SendMailAlert />
     </>
   );
 };
