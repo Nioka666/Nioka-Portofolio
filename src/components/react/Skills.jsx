@@ -99,7 +99,7 @@ function Skills() {
         <summary className="collapse-title">
           <div className="my-[8px] flex items-center gap-2 max-md:ms-[10px] max-sm:my-[5px] lg:ms-14">
             <i className="bx bx-code-curly text-[22px] md:text-2xl"></i>
-            <span className="md:ms-2 max-sm:ms-1 max-sm:text-[15.5px]">{title}</span>
+            <span className="md:ms-2 max-sm:ms-1">{title}</span>
           </div>
         </summary>
         <div className="skills-content collapse-content">
