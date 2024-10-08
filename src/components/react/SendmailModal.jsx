@@ -1,6 +1,5 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import SendMailAlert from "./SendmailAlert";
 
 const SendmailModal = ({ id }) => {
   const formRef = useRef();

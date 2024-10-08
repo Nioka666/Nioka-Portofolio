@@ -171,12 +171,12 @@ function Hero() {
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <SendmailModal id={"my_modal_2"} />
-            <a href={CV} target="_blank">
+            {/* <a href={CV} target="_blank">
               <button role="button" className="cv-sm-btn">
                 View CV
                 <i className="bx bx-file text-[21px] text-gray-600 dark:text-textdark3"></i>
               </button>
-            </a>
+            </a> */}
           </div>
         </section>
       </section>
