@@ -271,7 +271,7 @@
   .blob {
     background-size: cover;
     border: 11px solid #d8d8d86a;
-    @apply dark:border-[#424245] dark:brightness-90 md:border-[13px];
+    @apply dark:border-[#313133] dark:brightness-90 md:border-[13px];
     border-radius: 50% / 50%;
     margin-right: 10px;
     margin-left: -10px;
@@ -362,7 +362,7 @@
   color: #0b0b0c;
   /*  */
   color: #4c4c4f;
-  color: #424245;
+  color: #313133;
   /* textdark 4 */
   color: #a9aaac;
 }
