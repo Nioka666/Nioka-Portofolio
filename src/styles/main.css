@@ -113,7 +113,7 @@
   }
 
   section.sm-hero div.sm-btn-group {
-    @apply mt-10 flex items-center gap-[40px] font-medium max-sm:mt-[27px] max-miniphone:gap-2 sm:mt-0 sm:gap-[40px];
+    @apply flex items-center gap-[40px] font-medium max-sm:mt-[27px] max-miniphone:gap-2 sm:mt-0 sm:gap-[40px];
   }
 
   section.sm-hero button.hello-sm-btn {

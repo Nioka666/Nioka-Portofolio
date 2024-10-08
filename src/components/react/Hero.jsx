@@ -157,13 +157,13 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-niogray mt-[18.5px] h-[105px] w-full text-[15px] leading-[25px] dark:text-textdark2 max-sm:text-[16px]">
+          <p className="text-niogray mt-[18.5px] h-full w-full text-[15px] leading-[25px] dark:text-textdark2 max-sm:text-[16px]">
             A Front-End Web Developer & UI/UX Enthusiast, who dedicated to learn & develops themself in this field.
           </p>
           <div className="sm-btn-group">
             <button
               role="button"
-              className="hello-sm-btn"
+              className="hello-sm-btn mt-4"
               onClick={() => document.getElementById("my_modal_2").showModal()}
             >
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
