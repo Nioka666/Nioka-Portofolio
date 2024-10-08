@@ -15,10 +15,5 @@ export default defineConfig({
   //     expiration: 60 * 60 * 24,
   //   },
   // }),
-  adapter: vercel({
-    imageService: true,
-    imagesConfig: {
-      sizes: [320, 640, 1280],
-    },
-  }),
+  adapter: vercel(),
 });
