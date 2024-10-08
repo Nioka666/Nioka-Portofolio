@@ -27,7 +27,7 @@
 
   nav {
     @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center sm:top-6 sm:h-[75px] sm:px-8 lg:px-[115px];
-    transition: all 0.3s ease;
+    transition: all 0.37s ease;
   }
 
   nav section {

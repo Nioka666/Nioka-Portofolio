@@ -11,7 +11,6 @@ function FloatingButton() {
     window.addEventListener("scroll", handleScroll);
     handleScroll();
 
-    // unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

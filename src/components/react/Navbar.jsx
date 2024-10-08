@@ -69,7 +69,7 @@ function Navbar() {
         </div>
         <div className="dropdown dropdown-end menu-dropdown-toggle">
           <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => setIsMenuOpen(true)}
             aria-label="Navbar menu button"
           >
             <i className="bx bx-menu-alt-right cursor-pointer text-[26px] font-medium text-gray-600 transition-all hover:text-gray-400 dark:text-textdark"></i>
