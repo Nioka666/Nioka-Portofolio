@@ -73,7 +73,7 @@ const SendmailModal = ({ id }) => {
             ></textarea>
             <button
               type="submit"
-              className="btn mt-2 rounded-xl border-none bg-niodark text-nioprimary hover:bg-niodark2 dark:bg-textdark2 dark:text-niodark dark:hover:bg-niodark2"
+              className="btn mt-2 rounded-xl border-none bg-niodark text-nioprimary hover:bg-niodark2 dark:bg-textdark2 dark:text-niodark dark:hover:bg-niodark2 dark:hover:text-nioprimary"
             >
               Send Message
               <i className="uil uil-location-arrow"></i>
