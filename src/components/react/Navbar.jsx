@@ -6,31 +6,32 @@ function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [themeNow, setThemeNow] = useState("light");
 
+  const webUrl = "https://nioka.vercel.app";
   const menuData = [
     {
-      url: "#about",
-      icon: "bx bx-user text-2xl",
       title: "About",
+      icon: "bx bx-user text-3xl",
+      url: `${webUrl}/#about`,
     },
     {
-      url: "#skills",
-      icon: "bx bx-universal-access text-2xl",
       title: "Skills",
+      icon: "bx bx-universal-access text-3xl",
+      url: `${webUrl}/#skills`,
     },
     {
-      url: "#qualification",
-      icon: "bx bx-file text-2xl",
-      title: "Qualification",
+      title: "Qualifies",
+      icon: "bx bx-file text-3xl",
+      url: `${webUrl}/#qualification`,
     },
     {
-      url: "#portfolio",
-      icon: "bx bx-image text-2xl",
-      title: "Portfolio",
+      title: "portfolio",
+      icon: "bx bx-image text-3xl",
+      url: `${webUrl}/#portfolio`,
     },
     {
-      url: "#contact",
-      icon: "bx bxs-contact text-2xl",
       title: "Contact",
+      icon: "uil uil-user-square text-3xl",
+      url: `${webUrl}/#contact`,
     },
   ];
 

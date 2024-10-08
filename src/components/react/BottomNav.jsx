@@ -7,32 +7,33 @@ function BottomNav() {
   const [themeNow, setThemeNow] = useState("light");
   const bottomDrawerRef = useRef(null);
   const toggleButtonRef = useRef(null);
+  const webUrl = "https://nioka.vercel.app";
 
   const dataMenu = [
     {
       name: "About",
       icon: "bx bx-user text-3xl",
-      url: "#about",
+      url: `${webUrl}/#about`,
     },
     {
       name: "Skills",
       icon: "bx bx-universal-access text-3xl",
-      url: "#skills",
+      url: `${webUrl}/#skills`,
     },
     {
       name: "Qualifies",
       icon: "bx bx-file text-3xl",
-      url: "#qualification",
+      url: `${webUrl}/#qualification`,
     },
     {
       name: "portfolio",
       icon: "bx bx-image text-3xl",
-      url: "#portfolio",
+      url: `${webUrl}/#portfolio`,
     },
     {
       name: "Contact",
       icon: "uil uil-user-square text-3xl",
-      url: "#contact",
+      url: `${webUrl}/#contact`,
     },
   ];
 
