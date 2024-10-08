@@ -115,7 +115,7 @@ function Hero() {
           </div>
         </section>
         <picture className={`hero-pp`}>
-          <img src={avatar} alt="Adhim Niokagi Profile Picture" />
+          <img src={avatar.src} alt="Adhim Niokagi Profile Picture" />
         </picture>
       </section>
 
@@ -140,7 +140,7 @@ function Hero() {
             ))}
           </section>
           <picture className={`sm-avatar`}>
-            <img src={avatar} alt="Adhim Niokagi Profile Picture" />
+            <img src={avatar.src} alt="Adhim Niokagi Profile Picture" />
           </picture>
         </section>
         {/* headline */}
