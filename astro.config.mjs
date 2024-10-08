@@ -9,13 +9,16 @@ import vercelServerless from "@astrojs/vercel/serverless";
 export default defineConfig({
   site: "https://nioka.vercel.app",
   integrations: [react(), tailwind(), sitemap()],
-  output: "static",
+  output: "server",
   // adapter: vercel({
   //   isr: {
   //     expiration: 60 * 60 * 24,
   //   },
   // }),
-  adapter: vercel({
+  adapter: vercelServerless({
     imageService: true,
+    imagesConfig: {
+      sizes: [320, 640, 1280],
+    },
   }),
 });
