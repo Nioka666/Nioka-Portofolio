@@ -94,8 +94,7 @@ function Hero() {
             />
           </div>
           <p className="lg-paragraph">
-            Im a Junior Front-End Developer, work based in Mojokerto, East Java.
-            Passionate and dedicated in this field.
+            A Front-End Web Developer & UI/UX Enthusiast, who dedicated to learn more & develops themself in this field.
           </p>
           <div className="mt-10 flex gap-7 font-medium">
             <button
@@ -159,8 +158,7 @@ function Hero() {
             />
           </div>
           <p className="text-niogray mt-[18.5px] h-[97px] w-full text-[15px] leading-[25px] dark:text-textdark2 max-sm:text-[16px]">
-            A Front-End Web Developer & UI/UX Enthusiast, who dedicated to learn
-            more in & develop themself in this field.
+            A Front-End Web Developer & UI/UX Enthusiast, who dedicated to learn & develops themself in this field.
           </p>
           <div className="sm-btn-group">
             <button
