@@ -16,7 +16,6 @@ export default defineConfig({
   //   },
   // }),
   adapter: vercelServerless({
-    imageService: true,
     imagesConfig: {
       sizes: [320, 640, 1280],
     },
