@@ -8,9 +8,9 @@ export default defineConfig({
   site: "https://nioka.vercel.app",
   integrations: [react(), tailwind()],
   output: "static",
-  adapter: vercelServerless({
-    isr: {
-      expiration: 60 * 60 * 24,
-    },
-  }),
+  // adapter: vercelServerless({
+  //   isr: {
+  //     expiration: 60 * 60 * 24,
+  //   },
+  // }),
 });
