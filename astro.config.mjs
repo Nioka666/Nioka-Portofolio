@@ -7,7 +7,7 @@ import vercelServerless from "@astrojs/vercel/serverless";
 export default defineConfig({
   site: "https://nioka.vercel.app",
   integrations: [react(), tailwind()],
-  output: "static",
+  output: "server",
   adapter: vercelServerless({
     isr: {
       expiration: 60 * 60 * 24,
