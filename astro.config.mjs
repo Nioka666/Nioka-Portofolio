@@ -10,10 +10,10 @@ export default defineConfig({
   site: "https://nioka.vercel.app",
   integrations: [react(), tailwind(), sitemap()],
   output: "static",
+  adapter: vercel(),
   // adapter: vercel({
   //   isr: {
   //     expiration: 60 * 60 * 24,
   //   },
   // }),
-  adapter: vercel(),
 });
