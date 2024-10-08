@@ -22,11 +22,10 @@ function Educations() {
             <div className="timeline-end md:timeline-start max-md:ms-3 md:mb-10 md:me-5 md:text-end">
               <time className="font-mono italic">2024 - Present</time>
               <div className="mt-1 text-lg font-bold max-sm:text-base">
-                Politeknik Elektronika Negeri Surabaya
+                Electronic Engineering Polytechnic Institute of Surabaya (EEPIS)
               </div>
               <p className="mt-1 text-sm">
-                Associate's degree, Distance education <br />
-                Informatics Engineering <br /> <br />
+                Associate's degree - Informatics Engineering <br /> <br />
               </p>
             </div>
             <hr className="dark:bg-textdark2" />

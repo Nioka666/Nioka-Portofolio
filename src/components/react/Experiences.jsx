@@ -21,7 +21,7 @@ function Experiences() {
             <div className="timeline-end md:timeline-start max-md:ms-3 md:mb-10 md:me-5 md:text-end">
               <time className="font-mono italic">2023 - Present</time>
               <div className="mt-1 text-lg font-bold max-sm:text-base">
-                Independent Freelancer
+                Freelance (Self employed)
               </div>
               <p className="mt-1 text-sm">
                 Front-End Web Developer <br /> <br />
