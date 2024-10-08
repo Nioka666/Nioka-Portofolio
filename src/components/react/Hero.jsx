@@ -158,9 +158,9 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-niogray mt-[18.5px] h-[80px] w-full text-[15px] leading-[25px] dark:text-textdark2 max-sm:text-[16px]">
+          <p className="text-niogray mt-[18.5px] h-[90px] w-full text-[15px] leading-[25px] dark:text-textdark2 max-sm:text-[16px]">
             I'm a Front-End Web Developer & UI/UX Enthusiast, dedicated to learn
-            more in this field. <br /> <u className="font-semibold">See my projects here</u>
+            more in this field. <u className="font-semibold">See my projects here</u>
           </p>
           <div className="sm-btn-group">
             <button

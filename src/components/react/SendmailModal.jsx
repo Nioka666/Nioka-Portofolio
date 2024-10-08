@@ -43,10 +43,10 @@ const SendmailModal = ({ id }) => {
 
   return (
     <>
-      <dialog id={id} className="modal">
-        <div className="modal-box p-12 px-12 dark:bg-niodark3 max-sm:w-[94%] max-sm:p-7">
-          <div className="modal-head mb-7 text-center">
-            <h3 className="text-2xl font-semibold max-sm:text-lg">
+      <dialog id={id} className="modal backdrop-blur-sm">
+        <div className="modal-box p-12 px-12 dark:bg-niodark max-sm:w-[94%] max-sm:p-7 max-sm:pb-8">
+          <div className="modal-head mb-5 text-center">
+            <h3 className="text-2xl font-semibold max-sm:text-xl">
               Say Hello ?
             </h3>
             <p className="mt-1 text-xs font-normal text-gray-400">
@@ -73,7 +73,7 @@ const SendmailModal = ({ id }) => {
             ></textarea>
             <button
               type="submit"
-              className="btn mt-3 rounded-xl border-none bg-niodark text-nioprimary hover:bg-niodark2 dark:bg-textdark2 dark:hover:bg-niodark2"
+              className="btn mt-2 rounded-xl border-none bg-niodark text-nioprimary hover:bg-niodark2 dark:bg-textdark2 dark:text-niodark dark:hover:bg-niodark2"
             >
               Send Message
               <i className="uil uil-location-arrow"></i>
