@@ -231,7 +231,7 @@
 
   /* skills section */
   .skills-component {
-    @apply mt-20 py-10 max-sm:mt-12 lg:px-10;
+    @apply mt-[75px] py-10 max-sm:mt-12 lg:px-10;
   }
 
   .skills-content-container {
