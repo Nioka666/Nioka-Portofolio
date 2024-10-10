@@ -105,7 +105,7 @@
   }
 
   section.sm-hero section.sm-headline {
-    @apply mx-[22px] mt-6 flex flex-col;
+    @apply mx-[22px] mt-[26px] flex flex-col;
   }
 
   section.sm-hero section.sm-headline h1 {
@@ -125,7 +125,7 @@
   }
 
   picture.sm-avatar {
-    @apply blob overflow-hidden max-md:ms-[2px] max-sm:ms-[-3px] max-sm:h-full max-sm:w-[222px] max-miniphone:ms-[-3px] max-miniphone:w-[223px] sm:h-full sm:w-[280px] md:h-full md:w-[10px];
+    @apply blob overflow-hidden max-md:ms-[2px] max-sm:ms-[-3px] max-sm:h-full max-sm:w-[224px] max-miniphone:ms-[-3px] max-miniphone:w-[223px] sm:h-full sm:w-[280px] md:h-full md:w-[10px];
   }
 
   section.social-media {
@@ -160,7 +160,7 @@
   }
 
   .text-niogray {
-    color: #747b87;
+    color: #686e78;
   }
 
   .b-nav-shadow {
