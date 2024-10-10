@@ -5,37 +5,11 @@ function BottomNav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [shadowNav, setShadowNav] = useState(false);
   const [themeNow, setThemeNow] = useState("light");
+  let [is404, setIs404] = useState(false);
   const bottomDrawerRef = useRef(null);
   const toggleButtonRef = useRef(null);
-  const webUrl = "https://nioka.vercel.app";
-
-  const dataMenu = [
-    {
-      name: "About",
-      icon: "bx bx-user text-3xl",
-      url: `${webUrl}/#about`,
-    },
-    {
-      name: "Skills",
-      icon: "bx bx-universal-access text-3xl",
-      url: `${webUrl}/#skills`,
-    },
-    {
-      name: "Qualifies",
-      icon: "bx bx-file text-3xl",
-      url: `${webUrl}/#qualification`,
-    },
-    {
-      name: "portfolio",
-      icon: "bx bx-image text-3xl",
-      url: `${webUrl}/#portfolio`,
-    },
-    {
-      name: "Contact",
-      icon: "uil uil-user-square text-3xl",
-      url: `${webUrl}/#contact`,
-    },
-  ];
+  const validPages = ["#about", "#skills", "#qualification", "#portfolio", "#contact"];
+  const webUrl = "https://nioka.vercel.app/";
 
   function toggleTheme() {
     const currentTheme = localStorage.getItem("theme");
@@ -87,8 +61,52 @@ function BottomNav() {
     );
   }
 
+  const dataMenu = [
+    {
+      name: "About",
+      icon: "bx bx-user text-3xl",
+      url: "#about",
+      notFoundURL: `${webUrl}/#about`
+    },
+    {
+      name: "Skills",
+      icon: "bx bx-universal-access text-3xl",
+      url: "#skills",
+      notFoundURL: `${webUrl}/#skills`
+    },
+    {
+      name: "Qualifies",
+      icon: "bx bx-file text-3xl",
+      url: "#qualification",
+      notFoundURL: `${webUrl}/#qualification`
+    },
+    {
+      name: "portfolio",
+      icon: "bx bx-image text-3xl",
+      url: "#portfolio",
+      notFoundURL: `${webUrl}/#portfolio`
+    },
+    {
+      name: "Contact",
+      icon: "uil uil-user-square text-3xl",
+      url: "#contact",
+      notFoundURL: `${webUrl}/#contact`
+    },
+  ];
+
   useEffect(() => {
     let currentTheme = localStorage.getItem("theme");
+    let currentURL = window.location.href;
+    const isValidPage = validPages.some((page) => currentURL.includes(page));
+
+    if (currentURL === webUrl || isValidPage) {
+      setIs404(false);
+    } else {
+      setIs404(true);
+    }
+
+    console.log(is404);
+
     if (currentTheme === "light") {
       setThemeNow("light");
     } else {
@@ -125,7 +143,7 @@ function BottomNav() {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [themeNow, drawerOpen]);
+  }, [themeNow, is404, drawerOpen]);
 
   const SwipeHandler = useSwipeable({
     onSwipedDown: () => setDrawerOpen(false),
@@ -160,7 +178,7 @@ function BottomNav() {
               <div className="grid grid-cols-3 justify-items-center">
                 {dataMenu.map((data, index) => (
                   <a
-                    href={data.url}
+                    href={!is404 ? data.url : data.notFoundURL}
                     className="text-gray-600 hover:text-gray-400"
                     key={index}
                     onClick={() => setDrawerOpen(false)}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
-import avatar from "../../assets/adhim_niokagi.jpg";
+import avatar from "../../assets/nioka_2.jpg";
 import CV from "../../assets/Adhim_Niokagi_IT_CVS.pdf";
 import SendmailModal from "./SendmailModal";
 

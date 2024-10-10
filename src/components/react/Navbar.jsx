@@ -1,37 +1,44 @@
 import { useEffect, useState } from "react";
 
 function Navbar() {
+  let [is404, setIs404] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollDirection, setScrollDirection] = useState("up");
   const [lastScrollY, setLastScrollY] = useState(0);
   const [themeNow, setThemeNow] = useState("light");
-
-  const webUrl = "https://nioka.vercel.app";
+  const validPages = ["#about", "#skills", "#qualification", "#portfolio", "#contact"];
+  const webUrl = "https://nioka.vercel.app/";
+  
   const menuData = [
     {
-      title: "About",
+      name: "About",
       icon: "bx bx-user text-3xl",
-      url: `${webUrl}/#about`,
+      url: "#about",
+      notFoundURL: `${webUrl}/#about`
     },
     {
-      title: "Skills",
+      name: "Skills",
       icon: "bx bx-universal-access text-3xl",
-      url: `${webUrl}/#skills`,
+      url: "#skills",
+      notFoundURL: `${webUrl}/#skills`
     },
     {
-      title: "Qualifies",
+      name: "Qualifies",
       icon: "bx bx-file text-3xl",
-      url: `${webUrl}/#qualification`,
+      url: "#qualification",
+      notFoundURL: `${webUrl}/#qualification`
     },
     {
-      title: "portfolio",
+      name: "portfolio",
       icon: "bx bx-image text-3xl",
-      url: `${webUrl}/#portfolio`,
+      url: "#portfolio",
+      notFoundURL: `${webUrl}/#portfolio`
     },
     {
-      title: "Contact",
+      name: "Contact",
       icon: "uil uil-user-square text-3xl",
-      url: `${webUrl}/#contact`,
+      url: "#contact",
+      notFoundURL: `${webUrl}/#contact`
     },
   ];
 
@@ -80,7 +87,7 @@ function Navbar() {
             <div className={`nav-content-modal`} tabIndex="0">
               <div className="grid grid-cols-3 gap-2 p-5">
                 {menuData.map((menu, index) => (
-                  <a href={menu.url} key={index}>
+                  <a href={is404 ? menu.url : menu.notFoundURL} key={index}>
                     <div className="box grid w-[100px] cursor-pointer p-3 text-center">
                       <i className={menu.icon}></i>
                       <span className="text-xs">{menu.title}</span>
@@ -97,6 +104,15 @@ function Navbar() {
 
   useEffect(() => {
     let currentTheme = localStorage.getItem("theme");
+    let currentURL = window.location.href;
+    const isValidPage = validPages.some((page) => currentURL.includes(page));
+
+    if (currentURL === webUrl || isValidPage) {
+      setIs404(false);
+    } else {
+      setIs404(true);
+    }
+    
     if (currentTheme === "light") {
       setThemeNow("light");
     } else {
