@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useSwipeable } from "react-swipeable";
 import validPages from "../../data/valid_pages.json";
-import dataMenu from "../../data/nav_anchors.json";
+import menuData from "../../data/nav_anchors";
 
 
 function BottomNav() {
@@ -145,7 +145,7 @@ function BottomNav() {
             <div className="swipper relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200 dark:bg-textdark2"></div>
             <div className="h-[250px] rounded-t-3xl px-4 pt-8">
               <div className="grid grid-cols-3 justify-items-center">
-                {dataMenu.map((data, index) => (
+                {menuData.map((data, index) => (
                   <a
                     href={!is404 ? data.url : `${data.notFoundURL}`}
                     className="text-gray-600 hover:text-gray-400"
