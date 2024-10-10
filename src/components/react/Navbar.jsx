@@ -53,6 +53,43 @@ function Navbar() {
     }
   }
 
+
+
+  useEffect(() => {
+    let currentTheme = localStorage.getItem("theme");
+    let currentURL = window.location.href;
+    const isValidPage = validPages.some((page) => {
+      currentURL.includes(page);
+    });
+
+    if (currentURL === webUrl || isValidPage) {
+      setIs404(false);
+    } else {
+      setIs404(true);
+    }
+
+    if (currentTheme === "light") {
+      setThemeNow("light");
+    } else {
+      setThemeNow("dark");
+    }
+
+    function handleScroll() {
+      if (window.scrollY > lastScrollY) {
+        setScrollDirection("down");
+      } else {
+        setScrollDirection("up");
+      }
+      setLastScrollY(window.scrollY);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [themeNow, is404, lastScrollY]);
+
   function IconGroup() {
     return (
       <div className="icon-group flex gap-4 sm:gap-7">
@@ -101,41 +138,6 @@ function Navbar() {
       </div>
     );
   }
-
-  useEffect(() => {
-    let currentTheme = localStorage.getItem("theme");
-    let currentURL = window.location.href;
-    const isValidPage = validPages.some((page) => {
-      currentURL.includes(page);
-    });
-
-    if (currentURL === webUrl || isValidPage) {
-      setIs404(false);
-    } else {
-      setIs404(true);
-    }
-
-    if (currentTheme === "light") {
-      setThemeNow("light");
-    } else {
-      setThemeNow("dark");
-    }
-
-    function handleScroll() {
-      if (window.scrollY > lastScrollY) {
-        setScrollDirection("down");
-      } else {
-        setScrollDirection("up");
-      }
-      setLastScrollY(window.scrollY);
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [themeNow, is404, lastScrollY]);
 
   return (
     <>
