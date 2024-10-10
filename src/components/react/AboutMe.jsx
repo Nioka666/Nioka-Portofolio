@@ -48,7 +48,7 @@ function AboutMe() {
               {boxData.map((box) => (
                 <div
                   key={box.id}
-                  className="grid w-[150px] cursor-pointer gap-1 rounded-[20px] px-6 py-5 text-center text-black dark:text-textdark max-sm:w-[130px] max-sm:px-[10px] max-sm:py-4 md:border-0"
+                  className="boxx"
                 >
                   <i
                     className={`${box.icon} mb-2 text-[26px] max-sm:mb-1 max-sm:text-[20px]`}

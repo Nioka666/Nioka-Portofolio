@@ -206,7 +206,7 @@
   }
   /* end of hero */
   .about-component {
-    @apply mt-[84px] rounded-3xl py-10 max-md:mx-0 max-sm:mt-[77px] lg:px-10;
+    @apply mt-[88px] rounded-3xl py-10 max-md:mx-0 max-sm:mt-[77px] lg:px-10;
   }
 
   .about-content {
@@ -218,7 +218,11 @@
   }
 
   .about-desc-wrapper .about-boxes {
-    @apply flex gap-4 max-lg:my-7 max-lg:justify-center max-sm:my-6 max-sm:justify-center max-sm:px-2 max-sm:gap-0 max-sm:rounded-2xl max-sm:border-b-2 max-sm:bg-white max-sm:py-2 dark:bg-niodark3 dark:border-none;
+    @apply flex gap-4 dark:border-none dark:bg-niodark3 max-lg:my-7 max-lg:justify-center max-sm:my-6 max-sm:justify-center max-sm:gap-0 max-sm:rounded-2xl max-sm:border-b-2 max-sm:bg-white max-sm:px-2 max-sm:py-2;
+  }
+
+  .about-desc-wrapper .about-boxes .boxx {
+    @apply grid w-[150px] cursor-pointer gap-1 rounded-[20px] px-6 py-5 text-center text-black dark:text-textdark max-sm:w-[130px] max-sm:px-[10px] max-sm:py-4 md:border-0;
   }
 
   .about-mockup-window {
