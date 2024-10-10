@@ -218,7 +218,7 @@
   }
 
   .about-desc-wrapper .about-boxes {
-    @apply flex gap-4 max-lg:my-7 max-lg:justify-center max-sm:my-6 max-sm:justify-center max-sm:gap-0 max-sm:rounded-xl max-sm:border-t-2 max-sm:bg-white max-sm:py-2 dark:bg-niodark3 dark:border-none;
+    @apply flex gap-4 max-lg:my-7 max-lg:justify-center max-sm:my-6 max-sm:justify-center max-sm:gap-0 max-sm:rounded-2xl max-sm:border-t-2 max-sm:bg-white max-sm:py-2 dark:bg-niodark3 dark:border-none;
   }
 
   .about-mockup-window {
