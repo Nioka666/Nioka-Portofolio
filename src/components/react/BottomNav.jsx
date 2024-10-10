@@ -10,7 +10,7 @@ function BottomNav() {
   let [is404, setIs404] = useState(false);
   const bottomDrawerRef = useRef(null);
   const toggleButtonRef = useRef(null);
-  const webUrl = "https://nioka.vercel.app/";
+  const webUrl = "https://nioka.vercel.app";
 
   function toggleTheme() {
     const currentTheme = localStorage.getItem("theme");

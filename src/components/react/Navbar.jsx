@@ -7,7 +7,7 @@ function Navbar() {
   const [scrollDirection, setScrollDirection] = useState("up");
   const [lastScrollY, setLastScrollY] = useState(0);
   const [themeNow, setThemeNow] = useState("light");
-  const webUrl = "https://nioka.vercel.app/";
+  const webUrl = "https://nioka.vercel.app";
 
   const menuData = [
     {
