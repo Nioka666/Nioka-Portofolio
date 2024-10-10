@@ -144,7 +144,7 @@ function BottomNav() {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [themeNow, drawerOpen]);
+  }, [themeNow, is404, drawerOpen]);
 
   const SwipeHandler = useSwipeable({
     onSwipedDown: () => setDrawerOpen(false),

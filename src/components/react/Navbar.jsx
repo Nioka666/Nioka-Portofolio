@@ -8,7 +8,7 @@ function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [themeNow, setThemeNow] = useState("light");
   const webUrl = "https://nioka.vercel.app/";
-  
+
   const menuData = [
     {
       name: "About",
@@ -105,7 +105,9 @@ function Navbar() {
   useEffect(() => {
     let currentTheme = localStorage.getItem("theme");
     let currentURL = window.location.href;
-    const isValidPage = validPages.some((page) => currentURL.includes(page));
+    const isValidPage = validPages.some((page) => {
+      currentURL.includes(page);
+    });
 
     if (currentURL === webUrl || isValidPage) {
       setIs404(false);
@@ -113,8 +115,6 @@ function Navbar() {
       setIs404(true);
     }
 
-    console.log(is404);
-    
     if (currentTheme === "light") {
       setThemeNow("light");
     } else {
@@ -135,7 +135,7 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [themeNow, lastScrollY]);
+  }, [themeNow, is404, lastScrollY]);
 
   return (
     <>
