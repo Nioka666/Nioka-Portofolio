@@ -37,7 +37,7 @@ function AboutMe() {
           <div className="mx-auto flex justify-center md:w-1/2">
             <img
               src={niokaPhoto.src}
-              className="rounded-[30px] max-sm:w-[220px] sm:w-[250px] lg:w-[360px]"
+              className="rounded-[30px] max-sm:w-[210px] sm:w-[250px] lg:w-[355px]"
               alt="Adhim Niokagi Photo"
             />
           </div>
