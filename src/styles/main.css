@@ -206,7 +206,7 @@
   }
   /* end of hero */
   .about-component {
-    @apply mt-[88px] rounded-3xl py-10 max-md:mx-0 max-sm:mt-[77px] lg:px-10;
+    @apply mt-[90px] rounded-3xl py-10 max-md:mx-0 max-sm:mt-[77px] lg:px-10;
   }
 
   .about-content {
