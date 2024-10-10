@@ -7,38 +7,38 @@ function Navbar() {
   const [scrollDirection, setScrollDirection] = useState("up");
   const [lastScrollY, setLastScrollY] = useState(0);
   const [themeNow, setThemeNow] = useState("light");
-  const webUrl = "https://nioka.vercel.app";
+  const webUrl = "https://nioka.vercel.app/";
 
   const menuData = [
     {
       name: "About",
       icon: "bx bx-user text-3xl",
       url: "#about",
-      notFoundURL: `${webUrl}/#about`
+      notFoundURL: `${webUrl}#about`
     },
     {
       name: "Skills",
       icon: "bx bx-universal-access text-3xl",
       url: "#skills",
-      notFoundURL: `${webUrl}/#skills`
+      notFoundURL: `${webUrl}#skills`
     },
     {
       name: "Qualifies",
       icon: "bx bx-file text-3xl",
       url: "#qualification",
-      notFoundURL: `${webUrl}/#qualification`
+      notFoundURL: `${webUrl}#qualification`
     },
     {
       name: "portfolio",
       icon: "bx bx-image text-3xl",
       url: "#portfolio",
-      notFoundURL: `${webUrl}/#portfolio`
+      notFoundURL: `${webUrl}#portfolio`
     },
     {
       name: "Contact",
       icon: "uil uil-user-square text-3xl",
       url: "#contact",
-      notFoundURL: `${webUrl}/#contact`
+      notFoundURL: `${webUrl}#contact`
     },
   ];
 
