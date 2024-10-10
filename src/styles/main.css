@@ -117,7 +117,7 @@
   }
 
   section.sm-hero button.hello-sm-btn {
-    @apply rounded-[16px] bg-gray-800 px-[28px] py-[16px] text-[16px] text-nioprimary hover:shadow-md dark:bg-niodark2 dark:text-nioprimary dark:shadow-sm max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px];
+    @apply rounded-[16px] bg-gray-800 px-[28px] py-[16.2px] text-[16px] text-nioprimary hover:shadow-md dark:bg-niodark2 dark:text-nioprimary dark:shadow-sm max-miniphone:px-6 max-miniphone:py-[15.7px] max-miniphone:text-[11px] sm:text-[15px];
   }
 
   section.sm-hero button.cv-sm-btn {
