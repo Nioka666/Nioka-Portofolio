@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useSwipeable } from "react-swipeable";
+import validPages from "../../data/valid_pages.json";
+
 
 function BottomNav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -8,7 +10,6 @@ function BottomNav() {
   let [is404, setIs404] = useState(false);
   const bottomDrawerRef = useRef(null);
   const toggleButtonRef = useRef(null);
-  const validPages = ["#", "#about", "#skills", "#qualification", "#portfolio", "#contact"];
   const webUrl = "https://nioka.vercel.app/";
 
   function toggleTheme() {
@@ -143,7 +144,7 @@ function BottomNav() {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [themeNow, is404, drawerOpen]);
+  }, [themeNow, drawerOpen]);
 
   const SwipeHandler = useSwipeable({
     onSwipedDown: () => setDrawerOpen(false),

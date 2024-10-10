@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import validPages from "../../data/valid_pages.json";
 
 function Navbar() {
   let [is404, setIs404] = useState(false);
@@ -6,7 +7,6 @@ function Navbar() {
   const [scrollDirection, setScrollDirection] = useState("up");
   const [lastScrollY, setLastScrollY] = useState(0);
   const [themeNow, setThemeNow] = useState("light");
-  const validPages = ["#", "#about", "#skills", "#qualification", "#portfolio", "#contact"];
   const webUrl = "https://nioka.vercel.app/";
   
   const menuData = [
@@ -90,7 +90,7 @@ function Navbar() {
                   <a href={is404 ? menu.url : menu.notFoundURL} key={index}>
                     <div className="box grid w-[100px] cursor-pointer p-3 text-center">
                       <i className={menu.icon}></i>
-                      <span className="text-xs">{menu.title}</span>
+                      <span className="text-xs">{menu.name}</span>
                     </div>
                   </a>
                 ))}
@@ -112,6 +112,8 @@ function Navbar() {
     } else {
       setIs404(true);
     }
+
+    console.log(is404);
     
     if (currentTheme === "light") {
       setThemeNow("light");
