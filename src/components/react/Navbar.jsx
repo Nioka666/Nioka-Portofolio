@@ -14,31 +14,31 @@ function Navbar() {
       name: "About",
       icon: "bx bx-user text-3xl",
       url: "#about",
-      notFoundURL: `${webUrl}#about`
+      notFoundURL: "https://nioka.vercel.app/#about"
     },
     {
       name: "Skills",
       icon: "bx bx-universal-access text-3xl",
       url: "#skills",
-      notFoundURL: `${webUrl}#skills`
+      notFoundURL: "https://nioka.vercel.app/#skills"
     },
     {
       name: "Qualifies",
       icon: "bx bx-file text-3xl",
       url: "#qualification",
-      notFoundURL: `${webUrl}#qualification`
+      notFoundURL: "https://nioka.vercel.app/#qualification"
     },
     {
       name: "portfolio",
       icon: "bx bx-image text-3xl",
       url: "#portfolio",
-      notFoundURL: `${webUrl}#portfolio`
+      notFoundURL: "https://nioka.vercel.app/#portfolio"
     },
     {
       name: "Contact",
       icon: "uil uil-user-square text-3xl",
       url: "#contact",
-      notFoundURL: `${webUrl}#contact`
+      notFoundURL: "https://nioka.vercel.app/#contact"
     },
   ];
 
@@ -52,43 +52,6 @@ function Navbar() {
       localStorage.setItem("theme", "dark");
     }
   }
-
-
-
-  useEffect(() => {
-    let currentTheme = localStorage.getItem("theme");
-    let currentURL = window.location.href;
-    const isValidPage = validPages.some((page) => {
-      currentURL.includes(page);
-    });
-
-    if (currentURL === webUrl || isValidPage) {
-      setIs404(false);
-    } else {
-      setIs404(true);
-    }
-
-    if (currentTheme === "light") {
-      setThemeNow("light");
-    } else {
-      setThemeNow("dark");
-    }
-
-    function handleScroll() {
-      if (window.scrollY > lastScrollY) {
-        setScrollDirection("down");
-      } else {
-        setScrollDirection("up");
-      }
-      setLastScrollY(window.scrollY);
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [themeNow, is404, lastScrollY]);
 
   function IconGroup() {
     return (
@@ -138,6 +101,41 @@ function Navbar() {
       </div>
     );
   }
+
+  useEffect(() => {
+    let currentTheme = localStorage.getItem("theme");
+    let currentURL = window.location.href;
+    const isValidPage = validPages.some((page) => {
+      currentURL.includes(page);
+    });
+
+    if (currentURL === webUrl || isValidPage) {
+      setIs404(false);
+    } else {
+      setIs404(true);
+    }
+
+    if (currentTheme === "light") {
+      setThemeNow("light");
+    } else {
+      setThemeNow("dark");
+    }
+
+    function handleScroll() {
+      if (window.scrollY > lastScrollY) {
+        setScrollDirection("down");
+      } else {
+        setScrollDirection("up");
+      }
+      setLastScrollY(window.scrollY);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [themeNow, is404, lastScrollY]);
 
   return (
     <>
