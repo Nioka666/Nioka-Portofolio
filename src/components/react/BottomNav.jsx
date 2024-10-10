@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useSwipeable } from "react-swipeable";
 import validPages from "../../data/valid_pages.json";
-import menuData from "../../data/nav_anchors";
-
+import { menuData } from "../../data/nav_anchors";
 
 function BottomNav() {
   const [drawerOpen, setDrawerOpen] = useState(false);

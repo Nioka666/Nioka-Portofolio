@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import validPages from "../../data/valid_pages.json";
-import menuData from "../../data/nav_anchors";
+import { menuData } from "../../data/nav_anchors";
 
 function Navbar() {
   let [is404, setIs404] = useState(false);
