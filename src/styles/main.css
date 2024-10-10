@@ -218,11 +218,11 @@
   }
 
   .about-desc-wrapper .about-boxes {
-    @apply flex gap-4 max-lg:my-7 max-lg:justify-center max-sm:my-6 max-sm:justify-center max-sm:gap-0 max-sm:rounded-xl max-sm:border-l-[3px] max-sm:bg-white max-sm:py-2;
+    @apply flex gap-4 max-lg:my-7 max-lg:justify-center max-sm:my-6 max-sm:justify-center max-sm:gap-0 max-sm:rounded-xl max-sm:border-b-2 max-sm:bg-white max-sm:py-2;
   }
 
   .about-mockup-window {
-    @apply mt-5 border-l-[3px] bg-white dark:border-niodark dark:bg-niodark3 max-sm:mt-0 sm:mx-5 md:mx-0;
+    @apply mt-5 border-b-2 bg-white dark:border-niodark dark:bg-niodark3 max-sm:mt-0 sm:mx-5 md:mx-0;
   }
 
   .about-mockup-paragraph {
@@ -239,7 +239,7 @@
   }
 
   .skills-component .skills-collapse {
-    @apply cursor-pointer border-l-[3px] bg-white dark:border-borderbtm dark:bg-niodark3;
+    @apply cursor-pointer border-b-2 bg-white dark:border-borderbtm dark:bg-niodark3;
   }
 
   .skills-component summary {
