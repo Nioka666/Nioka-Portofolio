@@ -87,7 +87,7 @@ function Navbar() {
             <div className={`nav-content-modal`} tabIndex="0">
               <div className="grid grid-cols-3 gap-2 p-5">
                 {menuData.map((menu, index) => (
-                  <a href={is404 ? menu.url : menu.notFoundURL} key={index}>
+                  <a href={!is404 ? menu.url : `${menu.notFoundURL}`} key={index}>
                     <div className="box grid w-[100px] cursor-pointer p-3 text-center">
                       <i className={menu.icon}></i>
                       <span className="text-xs">{menu.name}</span>
