@@ -23,7 +23,7 @@ function AboutMe() {
     },
   ];
   const paragraph = {
-    text: "As a Front-End Web Developer and UI/UX Enthusiast, I am highly dedicated to learn more in this field. I have extensive experience with several up-to-date technology frameworks such as ReactJs, Express.js and more Javascript ecosystem for recent.",
+    text: "I am a student of electronic engineering polytechnic institute of Surabaya majoring in informatics engineering, as well as a Front-End Web Developer and UI/UX Enthusiast, I am highly dedicated to learn more in this field. I have enough experience with some of the latest technology frameworks such as ReactJs, Express.js, and some of the latest Javascript ecosystems.",
   };
 
   return (
@@ -63,7 +63,7 @@ function AboutMe() {
             {/* mockup */}
             <div className="about-mockup-window mockup-window">
               <div className="bg-white px-6 py-7 dark:bg-niodark3 dark:shadow-md max-sm:px-0 max-sm:py-7">
-                <p className="about-mockup-paragraph">{paragraph.text}</p>
+                <p className="about-mockup-paragraph indent-7 text-justify">{paragraph.text}</p>
               </div>
             </div>
           </div>
