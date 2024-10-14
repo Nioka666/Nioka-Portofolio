@@ -51,9 +51,9 @@ function AboutMe() {
                   className="boxx"
                 >
                   <i
-                    className={`${box.icon} mb-2 text-[26px] max-sm:mb-1 max-sm:text-[20px]`}
+                    className={`${box.icon} mb-2 text-[26px] max-sm:mb-1 max-sm:text-[20px] text-textdark2`}
                   ></i>
-                  <p className="mt-0 text-[14px] max-sm:text-[11px]">
+                  <p className="mt-0 text-[14px] max-sm:text-[11px] text-niodark2 dark:text-textdark2">
                     {box.title}
                   </p>
                   <p className="text-[8.9px] text-gray-500">{box.desc}</p>
