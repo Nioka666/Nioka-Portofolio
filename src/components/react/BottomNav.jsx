@@ -73,7 +73,7 @@ function BottomNav() {
       setIs404(true);
     }
 
-    console.log(is404);
+    // console.log(is404);
 
     if (currentTheme === "light") {
       setThemeNow("light");

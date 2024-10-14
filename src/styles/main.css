@@ -217,7 +217,7 @@
   }
 
   .about-content {
-    @apply mt-16 justify-between gap-16 max-sm:mt-8 lg:flex lg:items-center;
+    @apply mt-16 justify-between gap-16 max-sm:mt-8 lg:flex lg:place-items-start;
   }
 
   .about-desc-wrapper {
