@@ -124,21 +124,30 @@ function BottomNav() {
     onSwiping: (eventData) => {
       const deltaY = eventData.deltaY;
       if (deltaY > 0) {
-        setDrawerPosition(Math.min(100, deltaY));
+        setDrawerPosition(Math.min(100, deltaY)); // Drawer mengikuti gerakan swipe ke bawah
       } else {
-        setDrawerPosition(Math.max(0, 100 + deltaY));
+        setDrawerPosition(Math.max(0, 100 + deltaY)); // Swipe ke atas
       }
+    },
+    onSwipedDown: () => {
       if (drawerPosition > 50) {
-        setDrawerOpen(false);
+        setDrawerOpen(false); // Tutup drawer jika swipe lebih dari setengah ke bawah
       } else {
         setDrawerOpen(true);
       }
-  
+      setDrawerPosition(100);
+    },
+    onSwipedUp: () => {
+      if (drawerPosition < 50) {
+        setDrawerOpen(true); // Buka drawer jika swipe lebih dari setengah ke atas
+      } else {
+        setDrawerOpen(false); // Tetap tutup jika swipe kurang dari setengah
+      }
+      setDrawerPosition(0); // Reset posisi ke 0%
     },
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
-  }
-);
+  });
 
   return (
     <>
