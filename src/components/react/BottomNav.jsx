@@ -5,6 +5,7 @@ import { menuData } from "../../data/nav_anchors";
 
 function BottomNav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [drawerPosition, setDrawerPosition] = useState(100);
   const [shadowNav, setShadowNav] = useState(false);
   const [themeNow, setThemeNow] = useState("light");
   let [is404, setIs404] = useState(false);
@@ -114,10 +115,41 @@ function BottomNav() {
   }, [themeNow, is404, drawerOpen]);
 
   const SwipeHandler = useSwipeable({
-    onSwipedDown: () => setDrawerOpen(false),
+    onSwiping: (eventData) => {
+      const deltaY = eventData.deltaY;
+      if (deltaY > 0) {
+        setDrawerPosition(Math.min(100, deltaY)); // Drawer mengikuti gerakan swipe ke bawah
+      } else {
+        setDrawerPosition(Math.max(0, 100 + deltaY)); // Swipe ke atas
+      }
+    },
+    onSwipedDown: () => {
+      if (drawerPosition > 50) {
+        setDrawerOpen(false); // Tutup drawer jika swipe lebih dari setengah ke bawah
+      } else {
+        setDrawerOpen(true); // Tetap buka jika swipe kurang dari setengah
+      }
+      setDrawerPosition(100); // Reset posisi ke 100%
+    },
+    onSwipedUp: () => {
+      if (drawerPosition < 50) {
+        setDrawerOpen(true); // Buka drawer jika swipe lebih dari setengah ke atas
+      } else {
+        setDrawerOpen(false); // Tetap tutup jika swipe kurang dari setengah
+      }
+      setDrawerPosition(0); // Reset posisi ke 0%
+    },
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
+
+  useEffect(() => {
+    if (drawerOpen) {
+      bottomDrawerRef.current.style.transform = `translateY(0)`;
+    } else {
+      bottomDrawerRef.current.style.transform = `translateY(100%)`;
+    }
+  }, [drawerOpen]);
 
   return (
     <>
@@ -137,7 +169,8 @@ function BottomNav() {
         {/* Bottom drawer */}
         <div
           ref={bottomDrawerRef}
-          className={`bottom-drawer ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
+          style={{ transform: `translateY(${drawerPosition}%)` }}
+          className="bottom-drawer transition-transform duration-300"
         >
           {/* Drawer content */}
           <div className="rounded-t-3xl bg-white dark:bg-niodark3 dark:shadow-sm">
