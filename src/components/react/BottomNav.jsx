@@ -114,15 +114,15 @@ function BottomNav() {
   }, [themeNow, is404, drawerOpen]);
 
   const SwipeHandler = useSwipeable({
-    onSwiping: () => setDrawerOpen(false),
+    onSwipedDown: () => setDrawerOpen(false),
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
 
   return (
     <>
-      <div {...SwipeHandler} className={`${drawerOpen ? "visible" : "hidden"} backdrop-blur`}></div>
-      <div className="bottom-nav">
+      <div className={`${drawerOpen ? "visible" : "hidden"} backdrop-blur`}></div>
+      <div {...SwipeHandler} className="bottom-nav">
         <section
           className={`${shadowNav == true ? "b-nav-shadow" : "shadow-none"} flex h-[60px] w-full items-center justify-between px-7`}
         >
