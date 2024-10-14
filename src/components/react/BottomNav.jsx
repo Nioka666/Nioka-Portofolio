@@ -114,7 +114,7 @@ function BottomNav() {
   }, [themeNow, is404, drawerOpen]);
 
   const SwipeHandler = useSwipeable({
-    onSwipedDown: () => setDrawerOpen(false),
+    onSwiping: () => setDrawerOpen(false),
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
