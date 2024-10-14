@@ -225,7 +225,7 @@
   }
 
   .about-desc-wrapper .about-boxes {
-    @apply flex gap-4 dark:border-none dark:bg-niodark3 max-lg:my-7 max-lg:justify-center max-sm:my-6 max-sm:justify-center max-sm:gap-0 max-sm:rounded-2xl max-sm:border-b-2 max-sm:bg-white max-sm:px-3 max-sm:py-[5px];
+    @apply flex gap-4 dark:border-none max-lg:my-7 max-lg:justify-center max-sm:my-6 max-sm:justify-center max-sm:gap-0 max-sm:rounded-2xl;
   }
 
   .about-desc-wrapper .about-boxes .boxx {
