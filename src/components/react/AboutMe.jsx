@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import niokaPhoto from "../../assets/adhim_hp.webp";
 import PartTitle from "./PartTitle";
 import { gsap } from "gsap";

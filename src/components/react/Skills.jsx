@@ -1,3 +1,6 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 // frontend icons
 import htmlIcon from "../../assets/icons/html.png";
 import cssIcon from "../../assets/icons/css.png";
@@ -17,8 +20,40 @@ import mongodbIcon from "../../assets/icons/mongodb.png";
 import postmanIcon from "../../assets/icons/Postman.png";
 import nestIcon from "../../assets/icons/Nest.js.png";
 import PartTitle from "./PartTitle";
+import { useEffect, useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Skills() {
+  const skillsRef = useRef(null);
+  const skillsBlocks = useRef(null);
+
+  useEffect(() => {
+    gsap.to(skillsRef.current, {
+      scrollTrigger: {
+        trigger: skillsRef.current,
+        start: "center center",
+        end: "+=650",
+        pin: true,
+        pinSpacing: true,
+        scrub: true,  // Smooth scrubbing effect
+      },
+    });
+
+    gsap.from(skillsBlocks, {
+      scrollTrigger: {
+        trigger: skillsRef.current,
+        start: "top 90%",  // Start when boxes are almost in viewport
+        end: "bottom top",  // End as they leave the viewport
+        scrub: true,
+      },
+      opacity: 0,
+      y: 20,  // Start from below
+      duration: 0.7,  // Delay each box slightly
+    });
+
+  }, [])
+
   const frontEndData = [
     {
       id: "html_icon",
@@ -118,10 +153,10 @@ function Skills() {
 
   return (
     <>
-      <section id="skills" className="skills-component">
+      <section id="skills" className="skills-component" ref={skillsRef}>
         <PartTitle title={"Technical Skills"} desc={"Technology and Stack"} />
         {/* content */}
-        <section className="skills-content-container">
+        <section className="skills-content-container" ref={skillsBlocks}>
           <SkillCollapse
             title={"Front-End Development"}
             dataVariable={frontEndData}
