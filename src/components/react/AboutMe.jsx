@@ -17,8 +17,8 @@ function AboutMe() {
     gsap.to(aboutRef.current, {
       scrollTrigger: {
         trigger: aboutRef.current,
-        start: "top top",  // Start when the top of the about section hits the top of the viewport
-        end: "+=800",  // Increase the distance to make the pin last longer
+        start: "center center",
+        end: "+=650",  // Increase the distance to make the pin last longer
         pin: true,  // This will keep the about section 'pinned' (sticky)
         pinSpacing: true,  // Keep spacing to create room for scrolling
         scrub: true,  // Smooth scrubbing effect
@@ -30,14 +30,14 @@ function AboutMe() {
     gsap.from(imageRef.current, {
       scrollTrigger: {
         trigger: aboutRef.current,
-        start: "top 100%",  // Start when image is 80% into the viewport
+        start: "top 90%",  // Start when image is 80% into the viewport
         end: "bottom top",  // End when bottom of about section reaches top of viewport
         scrub: true,
       },
       opacity: 0,  // Start with opacity 0
-      scale: 0.8,  // Start slightly scaled down
-      x: -70,
-      duration: 0.8,  // Animation duration
+      scale: 0.9,  // Start slightly scaled down
+      y: -50,
+      duration: 0.1,  // Animation duration
     });
 
     // Boxes animation (fade-in one by one)
@@ -45,14 +45,13 @@ function AboutMe() {
       gsap.from(box, {
         scrollTrigger: {
           trigger: aboutRef.current,
-          start: "top 80%",  // Start when boxes are almost in viewport
+          start: "top 40%",  // Start when boxes are almost in viewport
           end: "bottom top",  // End as they leave the viewport
           scrub: true,
         },
         opacity: 0,  // Fade-in from opacity 0
-        scale: 0.7,
-        y: -50,  // Start from below
-        duration: 0.4 + index * 0.2,  // Delay each box slightly
+        y: -20,  // Start from below
+        duration: 0.1,  // Delay each box slightly
       });
     });
 
@@ -60,13 +59,13 @@ function AboutMe() {
     gsap.from(mockupRef.current, {
       scrollTrigger: {
         trigger: aboutRef.current,
-        start: "top 100%",  // Start when mockup is 70% into the viewport
-        end: "bottom top",
+        start: "top 20%",
+        end: "bottom 10%",
         scrub: true,
       },
-      x: 100,  // Slide in from left
+      y: 20,  // Slide in from left
       opacity: 0,  // Fade-in
-      duration: 0.8,
+      duration: 0.1,
     });
   }, []);
 
