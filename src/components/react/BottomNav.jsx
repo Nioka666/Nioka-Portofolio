@@ -5,7 +5,7 @@ import { menuData } from "../../data/nav_anchors";
 
 function BottomNav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const drawerPositionRef = useRef(100);
+  const [drawerPosition, setDrawerPosition] = useState(100);
   const [shadowNav, setShadowNav] = useState(false);
   const [themeNow, setThemeNow] = useState("light");
   let [is404, setIs404] = useState(false);
@@ -123,21 +123,19 @@ function BottomNav() {
   const SwipeHandler = useSwipeable({
     onSwiping: (eventData) => {
       const deltaY = eventData.deltaY;
-      const newPosition = drawerPositionRef.current + deltaY / window.innerHeight * 100;
-
-      const clampedPosition = Math.max(0, Math.min(100, newPosition));
-
-      bottomDrawerRef.current.style.transform = `translateY(${clampedPosition}%)`;
+      if (deltaY > 0) {
+        setDrawerPosition(Math.min(100, deltaY));
+      } else {
+        setDrawerPosition(Math.max(0, 100 + deltaY));
+      }
     },
     onSwipedDown: () => {
-      // Snap drawer to full close
-      setDrawerOpen(false);
-      bottomDrawerRef.current.style.transform = `translateY(100%)`;
-    },
-    onSwipedUp: () => {
-      // Snap drawer to full open
-      setDrawerOpen(true);
-      bottomDrawerRef.current.style.transform = `translateY(0)`;
+      if (drawerPosition > 50) {
+        setDrawerOpen(false);
+      } else {
+        setDrawerOpen(true);
+      }
+      setDrawerPosition(100);
     },
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
@@ -161,6 +159,7 @@ function BottomNav() {
         {/* Bottom drawer */}
         <div
           ref={bottomDrawerRef}
+          style={{ transform: `translateY(${drawerPosition}%)` }}
           className="bottom-drawer"
         >
           {/* Drawer content */}
