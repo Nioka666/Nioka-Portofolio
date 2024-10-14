@@ -5,7 +5,6 @@ import { menuData } from "../../data/nav_anchors";
 
 function BottomNav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [drawerPosition, setDrawerPosition] = useState(100);
   const [shadowNav, setShadowNav] = useState(false);
   const [themeNow, setThemeNow] = useState("light");
   let [is404, setIs404] = useState(false);
@@ -95,12 +94,6 @@ function BottomNav() {
       document.body.classList.remove("lock-scroll");
     }
 
-    if (drawerOpen) {
-      bottomDrawerRef.current.style.transform = `translateY(0)`;
-    } else {
-      bottomDrawerRef.current.style.transform = `translateY(100%)`;
-    }
-
     const handleClickOutside = (event) => {
       if (
         bottomDrawerRef.current &&
@@ -121,22 +114,7 @@ function BottomNav() {
   }, [themeNow, is404, drawerOpen]);
 
   const SwipeHandler = useSwipeable({
-    onSwiping: (eventData) => {
-      const deltaY = eventData.deltaY;
-      if (deltaY > 0) {
-        setDrawerPosition(Math.min(100, deltaY));
-      } else {
-        setDrawerPosition(Math.max(0, 100 + deltaY)); // Swipe ke atas
-      }
-    },
-    onSwipedDown: () => {
-      if (drawerPosition > 50) {
-        setDrawerOpen(false);
-      } else {
-        setDrawerOpen(true);
-      }
-      setDrawerPosition(100);
-    },
+    onSwipedDown: () => setDrawerOpen(false),
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
@@ -159,8 +137,7 @@ function BottomNav() {
         {/* Bottom drawer */}
         <div
           ref={bottomDrawerRef}
-          style={{ transform: `translateY(${drawerPosition}%)` }}
-          className="bottom-drawer"
+          className={`bottom-drawer ${drawerOpen ? "translate-y-0" : "translate-y-full"}`}
         >
           {/* Drawer content */}
           <div className="rounded-t-3xl bg-white dark:bg-niodark3 dark:shadow-sm">
