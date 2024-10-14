@@ -5,7 +5,7 @@ import { menuData } from "../../data/nav_anchors";
 
 function BottomNav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [drawerPosition, setDrawerPosition] = useState(100);
+  const drawerPositionRef = useRef(100);
   const [shadowNav, setShadowNav] = useState(false);
   const [themeNow, setThemeNow] = useState("light");
   let [is404, setIs404] = useState(false);
@@ -95,6 +95,12 @@ function BottomNav() {
       document.body.classList.remove("lock-scroll");
     }
 
+    if (drawerOpen) {
+      bottomDrawerRef.current.style.transform = `translateY(0)`;
+    } else {
+      bottomDrawerRef.current.style.transform = `translateY(100%)`;
+    }
+
     const handleClickOutside = (event) => {
       if (
         bottomDrawerRef.current &&
@@ -119,7 +125,6 @@ function BottomNav() {
       const deltaY = eventData.deltaY;
       const newPosition = drawerPositionRef.current + deltaY / window.innerHeight * 100;
 
-      // Limit the drawer position between 0% (open) and 100% (closed)
       const clampedPosition = Math.max(0, Math.min(100, newPosition));
 
       bottomDrawerRef.current.style.transform = `translateY(${clampedPosition}%)`;
@@ -156,7 +161,7 @@ function BottomNav() {
         {/* Bottom drawer */}
         <div
           ref={bottomDrawerRef}
-          className="bottom-drawer transition-transform duration-300 ease-in-out"
+          className="bottom-drawer"
         >
           {/* Drawer content */}
           <div className="rounded-t-3xl bg-white dark:bg-niodark3 dark:shadow-sm">
