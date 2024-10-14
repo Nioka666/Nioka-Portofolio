@@ -95,12 +95,6 @@ function BottomNav() {
       document.body.classList.remove("lock-scroll");
     }
 
-    if (drawerOpen) {
-      bottomDrawerRef.current.style.transform = `translateY(0)`;
-    } else {
-      bottomDrawerRef.current.style.transform = `translateY(100%)`;
-    }
-
     const handleClickOutside = (event) => {
       if (
         bottomDrawerRef.current &&
@@ -123,19 +117,22 @@ function BottomNav() {
   const SwipeHandler = useSwipeable({
     onSwiping: (eventData) => {
       const deltaY = eventData.deltaY;
-      if (deltaY > 0) {
-        setDrawerPosition(Math.min(100, deltaY));
-      } else {
-        setDrawerPosition(Math.max(0, 100 + deltaY)); // Swipe ke atas
-      }
+      const newPosition = drawerPositionRef.current + deltaY / window.innerHeight * 100;
+
+      // Limit the drawer position between 0% (open) and 100% (closed)
+      const clampedPosition = Math.max(0, Math.min(100, newPosition));
+
+      bottomDrawerRef.current.style.transform = `translateY(${clampedPosition}%)`;
     },
     onSwipedDown: () => {
-      if (drawerPosition > 50) {
-        setDrawerOpen(false);
-      } else {
-        setDrawerOpen(true);
-      }
-      setDrawerPosition(100);
+      // Snap drawer to full close
+      setDrawerOpen(false);
+      bottomDrawerRef.current.style.transform = `translateY(100%)`;
+    },
+    onSwipedUp: () => {
+      // Snap drawer to full open
+      setDrawerOpen(true);
+      bottomDrawerRef.current.style.transform = `translateY(0)`;
     },
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
@@ -159,8 +156,7 @@ function BottomNav() {
         {/* Bottom drawer */}
         <div
           ref={bottomDrawerRef}
-          style={{ transform: `translateY(${drawerPosition}%)` }}
-          className="bottom-drawer transition-transform duration-300"
+          className="bottom-drawer transition-transform duration-300 ease-in-out"
         >
           {/* Drawer content */}
           <div className="rounded-t-3xl bg-white dark:bg-niodark3 dark:shadow-sm">
