@@ -129,7 +129,14 @@ function BottomNav() {
         setDrawerPosition(Math.max(0, 100 + deltaY)); // Swipe ke atas
       }
     },
-   
+    onSwipedDown: () => {
+      if (drawerPosition > 50) {
+        setDrawerOpen(false);
+      } else {
+        setDrawerOpen(true);
+      }
+      setDrawerPosition(100);
+    },
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
