@@ -101,12 +101,6 @@ function BottomNav() {
       bottomDrawerRef.current.style.transform = `translateY(100%)`;
     }
 
-    if (drawerPosition > 50) {
-      setDrawerOpen(false);
-    } else {
-      setDrawerOpen(true);
-    }
-
     const handleClickOutside = (event) => {
       if (
         bottomDrawerRef.current &&
@@ -134,10 +128,17 @@ function BottomNav() {
       } else {
         setDrawerPosition(Math.max(0, 100 + deltaY));
       }
+      if (drawerPosition > 50) {
+        setDrawerOpen(false);
+      } else {
+        setDrawerOpen(true);
+      }
+  
     },
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
-  });
+  }
+);
 
   return (
     <>
