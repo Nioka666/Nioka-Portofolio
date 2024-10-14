@@ -18,7 +18,7 @@ function AboutMe() {
       scrollTrigger: {
         trigger: aboutRef.current,
         start: "center center",
-        end: "+=650",  // Increase the distance to make the pin last longer
+        end: "+=600",  // Increase the distance to make the pin last longer
         pin: true,  // This will keep the about section 'pinned' (sticky)
         pinSpacing: true,  // Keep spacing to create room for scrolling
         scrub: true,  // Smooth scrubbing effect

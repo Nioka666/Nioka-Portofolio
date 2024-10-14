@@ -22,37 +22,37 @@ import nestIcon from "../../assets/icons/Nest.js.png";
 import PartTitle from "./PartTitle";
 import { useEffect, useRef } from "react";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 function Skills() {
   const skillsRef = useRef(null);
   const skillsBlocks = useRef(null);
 
-  useEffect(() => {
-    gsap.to(skillsRef.current, {
-      scrollTrigger: {
-        trigger: skillsRef.current,
-        start: "center center",
-        end: "+=650",
-        pin: true,
-        pinSpacing: true,
-        scrub: true,  // Smooth scrubbing effect
-      },
-    });
+  // useEffect(() => {
+  //   gsap.to(skillsRef.current, {
+  //     scrollTrigger: {
+  //       trigger: skillsRef.current,
+  //       start: "top 10%",
+  //       end: "+=650",
+  //       pin: true,
+  //       pinSpacing: true,
+  //       scrub: true,  // Smooth scrubbing effect
+  //     },
+  //   });
 
-    gsap.from(skillsBlocks, {
-      scrollTrigger: {
-        trigger: skillsRef.current,
-        start: "top 90%",  // Start when boxes are almost in viewport
-        end: "bottom top",  // End as they leave the viewport
-        scrub: true,
-      },
-      opacity: 0,
-      y: 20,  // Start from below
-      duration: 0.7,  // Delay each box slightly
-    });
+  //   gsap.from(skillsBlocks, {
+  //     scrollTrigger: {
+  //       trigger: skillsRef.current,
+  //       start: "top 90%",  // Start when boxes are almost in viewport
+  //       end: "bottom top",  // End as they leave the viewport
+  //       scrub: true,
+  //     },
+  //     opacity: 0,
+  //     y: 20,  // Start from below
+  //     duration: 0.7,  // Delay each box slightly
+  //   });
 
-  }, [])
+  // }, [])
 
   const frontEndData = [
     {

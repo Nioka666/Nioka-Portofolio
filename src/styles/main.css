@@ -242,7 +242,7 @@
 
   /* skills section */
   .skills-component {
-    @apply mt-[75px] py-10 max-sm:mt-12 lg:px-10;
+    @apply mt-[75px] py-10 max-sm:mt-12 lg:px-10 h-full;
   }
 
   .skills-content-container {
