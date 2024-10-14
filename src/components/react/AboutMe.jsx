@@ -51,7 +51,7 @@ function AboutMe() {
                   className="boxx"
                 >
                   <i
-                    className={`${box.icon} mb-2 text-[26px] max-sm:mb-1 max-sm:text-[20px] text-textdark2`}
+                    className={`${box.icon} mb-2 text-[26px] max-sm:mb-1 max-sm:text-[20px] text-niodark2 dark:text-textdark2`}
                   ></i>
                   <p className="mt-0 text-[14px] max-sm:text-[11px] text-niodark2 dark:text-textdark2">
                     {box.title}
