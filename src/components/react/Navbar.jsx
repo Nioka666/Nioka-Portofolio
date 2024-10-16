@@ -24,7 +24,7 @@ function Navbar() {
   function IconGroup() {
     return (
       <div className="icon-group flex gap-4 sm:gap-7">
-        <div className="">
+        <div className="grid items-center">
           <label className="swap swap-rotate">
             <input type="checkbox" onChange={toggleTheme} />
             <svg
@@ -43,15 +43,16 @@ function Navbar() {
             </svg>
           </label>
         </div>
-        <div className="dropdown dropdown-end menu-dropdown-toggle">
-          <button
+        <details className="dropdown dropdown-end menu-dropdown-toggle">
+          <summary
+            className="btn bg-transparent border-none m-0 p-0 shadow-none hover:bg-transparent"
             onClick={() => setIsMenuOpen(true)}
             aria-label="Navbar menu button"
           >
             <i className="bx bx-menu-alt-right cursor-pointer text-[26px] font-medium text-gray-600 transition-all hover:text-gray-400 dark:text-textdark"></i>
-          </button>
+          </summary>
           {/* content modal */}
-          {isMenuOpen && scrollDirection !== "down" && (
+          {isMenuOpen && scrollDirection == "up" && (
             <div className={`nav-content-modal`} tabIndex="0">
               <div className="grid grid-cols-3 gap-2 p-5">
                 {menuData.map((menu, index) => (
@@ -65,7 +66,7 @@ function Navbar() {
               </div>
             </div>
           )}
-        </div>
+        </details>
       </div>
     );
   }
