@@ -35,8 +35,8 @@ function AboutMe() {
   useEffect(() => {
     gsap.from(".about-content img", {
       opacity: 0,
-      x: -50,
-      duration: 1.2,
+      x: -30,
+      duration: 1,
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".about-content",
@@ -49,7 +49,7 @@ function AboutMe() {
       opacity: 0,
       y: 20,
       duration: 0.5,
-      stagger: 0.1,
+      stagger: 0.2,
       scrollTrigger: {
         trigger: ".about-boxes",
         start: "top 90%",
