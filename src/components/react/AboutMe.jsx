@@ -29,11 +29,10 @@ function AboutMe() {
   ];
 
   const paragraph = {
-    text: "I am a student of electronic engineering polytechnic institute of Surabaya majoring in informatics engineering, as well as a Front-End Web Developer and UI/UX Enthusiast, I am highly dedicated to learn more in this field. I have enough experience with some of the latest technology frameworks such as ReactJs, Express.js, and some of the latest Javascript ecosystems.",
+    text: "I am a student of Electronic Engineering Polytechnic Institute of Surabaya majoring in informatics Engineering, as well as a Front-End Web Developer and UI/UX Enthusiast, I am highly dedicated to learn more in this field. I have enough experience with some of the latest technology frameworks such as ReactJs, Express.js, and some of the latest Javascript ecosystems.",
   };
 
   useEffect(() => {
-    // GSAP animations for About section
     gsap.from(".about-content img", {
       opacity: 0,
       x: -50,
