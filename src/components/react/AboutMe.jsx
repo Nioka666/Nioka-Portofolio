@@ -48,7 +48,7 @@ function AboutMe() {
     gsap.from(".boxx", {
       opacity: 0,
       y: 20,
-      duration: 0.8,
+      duration: 0.5,
       stagger: 0.3,
       scrollTrigger: {
         trigger: ".about-boxes",
