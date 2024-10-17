@@ -60,8 +60,8 @@ const { title } = Astro.props;
   <body>
     <Navbar client:idle />
     <slot />
-    <BottomNav client:idle />
-    <Footer />
+    <BottomNav client:only="react" />
+    <Footer client:only="react"/>
     <SendmailAlert />
   </body>
 </html>

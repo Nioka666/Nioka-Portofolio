@@ -17,16 +17,16 @@ export const menuData = [
       url: "#qualification",
       notFoundURL: "https://nioka.vercel.app/#qualification"
     },
-    {
-      name: "portfolio",
-      icon: "bx bx-image text-3xl",
-      url: "#portfolio",
-      notFoundURL: "https://nioka.vercel.app/#portfolio"
-    },
-    {
-      name: "Contact",
-      icon: "uil uil-user-square text-3xl",
-      url: "#contact",
-      notFoundURL: "https://nioka.vercel.app/#contact"
-    },
+    // {
+    //   name: "portfolio",
+    //   icon: "bx bx-image text-3xl",
+    //   url: "#portfolio",
+    //   notFoundURL: "https://nioka.vercel.app/#portfolio"
+    // },
+    // {
+    //   name: "Contact",
+    //   icon: "uil uil-user-square text-3xl",
+    //   url: "#contact",
+    //   notFoundURL: "https://nioka.vercel.app/#contact"
+    // },
   ];
