@@ -9,7 +9,7 @@ function Qualification() {
     return (
       <button
         role="button"
-        className={`flex items-center gap-2 rounded-xl border-b-2 dark:border-borderbtm bg-transparent bg-white dark:bg-niodark3 px-[21px] py-[12px] text-xl max-sm:text-[13px] md:px-9 md:py-[18px] md:text-[17px] ${activeMenu === stateActiveMenu ? "text-gray-400 dark:text-textdark2 border-none" : " text-black dark:text-textdark"}`}
+        className={`flex items-center gap-2 rounded-xl border-b-2 dark:border-borderbtm bg-transparent bg-white dark:bg-niodark3 px-[20px] py-[12px] text-xl max-sm:text-[13px] md:px-9 md:py-[18px] md:text-[17px] ${activeMenu === stateActiveMenu ? "text-gray-400 dark:text-textdark2 border-none" : " text-black dark:text-textdark"}`}
         onClick={() => setActiveMenu(stateActiveMenu)}
       >
         {children}
