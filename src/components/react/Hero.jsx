@@ -1,11 +1,9 @@
-import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
-import avatar from "../../assets/nioka_2.jpg";
+import avatar from "../../assets/nioka_2.webp";
 import CV from "../../assets/Adhim_Niokagi_IT_CVS.pdf";
 import SendmailModal from "./SendmailModal";
 
 function Hero() {
-  const [loaded, setLoaded] = useState(false);
   const mediaSocial = [
     {
       name: "Linkedin",
@@ -28,14 +26,6 @@ function Hero() {
       url: "https://wa.me/6287755588990",
     },
   ];
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setLoaded(true);
-    }, 50);
-
-    return () => clearTimeout(timeout);
-  }, []);
 
   const scrollDown = () => {
     window.scrollBy({
