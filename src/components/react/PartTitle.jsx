@@ -1,7 +1,7 @@
 function PartTitle({ title, desc }) {
   return (
     <section className="text-left px-6">
-      <h1 className="text-2xl font-semibold text-black dark:text-textdark sm:text-2xl md:text-4xl">
+      <h1 className="text-2xl font-semibold text-gray-600 dark:text-textdark sm:text-2xl md:text-4xl">
         ./{title}
       </h1>
       <h2 className="mt-[13.4px] text-sm text-gray-400 max-sm:mt-2 md:text-[17px]">

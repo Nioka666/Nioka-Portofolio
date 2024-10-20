@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import niokaPhoto from "../../assets/adhim_hp.webp";
+import niokaPhoto from "../../assets/nioka_2.webp";
 import PartTitle from "./PartTitle";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -76,17 +76,17 @@ function AboutMe() {
 
       {/* content */}
       <section className="about-content">
-        <div className="flex gap-7">
+        <div className="flex items-center gap-7">
           <img
             src={niokaPhoto.src}
-            className="rounded-[15px] max-sm:w-[100px] sm:w-[200px]"
+            className="rounded-[15px] max-sm:w-[90px] sm:w-[200px]"
             alt="Adhim Niokagi Photo"
           />
           <div className="cname">
-            <h1 className="text-2xl font-medium">Muhammad Adhim Niokagi</h1>
-            <div className="tag flex gap-2 mt-2">
-              <span className="bg-textdark px-3 py-1 text-sm rounded-md">Front-End Developer</span>
-              <span className="bg-textdark px-3 py-1 text-sm rounded-md">UI/UX</span>
+            <h1 className="text-3xl font-bold">nioka.o</h1>
+            <div className="tag grid grid-cols-3 gap-2 mt-2">
+              <span className="bg-textdark px-3 py-1 text-xs rounded-md">Front-End</span>
+              <span className="bg-textdark px-3 py-1 text-xs rounded-md">UI/UX</span>
             </div>
           </div>
         </div>
