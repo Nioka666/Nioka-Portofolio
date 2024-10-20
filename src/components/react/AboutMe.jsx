@@ -76,7 +76,7 @@ function AboutMe() {
 
       {/* content */}
       <section className="about-content">
-        <div className="mx-auto flex justify-center md:w-1/2 max-sm:hidden">
+        <div className="max-sm:hidden">
           <img
             src={niokaPhoto.src}
             className="rounded-[15px] max-sm:w-[220px] sm:w-[200px]"

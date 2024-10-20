@@ -217,7 +217,7 @@
   }
 
   .about-content {
-    @apply mt-16 justify-between gap-16 max-sm:mt-8 lg:flex lg:place-items-start;
+    @apply mt-16 max-sm:mt-8 grid;
   }
 
   .about-desc-wrapper {
