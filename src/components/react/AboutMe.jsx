@@ -83,7 +83,9 @@ function AboutMe() {
             alt="Adhim Niokagi Photo"
           />
           <div className="cname">
-            <h1 className="text-3xl font-bold">nioka.o</h1>
+            <h1 className="text-3xl font-bold">nioka.o
+              {/* <span className="font-light text-2xl text-textdark2">(he/him)</span> */}
+            </h1>
             <div className="tag flex gap-2 mt-2">
               <span className="bg-gray-100 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">Front-End</span>
               <span className="bg-gray-100 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">UI/UX</span>
@@ -93,7 +95,7 @@ function AboutMe() {
         {/* content */}
         <div className="about-desc-wrapper">
           <div className="about-mockup-window">
-            <p className="text-left text-sm max-sm:text-[13px] leading-6 dark:text-textdark3">
+            <p className="text-left text-base max-sm:text-[13px] leading-7 max-md:leading-6 dark:text-textdark3">
               {paragraph.text}
             </p>
           </div>

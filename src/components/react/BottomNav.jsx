@@ -128,7 +128,7 @@ function BottomNav() {
         >
           <a href="/">
             <h1 className="font-medium dark:text-textdark4 max-sm:text-sm md:text-lg lg:text-lg">
-              Adhim Niokagi
+              nioka.o
             </h1>
           </a>
           <IconGroup />
