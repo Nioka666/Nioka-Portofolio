@@ -40,7 +40,7 @@ function AboutMe() {
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".about-content",
-        start: "top 80%", 
+        start: "top 80%",
         toggleActions: "play none none none",
       },
     });
@@ -72,16 +72,23 @@ function AboutMe() {
   return (
     <section id="about" className="about-component">
       {/* head/title */}
-      <PartTitle title={"About Me"} desc={"Short Introduction about myself"} />
+      <PartTitle title={"about_me"} desc={"Short Introduction about myself"} />
 
       {/* content */}
       <section className="about-content">
-        <div className="max-sm:hidden">
+        <div className="flex gap-7">
           <img
             src={niokaPhoto.src}
-            className="rounded-[15px] max-sm:w-[220px] sm:w-[200px]"
+            className="rounded-[15px] max-sm:w-[100px] sm:w-[200px]"
             alt="Adhim Niokagi Photo"
           />
+          <div className="cname">
+            <h1 className="text-2xl font-medium">Muhammad Adhim Niokagi</h1>
+            <div className="tag flex gap-2 mt-2">
+              <span className="bg-textdark px-3 py-1 text-sm rounded-md">Front-End Developer</span>
+              <span className="bg-textdark px-3 py-1 text-sm rounded-md">UI/UX</span>
+            </div>
+          </div>
         </div>
         {/* content */}
         <div className="about-desc-wrapper">

@@ -20,7 +20,7 @@ function Qualification() {
   return (
     <>
       <section id="qualification" className="qualifications-component">
-        <PartTitle title={"Qualifications"} desc={"My Journey's"} />
+        <PartTitle title={"education_and_experience"} desc={"My Edu and Experience Journey"} />
         <section className="qualifications-btn-group">
           <PartButton stateActiveMenu={1}>
             <i className="bx bxs-graduation text-[25px] max-sm:text-[20px]"></i>{" "}
