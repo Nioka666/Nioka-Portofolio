@@ -147,7 +147,7 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-niogray mt-[18.5px] h-full w-full text-[15px] leading-[26px] dark:text-textdark2 max-sm:text-[16px]">
+          <p className="text-niogray mt-[18.5px] h-full w-full text-[15px] leading-[26px] dark:text-textdark3 max-sm:text-[16px]">
             A Front-End Web Developer & UI/UX Enthusiast, who dedicated to learn & develops themself in this field.
           </p>
           <div className="sm-btn-group">

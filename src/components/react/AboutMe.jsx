@@ -93,7 +93,7 @@ function AboutMe() {
         {/* content */}
         <div className="about-desc-wrapper">
           <div className="about-mockup-window">
-            <p className="text-left text-sm leading-6 dark:text-textdark3">
+            <p className="text-left text-sm max-sm:text-[13px] leading-6 dark:text-textdark3">
               {paragraph.text}
             </p>
           </div>
