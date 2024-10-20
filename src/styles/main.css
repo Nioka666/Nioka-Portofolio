@@ -262,7 +262,7 @@
   }
 
   .skills-component img.skills-icon {
-    @apply w-[90px] cursor-pointer select-none rounded-lg grayscale transition-all ease-in-out hover:grayscale-0 max-md:w-[50px];
+    @apply w-[70px] cursor-pointer select-none rounded-lg grayscale transition-all ease-in-out hover:grayscale-0 max-md:w-[50px] max-sm:w-[40px] max-sm:rounded-md;
   }
 
   /* qualifications part */
