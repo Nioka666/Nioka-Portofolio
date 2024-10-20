@@ -217,7 +217,7 @@
   }
 
   .about-content {
-    @apply mt-16 max-sm:mt-8 max-sm:px-5 grid;
+    @apply mt-16 max-sm:mt-8 max-sm:px-6 grid;
   }
 
   .about-desc-wrapper {
@@ -233,7 +233,7 @@
   }
 
   .about-mockup-window {
-    @apply mt-5 border-b-2 bg-white dark:border-niodark dark:bg-niodark3 max-sm:mt-0 sm:mx-5 md:mx-0;
+    @apply mt-5 max-sm:mt-0 sm:mx-5 md:mx-0;
   }
 
   .about-mockup-paragraph {
