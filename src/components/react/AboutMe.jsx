@@ -79,20 +79,20 @@ function AboutMe() {
         <div className="flex items-center gap-7">
           <img
             src={niokaPhoto.src}
-            className="rounded-[15px] max-sm:w-[90px] sm:w-[200px]"
+            className="rounded-[12px] max-sm:w-[90px] sm:w-[200px]"
             alt="Adhim Niokagi Photo"
           />
           <div className="cname">
-            <h1 className="text-3xl font-bold">nioka.o</h1>
-            <div className="tag grid grid-cols-3 gap-2 mt-2">
-              <span className="bg-textdark px-3 py-1 text-xs rounded-md">Front-End</span>
-              <span className="bg-textdark px-3 py-1 text-xs rounded-md">UI/UX</span>
+            <h1 className="text-4xl font-bold">nioka.o</h1>
+            <div className="tag flex gap-2 mt-2">
+              <span className="bg-gray-100 px-3 py-1 text-xs rounded-md">Front-End</span>
+              <span className="bg-gray-100 px-3 py-1 text-xs rounded-md">UI/UX</span>
             </div>
           </div>
         </div>
         {/* content */}
         <div className="about-desc-wrapper">
-          <div className="about-mockup-window mockup-window">
+          <div className="about-mockup-window mockup-window border-2">
             <div className="bg-white px-6 py-7 dark:bg-niodark3 dark:shadow-md max-sm:px-0 max-sm:py-7">
               <p className="about-mockup-paragraph indent-7 text-justify">
                 {paragraph.text}
