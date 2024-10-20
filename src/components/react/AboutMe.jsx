@@ -85,7 +85,6 @@ function AboutMe() {
         </div>
         {/* content */}
         <div className="about-desc-wrapper">
-          {/* mockup */}
           <div className="about-mockup-window mockup-window">
             <div className="bg-white px-6 py-7 dark:bg-niodark3 dark:shadow-md max-sm:px-0 max-sm:py-7">
               <p className="about-mockup-paragraph indent-7 text-justify">
