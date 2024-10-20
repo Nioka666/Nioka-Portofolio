@@ -146,8 +146,7 @@ function BottomNav() {
               <div className="grid grid-cols-3 justify-items-center">
                 {menuData.map((data, index) => (
                   <a
-                    // href={!is404 ? data.url : `${data.notFoundURL}`}
-                    href={data.url}
+                    href={!is404 ? data.url : `${data.notFoundURL}`}
                     className="text-gray-600 hover:text-gray-400"
                     key={index}
                     onClick={() => setDrawerOpen(false)}
