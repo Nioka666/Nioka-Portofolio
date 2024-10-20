@@ -72,7 +72,7 @@ function AboutMe() {
   return (
     <section id="about" className="about-component">
       {/* head/title */}
-      <PartTitle title={"about_me"} desc={"Short Introduction about myself"} />
+      <PartTitle title={"about_me"} desc={"Short Introduction"} />
 
       {/* content */}
       <section className="about-content">
@@ -85,15 +85,15 @@ function AboutMe() {
           <div className="cname">
             <h1 className="text-3xl font-bold">nioka.o</h1>
             <div className="tag flex gap-2 mt-2">
-              <span className="bg-gray-100 px-3 py-1 text-xs rounded-md">Front-End</span>
-              <span className="bg-gray-100 px-3 py-1 text-xs rounded-md">UI/UX</span>
+              <span className="bg-gray-100 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">Front-End</span>
+              <span className="bg-gray-100 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">UI/UX</span>
             </div>
           </div>
         </div>
         {/* content */}
         <div className="about-desc-wrapper">
           <div className="about-mockup-window">
-            <p className="text-left text-sm leading-6">
+            <p className="text-left text-sm leading-6 dark:text-textdark3">
               {paragraph.text}
             </p>
           </div>
