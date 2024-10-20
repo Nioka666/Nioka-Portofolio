@@ -7,26 +7,26 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function AboutMe() {
-  const boxData = [
-    {
-      id: "experience",
-      icon: "bx bx-time-five",
-      title: "Experience",
-      desc: "1+ Year Working",
-    },
-    {
-      id: "projects",
-      icon: "bx bx-code-block",
-      title: "Completed",
-      desc: "5 Projects",
-    },
-    {
-      id: "licenses",
-      icon: "bx bx-medal",
-      title: "Licenses",
-      desc: "15+ Certificates",
-    },
-  ];
+  // const boxData = [
+  //   {
+  //     id: "experience",
+  //     icon: "bx bx-time-five",
+  //     title: "Experience",
+  //     desc: "1+ Year Working",
+  //   },
+  //   {
+  //     id: "projects",
+  //     icon: "bx bx-code-block",
+  //     title: "Completed",
+  //     desc: "5 Projects",
+  //   },
+  //   {
+  //     id: "licenses",
+  //     icon: "bx bx-medal",
+  //     title: "Licenses",
+  //     desc: "15+ Certificates",
+  //   },
+  // ];
 
   const paragraph = {
     text: "I am a student of Electronic Engineering Polytechnic Institute of Surabaya majoring in informatics Engineering, as well as a Front-End Web Developer and UI/UX Enthusiast, I am highly dedicated to learn more in this field. I have enough experience with some of the latest technology frameworks such as ReactJs, Express.js, and some of the latest Javascript ecosystems.",
@@ -85,7 +85,6 @@ function AboutMe() {
         </div>
         {/* content */}
         <div className="about-desc-wrapper">
-          
           {/* mockup */}
           <div className="about-mockup-window mockup-window">
             <div className="bg-white px-6 py-7 dark:bg-niodark3 dark:shadow-md max-sm:px-0 max-sm:py-7">
