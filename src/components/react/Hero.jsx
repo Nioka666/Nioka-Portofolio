@@ -147,7 +147,7 @@ function Hero() {
               }}
             />
           </div>
-          <p className="text-niogray mt-[18.5px] h-full w-full text-[15px] leading-[26px] dark:text-textdark3 max-sm:text-[16px]">
+          <p className="text-niogray mt-[18.5px] h-full w-full text-[15px] leading-[26px] dark:text-textdark2 max-sm:text-[16px]">
             A Front-End Web Developer & UI/UX Enthusiast, who dedicated to learn & develops themself in this field.
           </p>
           <div className="sm-btn-group">
@@ -159,12 +159,6 @@ function Hero() {
               Say Hello <i className="uil uil-location-arrow ms-1"></i>
             </button>
             <SendmailModal id={"my_modal_2"} />
-            {/* <a href={CV} target="_blank">
-              <button role="button" className="cv-sm-btn">
-                View CV
-                <i className="bx bx-file text-[21px] text-gray-600 dark:text-textdark3"></i>
-              </button>
-            </a> */}
           </div>
         </section>
       </section>
