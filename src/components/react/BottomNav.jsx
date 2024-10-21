@@ -143,7 +143,7 @@ function BottomNav() {
           <div className="rounded-t-3xl bg-white dark:bg-niodark3 dark:shadow-sm">
             <div className="swipper relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200 dark:bg-textdark2"></div>
             {/* content wrapper */}
-            <div className="h-[200px] rounded-t-3xl px-4 pt-8">
+            <div className="h-[150px] rounded-t-3xl px-4 pt-8">
               <div className="grid grid-cols-3 justify-items-center">
                 {menuData.map((data, index) => (
                   <a
@@ -160,14 +160,14 @@ function BottomNav() {
                 ))}
               </div>
             </div>
-            <button
+            {/* <button
               type="button"
               onClick={() => setDrawerOpen(false)}
-              className="fixed bottom-4 right-7"
+              className="fixed bottom-4 right-10"
               aria-label="Close drawer button"
             >
-              <i className="bx bx-x text-[22px] font-medium"></i>
-            </button>
+              <i className="bx bx-x text-2xl font-medium"></i>
+            </button> */}
           </div>
         </div>
       </div>

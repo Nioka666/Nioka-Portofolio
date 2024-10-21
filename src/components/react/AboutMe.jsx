@@ -98,9 +98,9 @@ function AboutMe() {
               {paragraph.text}
             </p>
             <a href={"#"} target="_blank">
-              <button role="button" className="btn mt-6 px-6 text-sm text-niodark2 dark:bg-niodark2 border-none dark:text-textdark3 font-normal rounded-lg">
-                Download CV
-                <i className="bx bx-file text-lg text-gray-600 dark:text-textdark3"></i>
+              <button role="button" className="mt-6 px-6 py-3 text-sm bg-niodark text-nioprimary dark:bg-niodark2 border-none dark:text-textdark3 flex items-center gap-2 font-normal rounded-xl active:scale-95 transition-all duration-200">
+                View CV
+                <i className="bx bx-file text-lg text-niosecondary dark:text-textdark3"></i>
               </button>
             </a>
           </div>
