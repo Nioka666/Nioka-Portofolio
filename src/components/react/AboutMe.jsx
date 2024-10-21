@@ -79,11 +79,11 @@ function AboutMe() {
         <div className="flex items-center gap-7">
           <img
             src={niokaPhoto.src}
-            className="rounded-[12px] max-sm:w-[90px] sm:w-[100px]"
+            className="rounded-[12px] max-sm:w-[80px] sm:w-[100px]"
             alt="Adhim Niokagi Photo"
           />
           <div className="cname">
-            <h1 className="text-3xl font-bold">nioka.o
+            <h1 className="text-2xl font-normal">nioka.o
             </h1>
             <div className="tag flex gap-2 mt-2">
               <span className="bg-gray-100 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">Front-End</span>
@@ -98,9 +98,9 @@ function AboutMe() {
               {paragraph.text}
             </p>
             <a href={"#"} target="_blank">
-              <button role="button" className="btn mt-5 px-5 text-xs text-niodark2 dark:bg-niodark2 border-none dark:text-textdark3 font-normal">
+              <button role="button" className="btn mt-6 px-6 text-sm text-niodark2 dark:bg-niodark2 border-none dark:text-textdark3 font-normal rounded-lg">
                 Download CV
-                <i className="bx bx-file text-base text-gray-600 dark:text-textdark3"></i>
+                <i className="bx bx-file text-lg text-gray-600 dark:text-textdark3"></i>
               </button>
             </a>
           </div>
