@@ -1,16 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 import { useSwipeable } from "react-swipeable";
-import validPages from "../../data/valid_pages.json";
 import { menuData } from "../../data/nav_anchors";
 
 function BottomNav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [shadowNav, setShadowNav] = useState(false);
   const [themeNow, setThemeNow] = useState("light");
-  let [is404, setIs404] = useState(false);
   const bottomDrawerRef = useRef(null);
   const toggleButtonRef = useRef(null);
-  const webUrl = "https://nioka.vercel.app/";
 
   function toggleTheme() {
     const currentTheme = localStorage.getItem("theme");
@@ -64,16 +61,6 @@ function BottomNav() {
 
   useEffect(() => {
     let currentTheme = localStorage.getItem("theme");
-    let currentURL = window.location.href;
-    const isValidPage = validPages.some((page) => currentURL.includes(page));
-
-    if (currentURL === webUrl || isValidPage) {
-      setIs404(false);
-    } else {
-      setIs404(true);
-    }
-
-    // console.log(is404);
 
     if (currentTheme === "light") {
       setThemeNow("light");
@@ -111,7 +98,7 @@ function BottomNav() {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [themeNow, is404, drawerOpen]);
+  }, [themeNow, drawerOpen]);
 
   const SwipeHandler = useSwipeable({
     onSwipedDown: () => setDrawerOpen(false),
@@ -147,7 +134,8 @@ function BottomNav() {
               <div className="grid grid-cols-3 justify-items-center">
                 {menuData.map((data, index) => (
                   <a
-                    href={!is404 ? data.url : `${data.notFoundURL}`}
+                    // href={!is404 ? data.url : `${data.notFoundURL}`}
+                    href={data.url}
                     className="text-gray-600 hover:text-gray-400"
                     key={index}
                     onClick={() => setDrawerOpen(false)}

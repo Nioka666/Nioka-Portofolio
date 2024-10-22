@@ -8,27 +8,6 @@ import CV from "../../assets/Adhim_Niokagi_IT_CVS.pdf";
 gsap.registerPlugin(ScrollTrigger);
 
 function AboutMe() {
-  // const boxData = [
-  //   {
-  //     id: "experience",
-  //     icon: "bx bx-time-five",
-  //     title: "Experience",
-  //     desc: "1+ Year Working",
-  //   },
-  //   {
-  //     id: "projects",
-  //     icon: "bx bx-code-block",
-  //     title: "Completed",
-  //     desc: "5 Projects",
-  //   },
-  //   {
-  //     id: "licenses",
-  //     icon: "bx bx-medal",
-  //     title: "Licenses",
-  //     desc: "15+ Certificates",
-  //   },
-  // ];
-
   const paragraph = {
     text: "I am a student of Electronic Engineering Polytechnic Institute of Surabaya majoring in informatics Engineering, as well as a Front-End Web Developer and UI/UX Enthusiast, I am highly dedicated to learn more in this field. I have enough experience with some of the latest technology frameworks such as ReactJs, Express.js, and some of the latest Javascript ecosystems.",
   };
@@ -46,34 +25,34 @@ function AboutMe() {
     //   },
     // });
 
-    gsap.from(".boxx", {
-      opacity: 0,
-      y: 20,
-      duration: 0.5,
-      stagger: 0.2,
-      scrollTrigger: {
-        trigger: ".about-boxes",
-        start: "top 90%",
-        toggleActions: "play none none none",
-      },
-    });
+    // gsap.from(".boxx", {
+    //   opacity: 0,
+    //   y: 20,
+    //   duration: 0.5,
+    //   stagger: 0.2,
+    //   scrollTrigger: {
+    //     trigger: ".about-boxes",
+    //     start: "top 90%",
+    //     toggleActions: "play none none none",
+    //   },
+    // });
 
-    gsap.from(".about-mockup-window", {
-      opacity: 0,
-      duration: 0.8,
-      y: 20,
-      scrollTrigger: {
-        trigger: ".about-mockup-window",
-        start: "top 80%",
-        toggleActions: "play none none none",
-      },
-    });
+    // gsap.from(".about-mockup-window", {
+    //   opacity: 0,
+    //   duration: 0.8,
+    //   y: 20,
+    //   scrollTrigger: {
+    //     trigger: ".about-mockup-window",
+    //     start: "top 80%",
+    //     toggleActions: "play none none none",
+    //   },
+    // });
   }, []);
 
   return (
     <section id="about" className="about-component">
       {/* head/title */}
-      <PartTitle title={"about_me"} desc={"Short Introduction"} />
+      <PartTitle title={"about_me"} desc={"short_introduction"} />
 
       {/* content */}
       <section className="about-content">

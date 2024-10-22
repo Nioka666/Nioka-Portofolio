@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react";
-import validPages from "../../data/valid_pages.json";
 import { menuData } from "../../data/nav_anchors";
 
 function Navbar() {
-  let [is404, setIs404] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollDirection, setScrollDirection] = useState("up");
   const [lastScrollY, setLastScrollY] = useState(0);
   const [themeNow, setThemeNow] = useState("light");
-  const webUrl = "https://nioka.vercel.app/";
 
   function toggleTheme() {
     const currentTheme = localStorage.getItem("theme");
@@ -56,7 +53,7 @@ function Navbar() {
             <div className={`nav-content-modal`} tabIndex="0">
               <div className="grid grid-cols-3 gap-2 p-5">
                 {menuData.map((menu, index) => (
-                  <a href={!is404 ? menu.url : `${menu.notFoundURL}`} key={index}>
+                  <a href={menu.url} key={index}>
                     <div className="box grid w-[100px] cursor-pointer p-3 text-center">
                       <i className={menu.icon}></i>
                       <span className="text-xs">{menu.name}</span>
@@ -73,17 +70,6 @@ function Navbar() {
 
   useEffect(() => {
     let currentTheme = localStorage.getItem("theme");
-    let currentURL = window.location.href;
-    const isValidPage = validPages.some((page) => {
-      currentURL.includes(page);
-    });
-
-    if (currentURL === webUrl || isValidPage) {
-      setIs404(false);
-    } else {
-      setIs404(true);
-    }
-
     if (currentTheme === "light") {
       setThemeNow("light");
     } else {
@@ -104,7 +90,7 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [themeNow, is404, lastScrollY]);
+  }, [themeNow, lastScrollY]);
 
   return (
     <>

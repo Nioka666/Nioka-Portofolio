@@ -6,15 +6,19 @@ import Skills from "../components/react/Skills";
 import Qualification from "../components/react/Qualification";
 import FloatingButton from "../components/react/FloatingButton"
 import Portfolio from "../components/react/Portfolio";
+import Navbar from "../components/react/Navbar";
+import BottomNav from "../components/react/BottomNav";
 ---
 
 <MainLayout title="Adhim Niokagi Portfolio">
+  <Navbar client:idle/>
   <main>
     <Hero client:idle />
     <AboutMe client:only="react"/>
     <Skills client:only="react" />
     <!-- <Qualification client:only="react" /> -->
-    <!-- <Portfolio /> -->  
+    <Portfolio client:idle />  
     <FloatingButton client:idle />
   </main>
+  <BottomNav client:idle/>
 </MainLayout>

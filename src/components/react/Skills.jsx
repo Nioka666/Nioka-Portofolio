@@ -138,7 +138,7 @@ function Skills() {
   return (
     <>
       <section id="skills" className="skills-component">
-        <PartTitle title={"technical_skills"} desc={"Technology and Stack"} />
+        <PartTitle title={"technical_skills"} desc={"stack_and_technology_used"} />
         {/* content */}
         <section className="skills-content-container">
           <SkillCollapse
