@@ -78,9 +78,9 @@ function AboutMe() {
               {paragraph.text}
             </p>
             <a href={CV} target="_blank">
-              <button role="button" className="mt-6 px-6 py-3 text-sm bg-niodark text-nioprimary dark:bg-niodark2 border-none dark:text-textdark3 flex items-center gap-2 font-normal rounded-xl active:scale-95 transition-all duration-200">
+              <button role="button" className="mt-6 px-6 py-3 max-sm:py-2 max-sm:px-5 text-sm max-sm:text-[13px] bg-niodark text-nioprimary dark:bg-niodark2 border-none max-sm:rounded-lg dark:text-textdark3 flex items-center gap-2 font-normal rounded-xl active:scale-95 transition-all duration-200">
                 View CV
-                <i className="bx bx-file text-lg text-niosecondary dark:text-textdark3"></i>
+                <i className="bx bx-file text-lg max-sm:text-base text-niosecondary dark:text-textdark3"></i>
               </button>
             </a>
           </div>

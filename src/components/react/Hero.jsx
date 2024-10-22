@@ -1,6 +1,5 @@
 import Typewriter from "typewriter-effect";
 import avatar from "../../assets/nioka_2.webp";
-import CV from "../../assets/Adhim_Niokagi_IT_CVS.pdf";
 import SendmailModal from "./SendmailModal";
 
 function Hero() {
@@ -96,12 +95,6 @@ function Hero() {
               <i className="uil uil-location-arrow md:ms-1 lg:ms-[9.2px]"></i>
             </button>
             <SendmailModal id={"my_modal_1"} />
-            {/* <a href={CV} target="_blank">
-              <button role="button" className="hero-cv-btn">
-                View CV
-                <i className="bx bx-file"></i>
-              </button>
-            </a> */}
           </div>
         </section>
         <picture className={`hero-pp`}>
