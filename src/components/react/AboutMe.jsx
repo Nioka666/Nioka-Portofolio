@@ -67,21 +67,21 @@ function AboutMe() {
             alt="Adhim Niokagi Photo"
           />
           <div className="cname">
-            <h1 className="text-2xl font-bold">nioka.o
+            <h1 className="text-[25px] font-bold">nioka.o
             </h1>
             <div className="tag flex gap-2 mt-2">
-              <span className="bg-gray-100 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">Front-End</span>
-              <span className="bg-gray-100 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">UI/UX</span>
+              <span className="bg-gray-200 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">Front-End</span>
+              <span className="bg-gray-200 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">UI/UX</span>
             </div>
           </div>
         </div>
         {/* content */}
         <div className="about-desc-wrapper">
           <div className="about-mockup">
-            <p className="text-left text-base max-sm:text-[13px] leading-7 max-md:leading-6 dark:text-textdark3">
+            <p className="text-left text-base max-sm:text-[14px] leading-7 max-md:leading-6 dark:text-textdark3">
               {paragraph.text}
             </p>
-            <button onClick={cvClick} role="button" className="mt-6 px-6 py-3 max-sm:py-[10px] max-sm:px-[22px] text-sm max-sm:text-[14px] bg-gray-100 text-black dark:bg-niodark2 border-none max-sm:rounded-lg dark:text-textdark3 flex items-center gap-2 font-medium rounded-xl active:scale-95 transition-all duration-0">
+            <button onClick={cvClick} role="button" className="mt-6 px-6 py-3 max-sm:py-[10px] max-sm:px-[22px] text-sm max-sm:text-[14px] bg-gray-200 text-black dark:bg-niodark2 border-none max-sm:rounded-lg dark:text-textdark3 flex items-center gap-2 font-medium rounded-xl active:scale-95 transition-all duration-0">
               View CV
               <i className="bx bx-file text-lg max-sm:text-base text-black dark:text-textdark3"></i>
             </button>

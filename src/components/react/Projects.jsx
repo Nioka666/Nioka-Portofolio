@@ -5,7 +5,7 @@ function Projects() {
     <>
       <section id="projects" className="projects-component grid grid-cols-3 max-sm:grid-cols-2 gap-3 max-sm:px-5">
         <div className="">
-          <PartTitle title={"Latest Project"} desc={"my_latest_projects"} num={"003"} extraPadding={"px-0"} extraStyle={"max-sm:text-[35px] leading-[45px]"} />
+          <PartTitle title={"LATEST PROJECT ...."} desc={"my_latest_projects"} num={"003"} extraPadding={"px-0"} extraStyle={"max-sm:text-[35px] leading-[45px]"} />
         </div>
         <div className="box-wrapper h-[200px] w-[100%] rounded-2xl bg-white p-4">
           <div className="flex flex-col gap-4">
