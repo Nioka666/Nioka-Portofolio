@@ -11,18 +11,18 @@ export const menuData = [
       url: "#skills",
       notFoundURL: "https://nioka.vercel.app/#skills"
     },
-    {
-      name: "Qualifies",
-      icon: "bx bx-file text-3xl",
-      url: "#qualification",
-      notFoundURL: "https://nioka.vercel.app/#qualification"
-    },
     // {
-    //   name: "portfolio",
-    //   icon: "bx bx-image text-3xl",
-    //   url: "#portfolio",
-    //   notFoundURL: "https://nioka.vercel.app/#portfolio"
+    //   name: "Qualifies",
+    //   icon: "bx bx-file text-3xl",
+    //   url: "#qualification",
+    //   notFoundURL: "https://nioka.vercel.app/#qualification"
     // },
+    {
+      name: "projects",
+      icon: "bx bx-image text-3xl",
+      url: "#projects",
+      notFoundURL: "https://nioka.vercel.app/#portfolio"
+    },
     // {
     //   name: "Contact",
     //   icon: "uil uil-user-square text-3xl",

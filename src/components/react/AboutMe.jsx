@@ -12,6 +12,10 @@ function AboutMe() {
     text: "I am a student of Electronic Engineering Polytechnic Institute of Surabaya majoring in informatics Engineering, as well as a Front-End Web Developer and UI/UX Enthusiast, I am highly dedicated to learn more in this field. I have enough experience with some of the latest technology frameworks such as ReactJs, Express.js, and some of the latest Javascript ecosystems.",
   };
 
+  function cvClick() {
+    window.open(CV, "_blank");
+  }
+
   useEffect(() => {
     // gsap.from(".about-content img", {
     //   opacity: 0,
@@ -52,7 +56,7 @@ function AboutMe() {
   return (
     <section id="about" className="about-component">
       {/* head/title */}
-      <PartTitle title={"about_me"} desc={"short_introduction"} />
+      <PartTitle title={"about_me"} desc={"short_introduction"} hSize={"text-lg"} hColor={"text-textdark2"} />
 
       {/* content */}
       <section className="about-content">
@@ -63,7 +67,7 @@ function AboutMe() {
             alt="Adhim Niokagi Photo"
           />
           <div className="cname">
-            <h1 className="text-2xl font-normal">nioka.o
+            <h1 className="text-2xl font-bold">nioka.o
             </h1>
             <div className="tag flex gap-2 mt-2">
               <span className="bg-gray-100 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">Front-End</span>
@@ -77,12 +81,10 @@ function AboutMe() {
             <p className="text-left text-base max-sm:text-[13px] leading-7 max-md:leading-6 dark:text-textdark3">
               {paragraph.text}
             </p>
-            <a href={CV} target="_blank">
-              <button role="button" className="mt-6 px-6 py-3 max-sm:py-2 max-sm:px-5 text-sm max-sm:text-[13px] bg-niodark text-nioprimary dark:bg-niodark2 border-none max-sm:rounded-lg dark:text-textdark3 flex items-center gap-2 font-normal rounded-xl active:scale-95 transition-all duration-200">
-                View CV
-                <i className="bx bx-file text-lg max-sm:text-base text-niosecondary dark:text-textdark3"></i>
-              </button>
-            </a>
+            <button onClick={cvClick} role="button" className="mt-6 px-6 py-3 max-sm:py-[10px] max-sm:px-[22px] text-sm max-sm:text-[14px] bg-gray-100 text-black dark:bg-niodark2 border-none max-sm:rounded-lg dark:text-textdark3 flex items-center gap-2 font-medium rounded-xl active:scale-95 transition-all duration-0">
+              View CV
+              <i className="bx bx-file text-lg max-sm:text-base text-black dark:text-textdark3"></i>
+            </button>
           </div>
         </div>
       </section>
