@@ -56,14 +56,14 @@ function AboutMe() {
   return (
     <section id="about" className="about-component">
       {/* head/title */}
-      <PartTitle title={"about_me"} desc={"short_introduction"} hSize={"text-lg"} hColor={"text-textdark2"} />
+      <PartTitle title={"about_me"} num={"001"} extraStyle={"text-xl"} hColor={"text-textdark2"} />
 
       {/* content */}
       <section className="about-content">
         <div className="flex items-center gap-7">
           <img
             src={niokaPhoto.src}
-            className="rounded-[12px] max-sm:w-[80px] sm:w-[100px]"
+            className="rounded-xl max-sm:w-[75px] sm:w-[100px]"
             alt="Adhim Niokagi Photo"
           />
           <div className="cname">

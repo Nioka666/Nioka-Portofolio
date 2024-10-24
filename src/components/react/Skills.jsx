@@ -114,25 +114,7 @@ function Skills() {
 
   const SkillCollapse = ({ title, dataVariable }) => {
     return (
-      // <details className="skills-collapse collapse">
-      //   <summary className="collapse-title">
-      //     <div className="my-[8px] flex items-center gap-2 max-md:ms-[10px] max-sm:my-[5px] lg:ms-14">
-      //       <i className="bx bx-code-curly text-[20px] md:text-2xl"></i>
-      //       <span className="md:ms-2 max-sm:ms-1 max-sm:text-sm">{title}</span>
-      //     </div>
-      //   </summary>
-      //   <div className="skills-content collapse-content">
-      //     {dataVariable.map((iconData) => (
-      //       <img
-      //         key={iconData.id}
-      //         src={iconData.src}
-      //         alt={iconData.id}
-      //         className={`skills-icon ${iconData.class}`}
-      //       />
-      //     ))}
-      //   </div>
-      // </details>
-      <div className="collapse collapse-arrow bg-base-200 max-sm:px-4 max-sm:py-2 py-3 px-4">
+      <div className="collapse collapse-arrow bg-gray-100 max-sm:px-3 max-sm:py-2 py-3 px-4">
         <input type="radio" name="my-accordion-2" defaultChecked />
         <div className="collapse-title text-xl max-sm:text-base font-medium">{title}</div>
         <div className="collapse-content grid grid-cols-7 max-sm:grid-cols-4">
@@ -152,7 +134,7 @@ function Skills() {
   return (
     <>
       <section id="skills" className="skills-component">
-        <PartTitle title={"technical_skills"} desc={"stack_and_technology_used"} />
+        <PartTitle title={"technical_skills"} num={"002"} />
         {/* content */}
         <section className="skills-content-container">
           <SkillCollapse
