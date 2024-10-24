@@ -5,7 +5,7 @@ function Projects() {
     <>
       <section id="projects" className="projects-component grid grid-cols-3 max-sm:grid-cols-2 gap-3 max-sm:px-5 ">
         {/* <PartTitle title={"LATEST_ PROJECT"} desc={"my_latest_projects"} num={"003"} extraPadding={"px-1"} extraStyle={"max-sm:text-[30px] leading-[42px]"} /> */}
-        <section className={`text-left px-0`}>
+        <section className={`text-left px-0 my-auto`}>
           <h1 className="text-base font-normal text-textdark2 dark:text-textdark2 md:text-xl">
             $_003
           </h1>
