@@ -13,21 +13,27 @@ function Projects() {
             Latest_ Projects
           </h2>
         </section>
-        <div className="box-wrapper h-[180px] w-[100%] rounded-3xl bg-transparent border-2 border-base-300 dark:bg-niodark2 p-4 flex items-center justify-center">
+        <div className="box-wrapper h-[180px] w-[100%] rounded-3xl bg-transparent border-4 border-base-300 dark:bg-niodark2 p-4 flex items-center justify-center">
           <div className="flex flex-col items-center justify-center">
             <h1 className="text-4xl font-bold text-textdark4">001</h1>
           </div>
           <div className="tags-section"></div>
         </div>
-        <div className="box-wrapper h-[180px] w-[100%] rounded-3xl bg-transparent border-2 border-base-300 dark:bg-niodark2 p-4 flex items-center justify-center">
+        <div className="box-wrapper h-[180px] w-[100%] rounded-3xl bg-transparent border-4 border-base-300 dark:bg-niodark2 p-4 flex items-center justify-center">
           <div className="">
             <h1 className="text-4xl font-bold text-textdark4">002</h1>
           </div>
           <div className="tags-section"></div>
         </div>
-        <div className="box-wrapper h-[180px] w-[100%] rounded-3xl bg-transparent border-2 border-base-300 dark:bg-niodark2 p-4 flex items-center justify-center">
+        <div className="box-wrapper h-[180px] w-[100%] rounded-3xl bg-transparent border-4 border-base-300 dark:bg-niodark2 p-4 flex items-center justify-center">
           <div className="flex flex-col items-center justify-center">
             <h1 className="text-4xl font-bold text-textdark4">003</h1>
+          </div>
+          <div className="tags-section"></div>
+        </div>
+        <div className="box-wrapper h-[180px] w-[100%] rounded-3xl bg-transparent border-4 border-base-300 dark:bg-niodark2 p-4 flex items-center justify-center">
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="text-4xl font-bold text-textdark4">004</h1>
           </div>
           <div className="tags-section"></div>
         </div>
