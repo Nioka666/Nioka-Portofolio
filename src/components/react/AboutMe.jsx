@@ -63,7 +63,7 @@ function AboutMe() {
         <div className="flex items-center gap-7">
           <img
             src={niokaPhoto.src}
-            className="rounded-xl max-sm:w-[75px] sm:w-[100px]"
+            className="rounded-2xl max-sm:w-[75px] sm:w-[100px]"
             alt="Adhim Niokagi Photo"
           />
           <div className="cname">
