@@ -99,7 +99,7 @@ function Navbar() {
         <section className="transition-none max-md:hidden max-sm:hidden">
           <a href="/">
             <h1 className="text-base font-medium md:text-base lg:text-base">
-              nioka.o
+              Adhim Niokagi
             </h1>
           </a>
           <IconGroup />
