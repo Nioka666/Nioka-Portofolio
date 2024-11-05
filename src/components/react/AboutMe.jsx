@@ -63,7 +63,7 @@ function AboutMe() {
         <div className="flex items-center gap-7">
           <img
             src={niokaPhoto.src}
-            className="rounded-2xl max-sm:w-[75px] sm:w-[100px]"
+            className="rounded-xl max-sm:w-[75px] sm:w-[100px]"
             alt="Adhim Niokagi Photo"
           />
           <div className="cname">
@@ -78,7 +78,7 @@ function AboutMe() {
         {/* content */}
         <div className="about-desc-wrapper">
           <div className="about-mockup">
-            <p className="text-left text-base max-sm:text-[14px] leading-7 max-md:leading-6 dark:text-textdark3">
+            <p className="text-left text-base max-sm:text-[15.5px] leading-7 max-md:leading-6 dark:text-textdark3">
               {paragraph.text}
             </p>
             <button onClick={cvClick} role="button" className="mt-6 px-6 py-3 max-sm:py-[10px] max-sm:px-[22px] text-sm max-sm:text-[14px] bg-gray-200 text-black dark:bg-niodark2 border-none max-sm:rounded-lg dark:text-textdark3 flex items-center gap-2 font-medium rounded-xl active:scale-95 transition-all duration-0">
