@@ -123,7 +123,7 @@ function Skills() {
               key={iconData.id}
               src={iconData.src}
               alt={iconData.id}
-              className={`skills-icon mt-3 ${iconData.class}`}
+              className={`skills-icon mt-3`}
             />
           ))}
         </div>
