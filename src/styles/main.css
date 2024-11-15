@@ -275,7 +275,7 @@
   }
 
   .projects-component {
-    @apply mt-28 py-10 max-sm:mt-12 lg:px-10;
+    @apply mt-16 py-10 max-sm:mt-12 lg:px-10;
   }
 
   /* blob animation */

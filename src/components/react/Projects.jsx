@@ -28,25 +28,19 @@ function Projects() {
 
   return (
     <>
-      <section id="projects" className="projects-component grid grid-cols-3 max-sm:grid-cols-1 gap-3 lg:gap-5 max-sm:px-5 ">
-        <section className={`px-0 my-auto mx-auto max-sm:ms-3`}>
-          <h1 className="text-base font-normal text-textdark2 dark:text-textdark2 md:text-xl">
-            003
-          </h1>
-          <h2 className={`mt-[5px] text-[30px] font-semibold text-niodark2 dark:text-textdark max-sm:mt-0 md:text-5xl mb-5`}>
-            my_projects
-          </h2>
-        </section>
-        <div className="sm:hidden"></div>
-        <ProjectBox st_title={"Nio"} nd_title={"Nime"}/>
-        <ProjectBox st_title={"Nio"} nd_title={"Libs"}/>
-        <div class="card bg-nioprimary max-sm:w-full sm:w-[410px] text-center h-96">
-          <div class="my-auto">
-            <i class="bx bxs-ghost text-9xl text-gray-300"></i>
-            <h1 class="text-2xl md:text-3xl mt-5 text-gray-300 font-bold">What's next?</h1>
-            <p class="text-base text-gray-300">Let's collaborate w/ me</p>
+      <section id="projects" className="projects-component">
+        <PartTitle title={"technical_skills"} num={"002"} extraStyle={"max-sm:font-semibold"} />
+        <section className="grid grid-cols-2 max-sm:grid-cols-1 gap-3 lg:gap-5 max-sm:px-5 lg:mt-16">
+          <ProjectBox st_title={"Nio"} nd_title={"Nime"} />
+          <ProjectBox st_title={"Nio"} nd_title={"Libs"} />
+          <div class="card bg-nioprimary max-sm:w-full sm:w-[410px] text-center h-96">
+            <div class="my-auto">
+              <i class="bx bxs-ghost text-9xl text-gray-300"></i>
+              <h1 class="text-2xl md:text-3xl mt-5 text-gray-300 font-bold">What's next?</h1>
+              <p class="text-base text-gray-300">Let's collaborate w/ me</p>
+            </div>
           </div>
-        </div>
+        </section>
       </section>
     </>
   );
