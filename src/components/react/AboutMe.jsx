@@ -57,7 +57,7 @@ function AboutMe() {
     <section id="about" className="about-component">
       {/* head/title */}
       <PartTitle title={"about_me"} num={"001"} extraStyle={"text-[26px]"} hColor={"text-textdark2"} />
-      <hr className="mt-6 max-sm:w-[90%] lg:w-[95%] mx-auto"/>
+      {/* <hr className="mt-6 max-sm:w-[90%] lg:w-[95%] mx-auto"/> */}
 
       {/* content */}
       <section className="about-content mt-10">

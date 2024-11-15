@@ -134,7 +134,7 @@ function Skills() {
   return (
     <>
       <section id="skills" className="skills-component">
-        <PartTitle title={"technical_skills"} num={"002"} extraStyle={"max-sm:font-semibold"} />
+        <PartTitle title={"technical_skills"} num={"002"} />
         {/* content */}
         <section className="skills-content-container">
           <SkillCollapse
