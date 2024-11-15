@@ -12,14 +12,14 @@ function Projects() {
           </div>
           <p className="mt-4 text-[13px] font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing
             elit. Esse labore dolorum qui eius officiis</p>
-          {/* <div className="mt-8 flex justify-between w-full">
+          <div className="mt-5 flex justify-between w-full">
             <div className="cursor-pointer">
               <i className="bx bxl-github text-xl"></i>
             </div>
             <div className="cursor-pointer">
               <i className="bx bx-arrow-back rotate-180 text-xl"></i>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </>)
