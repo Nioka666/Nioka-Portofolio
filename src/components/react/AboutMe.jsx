@@ -56,10 +56,11 @@ function AboutMe() {
   return (
     <section id="about" className="about-component">
       {/* head/title */}
-      <PartTitle title={"about_me"} num={"001"} extraStyle={"text-2xl"} hColor={"text-textdark2"} />
+      <PartTitle title={"about_me"} num={"001"} extraStyle={"text-[26px]"} hColor={"text-textdark2"} />
+      <hr className="mt-6 w-[90%] mx-auto"/>
 
       {/* content */}
-      <section className="about-content">
+      <section className="about-content mt-10">
         <div className="flex items-center gap-7">
           <img
             src={niokaPhoto.src}
