@@ -52,10 +52,12 @@
   .nav.hide,
   .nav-content-modal.hide {
     transform: translateY(-200%);
+    transition: all ease-in-out 0.45s;
   }
 
   .nav.show {
     transform: translateY(0);
+    transition: all ease-in-out 0.45s;
   }
 
   main {
@@ -92,7 +94,7 @@
   }
 
   .lg-paragraph {
-    @apply text-gray mt-5 h-[80px] w-[85%] font-normal dark:text-textdark2 md:text-[14px] lg:text-[16.5px];
+    @apply text-gray mt-5 h-[80px] w-[85%] font-normal dark:text-textdark2 md:text-[14px] lg:text-[16px];
   }
 
   /* hero sm */

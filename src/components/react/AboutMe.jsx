@@ -60,7 +60,7 @@ function AboutMe() {
       {/* <hr className="mt-6 max-sm:w-[90%] lg:w-[95%] mx-auto"/> */}
 
       {/* content */}
-      <section className="about-content mt-10">
+      <section className="about-content mt-5">
         <div className="flex items-center gap-7">
           <img
             src={niokaPhoto.src}
