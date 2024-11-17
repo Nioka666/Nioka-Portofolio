@@ -10,7 +10,7 @@ function Experiences() {
           <div role="tablist" className="tabs tabs-lifted tabs-lg">
             <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base dark:[--tab-bg:#2d2d2d] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Educations"
               defaultChecked />
-            <div role="tabpanel" className="tab-content bg-white border-base-300 rounded-box p-6 pt-8 dark:bg-gradient-to-b from-niodark2 to-niodark3 dark:border-borderbtm">
+            <div role="tabpanel" className="tab-content bg-white border-base-300 rounded-box p-6 pt-8 dark:bg-gradient-to-b from-niodark2 to-niodark4 dark:border-borderbtm">
               <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
                 <li>
                   <div className="timeline-middle">
@@ -66,7 +66,7 @@ function Experiences() {
             </div>
 
             <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base  dark:[--tab-bg:#2d2d2d] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Experiences" />
-            <div role="tabpanel" className="tab-content bg-white border-base-300 dark:bg-gradient-to-b from-niodark2 to-niodark3 dark:border-borderbtm rounded-box p-6 pt-8">
+            <div role="tabpanel" className="tab-content bg-white border-base-300 dark:bg-gradient-to-b from-niodark2 to-niodark4 dark:border-borderbtm rounded-box p-6 pt-8">
               <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
                 <li>
                   <div className="timeline-middle">
