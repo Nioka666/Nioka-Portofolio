@@ -13,8 +13,8 @@ function Experiences() {
         </section>
 
         <section className="max-md:mt-10 max-md:px-6 md:px-5 max-sm:mt-10 lg:mt-16 max-sm:mx-0 sm:mx-2">
-          <div role="tablist" className="tabs tabs-lifted max-sm:tabs-lg tabs-lg">
-            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium" aria-label="Educations"
+          <div role="tablist" className="tabs tabs-lifted tabs-lg">
+            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base" aria-label="Educations"
               checked="checked" />
             <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6 pt-8">
               <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
@@ -71,7 +71,7 @@ function Experiences() {
               </ul>
             </div>
 
-            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium" aria-label="Experiences" />
+            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base" aria-label="Experiences" />
             <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6 pt-8">
               <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
                 <li>
@@ -85,7 +85,7 @@ function Experiences() {
                   </div>
                   <div className="timeline-start mb-10">
                     <time className="font-mono italic">Nov 2023 - Present</time>
-                    <div className="text-lg font-bold mt-1">Remote Freelance (self employed)</div>
+                    <div className="text-lg font-semibold mt-1">Remote Freelance (self employed)</div>
                     <p className="mb-5">Front-End Web Developer</p>
                   </div>
                   <hr />
@@ -102,11 +102,8 @@ function Experiences() {
                   </div>
                   <div className="timeline-start mb-10">
                     <time className="font-mono italic">Jul 2022 - Dec 2023</time>
-                    <div className="text-lg font-bold mt-1">ATR/BPN - Kantor Pertanahan Kota Mojokerto</div>
-                    <p className="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-                      dolores, blanditiis rem fugiat odit, autem necessitatibus perferendis mollitia
-                      debitis et neque accusamus unde suscipit consequuntur voluptates iure.
-                      Consequuntur, ducimus modi.</p>
+                    <div className="text-lg font-semibold mt-1">ATR/BPN - Kantor Pertanahan Kota Mojokerto</div>
+                    <p className="mb-5">Student Intern</p>
                   </div>
                 </li>
               </ul>
