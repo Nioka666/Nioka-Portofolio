@@ -269,7 +269,7 @@
 
   /* qualifications part */
   .qualifications-component {
-    @apply mt-10 h-[700px] py-10 max-sm:mt-1;
+    @apply my-10 py-10 max-sm:mt-1;
   }
 
   .qualifications-btn-group {

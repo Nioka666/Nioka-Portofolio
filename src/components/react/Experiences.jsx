@@ -1,22 +1,16 @@
+import PartTitle from "./PartTitle";
+
 function Experiences() {
   return (
     <>
       <section id="qualification" className="qualifications-component">
-        <section className="text-left px-6">
-          <h1 className="text-base font-normal text-textdark2 dark:text-textdark2 md:text-xl">
-            003
-          </h1>
-          <h2 className="mt-[5px] text-2xl max-sm:text-3xl font-normal text-black dark:text-textdark
-                    max-sm:mt-0 md:text-5xl">
-            experiences
-          </h2>
-        </section>
+        <PartTitle title={"experiences"} num={"003"} />
 
         <section className="max-md:mt-10 max-md:px-6 md:px-5 max-sm:mt-10 lg:mt-16 max-sm:mx-0 sm:mx-2">
           <div role="tablist" className="tabs tabs-lifted tabs-lg">
             <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base dark:[--tab-bg:#2d2d2d] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Educations"
-              checked="checked" />
-            <div role="tabpanel" className="tab-content bg-white border-base-300 rounded-box p-6 pt-8 dark:bg-niodark2 dark:border-borderbtm">
+              defaultChecked />
+            <div role="tabpanel" className="tab-content bg-white border-base-300 rounded-box p-6 pt-8 dark:bg-gradient-to-b from-niodark2 to-niodark3 dark:border-borderbtm">
               <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
                 <li>
                   <div className="timeline-middle">
@@ -72,7 +66,7 @@ function Experiences() {
             </div>
 
             <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base  dark:[--tab-bg:#2d2d2d] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Experiences" />
-            <div role="tabpanel" className="tab-content bg-white border-base-300 dark:bg-niodark2 dark:border-borderbtm rounded-box p-6 pt-8">
+            <div role="tabpanel" className="tab-content bg-white border-base-300 dark:bg-gradient-to-b from-niodark2 to-niodark3 dark:border-borderbtm rounded-box p-6 pt-8">
               <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
                 <li>
                   <div className="timeline-middle">

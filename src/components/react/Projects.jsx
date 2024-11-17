@@ -3,7 +3,7 @@ import PartTitle from "./PartTitle";
 function Projects() {
   function ProjectBox({ st_title, nd_title }) {
     return (<>
-      <div className="card bg-white dark:bg-niodark2 max-sm:w-full sm:w-[410px] border dark:border-borderbtm">
+      <div className="card bg-white dark:bg-gradient-to-b from-niodark2 to-niodark3 max-sm:w-full sm:w-[410px] border dark:border-borderbtm">
         <div className="card-body text-left">
           <h1 className="text-6xl sm:text-7xl">{st_title} <br /> {nd_title}</h1>
           <div className="tag flex gap-2 mt-2">
@@ -28,7 +28,7 @@ function Projects() {
   return (
     <>
       <section id="projects" className="projects-component">
-        <PartTitle title={"my_projects"} num={"003"} />
+        <PartTitle title={"my_projects"} num={"004"} />
         <section className="mt-8 grid grid-cols-2 max-sm:grid-cols-1 gap-5 lg:gap-5 max-sm:px-5 lg:mt-16">
           <ProjectBox st_title={"Nio"} nd_title={"Nime"} />
           <ProjectBox st_title={"Nio"} nd_title={"Libs"} />

@@ -81,7 +81,7 @@ function Skills() {
     {
       id: "express_icon",
       src: expressIcon.src,
-      class: "dark:brightness-0 dark:invert",
+      extra: "dark:brightness-0 dark:invert",
     },
     // {
     //   id: "php_icon",
@@ -114,7 +114,7 @@ function Skills() {
 
   const SkillCollapse = ({ title, dataVariable }) => {
     return (
-      <div className="collapse collapse-arrow bg-white border-b-2 dark:border-borderbtm dark:bg-niodark2 max-sm:px-3 max-sm:py-2 py-3 px-4">
+      <div className="collapse collapse-arrow bg-white border-b-2 dark:border-borderbtm dark:border-none dark:bg-gradient-to-b from-niodark2 to-niodark3 max-sm:px-3 max-sm:py-2 py-3 px-4">
         <input type="radio" name="my-accordion-2" />
         <div className="collapse-title text-xl max-sm:text-base font-medium">{title}</div>
         <div className="collapse-content grid grid-cols-7 max-sm:grid-cols-4">
@@ -123,7 +123,7 @@ function Skills() {
               key={iconData.id}
               src={iconData.src}
               alt={iconData.id}
-              className={`skills-icon mt-3`}
+              className={`skills-icon mt-3 ${iconData.extra}`}
             />
           ))}
         </div>
