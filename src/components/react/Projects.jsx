@@ -3,7 +3,7 @@ import PartTitle from "./PartTitle";
 function Projects() {
   function ProjectBox({ st_title, nd_title }) {
     return (<>
-      <div className="card bg-white dark:bg-gradient-to-b from-niodark2 to-niodark3 max-sm:w-full sm:w-[410px] border dark:border-borderbtm">
+      <div className="card bg-white dark:bg-gradient-to-b from-niodark3 to-niodark max-sm:w-full sm:w-[410px] border dark:border-borderbtm">
         <div className="card-body text-left">
           <h1 className="text-6xl sm:text-7xl">{st_title} <br /> {nd_title}</h1>
           <div className="tag flex gap-2 mt-2">
