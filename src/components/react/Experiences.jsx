@@ -14,9 +14,9 @@ function Experiences() {
 
         <section className="max-md:mt-10 max-md:px-6 md:px-5 max-sm:mt-10 lg:mt-16 max-sm:mx-0 sm:mx-2">
           <div role="tablist" className="tabs tabs-lifted tabs-lg">
-            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base" aria-label="Educations"
+            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base dark:[--tab-bg:#2d2d2d] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Educations"
               checked="checked" />
-            <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6 pt-8">
+            <div role="tabpanel" className="tab-content bg-white border-base-300 rounded-box p-6 pt-8 dark:bg-niodark2 dark:border-borderbtm">
               <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
                 <li>
                   <div className="timeline-middle">
@@ -30,12 +30,12 @@ function Experiences() {
                   <div className="timeline-start mb-10">
                     <time className="font-mono italic">2019 - 2021</time>
                     <div className="text-lg font-bold mt-1">SMP Negeri 1 Jetis </div>
-                    <p className="mb-5">Regular Student</p>
+                    <p className="mb-5 dark:text-textdark4">Regular Student</p>
                   </div>
-                  <hr />
+                  <hr className="dark:bg-textdark2" />
                 </li>
                 <li>
-                  <hr />
+                  <hr className="dark:bg-textdark2" />
                   <div className="timeline-middle">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                       className="h-5 w-5">
@@ -47,12 +47,12 @@ function Experiences() {
                   <div className="timeline-start mb-10">
                     <time className="font-mono italic">2021 - 2024</time>
                     <div className="text-lg font-bold mt-1">SMK Negeri 2 Mojokerto</div>
-                    <p className="mb-5">Software Engineering</p>
+                    <p className="mb-5 dark:text-textdark4">Software Engineering</p>
                   </div>
-                  <hr />
+                  <hr className="dark:bg-textdark2" />
                 </li>
                 <li>
-                  <hr />
+                  <hr className="dark:bg-textdark2" />
                   <div className="timeline-middle">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                       className="h-5 w-5">
@@ -65,14 +65,14 @@ function Experiences() {
                     <time className="font-mono italic">2024 - Present</time>
                     <div className="text-lg font-bold mt-1">Electronic Engineering Polytechnic Institute of
                       Surabaya</div>
-                    <p className="mb-5">Associate's degree - Informatics Engineering</p>
+                    <p className="mb-5 dark:text-textdark4">Associate's degree - Informatics Engineering</p>
                   </div>
                 </li>
               </ul>
             </div>
 
-            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base" aria-label="Experiences" />
-            <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6 pt-8">
+            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base  dark:[--tab-bg:#2d2d2d] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Experiences" />
+            <div role="tabpanel" className="tab-content bg-white border-base-300 dark:bg-niodark2 dark:border-borderbtm rounded-box p-6 pt-8">
               <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
                 <li>
                   <div className="timeline-middle">
@@ -86,12 +86,12 @@ function Experiences() {
                   <div className="timeline-start mb-10">
                     <time className="font-mono italic">Nov 2023 - Present</time>
                     <div className="text-lg font-semibold mt-1">Remote Freelance (self employed)</div>
-                    <p className="mb-5">Front-End Web Developer</p>
+                    <p className="mb-5 dark:text-textdark4">Front-End Web Developer</p>
                   </div>
-                  <hr />
+                  <hr className="dark:bg-textdark2" />
                 </li>
                 <li>
-                  <hr />
+                  <hr className="dark:bg-textdark2" />
                   <div className="timeline-middle">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                       className="h-5 w-5">
@@ -103,7 +103,7 @@ function Experiences() {
                   <div className="timeline-start mb-10">
                     <time className="font-mono italic">Jul 2022 - Dec 2023</time>
                     <div className="text-lg font-semibold mt-1">ATR/BPN - Kantor Pertanahan Kota Mojokerto</div>
-                    <p className="mb-5">Student Intern</p>
+                    <p className="mb-5 dark:text-textdark4">Student Intern</p>
                   </div>
                 </li>
               </ul>

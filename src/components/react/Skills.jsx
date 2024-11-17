@@ -114,7 +114,7 @@ function Skills() {
 
   const SkillCollapse = ({ title, dataVariable }) => {
     return (
-      <div className="collapse collapse-arrow bg-white border-b-2 dark:border-textdark2 dark:bg-niodark2 max-sm:px-3 max-sm:py-2 py-3 px-4">
+      <div className="collapse collapse-arrow bg-white border-b-2 dark:border-borderbtm dark:bg-niodark2 max-sm:px-3 max-sm:py-2 py-3 px-4">
         <input type="radio" name="my-accordion-2" />
         <div className="collapse-title text-xl max-sm:text-base font-medium">{title}</div>
         <div className="collapse-content grid grid-cols-7 max-sm:grid-cols-4">
