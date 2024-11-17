@@ -274,6 +274,7 @@
 
   .qualifications-btn-group {
     @apply mt-16 flex justify-start gap-3 px-6 font-medium max-sm:mt-12 md:gap-8;
+    color: #161617;
   }
 
   .projects-component {
