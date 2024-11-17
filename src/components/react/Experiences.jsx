@@ -8,9 +8,9 @@ function Experiences() {
 
         <section className="max-md:mt-10 max-md:px-6 md:px-5 max-sm:mt-10 lg:mt-16 max-sm:mx-0 sm:mx-2">
           <div role="tablist" className="tabs tabs-lifted tabs-lg">
-            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base dark:[--tab-bg:#282828] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Educations"
+            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base dark:[--tab-bg:#161617] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Educations"
               defaultChecked />
-            <div role="tabpanel" className="tab-content bg-white border-base-300 rounded-box p-6 pt-8 dark:bg-gradient-to-b from-niodark2 to-niodark4 dark:border-borderbtm">
+            <div role="tabpanel" className="tab-content bg-white border-base-300 rounded-box p-6 pt-8 dark:bg-niodark4 dark:border-borderbtm">
               <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
                 <li>
                   <div className="timeline-middle">
@@ -65,8 +65,8 @@ function Experiences() {
               </ul>
             </div>
 
-            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base  dark:[--tab-bg:#282828] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Experiences" />
-            <div role="tabpanel" className="tab-content bg-white border-base-300 dark:bg-gradient-to-b from-niodark2 to-niodark4 dark:border-borderbtm rounded-box p-6 pt-8">
+            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base  dark:[--tab-bg:#161617] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Experiences" />
+            <div role="tabpanel" className="tab-content bg-white border-base-300 dark:bg-niodark4 dark:border-borderbtm rounded-box p-6 pt-8">
               <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
                 <li>
                   <div className="timeline-middle">
