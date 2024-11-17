@@ -32,11 +32,11 @@ function Projects() {
         <section className="mt-8 grid grid-cols-2 max-sm:grid-cols-1 gap-5 lg:gap-5 max-sm:px-5 lg:mt-16">
           <ProjectBox st_title={"Nio"} nd_title={"Nime"} />
           <ProjectBox st_title={"Nio"} nd_title={"Libs"} />
-          <div class="card bg-nioprimary max-sm:w-full sm:w-[410px] text-center h-96">
-            <div class="my-auto">
-              <i class="bx bxs-ghost text-9xl text-gray-300"></i>
-              <h1 class="text-2xl md:text-3xl mt-5 text-gray-300 font-bold">What's next?</h1>
-              <p class="text-base text-gray-300">Let's collaborate w/ me</p>
+          <div className="card bg-nioprimary max-sm:w-full sm:w-[410px] text-center h-96">
+            <div className="my-auto">
+              <i className="bx bxs-ghost text-9xl text-gray-300"></i>
+              <h1 className="text-2xl md:text-3xl mt-5 text-gray-300 font-bold">What's next?</h1>
+              <p className="text-base text-gray-300">Let's collaborate w/ me</p>
             </div>
           </div>
         </section>
