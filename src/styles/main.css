@@ -74,7 +74,7 @@
   }
 
   section.hero button.hero-hello-btn {
-    @apply rounded-[16.5px] bg-niodark py-[20px] text-white hover:bg-niodark2 hover:shadow-lg dark:bg-textdark2 dark:font-semibold dark:text-niodark dark:hover:text-niodark md:px-[25px] md:text-sm lg:px-[34px] lg:text-[18px];
+    @apply rounded-[16.5px] bg-niodark py-[20px] text-white hover:bg-niodark2 hover:shadow-lg dark:bg-niodark2 dark:font-semibold dark:text-niodark dark:hover:text-niodark md:px-[25px] md:text-sm lg:px-[34px] lg:text-[18px];
   }
 
   section.hero button.hero-cv-btn {
@@ -274,7 +274,7 @@
 
   .qualifications-btn-group {
     @apply mt-16 flex justify-start gap-3 px-6 font-medium max-sm:mt-12 md:gap-8;
-    color: #161617;
+    /* color: #161617; */
   }
 
   .projects-component {
