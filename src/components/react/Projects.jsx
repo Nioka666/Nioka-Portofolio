@@ -32,6 +32,7 @@ function Projects() {
         <section className="mt-8 grid grid-cols-2 max-sm:grid-cols-1 gap-5 lg:gap-5 max-sm:px-5 lg:mt-16">
           <ProjectBox st_title={"Nio"} nd_title={"Nime"} />
           <ProjectBox st_title={"Nio"} nd_title={"Libs"} />
+          <ProjectBox st_title={"N"} nd_title={"Quiz"} />
           <div className="card bg-nioprimary dark:bg-niodark max-sm:w-full sm:w-[410px] text-center h-96">
             <div className="my-auto">
               <i className="bx bxs-ghost text-9xl text-gray-300 dark:text-textdark2"></i>
