@@ -66,11 +66,11 @@
 
   /* hero section */
   section.hero {
-    @apply flex items-center justify-between rounded-2xl max-md:hidden md:mt-14 lg:mt-12 nionotebook:mt-10;
+    @apply flex items-center justify-between rounded-2xl max-md:hidden md:mt-14 lg:mt-12 nionotebook:mt-[50px];
   }
 
   section.hero picture.hero-pp {
-    @apply blob me-[25px] overflow-hidden md:mt-[-30px] md:w-[260px] lg:mt-[-70px] lg:h-[240px] lg:w-[345px] nionotebook:mt-[-15px] nionotebook:h-[315px] nionotebook:w-[325px];
+    @apply blob me-[25px] overflow-hidden md:mt-[-30px] md:w-[260px] lg:mt-[-70px] lg:h-[240px] lg:w-[345px] nionotebook:mt-[-15px] nionotebook:h-[307px] nionotebook:w-[317px];
   }
 
   section.hero button.hero-hello-btn {
