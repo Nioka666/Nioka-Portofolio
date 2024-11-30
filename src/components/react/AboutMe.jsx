@@ -58,7 +58,7 @@ function AboutMe() {
       <section id="about" className="about-component rounded-3xl max-sm:rounded-none border md:bg-white">
         {/* head/title */}
         {/* <PartTitle title={"about_me"} num={"001"} extraStyle={"text-[26px]"} hColor={"text-textdark2"} /> */}
-        <section className="flex justify-center mt-[-85px]">
+        <section className="flex justify-center mt-[-85px] max-sm:hidden">
           <button
             role="button"
             className="mouse-scroll-btn text-gray-600 dark:text-textdark2"
@@ -69,13 +69,13 @@ function AboutMe() {
           </button>
         </section>
         {/* divide */}
-        <section className="text-left mt-7 px-6 flex items-center justify-between">
-          <div className="part-number">
+        <section className="text-left mt-7 px-6 flex items-center justify-between max-sm:mt-[-65px]">
+          <div className="part-number mb-0">
             <h1 className="text-base font-normal text-textdark2 dark:text-textdark2 md:text-xl">
               001
             </h1>
           </div>
-          <h2 className={`mt-[5px] text-[26px] text-niodark2 dark:text-textdark max-sm:mt-0 md:text-5xl`}>
+          <h2 className="mt-[5px] text-[26px] text-niodark2 rounded-lg dark:text-textdark max-sm:mt-0 md:text-5xl max-sm:border max-sm:bg-white max-sm:px-4 max-sm:py-1">
             about_me
           </h2>
         </section>
