@@ -3,22 +3,22 @@ import PartTitle from "./PartTitle";
 function Experiences() {
   return (
     <>
-      <section id="qualification" className="qualifications-component">
+      <section id="experiences" className="experiences-component">
         <PartTitle title={"experiences"} num={"003"} />
 
-        <section className="max-md:mt-10 max-md:px-6 md:px-5 max-sm:mt-10 lg:mt-16 max-sm:mx-0 sm:mx-2">
+        <section className="max-lg:mt-10 max-md:px-6 max-sm:mt-10 lg:mt-16 max-sm:mx-0">
           <div role="tablist" className="tabs tabs-lifted tabs-lg">
             <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base dark:[--tab-bg:#161617] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Educations"
               defaultChecked />
             <div role="tabpanel" className="tab-content bg-white border-base-300 rounded-box p-6 pt-8 dark:bg-niodark4 dark:border-borderbtm">
-              <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
+              <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical sm:px-2">
                 <li>
                   <div className="timeline-middle">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                       className="h-5 w-5">
-                      <path fill-rule="evenodd"
+                      <path fillRule="evenodd"
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clip-rule="evenodd" />
+                        clipRule="evenodd" />
                     </svg>
                   </div>
                   <div className="timeline-start mb-10">
@@ -33,9 +33,9 @@ function Experiences() {
                   <div className="timeline-middle">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                       className="h-5 w-5">
-                      <path fill-rule="evenodd"
+                      <path fillRule="evenodd"
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clip-rule="evenodd" />
+                        clipRule="evenodd" />
                     </svg>
                   </div>
                   <div className="timeline-start mb-10">
@@ -50,9 +50,9 @@ function Experiences() {
                   <div className="timeline-middle">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                       className="h-5 w-5">
-                      <path fill-rule="evenodd"
+                      <path fillRule="evenodd"
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clip-rule="evenodd" />
+                        clipRule="evenodd" />
                     </svg>
                   </div>
                   <div className="timeline-start mb-10">
@@ -72,9 +72,9 @@ function Experiences() {
                   <div className="timeline-middle">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                       className="h-5 w-5">
-                      <path fill-rule="evenodd"
+                      <path fillRule="evenodd"
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clip-rule="evenodd" />
+                        clipRule="evenodd" />
                     </svg>
                   </div>
                   <div className="timeline-start mb-10">
@@ -89,9 +89,9 @@ function Experiences() {
                   <div className="timeline-middle">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                       className="h-5 w-5">
-                      <path fill-rule="evenodd"
+                      <path fillRule="evenodd"
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clip-rule="evenodd" />
+                        clipRule="evenodd" />
                     </svg>
                   </div>
                   <div className="timeline-start mb-10">

@@ -53,7 +53,7 @@ function Hero() {
     <>
       {/* Hero */}
       <section className="hero">
-        <section className="social-media">
+        <aside className="sosmed-nav">
           {mediaSocial.map((data) => (
             <a
               href={data.url}
@@ -68,7 +68,7 @@ function Hero() {
               ></i>
             </a>
           ))}
-        </section>
+        </aside>
         <section className="headline">
           <h1 className="lg-header">Adhim Niokagi</h1>
           <div className="lg-role">
@@ -106,7 +106,7 @@ function Hero() {
       <section className="sm-hero">
         {/* avatars */}
         <section className="avatar-wrap">
-          <section className="social-media">
+          <aside className="sosmed-nav">
             {mediaSocial.map((data) => (
               <a
                 href={data.url}
@@ -121,7 +121,7 @@ function Hero() {
                 ></i>
               </a>
             ))}
-          </section>
+          </aside>
           <picture className={`sm-avatar`}>
             <img src={avatar.src} alt="Adhim Niokagi Profile Picture" />
           </picture>
@@ -157,7 +157,7 @@ function Hero() {
       </section>
 
       {/* scroll button */}
-      <section className="hero-scroll-btn-group">
+      {/* <section className="hero-scroll-btn-group">
         <button
           role="button"
           className="mouse-scroll-btn text-gray-600 dark:text-textdark2"
@@ -166,7 +166,7 @@ function Hero() {
           <i className="bx bx-mouse me-1 text-2xl"></i>Scroll Down
           <i className="bx bx-down-arrow-alt ms-1 text-xl"></i>
         </button>
-      </section>
+      </section> */}
     </>
   );
 }

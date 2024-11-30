@@ -137,10 +137,24 @@ function Skills() {
         <PartTitle title={"technical_skills"} num={"002"} />
         {/* content */}
         <section className="skills-content-container">
-          <SkillCollapse
+          {/* <SkillCollapse
             title={"Front-End Development"}
             dataVariable={frontEndData}
-          />
+          /> */}
+          <div className="collapse collapse-arrow bg-white border-b-2 dark:border-borderbtm dark:border-none dark:bg-niodark3 max-sm:px-3 max-sm:py-2 py-3 px-4">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div className="collapse-title text-xl max-sm:text-base font-medium">Front-End Development</div>
+            <div className="collapse-content grid grid-cols-7 max-sm:grid-cols-4">
+              {frontEndData.map((iconData) => (
+                <img
+                  key={iconData.id}
+                  src={iconData.src}
+                  alt={iconData.id}
+                  className={`skills-icon mt-3 ${iconData.extra}`}
+                />
+              ))}
+            </div>
+          </div>
           <SkillCollapse
             title={"Back-End Development"}
             dataVariable={backEndData}

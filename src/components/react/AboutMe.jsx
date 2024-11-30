@@ -54,43 +54,75 @@ function AboutMe() {
   }, []);
 
   return (
-    <section id="about" className="about-component">
-      {/* head/title */}
-      <PartTitle title={"about_me"} num={"001"} extraStyle={"text-[26px]"} hColor={"text-textdark2"} />
-      {/* <hr className="mt-6 max-sm:w-[90%] lg:w-[95%] mx-auto"/> */}
-
-      {/* content */}
-      <section className="about-content">
-        <div className="flex items-center gap-7">
-          <img
-            src={niokaPhoto.src}
-            className="rounded-xl max-sm:w-[75px] sm:w-[100px]"
-            alt="Adhim Niokagi Photo"
-          />
-          <div className="cname">
-            <h1 className="text-[25px] font-bold">nioka.o
+    <>
+      <section id="about" className="about-component rounded-3xl max-sm:rounded-none border md:bg-white">
+        {/* head/title */}
+        {/* <PartTitle title={"about_me"} num={"001"} extraStyle={"text-[26px]"} hColor={"text-textdark2"} /> */}
+        <section className="flex justify-center mt-[-85px]">
+          <button
+            role="button"
+            className="mouse-scroll-btn text-gray-600 dark:text-textdark2"
+          >
+            <i className="bx bxs-message-alt-dots md:bx-mouse max-sm:text-xl md:text-3xl"></i>
+            {/* <i class='bx bxs-message-alt-dots'></i> */}
+            {/* <i className="bx bx-down-arrow-alt ms-1 text-xl"></i> */}
+          </button>
+        </section>
+        {/* divide */}
+        <section className="text-left mt-7 px-6 flex items-center justify-between">
+          <div className="part-number">
+            <h1 className="text-base font-normal text-textdark2 dark:text-textdark2 md:text-xl">
+              001
             </h1>
-            <div className="tag flex gap-2 mt-2">
-              <span className="bg-gray-200 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">Front-End</span>
-              <span className="bg-gray-200 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">UI/UX</span>
+          </div>
+          <h2 className={`mt-[5px] text-[26px] text-niodark2 dark:text-textdark max-sm:mt-0 md:text-5xl`}>
+            about_me
+          </h2>
+        </section>
+        {/* content */}
+        <section className="about-content">
+          <div className="flex items-center gap-7">
+            <img
+              src={niokaPhoto.src}
+              className="rounded-xl max-sm:w-[75px] sm:w-[100px]"
+              alt="Adhim Niokagi Photo"
+            />
+            <div className="cname">
+              <h1 className="text-[25px] font-bold">nioka.o
+              </h1>
+              <div className="tag flex gap-2 mt-2">
+                <span className="bg-gray-200 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">Front-End</span>
+                <span className="bg-gray-200 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">UI/UX</span>
+              </div>
             </div>
           </div>
-        </div>
-        {/* content */}
-        <div className="about-desc-wrapper">
-          <div className="about-mockup">
-            <p className="text-justify text-base max-sm:text-[15.5px] leading-7 max-md:leading-6 dark:text-textdark3">
-              {paragraph.text}
-            </p>
-            <button onClick={cvClick} role="button" className="mt-6 px-6 py-3 max-sm:py-[11.5px] max-sm:px-[23px] text-sm max-sm:text-[14px] bg-niodark text-nioprimary dark:bg-niodark2 border-none max-sm:rounded-[10px] dark:text-textdark3 flex items-center gap-2 font-normal rounded-xl active:scale-95 transition-all duration-0">
-              View CV
-              <i className="bx bx-file text-lg max-sm:text-base font-normal text-niosecondary dark:text-textdark3"></i>
-            </button>
+          {/* content */}
+          <div className="about-desc-wrapper">
+            <div className="about-mockup">
+              <p className="text-justify text-base max-sm:text-[14.9px] leading-7 max-md:leading-6 text-niodark2  dark:text-textdark2">
+                {paragraph.text}
+              </p>
+              <br />
+              <p
+                className="text-base text-niodark2 max-sm:text-[14.9px] text-justify leading-7 max-md:leading-6 dark:text-textdark2">
+                In addition to my skills, I've a strong learning passion and
+                stay updated with industry trends.
+              </p>
+              <button onClick={cvClick} role="button" className="mt-8 px-6 py-3 max-sm:py-[11.5px] max-sm:px-[23px] text-sm max-sm:text-[14px] bg-niodark text-nioprimary dark:bg-niodark2 border-none max-sm:rounded-[10px] dark:text-textdark3 flex items-center gap-2 font-normal rounded-xl active:scale-95 transition-all duration-0">
+                View CV
+                <i className="bx bx-file text-lg max-sm:text-base font-normal text-niosecondary dark:text-textdark3"></i>
+              </button>
+            </div>
           </div>
-        </div>
+        </section>
+        {/* end of content */}
       </section>
-      {/* end of content */}
-    </section>
+      <section className="bottom-desc mt-2 text-end sm:hidden">
+        <h5 className="text-sm me-4">
+          END OF ABOUT_ME
+        </h5>
+      </section>
+    </>
   );
 }
 
