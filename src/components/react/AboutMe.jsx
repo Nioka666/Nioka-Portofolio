@@ -75,7 +75,7 @@ function AboutMe() {
               001
             </h1>
           </div>
-          <h2 className="mt-[5px] text-[26px] text-niodark max-sm:rounded-lg dark:text-textdark max-sm:mt-0 md:text-5xl max-sm: max-sm:bg-white max-sm:px-4 max-sm:py-1">
+          <h2 className="mt-[5px] text-[23px] text-niodark max-sm:rounded-lg dark:text-textdark max-sm:mt-0 md:text-5xl max-sm:bg-nioprimary max-sm:px-5 max-sm:py-1">
             about_me
           </h2>
         </section>
