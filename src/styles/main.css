@@ -239,11 +239,11 @@
   }
   /* end of hero */
   .about-component {
-    @apply mt-[80px] rounded-3xl py-10 max-md:mx-0 max-sm:mt-[85px] lg:px-10 lg:py-14;
+    @apply mt-[80px] rounded-3xl py-10 max-md:mx-0 max-sm:mt-[100px] lg:px-10 lg:py-14;
   }
 
   .about-content {
-    @apply mt-12 grid px-6 max-sm:mt-12 max-sm:px-6;
+    @apply mt-12 grid px-6 max-sm:mt-14 max-sm:px-6;
   }
 
   .about-desc-wrapper {
