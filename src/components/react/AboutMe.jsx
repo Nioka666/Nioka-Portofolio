@@ -55,7 +55,7 @@ function AboutMe() {
 
   return (
     <>
-      <section id="about" className="about-component rounded-3xl max-sm:rounded-none  bg-white">
+      <section id="about" className="about-component rounded-3xl max-sm:rounded-none border dark:border-borderbtm bg-white dark:bg-niodark3">
         {/* head/title */}
         {/* <PartTitle title={"about_me"} num={"001"} extraStyle={"text-[26px]"} hColor={"text-textdark2"} /> */}
         <section className="flex justify-center mt-[-85px] max-sm:hidden">
@@ -70,12 +70,12 @@ function AboutMe() {
         </section>
         {/* divide */}
         <section className="text-left mt-7 px-6 flex items-center justify-between max-sm:mt-[-65px]">
-          <div className="part-number border-none mb-0">
-            <h1 className="text-base font-normal text-niodark dark:text-textdark2 md:text-xl">
+          <div className="part-number max-sm:border-[1.3px] mb-0">
+            <h1 className="text-base font-normal text-niodark dark:text-textdark md:text-xl">
               001
             </h1>
           </div>
-          <h2 className="mt-[5px] text-[23px] text-niodark max-sm:rounded-lg dark:text-textdark max-sm:mt-0 md:text-5xl max-sm:bg-nioprimary max-sm:px-5 max-sm:py-1">
+          <h2 className="mt-[5px] text-[23px] text-niodark2 max-sm:rounded-lg dark:text-textdark max-sm:mt-0 md:text-5xl max-sm:border-[1.3px] max-sm:bg-white dark:bg-niodark3 dark:border-borderbtm max-sm:px-5 max-sm:py-1">
             about_me
           </h2>
         </section>
@@ -108,7 +108,7 @@ function AboutMe() {
                 In addition to my skills, I've a strong learning passion and
                 stay updated with industry trends.
               </p>
-              <button onClick={cvClick} role="button" className="mt-8 px-6 py-3 max-sm:py-[11.5px] max-sm:px-[23px] text-sm max-sm:text-[14px] bg-niodark text-nioprimary dark:bg-niodark2 -none max-sm:rounded-[10px] dark:text-textdark3 flex items-center gap-2 font-normal rounded-xl active:scale-95 transition-all duration-0">
+              <button onClick={cvClick} role="button" className="mt-8 px-6 py-3 max-sm:py-[11.5px] max-sm:px-[23px] text-sm max-sm:text-[14px] bg-niodark text-nioprimary dark:bg-niodark2 border-none max-sm:rounded-[10px] dark:text-textdark3 flex items-center gap-2 font-normal rounded-xl active:scale-95 transition-all duration-0">
                 View CV
                 <i className="bx bx-file text-lg max-sm:text-base font-normal text-niosecondary dark:text-textdark3"></i>
               </button>
