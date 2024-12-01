@@ -4,7 +4,7 @@ function Journey() {
   return (
     <>
       <section id="journey" className="journey-component">
-        <PartTitle title={"my_journey"} num={"003"} />
+        <PartTitle title={"my_journey"} num={"002"} />
 
         <section className="max-lg:mt-10 max-md:px-6 max-sm:mt-10 lg:mt-16 max-sm:mx-0">
           <div role="tablist" className="tabs tabs-lifted tabs-lg">

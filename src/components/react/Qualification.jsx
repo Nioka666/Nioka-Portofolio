@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Educations from "./Educations";
-import Experiences from "./Experiences";
+import Experiences from "./Journey";
 import PartTitle from "./PartTitle";
 
 function Qualification() {
