@@ -55,7 +55,7 @@ function AboutMe() {
 
   return (
     <>
-      <section id="about" className="about-component rounded-3xl max-sm:rounded-none sm:border max-sm:border-t max-sm:border-b dark:border-borderbtm bg-white dark:bg-niodark3">
+      <section id="about" className="about-component rounded-3xl max-sm:rounded-none sm:border max-sm:border-t max-sm:border-b dark:border-borderbtm bg-white dark:bg-niodark4">
         {/* head/title */}
         {/* <PartTitle title={"about_me"} num={"001"} extraStyle={"text-[26px]"} hColor={"text-textdark2"} /> */}
         <section className="flex justify-center mt-[-85px] max-sm:hidden">
@@ -75,7 +75,7 @@ function AboutMe() {
               001
             </h1>
           </div>
-          <h2 className="mt-[5px] text-[23px] text-niodark2 max-sm:rounded-lg dark:text-textdark max-sm:mt-0 md:text-5xl max-sm:border-[1.3px] max-sm:bg-nioprimary dark:bg-niodark3 dark:border-borderbtm max-sm:px-5 max-sm:py-1">
+          <h2 className="mt-[5px] text-[23px] text-niodark2 max-sm:rounded-lg dark:text-textdark max-sm:mt-0 md:text-5xl max-sm:border-[1.3px] max-sm:bg-nioprimary dark:bg-niodark dark:border-borderbtm max-sm:px-5 max-sm:py-1">
             {/* about_me */}
             About me
           </h2>
