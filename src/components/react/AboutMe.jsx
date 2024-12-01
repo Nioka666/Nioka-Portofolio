@@ -85,9 +85,9 @@ function AboutMe() {
             </h1>
           </div>
           <div className="sm:hidden"></div>
-          <h2 className="mt-[5px] text-[23px] text-niodark2 max-sm:rounded-lg dark:text-textdark max-sm:mt-0 md:text-[42px] max-sm:border-[1.3px] max-sm:bg-nioprimary dark:bg-niodark dark:border-borderbtm max-sm:px-5 max-sm:py-1">
+          <h2 className="mt-[5px] text-[23px] text-niodark2 max-sm:rounded-lg dark:text-textdark max-sm:mt-0 md:text-[42px] max-sm:border-[1.3px] max-sm:bg-nioprimary dark:bg-niodark dark:border-borderbtm max-sm:px-5 max-sm:py-2">
             {/* about_me */}
-            About me
+            about_me
           </h2>
         </section>
         {/* content */}
