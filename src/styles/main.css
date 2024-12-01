@@ -296,7 +296,7 @@
   }
 
   .skills-component img.skills-icon {
-    @apply w-[65px] cursor-pointer select-none rounded-lg grayscale transition-all ease-in-out hover:grayscale-0 max-md:w-[50px] max-sm:w-[50px] max-sm:rounded-md;
+    @apply w-[65px] cursor-pointer select-none rounded-lg grayscale transition-all ease-in-out hover:grayscale-0 max-md:w-[50px] max-sm:w-[49px] max-sm:rounded-md;
   }
 
   /* journey part */
