@@ -65,7 +65,7 @@ function Journey() {
               </ul>
             </div>
 
-            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base  dark:[--tab-bg:#161617] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="journey" />
+            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base  dark:[--tab-bg:#161617] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Experiences" />
             <div role="tabpanel" className="tab-content bg-white border-base-300 dark:bg-niodark4 dark:border-borderbtm rounded-box p-6 pt-8">
               <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical sm:px-3">
                 <li>

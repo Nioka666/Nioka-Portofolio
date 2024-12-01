@@ -115,7 +115,7 @@ function AboutMe() {
               </p>
               <br />
               <p
-                className="text-base text-niodark2 max-sm:text-[14.9px] text-justify leading-7 max-md:leading-6 dark:text-textdark2">
+                className="text-base max-sm:hidden text-niodark2 max-sm:text-[14.9px] text-justify leading-7 max-md:leading-6 dark:text-textdark2">
                 In addition to my skills, I've a strong learning passion and
                 stay updated with industry trends.
               </p>
