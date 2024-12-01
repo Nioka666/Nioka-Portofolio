@@ -114,7 +114,7 @@ function BottomNav() {
           className={`${shadowNav == true ? "b-nav-shadow" : "shadow-none"} flex h-[60px] w-full items-center justify-between px-7`}
         >
           <a href="/">
-            <h1 className="font-medium dark:text-textdark4 max-sm:text-sm md:text-lg lg:text-lg">
+            <h1 className="font-semibold dark:text-textdark4 max-sm:text-sm md:text-lg lg:text-lg">
               nioka.o
             </h1>
           </a>
