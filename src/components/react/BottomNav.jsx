@@ -130,7 +130,7 @@ function BottomNav() {
           <div className="rounded-t-3xl bg-white dark:bg-niodark3 dark:shadow-sm">
             <div className="swipper relative top-[10px] mx-auto mt-10 h-[5.5px] w-[70px] rounded-full bg-gray-200 dark:bg-textdark2"></div>
             {/* content wrapper */}
-            <div className="h-[150px] rounded-t-3xl px-4 pt-8">
+            <div className="h-[240px] rounded-t-3xl px-4 pt-8">
               <div className="grid grid-cols-3 justify-items-center">
                 {menuData.map((data, index) => (
                   <a
@@ -140,7 +140,7 @@ function BottomNav() {
                     key={index}
                     onClick={() => setDrawerOpen(false)}
                   >
-                    <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center text-gray-600 dark:text-textdark2">
+                    <div className="box grid w-[100px] basis-1/3 cursor-pointer p-3 text-center text-textdark5 hover:text-black dark:text-textdark2">
                       <i className={data.icon}></i>
                       <span className="mt-[5px] text-sm">{data.name}</span>
                     </div>

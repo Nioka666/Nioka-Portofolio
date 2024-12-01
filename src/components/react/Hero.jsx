@@ -26,13 +26,7 @@ function Hero() {
     },
   ];
 
-  const scrollDown = () => {
-    window.scrollBy({
-      top: 650,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
+
 
   const XLine = ({ n }) => {
     const elements = [];

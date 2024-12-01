@@ -26,6 +26,7 @@ export default {
         textdark2: "#8f8f8f",
         textdark3: "#bfc0c3",
         textdark4: "#a9aaac",
+        textdark5: "#58595a",
         borderbtm: "#434346",
       },
     },

@@ -12,6 +12,14 @@ function AboutMe() {
     text: "I am a student of Electronic Engineering Polytechnic Institute of Surabaya majoring in informatics Engineering, as well as a Front-End Web Developer and UI/UX Enthusiast, I am highly dedicated to learn more in this field. I have enough experience with some of the latest technology frameworks such as ReactJs, Express.js, and some of the latest Javascript ecosystems.",
   };
 
+  const scrollDown = () => {
+    window.scrollBy({
+      top: 570,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   function cvClick() {
     window.open(CV, "_blank");
   }
@@ -55,15 +63,16 @@ function AboutMe() {
 
   return (
     <>
-      <section id="about" className="about-component rounded-3xl max-sm:rounded-none sm:border max-sm:border-t max-sm:border-b dark:border-borderbtm bg-white dark:bg-niodark4">
+      <section id="about" className="about-component rounded-3xl max-sm:rounded-none sm:border max-sm:border-t max-sm:border-b dark:border-borderbtm bg-white dark:bg-niodark4 md:mx-4">
         {/* head/title */}
         {/* <PartTitle title={"about_me"} num={"001"} extraStyle={"text-[26px]"} hColor={"text-textdark2"} /> */}
         <section className="flex justify-center mt-[-85px] max-sm:hidden">
           <button
             role="button"
             className="mouse-scroll-btn text-gray-600 dark:text-textdark2"
+            onClick={scrollDown}
           >
-            <i className="bx bxs-message-alt-dots md:bx-mouse max-sm:text-xl md:text-3xl"></i>
+            <i className="bx bx-mouse max-sm:text-xl md:text-3xl"></i>
             {/* <i class='bx bxs-message-alt-dots'></i> */}
             {/* <i className="bx bx-down-arrow-alt ms-1 text-xl"></i> */}
           </button>
@@ -75,7 +84,7 @@ function AboutMe() {
               001
             </h1>
           </div>
-          <h2 className="mt-[5px] text-[23px] text-niodark2 max-sm:rounded-lg dark:text-textdark max-sm:mt-0 md:text-5xl max-sm:border-[1.3px] max-sm:bg-nioprimary dark:bg-niodark dark:border-borderbtm max-sm:px-5 max-sm:py-1">
+          <h2 className="mt-[5px] text-[23px] text-niodark2 max-sm:rounded-lg dark:text-textdark max-sm:mt-0 md:text-[42px] max-sm:border-[1.3px] max-sm:bg-nioprimary dark:bg-niodark dark:border-borderbtm max-sm:px-5 max-sm:py-1">
             {/* about_me */}
             About me
           </h2>

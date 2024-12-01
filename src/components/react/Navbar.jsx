@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { menuData } from "../../data/nav_anchors";
 
 function Navbar() {
@@ -6,6 +6,7 @@ function Navbar() {
   const [scrollDirection, setScrollDirection] = useState("up");
   const [lastScrollY, setLastScrollY] = useState(0);
   const [themeNow, setThemeNow] = useState("light");
+  const Nav = useRef(null);
 
   function toggleTheme() {
     const currentTheme = localStorage.getItem("theme");
@@ -54,7 +55,7 @@ function Navbar() {
               <div className="grid grid-cols-3 gap-2 p-5">
                 {menuData.map((menu, index) => (
                   <a href={menu.url} key={index}>
-                    <div className="box grid w-[100px] cursor-pointer p-3 text-center">
+                    <div className="box grid w-[100px] text-textdark5 hover:text-black cursor-pointer p-3 text-center">
                       <i className={menu.icon}></i>
                       <span className="text-xs">{menu.name}</span>
                     </div>
@@ -83,6 +84,14 @@ function Navbar() {
         setScrollDirection("up");
       }
       setLastScrollY(window.scrollY);
+
+      if (Nav.current) {
+        if (window.scrollY > 400) {
+          Nav.current.classList.add("px-[165px]");
+        } else {
+          Nav.current.classList.remove("px-[165px]");
+        }
+      }
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -94,7 +103,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className={`nav ${scrollDirection === "down" ? "hide" : "show"}`}>
+      <nav className={`nav ${scrollDirection === "down" ? "hide" : "show"}`} ref={Nav}>
         {/* nav floating island */}
         <section className="transition-none max-md:hidden max-sm:hidden">
           <a href="/">

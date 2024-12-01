@@ -45,7 +45,7 @@
   } */
 
   nav {
-    @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center sm:top-6 sm:h-[75px] sm:px-8 lg:px-[115px];
+    @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center sm:top-7 sm:h-[75px] sm:px-8 lg:px-[115px];
     transition: all 0.37s ease;
   }
 
@@ -83,7 +83,7 @@
 
   /* hero section */
   section.hero {
-    @apply flex items-center justify-between rounded-2xl max-md:hidden md:mt-14 lg:mt-12 nionotebook:mt-[52.5px];
+    @apply flex items-center justify-between rounded-2xl max-md:hidden md:mt-14 lg:mt-12 nionotebook:mt-[48px];
   }
 
   section.hero picture.hero-pp {
@@ -152,7 +152,7 @@
   } */
 
   aside.sosmed-nav {
-    @apply flex flex-col gap-5 max-sm:gap-4;
+    @apply flex flex-col gap-5 max-sm:gap-4 lg:ms-5;
   }
 
   section.headline {
@@ -241,6 +241,10 @@
   .about-component {
     @apply mt-[80px] rounded-3xl py-10 max-md:mx-0 max-sm:mt-[120px] lg:px-10 lg:py-14;
   }
+/* 
+  .color {
+    color: #58595a;
+  } */
 
   .about-content {
     @apply mt-12 grid px-6 max-sm:mt-14 max-sm:px-6;
@@ -268,7 +272,7 @@
 
   /* skills section */
   .skills-component {
-    @apply mt-[75px] h-full py-10 max-sm:mt-12 lg:px-4;
+    @apply my-10 h-full py-10 max-sm:mt-12 lg:px-4;
   }
 
   .skills-content-container {
@@ -297,7 +301,7 @@
 
   /* experiences part */
   .experiences-component {
-    @apply my-10 py-10 max-sm:mt-1 lg:px-4;
+    @apply my-12 sm:mt-24 max-sm:my-12 py-10 lg:px-4;
   }
 
   .experiences-btn-group {
@@ -306,7 +310,7 @@
 
   /* projects */
   .projects-component {
-    @apply my-12 py-10 max-sm:mt-12 lg:px-4;
+    @apply my-8 py-10 max-sm:mt-1 max-sm:my-0 max-sm:py-0 lg:px-4;
   }
 
   .projects-content {

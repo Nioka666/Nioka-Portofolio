@@ -1,25 +1,25 @@
 export const menuData = [
     {
       name: "About",
-      icon: "bx bx-user text-3xl",
+      icon: "bx bx-face text-3xl",
+      url: "#about",
+      notFoundURL: "https://nioka.vercel.app/#about"
+    },
+    {
+      name: "Journey",
+      icon: "bx bx-briefcase text-3xl",
       url: "#about",
       notFoundURL: "https://nioka.vercel.app/#about"
     },
     {
       name: "Skills",
-      icon: "bx bx-universal-access text-3xl",
+      icon: "bx bx-code-alt text-3xl",
       url: "#skills",
       notFoundURL: "https://nioka.vercel.app/#skills"
     },
-    // {
-    //   name: "Qualifies",
-    //   icon: "bx bx-file text-3xl",
-    //   url: "#qualification",
-    //   notFoundURL: "https://nioka.vercel.app/#qualification"
-    // },
     {
-      name: "projects",
-      icon: "bx bx-image text-3xl",
+      name: "Projects",
+      icon: "bx bx-blanket text-3xl",
       url: "#projects",
       notFoundURL: "https://nioka.vercel.app/#portfolio"
     },
