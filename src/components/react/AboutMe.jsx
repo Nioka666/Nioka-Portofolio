@@ -79,11 +79,12 @@ function AboutMe() {
         </section>
         {/* divide */}
         <section className="text-left mt-7 px-6 flex items-center justify-between max-sm:mt-[-65px]">
-          <div className="part-number max-sm:border-[1.3px] mb-0 max-sm:bg-nioprimary">
+          <div className="part-number max-sm:border-[1.3px] mb-0 max-sm:bg-nioprimary max-sm:hidden">
             <h1 className="text-base font-normal text-niodark dark:text-textdark md:text-xl">
               001
             </h1>
           </div>
+          <div className="sm:hidden"></div>
           <h2 className="mt-[5px] text-[23px] text-niodark2 max-sm:rounded-lg dark:text-textdark max-sm:mt-0 md:text-[42px] max-sm:border-[1.3px] max-sm:bg-nioprimary dark:bg-niodark dark:border-borderbtm max-sm:px-5 max-sm:py-1">
             {/* about_me */}
             About me
