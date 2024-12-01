@@ -239,7 +239,7 @@
   }
   /* end of hero */
   .about-component {
-    @apply mt-[80px] rounded-3xl py-10 max-md:mx-0 max-sm:mt-[100px] lg:px-10 lg:py-14;
+    @apply mt-[80px] rounded-3xl py-10 max-md:mx-0 max-sm:mt-[120px] lg:px-10 lg:py-14;
   }
 
   .about-content {
