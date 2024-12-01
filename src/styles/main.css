@@ -180,7 +180,9 @@
 
   /* button go up */
   .button-go-top {
-    @apply fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full bg-white text-black shadow-sm transition-none hover:bg-nioprimary dark:bg-niodark2 dark:text-textdark2 max-md:bottom-20 max-md:right-5 max-sm:h-[38px] max-sm:w-[38px] max-sm:rounded-xl;
+    @apply fixed bottom-12 right-10 h-[55px] w-[55px] rounded-full text-black transition-none border bg-[#fafafa71] dark:bg-[#0e0e1035] dark:border-borderbtm dark:text-textdark2 max-md:bottom-20 max-md:right-5 max-sm:h-[38px] max-sm:w-[38px] max-sm:rounded-xl;
+    /* background-color: #0e0e1035; */
+    backdrop-filter: blur(5px);
   }
 
   /*  */
