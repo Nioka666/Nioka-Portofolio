@@ -63,7 +63,7 @@ function AboutMe() {
 
   return (
     <>
-      <section id="about" className="about-component rounded-3xl max-sm:rounded-none sm:border max-sm:border-t max-sm:border-b dark:border-borderbtm bg-white dark:bg-niodark4 md:mx-4">
+      <section id="about" className="about-component rounded-3xl max-sm:rounded-none sm:border-[1.7px] max-sm:border-t max-sm:border-b dark:border-borderbtm bg-white dark:bg-niodark4 md:mx-4">
         {/* head/title */}
         {/* <PartTitle title={"about_me"} num={"001"} extraStyle={"text-[26px]"} hColor={"text-textdark2"} /> */}
         <section className="flex justify-center mt-[-85px] max-sm:hidden">

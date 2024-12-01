@@ -57,7 +57,7 @@ function Navbar() {
                   <a href={menu.url} key={index}>
                     <div className="box grid w-[100px] text-textdark5 hover:text-black cursor-pointer p-3 text-center">
                       <i className={menu.icon}></i>
-                      <span className="text-xs">{menu.name}</span>
+                      <span className="text-[13.5px] mt-1">{menu.name}</span>
                     </div>
                   </a>
                 ))}

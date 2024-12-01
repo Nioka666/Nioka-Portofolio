@@ -238,7 +238,7 @@
   }
 
   button.mouse-scroll-btn {
-    @apply flex items-center justify-center rounded-full bg-transparent border p-3 px-4 max-sm:mt-5 bg-white max-sm:bg-nioprimary text-base font-normal transition-all hover:translate-y-1;
+    @apply flex items-center justify-center rounded-full bg-transparent border md:border-[1.7px] p-3 px-4 max-sm:mt-5 bg-white dark:bg-niodark4 dark:border-borderbtm max-sm:bg-nioprimary text-base font-normal active:scale-95;
   }
   /* end of hero */
   .about-component {
