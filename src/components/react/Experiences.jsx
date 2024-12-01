@@ -1,9 +1,9 @@
 import PartTitle from "./PartTitle";
 
-function Experiences() {
+function Journey() {
   return (
     <>
-      <section id="experiences" className="experiences-component">
+      <section id="journey" className="journey-component">
         <PartTitle title={"my_journey"} num={"003"} />
 
         <section className="max-lg:mt-10 max-md:px-6 max-sm:mt-10 lg:mt-16 max-sm:mx-0">
@@ -65,7 +65,7 @@ function Experiences() {
               </ul>
             </div>
 
-            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base  dark:[--tab-bg:#161617] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Experiences" />
+            <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base  dark:[--tab-bg:#161617] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="journey" />
             <div role="tabpanel" className="tab-content bg-white border-base-300 dark:bg-niodark4 dark:border-borderbtm rounded-box p-6 pt-8">
               <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical sm:px-3">
                 <li>
@@ -109,4 +109,4 @@ function Experiences() {
   );
 }
 
-export default Experiences;
+export default Journey;

@@ -8,7 +8,7 @@ export const menuData = [
     {
       name: "Journey",
       icon: "bx bx-briefcase text-3xl",
-      url: "#about",
+      url: "#journey",
       notFoundURL: "https://nioka.vercel.app/#about"
     },
     {

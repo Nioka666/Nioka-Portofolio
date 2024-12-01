@@ -299,12 +299,12 @@
     @apply w-[65px] cursor-pointer select-none rounded-lg grayscale transition-all ease-in-out hover:grayscale-0 max-md:w-[50px] max-sm:w-[50px] max-sm:rounded-md;
   }
 
-  /* experiences part */
-  .experiences-component {
+  /* journey part */
+  .journey-component {
     @apply my-12 sm:mt-24 max-sm:my-12 py-10 lg:px-4;
   }
 
-  .experiences-btn-group {
+  .journey-btn-group {
     @apply mt-16 flex justify-start gap-3 px-6 font-medium max-sm:mt-12 md:gap-8;
   }
 
