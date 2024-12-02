@@ -129,7 +129,7 @@ function AboutMe() {
         {/* end of content */}
       </section>
       <section className="bottom-desc mt-3 text-end sm:hidden">
-        <h5 className="text-xs me-4 text-textdark2">
+        <h5 className="text-[8px] me-4 text-textdark2">
           END OF ABOUT_ME
         </h5>
       </section>
