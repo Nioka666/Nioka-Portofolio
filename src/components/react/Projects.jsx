@@ -1,7 +1,7 @@
 import PartTitle from "./PartTitle";
 
 function Projects() {
-  function ProjectBox({ st_title, nd_title, desc, url }) {
+  function ProjectBox({ st_title, nd_title, st_tech, nd_tech, desc, url }) {
     return (
       <>
         <div
@@ -9,8 +9,8 @@ function Projects() {
           <div className="card-body text-left">
             <h1 className="text-6xl sm:text-7xl">{st_title} <br /> {nd_title}</h1>
             <div className="tag flex gap-2 mt-2">
-              <span className="bg-gray-100 dark:bg-borderbtm px-3 py-1 text-xs rounded-md">React.js</span>
-              <span className="bg-gray-100 dark:bg-borderbtm px-3 py-1 text-xs rounded-md">ExpressJS</span>
+              <span className="bg-gray-100 dark:bg-borderbtm px-3 py-1 text-xs rounded-md">{st_tech}</span>
+              <span className="bg-gray-100 dark:bg-borderbtm px-3 py-1 text-xs rounded-md">{nd_tech}</span>
             </div>
             <p className="mt-4 text-[13px] font-normal dark:text-textdark4">
               {desc}
@@ -39,11 +39,11 @@ function Projects() {
       <section id="projects" className="projects-component">
         <PartTitle title={"my_projects"} num={"004"} />
         <section className="projects-content">
-          <ProjectBox st_title={"Nio"} nd_title={"Nime"} desc={"Anime streaming web without ads, with administration system and allows user subscribtion with several benefits"} url={"https://github.com/Nioka666/NioNime"} />
+          <ProjectBox st_title={"Nio"} nd_title={"Nime"} desc={"Anime streaming web without ads, with administration system and allows user subscribtion with several benefits"} url={"https://github.com/Nioka666/NioNime"} st_tech={"React.js"} nd_tech={"ExpressJS"} />
 
-          <ProjectBox st_title={"Nio"} nd_title={"Libs"} desc={"Dynamic library website with fresh look and administration support"} url={"https://github.com/Nioka666/NioLibs"} />
+          <ProjectBox st_title={"Nio"} nd_title={"Libs"} desc={"Dynamic library website with fresh look and administration support"} url={"https://github.com/Nioka666/NioLibs"} st_tech={"React.js"} nd_tech={"ExpressJS"} />
 
-          <ProjectBox st_title={"N"} nd_title={"Quiz"} desc={"A Simple mobile/android-based quiz app, with a fresh look and fun quiz content"} url={"https://github.com/Nioka666/NQuiz"} />
+          <ProjectBox st_title={"N"} nd_title={"Quiz"} desc={"A Simple mobile/android-based quiz app, with a fresh look and fun quiz content"} url={"https://github.com/Nioka666/NQuiz"} st_tech={"Java"} nd_tech={"Kotlin"} />
           <div className="card bg-nioprimary dark:bg-niodark max-sm:w-full sm:w-[410px] text-center h-80">
             <div className="my-auto">
               <i className="bx bxs-ghost text-9xl max-sm:text-[110px] text-gray-300 dark:text-textdark5"></i>
