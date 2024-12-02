@@ -7,6 +7,7 @@ function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [themeNow, setThemeNow] = useState("light");
   const Nav = useRef(null);
+  const Island = useRef(null);
 
   function toggleTheme() {
     const currentTheme = localStorage.getItem("theme");
@@ -86,10 +87,17 @@ function Navbar() {
       setLastScrollY(window.scrollY);
 
       if (Nav.current) {
-        if (window.scrollY > 400) {
-          Nav.current.classList.add("px-[165px]");
+        if (window.scrollY > 320) {
+          Nav.current.classList.add("sm:px-[300px]");
+          // Nav.current.classList.add("sm:px-[300px]");
+          Island.current.classList.add("border");
+          Island.current.classList.add("dark:border-borderbtm");
         } else {
-          Nav.current.classList.remove("px-[165px]");
+          Nav.current.classList.remove("sm:px-[300px]");
+          // Nav.current.classList.remove("sm:px-[300px]");
+          Island.current.classList.remove("border");
+          Island.current.classList.remove("dark:border-borderbtm");
+
         }
       }
     }
@@ -105,7 +113,7 @@ function Navbar() {
     <>
       <nav className={`nav ${scrollDirection === "down" ? "hide" : "show"}`} ref={Nav}>
         {/* nav floating island */}
-        <section className="transition-none max-md:hidden max-sm:hidden">
+        <section className="transition-none max-md:hidden max-sm:hidden" ref={Island}>
           <a href="/">
             <h1 className="text-base font-medium md:text-base lg:text-base">
               Adhim Niokagi

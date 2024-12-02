@@ -23,10 +23,10 @@ export const menuData = [
       url: "#projects",
       notFoundURL: "https://nioka.vercel.app/#portfolio"
     },
-    // {
-    //   name: "Contact",
-    //   icon: "uil uil-user-square text-3xl",
-    //   url: "#contact",
-    //   notFoundURL: "https://nioka.vercel.app/#contact"
-    // },
+    {
+      name: "Contact",
+      icon: "bx bx-phone text-3xl",
+      url: "#contacts",
+      notFoundURL: "https://nioka.vercel.app/#contact"
+    },
   ];

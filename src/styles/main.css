@@ -45,7 +45,7 @@
   } */
 
   nav {
-    @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center sm:top-7 sm:h-[75px] sm:px-8 lg:px-[115px];
+    @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center sm:top-7 sm:h-[75px] sm:px-8 lg:px-[150px];
     transition: all 0.37s ease;
   }
 
@@ -197,7 +197,7 @@
   }
 
   .b-nav-shadow {
-    box-shadow: 0px -1px 6px #0000000c;
+    box-shadow: 0px -1px 6px #24242406;
   }
 
   /* end of hero section */
@@ -217,13 +217,13 @@
     }
   }
   footer {
-    @apply flex h-72 items-end justify-center pb-16 dark:border-none;
+    @apply flex h-60 items-end justify-center pb-1 max-sm:pb-12 dark:border-none;
   }
   footer section.foot-header {
     @apply text-center;
   }
   section.foot-header h1 {
-    @apply text-base font-medium sm:text-lg md:text-2xl;
+    @apply text-base font-medium sm:text-lg md:text-xl;
   }
   section.foot-header h2 {
     @apply mt-1 text-[10px] text-gray-400 sm:text-sm;
@@ -322,11 +322,11 @@
 
   /* contacts */
   .contacts-component {
-    @apply my-20 max-sm:my-0 max-sm:mb-20 lg:px-4;
+    @apply my-12 py-10 max-sm:my-0 max-sm:mb-20 lg:px-4;
   }
 
   .contacts-content {
-    @apply mt-16 grid grid-cols-3 gap-5 max-sm:mt-8 max-sm:grid-cols-1 max-sm:gap-3 max-sm:px-6;
+    @apply mt-14 max-sm:mt-7 rounded-2xl bg-white border dark:border-borderbtm dark:bg-niodark3 p-9 py-10 max-sm:p-7 max-sm:py-8;
   }
 
   /* blob animation */
