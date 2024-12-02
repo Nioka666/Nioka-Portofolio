@@ -1,7 +1,7 @@
 function ProjectDetails({ url, slug, title, banner_img, date, p1, p2, p3, github_url }) {
     return (
         <>
-            <section className="navigation mt-[-20px] flex justify-between px-16 max-sm:px-[22px] max-sm:mt-[-40px]">
+            <section className="navigation mt-[-20px] flex justify-between px-16 max-sm:px-[21px] max-sm:mt-[-40px]">
                 <div className="breadcrumbs text-sm">
                     <ul>
                         <li>
@@ -14,7 +14,7 @@ function ProjectDetails({ url, slug, title, banner_img, date, p1, p2, p3, github
                 </div>
                 <div className="blank"></div>
             </section>
-            <section className="project-details-component mt-6 px-[22px] md:px-16">
+            <section className="project-details-component mt-6 px-[21px] md:px-16">
                 <header className="grid gap-7">
                     <h1 className="text-5xl max-sm:text-[33px] max-sm:leading-[38px] font-semibold dark:text-textdark3">{title}</h1>
                     <span className="text-gray-500 max-sm:text-sm max-sm:mt-[-10px]">Last update {date}</span>
