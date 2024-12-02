@@ -17,11 +17,11 @@ function ProjectDetails({ url, slug, title, banner_img, date, p1, p2, p3, github
             <section className="project-details-component mt-6 px-5">
                 <header className="grid gap-7">
                     <h1 className="text-5xl max-sm:text-3xl font-semibold dark:text-textdark3">{title}</h1>
-                    <span className="text-gray-500 max-sm:text-sm max-sm:mt-[-10px]">{date}</span>
+                    <span className="text-gray-500 max-sm:text-sm max-sm:mt-[-10px]">Last update {date}</span>
                     <div className="rectangle skeleton w-full h-[200px] max-sm:h-[180px] bg-gray-200 dark:bg-niodark3 rounded-xl"></div>
                     {/* <img src={banner_img.src} alt="" className="w-full h-[200px] rounded-xl" /> */}
                 </header>
-                <article className="mt-12 max-sm:mt-10 text-left text-[14.8px] sm:text-[17px] [word-spacing:5px] max-sm:[word-spacing:2.5px] leading-[26.5px] text-textdark5 dark:text-textdark4">
+                <article className="mt-12 max-sm:mt-8 text-left text-[14.8px] sm:text-[17px] [word-spacing:5px] max-sm:[word-spacing:2.5px] leading-[26.5px] text-textdark5 dark:text-textdark4">
                     <p>
                         {p1}
                     </p>
