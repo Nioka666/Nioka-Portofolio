@@ -4,14 +4,14 @@
             "handle": "filesystem"
         },
         {
-            "src": "/(.*)",
-            "status": 404,
-            "dest": "/404.html"
+            "src": "/projects/(.*)",
+            "dest": "/projects/[project].html",
+            "status": 200
         },
         {
-            "src": "/project/(.*)",
-            "status": 200,
-            "dest": "/404.html"
+            "src": "/(.*)",
+            "dest": "/404.html",
+            "status": 404
         }
     ]
 }
