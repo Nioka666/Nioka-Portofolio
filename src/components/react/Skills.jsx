@@ -24,19 +24,19 @@ import PartTitle from "./PartTitle";
 gsap.registerPlugin(ScrollTrigger);
 
 function Skills() {
-  useEffect(() => {
-    gsap.from(".skills-collapse", {
-      opacity: 0,
-      y: 30,
-      duration: 0.5,
-      stagger: 0.1,
-      scrollTrigger: {
-        trigger: ".skills-collapse",
-        start: "top 90%",
-        toggleActions: "play none none none",
-      },
-    })
-  }, [])
+  // useEffect(() => {
+  //   gsap.from(".skills-collapse", {
+  //     opacity: 0,
+  //     y: 30,
+  //     duration: 0.5,
+  //     stagger: 0.1,
+  //     scrollTrigger: {
+  //       trigger: ".skills-collapse",
+  //       start: "top 90%",
+  //       toggleActions: "play none none none",
+  //     },
+  //   })
+  // }, [])
 
   const frontEndData = [
     {
