@@ -217,7 +217,7 @@
     }
   }
   footer {
-    @apply flex h-60 md:h-32 items-end justify-center pb-1 max-sm:pb-12 dark:border-none;
+    @apply flex h-60 md:h-28 items-end justify-center pb-1 max-sm:pb-12 dark:border-none;
   }
   footer section.foot-header {
     @apply text-center;
