@@ -45,7 +45,7 @@
   } */
 
   nav {
-    @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center sm:top-7 sm:h-[75px] sm:px-8 lg:px-[150px];
+    @apply sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center sm:top-7 sm:h-[75px] sm:px-8 lg:px-[150px] max-sm:-z-20;
     transition: all 0.37s ease;
   }
 

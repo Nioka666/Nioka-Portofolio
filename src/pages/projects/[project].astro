@@ -56,7 +56,7 @@ const { title, slug, url, banner_img, date, p1, p2, p3 } = Astro.props;
 
 <MainLayout title={`${title}`}>
   <Navbar client:idle />
-  <main>
+  <main class="max-sm:px-1">
     <ProjectDetails url={url} slug={slug} title={title} banner_img={banner_img} date={date} p1={p1} p2={p2} p3={p3} client:idle />
     <FloatingButton client:idle />
   </main>

@@ -1,11 +1,15 @@
 function ProjectDetails({ url, slug, title, banner_img, date, p1, p2, p3 }) {
     return (
         <>
-            <section className="navigation mt-[-20px] flex justify-between px-5 max-sm:mt-[-40px]">
+            <section className="navigation mt-[-20px] flex justify-between px-[22px] max-sm:mt-[-40px]">
                 <div className="breadcrumbs text-sm">
                     <ul>
-                        <li><a href="/#projects">Projects</a></li>
-                        <li><a href={`/projects/${url}`}>{slug}</a></li>
+                        <li>
+                            <a href="/#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href={`/projects/${url}`}>{slug}</a>
+                        </li>
                     </ul>
                 </div>
                 <div className="blank"></div>
@@ -17,7 +21,7 @@ function ProjectDetails({ url, slug, title, banner_img, date, p1, p2, p3 }) {
                     <div className="rectangle skeleton w-full h-[200px] max-sm:h-[180px] bg-gray-200 dark:bg-niodark3 rounded-xl"></div>
                     {/* <img src={banner_img.src} alt="" className="w-full h-[200px] rounded-xl" /> */}
                 </header>
-                <article className="mt-12 max-sm:mt-10 text-left text-[15.3px] sm:text-[17px] [word-spacing:5px] max-sm:[word-spacing:2.5px] leading-[26.5px] dark:text-textdark2">
+                <article className="mt-12 max-sm:mt-10 text-left text-[14.8px] sm:text-[17px] [word-spacing:5px] max-sm:[word-spacing:2.5px] leading-[26.5px] text-textdark5 dark:text-textdark4">
                     <p>
                         {p1}
                     </p>
@@ -36,12 +40,18 @@ function ProjectDetails({ url, slug, title, banner_img, date, p1, p2, p3 }) {
                         </a>
                     </p>
                 </article>
-                <hr className="border-[0.5px] mt-10 dark:border-borderbtm" />
-                <div className="mt-10 h-40">
-                    <a href="/#projects">
-                        <button className="bg-gray-200 dark:bg-niodark3 dark:text-textdark4 px-6 py-3 rounded-xl max-sm:rounded-lg flex items-center gap-2 max-sm:text-sm">
+                <hr className="border mt-10 dark:border-borderbtm" />
+                <div className="mt-10 h-40 w-full flex justify-between">
+                    <a href="/">
+                        <button className="bg-gray-100 dark:bg-niodark3 dark:text-textdark4 px-6 py-3 rounded-xl max-sm:rounded-lg flex items-center gap-2 max-sm:text-sm">
                             <i className="bx bx-arrow-back"></i>
-                            Back to Projects
+                            Back Home
+                        </button>
+                    </a>
+                    <a href="/">
+                        <button className="bg-gray-100 dark:bg-niodark3 dark:text-textdark4 px-6 py-3 rounded-xl max-sm:rounded-lg flex items-center gap-2 max-sm:text-sm">
+                            <i className="bx bxl-github"></i>
+                            Github
                         </button>
                     </a>
                 </div>

@@ -6,8 +6,18 @@ function BottomNav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [shadowNav, setShadowNav] = useState(false);
   const [themeNow, setThemeNow] = useState("light");
+  const [exceptPage, setExceptPage] = useState(false);
   const bottomDrawerRef = useRef(null);
   const toggleButtonRef = useRef(null);
+
+  useEffect(() => {
+    const currentLocation = window.location.href;
+    if (currentLocation.includes("/projects/")) {
+      setExceptPage(true);
+    } else {
+      setExceptPage(false);
+    }
+  }, []);
 
   function toggleTheme() {
     const currentTheme = localStorage.getItem("theme");
@@ -50,7 +60,7 @@ function BottomNav() {
         <button
           ref={toggleButtonRef}
           onClick={() => setDrawerOpen((prev) => !prev)}
-          className="mt-1"
+          className={`mt-1 ${exceptPage == true ? 'hidden' : 'visible'}`}
           aria-label="Menu button"
         >
           <i className="bx bx-category cursor-pointer text-[22px] font-medium text-gray-600 transition-all hover:text-gray-400 dark:text-textdark4"></i>
@@ -58,6 +68,7 @@ function BottomNav() {
       </div>
     );
   }
+
 
   useEffect(() => {
     let currentTheme = localStorage.getItem("theme");
