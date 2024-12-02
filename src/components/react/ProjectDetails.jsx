@@ -16,7 +16,7 @@ function ProjectDetails({ url, slug, title, banner_img, date, p1, p2, p3, github
             </section>
             <section className="project-details-component mt-6 px-5">
                 <header className="grid gap-7">
-                    <h1 className="text-5xl max-sm:text-[33px] font-semibold dark:text-textdark3">{title}</h1>
+                    <h1 className="text-5xl max-sm:text-[33px] max-sm:leading-[38px] font-semibold dark:text-textdark3">{title}</h1>
                     <span className="text-gray-500 max-sm:text-sm max-sm:mt-[-10px]">Last update {date}</span>
                     <div className="rectangle skeleton w-full h-[200px] max-sm:h-[180px] bg-gray-200 dark:bg-niodark3 rounded-xl"></div>
                     {/* <img src={banner_img.src} alt="" className="w-full h-[200px] rounded-xl" /> */}
