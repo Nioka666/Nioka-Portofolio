@@ -17,7 +17,8 @@ export function getStaticPaths() {
         date: "2 Dec, 2024",
         p1: "I am proud to present NioNime, a new anime streaming platform that I developed using technologies such as Node.js, TypeScript, React, and Vite.js. NioNime is a place for anime fans to enjoy their favorite shows anytime and anywhere. With MongoDB Atlas as the database, I ensure all user information and membership transactions are stored securely. The viewing experience on NioNime is guaranteed to be seamless and enjoyable, with high streaming quality and a constantly updated anime collection.",
         p2: "One of NioNime's standout features is the ease with which users can manage their accounts. I have integrated various exciting features such as personalized watch lists, recommendations based on preferences, and new episode notifications. Users can sign up, manage their subscriptions, and enjoy content without the interruption of ads. NioNime's interface is designed with inspiration from Crunchyroll, thus providing an elegant and easy-to-use user experience. I am committed to continuously improving this platform by adding new features and content regularly.",
-        p3: "NioNime also has a complete backend administration management feature. I developed an admin panel to manage all transaction data, be it user information or membership transactions. With this backend, administrators can easily oversee and manage all activities on the platform. The use of Anify.tv's API allows me to provide an extensive and constantly updated anime collection. I am confident that NioNime will become the platform of choice for all anime lovers around the world. Join me at NioNime and enjoy unlimited anime adventures!"
+        p3: "NioNime also has a complete backend administration management feature. I developed an admin panel to manage all transaction data, be it user information or membership transactions. With this backend, administrators can easily oversee and manage all activities on the platform. The use of Anify.tv's API allows me to provide an extensive and constantly updated anime collection. I am confident that NioNime will become the platform of choice for all anime lovers around the world. Join me at NioNime and enjoy unlimited anime adventures!",
+        github_url: "https://github.com/Nioka666/NioNime"
       }
     },
     {
@@ -30,20 +31,22 @@ export function getStaticPaths() {
         date: "2 Dec, 2024",
         p1: "I am excited to introduce NioLibs, a digital library platform that I developed using technologies such as Node.js, React, and Vite.js. With NioLibs, users can access various digital book collections easily and conveniently. To ensure user data and membership transactions are secure, I use MongoDB Atlas as a reliable database solution. NioLibs is designed to provide an optimal reading experience with an intuitive and responsive user interface.",
         p2: "In NioLibs, users can enjoy various exciting features such as the creation of personalized reading lists, book recommendations based on interests, and notifications for new books. I am committed to providing a constantly updated collection of books and various categories to meet the needs of all readers. The platform also allows users to leave reviews and ratings on the books they have read, so that the community of readers can share recommendations with each other.",
-        p3: "In addition to the features for users, NioLibs also comes with a backend administration panel that allows efficient management of transaction and membership data. Administrators can easily manage user information, oversee activities on the platform, and ensure all transactions run smoothly. With the APIs and technologies used, I believe NioLibs can be an innovative and reliable digital library solution. Come join me at NioLibs and enjoy the convenience of reading digital books at your fingertips!"
+        p3: "In addition to the features for users, NioLibs also comes with a backend administration panel that allows efficient management of transaction and membership data. Administrators can easily manage user information, oversee activities on the platform, and ensure all transactions run smoothly. With the APIs and technologies used, I believe NioLibs can be an innovative and reliable digital library solution. Come join me at NioLibs and enjoy the convenience of reading digital books at your fingertips!",
+        github_url: "https://github.com/Nioka666/NioLibs"
       }
     },
     {
       params: {project: 'n-quiz'},
       props: {
         url:"n-quiz",
-        slug: "NQibs",
+        slug: "NQuiz",
         title: "NQuiz: A Simple Quiz Mobile App",
         banner_img: "../../assets/nionime_cover.webp",
         date: "2 Dec, 2024",
         p1: "I am excited to introduce NioLibs, a digital library platform that I developed using technologies such as Node.js, React, and Vite.js. With NioLibs, users can access various digital book collections easily and conveniently. To ensure user data and membership transactions are secure, I use MongoDB Atlas as a reliable database solution. NioLibs is designed to provide an optimal reading experience with an intuitive and responsive user interface.",
         p2: "In NioLibs, users can enjoy various exciting features such as the creation of personalized reading lists, book recommendations based on interests, and notifications for new books. I am committed to providing a constantly updated collection of books and various categories to meet the needs of all readers. The platform also allows users to leave reviews and ratings on the books they have read, so that the community of readers can share recommendations with each other.",
-        p3: "In addition to the features for users, NioLibs also comes with a backend administration panel that allows efficient management of transaction and membership data. Administrators can easily manage user information, oversee activities on the platform, and ensure all transactions run smoothly. With the APIs and technologies used, I believe NioLibs can be an innovative and reliable digital library solution. Come join me at NioLibs and enjoy the convenience of reading digital books at your fingertips!"
+        p3: "In addition to the features for users, NioLibs also comes with a backend administration panel that allows efficient management of transaction and membership data. Administrators can easily manage user information, oversee activities on the platform, and ensure all transactions run smoothly. With the APIs and technologies used, I believe NioLibs can be an innovative and reliable digital library solution. Come join me at NioLibs and enjoy the convenience of reading digital books at your fingertips!",
+        github_url: "https://github.com/Nioka666/NQuiz"
       }
     },
     // {params: {project: 'nio-libs'}, props: {url:"nio-libs", title: "NioLibs", date: "2 Dec, 2024"}},
@@ -51,13 +54,13 @@ export function getStaticPaths() {
   ];
 }
 
-const { title, slug, url, banner_img, date, p1, p2, p3 } = Astro.props;
+const { title, slug, url, banner_img, date, p1, p2, p3, github_url } = Astro.props;
 --- 
 
 <MainLayout title={`${title}`}>
   <Navbar client:idle />
   <main class="max-sm:px-1">
-    <ProjectDetails url={url} slug={slug} title={title} banner_img={banner_img} date={date} p1={p1} p2={p2} p3={p3} client:idle />
+    <ProjectDetails url={url} slug={slug} title={title} banner_img={banner_img} date={date} p1={p1} p2={p2} p3={p3} github_url={github_url} client:idle />
     <FloatingButton client:idle />
   </main>
   <BottomNav client:idle />

@@ -326,7 +326,7 @@
   }
 
   .contacts-content {
-    @apply mt-14 max-sm:mt-7 rounded-2xl bg-white border dark:border-borderbtm dark:bg-niodark3 p-9 py-10 max-sm:p-7 max-sm:py-8;
+    @apply mt-14 max-sm:mt-7 rounded-2xl bg-white border dark:border-borderbtm dark:bg-niodark4 p-9 py-10 max-sm:p-7 max-sm:py-8;
   }
 
   /* blob animation */

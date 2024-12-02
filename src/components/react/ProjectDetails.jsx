@@ -1,4 +1,4 @@
-function ProjectDetails({ url, slug, title, banner_img, date, p1, p2, p3 }) {
+function ProjectDetails({ url, slug, title, banner_img, date, p1, p2, p3, github_url }) {
     return (
         <>
             <section className="navigation mt-[-20px] flex justify-between px-[22px] max-sm:mt-[-40px]">
@@ -48,7 +48,7 @@ function ProjectDetails({ url, slug, title, banner_img, date, p1, p2, p3 }) {
                             Back Home
                         </button>
                     </a>
-                    <a href="/">
+                    <a href={github_url}>
                         <button className="bg-gray-100 dark:bg-niodark3 dark:text-textdark4 px-6 py-3 rounded-xl max-sm:rounded-lg flex items-center gap-2 max-sm:text-sm">
                             <i className="bx bxl-github"></i>
                             Github
