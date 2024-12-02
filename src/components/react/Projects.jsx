@@ -41,16 +41,22 @@ function Projects() {
         <section className="projects-content">
           <ProjectBox st_title={"Nio"} nd_title={"Nime"} desc={"Anime streaming web without ads, with administration system and allows user subscribtion with several benefits"} url={"https://github.com/Nioka666/NioNime"} st_tech={"React.js"} nd_tech={"ExpressJS"} details_url={"/projects/nio-nime"} />
 
-          <ProjectBox st_title={"Nio"} nd_title={"Libs"} desc={"Dynamic library website with fresh look and administration support"} url={"https://github.com/Nioka666/NioLibs"} st_tech={"React.js"} nd_tech={"ExpressJS"} details_url={"/projects/nio-libs"}/>
+          <ProjectBox st_title={"Nio"} nd_title={"Libs"} desc={"Dynamic library website with fresh look and administration support"} url={"https://github.com/Nioka666/NioLibs"} st_tech={"React.js"} nd_tech={"ExpressJS"} details_url={"/projects/nio-libs"} />
 
           <ProjectBox st_title={"N"} nd_title={"Quiz"} desc={"A Simple mobile/android-based quiz app, with a fresh look and fun quiz content"} url={"https://github.com/Nioka666/NQuiz"} st_tech={"Java"} nd_tech={"Kotlin"} details_url={"/projects/n-quiz"} />
-          <div className="card bg-nioprimary dark:bg-niodark max-sm:w-full sm:w-[410px] text-center h-80">
+          <div className="card bg-nioprimary dark:bg-niodark max-sm:w-full sm:w-[410px] text-center h-36 mb-14">
+            <div className="my-auto">
+              <h1 className="text-xl md:text-3xl mt-5 text-gray-300 dark:text-textdark5 font-semibold">What's next?</h1>
+              <p className="text-base max-sm:text-sm text-gray-300 dark:text-textdark5 ">perhaps the next idea is yours!</p>
+            </div>
+          </div>
+          {/* <div className="card bg-nioprimary dark:bg-niodark max-sm:w-full sm:w-[410px] text-center h-80">
             <div className="my-auto">
               <i className="bx bxs-ghost text-9xl max-sm:text-[110px] text-gray-300 dark:text-textdark5"></i>
               <h1 className="text-xl md:text-3xl mt-5 text-gray-300 dark:text-textdark5 font-bold">What's next?</h1>
               <p className="text-base max-sm:text-sm text-gray-300 dark:text-textdark5 underline">Let's collaborate w/ me</p>
             </div>
-          </div>
+          </div> */}
         </section>
       </section>
     </>

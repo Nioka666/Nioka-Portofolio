@@ -45,8 +45,8 @@ function Contacts() {
             </a>
           </section>
           <section className="mt-40 max-sm:mt-5 text-right w-[90%] max-sm:w-[90%] max-sm:ms-7">
-            <h1 className="text-[27px] max-sm:text-[18px] leading-[40px] max-sm:leading-9 dark:text-textdark4 font-extralight">There are many ways to connect w/ me, and I look forward to our future
-              <span className="text-3xl max-sm:text-[27px] font-medium">
+            <h1 className="text-[27px] max-sm:text-[19px] leading-[40px] max-sm:leading-9 dark:text-textdark4 font-extralight">There are many ways to connect w/ me, and I look forward to our future
+              <span className="text-3xl max-sm:text-[26px] font-medium">
                 {" "} collaboration.
               </span>
             </h1>
