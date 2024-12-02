@@ -25,22 +25,22 @@ function Contacts() {
           <section className="contacts-content grid gap-7 grid-cols-1 w-[110%] max-sm:w-full">
             <a href="https://linkedin.com/in/adhim-niokagi">
               <div className="contact-card group cursor-pointer px-3 flex justify-between">
-                <span className="text-2xl max-sm:group-hover:text-niodark max-sm:text-xl max-sm:group-hover:text-2xl text-textdark5 hover:text-niodark group-hover:text-3xl transition-all duration-150 dark:text-textdark4">LinkedIn</span>
-                <i className='bx bx-arrow-back max-sm:group-hover:text-niodark text-textdark5 hover:text-niodark rotate-[140deg] text-2xl dark:text-textdark4 dark:hover:text-textdark4 group-hover:text-3xl transition-all duration-150 group-hover:rotate-180'></i>
+                <span className="text-2xl max-sm:group-hover:text-niodark dark:max-sm:group-hover:text-textdark3 max-sm:text-xl max-sm:group-hover:text-2xl text-textdark5 hover:text-niodark group-hover:text-3xl transition-all duration-150 dark:text-textdark4">LinkedIn</span>
+                <i className='bx bx-arrow-back max-sm:group-hover:text-niodark dark:max-sm:group-hover:text-textdark3 text-textdark5 hover:text-niodark rotate-[140deg] text-2xl dark:text-textdark4 dark:hover:text-textdark4 group-hover:text-3xl transition-all duration-150 group-hover:rotate-180'></i>
               </div>
             </a>
             <hr className="mt-[-10px] dark:border-borderbtm" />
             <a href="https://instagram.com/nioka.o">
               <div className="contact-card group cursor-pointer px-3 flex justify-between">
-                <span className="text-2xl max-sm:group-hover:text-niodark max-sm:text-xl max-sm:group-hover:text-2xl text-textdark5 hover:text-niodark group-hover:text-3xl transition-all duration-150 dark:text-textdark4">Instagram</span>
-                <i className='bx bx-arrow-back max-sm:group-hover:text-niodark text-textdark5 hover:text-niodark rotate-[140deg] text-2xl dark:text-textdark4 dark:hover:text-textdark4 group-hover:text-3xl transition-all duration-150 group-hover:rotate-180'></i>
+                <span className="text-2xl max-sm:group-hover:text-niodark dark:max-sm:group-hover:text-textdark3 max-sm:text-xl max-sm:group-hover:text-2xl text-textdark5 hover:text-niodark group-hover:text-3xl transition-all duration-150 dark:text-textdark4">Instagram</span>
+                <i className='bx bx-arrow-back max-sm:group-hover:text-niodark dark:max-sm:group-hover:text-textdark3 text-textdark5 hover:text-niodark rotate-[140deg] text-2xl dark:text-textdark4 dark:hover:text-textdark4 group-hover:text-3xl transition-all duration-150 group-hover:rotate-180'></i>
               </div>
             </a>
             <hr className="mt-[-10px] dark:border-borderbtm" />
             <a href="https://wa.me/6287755588990">
               <div className="contact-card group cursor-pointer px-3 flex justify-between">
-                <span className="text-2xl max-sm:group-hover:text-niodark max-sm:text-xl max-sm:group-hover:text-2xl text-textdark5 hover:text-niodark group-hover:text-3xl transition-all duration-150 dark:text-textdark4">WhatsApp</span>
-                <i className='bx bx-arrow-back max-sm:group-hover:text-niodark text-textdark5 hover:text-niodark rotate-[140deg] text-2xl dark:text-textdark4 dark:hover:text-textdark4 group-hover:text-3xl transition-all duration-150 group-hover:rotate-180'></i>
+                <span className="text-2xl max-sm:group-hover:text-niodark dark:max-sm:group-hover:text-textdark3 max-sm:text-xl max-sm:group-hover:text-2xl text-textdark5 hover:text-niodark group-hover:text-3xl transition-all duration-150 dark:text-textdark4">WhatsApp</span>
+                <i className='bx bx-arrow-back max-sm:group-hover:text-niodark dark:max-sm:group-hover:text-textdark3 text-textdark5 hover:text-niodark rotate-[140deg] text-2xl dark:text-textdark4 dark:hover:text-textdark4 group-hover:text-3xl transition-all duration-150 group-hover:rotate-180'></i>
               </div>
             </a>
           </section>
