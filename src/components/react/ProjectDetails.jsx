@@ -21,7 +21,7 @@ function ProjectDetails({ url, slug, title, banner_img, date, p1, p2, p3, github
                     <div className="rectangle skeleton w-full h-[200px] max-sm:h-[180px] bg-gray-200 dark:bg-niodark3 rounded-xl"></div>
                     {/* <img src={banner_img.src} alt="" className="w-full h-[200px] rounded-xl" /> */}
                 </header>
-                <article className="mt-12 max-sm:mt-8 text-left text-[14.8px] sm:text-[17px] [word-spacing:5px] max-sm:[word-spacing:2.5px] leading-[26.5px] text-textdark5 dark:text-textdark4 max-sm:px-[1px]">
+                <article className="mt-12 max-sm:mt-8 text-left text-[14.8px] sm:text-[17px] [word-spacing:5px] max-sm:[word-spacing:2.5px] leading-[26.5px] text-textdark5 dark:text-textdark4 px-[1px]">
                     <p>
                         {p1}
                     </p>

@@ -44,10 +44,11 @@ function Projects() {
           <ProjectBox st_title={"Nio"} nd_title={"Libs"} desc={"Dynamic library website with fresh look and administration support"} url={"https://github.com/Nioka666/NioLibs"} st_tech={"React.js"} nd_tech={"ExpressJS"} details_url={"/projects/nio-libs"} />
 
           <ProjectBox st_title={"N"} nd_title={"Quiz"} desc={"A Simple mobile/android-based quiz app, with a fresh look and fun quiz content"} url={"https://github.com/Nioka666/NQuiz"} st_tech={"Java"} nd_tech={"Kotlin"} details_url={"/projects/n-quiz"} />
-          <div className="card bg-nioprimary dark:bg-niodark max-sm:w-full sm:w-[410px] text-center h-36 mb-14">
-            <div className="my-auto">
-              <h1 className="text-xl md:text-3xl mt-5 text-gray-400 dark:text-textdark5 font-semibold">What's next?</h1>
-              <p className="text-base max-sm:text-sm text-gray-400 dark:text-textdark5 ">perhaps the next idea is yours!</p>
+          <div className="card bg-nioprimary dark:bg-niodark max-sm:w-full sm:w-[410px] text-center h-36 md:h-72 mb-14">
+            <div className="my-auto md:mt-20">
+              <i className="bx bxs-ghost text-9xl max-sm:text-[110px] text-gray-300 dark:text-textdark5 max-md:hidden"></i>
+              <h1 className="text-xl md:text-3xl mt-5 text-gray-400 md:text-gray-300 dark:text-textdark5 font-semibold">What's next?</h1>
+              <p className="text-base max-sm:text-sm text-gray-400 md:text-gray-300 dark:text-textdark5 ">perhaps the next idea is yours!</p>
             </div>
           </div>
           {/* <div className="card bg-nioprimary dark:bg-niodark max-sm:w-full sm:w-[410px] text-center h-80">
