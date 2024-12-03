@@ -1,15 +1,18 @@
 ---
+import Navbar from "../components/react/Navbar";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="404 Page Not Found">
+    <section class="sticky top-0 z-50 mx-auto flex h-[70px] w-full items-center sm:top-7 sm:h-[0px] sm:px-8 lg:px-[150px] max-sm:-z-20">
+    </section>
     <main>
-        <div class="not-found-page h-full text-center mt-28 rounded-2xl max-sm:w-full max-sm:mt-28 mx-auto p-10 py-16">
-            <div class="mb-10">
-                <h1 class="text-7xl max-sm:text-6xl font-bold">404</h1>
-                <h2 class="text-xl">Page Not Found</h2>
-            </div>
-                <a href="/" class="font-semibold text-base">{"<"}Back to Homepage</a>
+    <div class="not-found-page h-full text-center mt-28 rounded-2xl max-sm:w-full max-sm:mt-28 mx-auto p-10 py-16">
+        <div class="mb-10">
+            <h1 class="text-7xl max-sm:text-6xl font-bold">404</h1>
+            <h2 class="text-xl">Page Not Found</h2>
         </div>
+            <a href="/" class="font-semibold text-base">{"<"}Back to Homepage</a>
+    </div>
     </main>
 </MainLayout>
