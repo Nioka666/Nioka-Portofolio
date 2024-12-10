@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-import niokaPhoto from "../../assets/nioka_2.webp";
-import PartTitle from "./PartTitle";
+import niokaPhoto from "../../assets/ppw_glass.webp";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CV from "../../assets/Adhim_Niokagi_IT_CVS.pdf";
@@ -85,13 +84,13 @@ function AboutMe() {
             </h1>
           </div>
           <div className="sm:hidden"></div>
-          <h2 className="mt-[5px] text-[23px] text-niodark2 max-sm:rounded-lg dark:text-textdark2 dark:max-sm:text-textdark max-sm:mt-0 md:text-[42px] max-sm:border-[1.3px] max-sm:bg-nioprimary dark:bg-niodark dark:border-borderbtm max-sm:px-5 max-sm:py-2">
+          <h2 className="mt-[5px] text-[20px] text-niodark2 max-sm:rounded-lg dark:text-textdark2 dark:max-sm:text-textdark max-sm:mt-0 md:text-[40px] max-sm:border-[1.3px] max-sm:bg-nioprimary max-sm:hidden dark:bg-niodark dark:border-borderbtm max-sm:px-5 max-sm:py-2">
             {/* about_me */}
             about_me
           </h2>
         </section>
         {/* content */}
-        <section className="about-content">
+        <section className="about-content max-sm:pt-7">
           <div className="flex items-center gap-7">
             <img
               src={niokaPhoto.src}
@@ -119,7 +118,7 @@ function AboutMe() {
                 In addition to my skills, I've a strong learning passion and
                 stay updated with industry trends.
               </p>
-              <button onClick={cvClick} role="button" className="mt-8 px-6 py-3 max-sm:py-[11.5px] max-sm:px-[23px] text-sm max-sm:text-[14px] bg-niodark text-nioprimary dark:bg-niodark2 border-none max-sm:rounded-[10px] dark:text-textdark3 flex items-center gap-2 font-normal rounded-xl active:scale-95 transition-all duration-0">
+              <button onClick={cvClick} role="button" className="mt-8 px-6 py-3 max-sm:py-[11.5px] max-sm:px-[23px] text-sm max-sm:text-[14px] bg-niodark text-nioprimary dark:bg-niodark2 border-none max-sm:rounded-[10px] dark:text-textdark3 flex items-center gap-2 font-normal rounded-xl active:scale-95 transition-all duration-0 max-sm:mt-5">
                 View CV
                 <i className="bx bx-file text-lg max-sm:text-base font-normal text-niosecondary dark:text-textdark3"></i>
               </button>

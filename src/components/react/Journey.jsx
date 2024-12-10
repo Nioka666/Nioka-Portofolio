@@ -6,7 +6,7 @@ function Journey() {
       <section id="journey" className="journey-component">
         <PartTitle title={"my_journey"} num={"002"} />
 
-        <section className="max-lg:mt-10 max-md:px-6 max-sm:mt-10 lg:mt-16 max-sm:mx-0">
+        <section className="max-lg:mt-10 max-md:px-6 max-sm:mt-11 lg:mt-16 max-sm:mx-0">
           <div role="tablist" className="tabs tabs-lifted tabs-lg">
             <input type="radio" name="my_tabs_2" role="tab" className="tab font-medium text-base dark:[--tab-bg:#161617] dark:[--tab-border-color:#434346] dark:text-textdark2" aria-label="Educations"
               defaultChecked />

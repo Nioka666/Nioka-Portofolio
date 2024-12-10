@@ -6,7 +6,7 @@ function PartTitle({ title, num, extraStyle, extraPadding }) {
           {num}
         </h1>
       </div>
-      <h2 className={`${extraStyle} mt-[5px] text-3xl font-normal text-niodark2 dark:text-textdark max-sm:mt-0 md:text-5xl`}>
+      <h2 className={`${extraStyle} mt-[5px] max-sm:mb-2 text-3xl font-normal text-niodark2 dark:text-textdark max-sm:mt-0 md:text-5xl`}>
         {title}
       </h2>
     </section>
