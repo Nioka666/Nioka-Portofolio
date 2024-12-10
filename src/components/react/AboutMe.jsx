@@ -90,11 +90,11 @@ function AboutMe() {
           </h2>
         </section>
         {/* content */}
-        <section className="about-content max-sm:pt-7">
+        <section className="about-content max-sm:pt-8">
           <div className="flex items-center gap-7">
             <img
               src={niokaPhoto.src}
-              className="rounded-xl max-sm:w-[75px] sm:w-[100px]"
+              className="rounded-xl max-sm:w-[75px] sm:w-[100px] brightness-95"
               alt="Adhim Niokagi Photo"
             />
             <div className="cname">
