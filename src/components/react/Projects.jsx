@@ -47,8 +47,8 @@ function Projects() {
           <div className="card bg-nioprimary dark:bg-niodark max-sm:w-full sm:w-[410px] text-center h-36 md:h-72 mb-14">
             <div className="my-auto md:mt-20">
               <i className="bx bxs-ghost text-9xl max-sm:text-[110px] text-gray-300 dark:text-textdark5 max-md:hidden"></i>
-              <h1 className="text-2xl md:text-3xl mt-5 text-niodark md:text-gray-300 dark:text-textdark5 font-thin md:font-semibold">What's next?</h1>
-              <p className="text-base max-sm:font-medium max-sm:text-sm text-textdark5 md:text-gray-300 dark:text-textdark5 max-sm:mt-1">perhaps the next idea <br /> is yours!</p>
+              <h1 className="text-2xl md:text-3xl mt-5 text-niodark md:text-gray-300 dark:text-textdark4 font-thin md:font-semibold">What's next?</h1>
+              <p className="text-base max-sm:font-medium max-sm:text-sm text-textdark5 md:text-gray-300  max-sm:mt-1 dark:text-textdark2">perhaps the next idea <br /> is yours!</p>
             </div>
           </div>
           {/* <div className="card bg-nioprimary dark:bg-niodark max-sm:w-full sm:w-[410px] text-center h-80">
