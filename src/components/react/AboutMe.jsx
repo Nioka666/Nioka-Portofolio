@@ -118,7 +118,7 @@ function AboutMe() {
                 In addition to my skills, I've a strong learning passion and
                 stay updated with industry trends.
               </p>
-              <button onClick={cvClick} role="button" className="mt-8 px-6 py-3 max-sm:py-[11.5px] max-sm:px-[23px] text-sm max-sm:text-[14px] bg-niodark text-nioprimary dark:bg-niodark2 border-none max-sm:rounded-[10px] dark:text-textdark3 flex items-center gap-2 font-normal rounded-xl active:scale-95 transition-all duration-0 max-sm:mt-5">
+              <button onClick={cvClick} role="button" className="mt-8 px-6 py-3 max-sm:py-[11.5px] max-sm:px-[23px] text-sm max-sm:text-[14px] bg-niodark text-nioprimary dark:bg-niodark2 border-none max-sm:rounded-[10px] dark:text-textdark3 flex items-center gap-2 font-normal rounded-xl active:scale-95 transition-all duration-0 max-sm:mt-2 max-sm:mb-1">
                 View CV
                 <i className="bx bx-file text-lg max-sm:text-base font-normal text-niosecondary dark:text-textdark3"></i>
               </button>
