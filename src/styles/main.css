@@ -266,7 +266,7 @@
   }
 
   .about-mockup {
-    @apply mt-8 max-sm:mt-3 sm:mx-5 md:mx-0;
+    @apply mt-8 max-sm:mt-1 sm:mx-5 md:mx-0;
   }
 
   .about-mockup-paragraph {

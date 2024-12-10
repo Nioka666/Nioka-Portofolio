@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import niokaPhoto from "../../assets/ppw_glass.webp";
+import niokaPhoto from "../../assets/ppw_glass.jpg";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CV from "../../assets/Adhim_Niokagi_IT_CVS.pdf";
