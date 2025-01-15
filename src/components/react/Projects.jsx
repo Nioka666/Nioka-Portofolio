@@ -55,19 +55,19 @@ function Projects() {
                 <span className="bg-gray-100 dark:bg-borderbtm px-3 py-1 text-xs rounded-md">TailwindCSS</span>
               </div>
               <p className="mt-4 text-[13px] font-normal dark:text-textdark4">
-                Administrator page of <a href="https://qrisjelajah.id/" className="underline font-medium">qrisjelajah.id</a>, the result of UI/UX mockup implementation with React.js and TailwindCSS (without API integration) and before further revision process.
+                Administrator page of <a href="https://qrisjelajah.id/" className="underline font-medium">qrisjelajah.id</a>, the result of UI/UX mockup implementation with React.js and TailwindCSS (without API integration) and before further revision and development process.
               </p>
               <div className="mt-5 flex justify-between w-full max-sm:mb-[-8px]">
                 <div className="cursor-pointer">
-                    {/* <i className="bx bxl-github text-xl hover:text-textdark2 duration-200"></i> */}
-                    <p className="max-sm:text-[12px]">Not available</p>
+                    <i className="bx bxl-github text-xl hover:text-textdark2 duration-200 text-gray-400"></i>
+                    {/* <p className="max-sm:text-[12px]">Not available</p> */}
                 </div>
-                {/* <div className="cursor-pointer">
-                  <a href="#">
+                <div className="cursor-pointer">
+                  <a href="/projects/admin-page-qrisjelajah">
                     <i
                       className="bx bx-arrow-back rotate-180 text-xl hover:translate-x-1 transition-all duration-200"></i>
                   </a>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>

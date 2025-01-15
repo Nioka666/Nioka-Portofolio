@@ -34,14 +34,14 @@ function ProjectDetails({ url, slug, title, banner_img, date, p1, p2, p3, github
                         {p3}
                     </p>
                     <br /><br />
-                    <p>Author : {" "}
+                    {/* <p>Author : {" "}
                         <a href="/" className="underline">
                             Adhim Niokagi
                         </a>
-                    </p>
+                    </p> */}
                 </article>
                 <hr className="border mt-10 dark:border-borderbtm" />
-                <div className="mt-10 h-40 md:h-28 w-full flex justify-between">
+                <div className="mt-10 h-20 max-sm:h-14 md:h-28 w-full flex justify-between">
                     <a href="/">
                         <button className="bg-gray-100 dark:bg-niodark3 dark:text-textdark4 px-6 py-3 rounded-xl max-sm:rounded-lg flex items-center gap-2 max-sm:text-sm">
                             <i className="bx bx-arrow-back"></i>
