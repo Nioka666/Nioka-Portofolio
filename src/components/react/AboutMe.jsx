@@ -94,11 +94,11 @@ function AboutMe() {
           <div className="flex items-center gap-7">
             <img
               src={niokaPhoto.src}
-              className="rounded-xl max-sm:w-[75px] sm:w-[100px] brightness-95"
+              className="rounded-full max-sm:hidden sm:w-[100px] brightness-95"
               alt="Adhim Niokagi Photo"
             />
             <div className="cname">
-              <h1 className="text-[25px] font-bold">nioka.o
+              <h1 className="text-[25px] font-bold">M. Adhim Niokagi
               </h1>
               <div className="tag flex gap-2 mt-2">
                 <span className="bg-gray-200 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">Front-End</span>

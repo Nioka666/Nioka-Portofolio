@@ -44,6 +44,36 @@ function Projects() {
           <ProjectBox st_title={"Nio"} nd_title={"Libs"} desc={"Dynamic library website with fresh look and administration support"} url={"https://github.com/Nioka666/NioLibs"} st_tech={"React.js"} nd_tech={"ExpressJS"} details_url={"/projects/nio-libs"} />
 
           <ProjectBox st_title={"N"} nd_title={"Quiz"} desc={"A Simple mobile/android-based quiz app, with a fresh look and fun quiz content"} url={"https://github.com/Nioka666/NQuiz"} st_tech={"Java"} nd_tech={"Kotlin"} details_url={"/projects/n-quiz"} />
+
+          {/* specified */}
+          <div
+            className="card bg-white dark:bg-gradient-to-b from-[#1b1b1d] to-niodark4 max-sm:w-full lg:w-[440px] max-lg:w-[340px] border dark:border-borderbtm">
+            <div className="card-body text-left">
+              <h1 className="text-4xl sm:text-5xl">Admin Page of <br /> QRIS Jelajah ID</h1>
+              <div className="tag flex gap-2 mt-2">
+                <span className="bg-gray-100 dark:bg-borderbtm px-3 py-1 text-xs rounded-md">React.js</span>
+                <span className="bg-gray-100 dark:bg-borderbtm px-3 py-1 text-xs rounded-md">TailwindCSS</span>
+              </div>
+              <p className="mt-4 text-[13px] font-normal dark:text-textdark4">
+                Administrator page of <a href="https://qrisjelajah.id/" className="underline font-medium">qrisjelajah.id</a>, the result of UI/UX mockup implementation with React.js and TailwindCSS (without integration with API) and before further revision process.
+              </p>
+              <div className="mt-5 flex justify-between w-full max-sm:mb-[-8px]">
+                <div className="cursor-pointer">
+                    {/* <i className="bx bxl-github text-xl hover:text-textdark2 duration-200"></i> */}
+                    <p className="max-sm:text-[12px]">Not available</p>
+                </div>
+                {/* <div className="cursor-pointer">
+                  <a href="#">
+                    <i
+                      className="bx bx-arrow-back rotate-180 text-xl hover:translate-x-1 transition-all duration-200"></i>
+                  </a>
+                </div> */}
+              </div>
+            </div>
+          </div>
+
+          {/*  */}
+
           <div className="card bg-nioprimary dark:bg-niodark max-sm:w-full sm:w-[410px] text-center h-36 md:h-72 mb-14">
             <div className="my-auto md:mt-20">
               <i className="bx bxs-ghost text-9xl max-sm:text-[110px] text-gray-300 dark:text-textdark5 max-md:hidden"></i>
