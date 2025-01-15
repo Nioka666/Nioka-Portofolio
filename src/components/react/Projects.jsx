@@ -55,7 +55,7 @@ function Projects() {
                 <span className="bg-gray-100 dark:bg-borderbtm px-3 py-1 text-xs rounded-md">TailwindCSS</span>
               </div>
               <p className="mt-4 text-[13px] font-normal dark:text-textdark4">
-                Administrator page of <a href="https://qrisjelajah.id/" className="underline font-medium">qrisjelajah.id</a>, just the result of UI/UX mockup implementation with React.js and TailwindCSS (without API integration) and before further revision process.
+                Administrator page of <a href="https://qrisjelajah.id/" className="underline font-medium">qrisjelajah.id</a>, the result of UI/UX mockup implementation with React.js and TailwindCSS (without API integration) and before further revision process.
               </p>
               <div className="mt-5 flex justify-between w-full max-sm:mb-[-8px]">
                 <div className="cursor-pointer">
