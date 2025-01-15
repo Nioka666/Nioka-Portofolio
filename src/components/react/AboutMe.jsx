@@ -98,7 +98,7 @@ function AboutMe() {
               alt="Adhim Niokagi Photo"
             />
             <div className="cname max-sm:mt-[-20px]">
-              <h1 className="text-[25px] font-bold">M. Adhim Niokagi
+              <h1 className="text-[25px] font-bold max-sm:font-semibold">M. Adhim Niokagi
               </h1>
               <div className="tag flex gap-2 mt-2">
                 <span className="bg-gray-200 dark:bg-niodark2 px-3 py-1 text-xs rounded-md">Front-End</span>
