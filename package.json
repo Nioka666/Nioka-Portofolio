@@ -12,13 +12,13 @@
     "disable-toolbar": "astro preferences disable devToolbar"
   },
   "dependencies": {
-    "@astrojs/react": "^4.1.5",
-    "@astrojs/tailwind": "^5.1.4",
-    "@astrojs/vercel": "^8.0.2",
+    "@astrojs/react": "^4.2.0",
+    "@astrojs/tailwind": "^6.0.0",
+    "@astrojs/vercel": "^8.0.5",
     "@emailjs/browser": "^4.4.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "astro": "^5.1.7",
+    "astro": "^5.2.3",
     "gsap": "^3.12.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
