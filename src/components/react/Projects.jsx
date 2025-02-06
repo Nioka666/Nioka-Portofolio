@@ -37,7 +37,7 @@ function Projects() {
   return (
     <>
       <section id="projects" className="projects-component">
-        <PartTitle title={"my_projects"} num={"004"} />
+        <PartTitle title={"projects"} num={"004"} />
         <section className="projects-content">
           <ProjectBox st_title={"Nio"} nd_title={"Nime"} desc={"Anime streaming web without ads, with administration system and allows user subscribtion with several benefits"} url={"https://github.com/Nioka666/NioNime"} st_tech={"React.js"} nd_tech={"ExpressJS"} details_url={"/projects/nio-nime"} />
 

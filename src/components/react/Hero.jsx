@@ -26,8 +26,6 @@ function Hero() {
     },
   ];
 
-
-
   const XLine = ({ n }) => {
     const elements = [];
     for (let i = 0; i < n; i++) {
